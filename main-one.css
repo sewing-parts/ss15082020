@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 248, 166);
+}
+
+body .en {
+    font-size: 40px;
+    color: rgb(33, 228, 33);
+}
