@@ -1,0 +1,1874 @@
+@media (min-width: 668px) and (max-width: 940px) {
+    body header .block-header-upper-level {
+        padding: 0px 25px 0px 25px;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu {
+        flex-direction: column;
+    }
+    body header .block-header-upper-level .shopping-basket {
+        margin-right: -7%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 667px) {
+    body header .block-header-upper-level {
+        padding: 0px 3px 0px 3px;
+    }
+    body header .block-header-upper-level .quick-contact {
+        width: 100vw;
+        position: absolute;
+        margin: 80px 0px 0px 0%;
+        z-index: 88888;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu {
+        width: 100%;
+        max-width: 1260px;
+        background: #5b8ab6;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li {
+        height: 25px;
+        line-height: 23px;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li .contact-menu-a {
+        color: #f5f6fa;
+        font-size: 16px;
+    }
+    body header .block-header-upper-level .language-selection {
+        margin-left: -7%;
+    }
+    body header .block-header-upper-level .shopping-basket {
+        margin-right: -7%;
+    }
+    body header .block-header-upper-level .shopping-basket .cart {
+        padding: 2px;
+    }
+    body header .block-header-upper-level .shopping-basket .cart .cart-a .cart-block {
+        width: 114px;
+        font-size: 14px;
+    }
+    body header .block-header-upper-level .shopping-basket .cart .cart-a .cart-block .cart-block-one {
+        padding: 2px 2px 0px 2px;
+        margin: 1px 0px 0px 0px;
+        height: 20px;
+        width: 108px;
+    }
+    body header .block-header-upper-level .shopping-basket .cart .cart-a .cart-block .cart-block-two {
+        padding: 1px 2px 0px 2px;
+        margin: 2px 0px 0px 0px;
+        height: 20px;
+        width: 108px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    body header .block-header-upper-level {
+        padding: 0px 3px 0px 3px;
+    }
+    body header .block-header-upper-level .quick-contact {
+        width: 100vw;
+        position: absolute;
+        margin: 80px 0px 0px 0%;
+        z-index: 88888;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu {
+        width: 100%;
+        max-width: 1260px;
+        background: #5b8ab6;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li {
+        height: 25px;
+        line-height: 23px;
+    }
+    body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li .contact-menu-a {
+        color: #f5f6fa;
+        font-size: 14px;
+    }
+    body header .block-header-upper-level .language-selection {
+        margin-left: -7%;
+    }
+    body header .block-header-upper-level .shopping-basket {
+        margin-right: -7%;
+    }
+    body header .block-header-upper-level .shopping-basket .cart {
+        padding: 2px;
+    }
+    body header .block-header-upper-level .shopping-basket .cart .cart-a .cart-block {
+        display: none;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 770px) {
+    body header .block-header-slider-level .container-slider #search .search-box .search-txt {
+        min-width: 70vw;
+        /* строка поиска */
+    }
+}
+
+@media all and (max-width: 374px) {
+    body header .block-header-slider-level .container-slider #logo a .block-logo {
+        margin: 100px 0 0 -20px;
+    }
+    body header .block-header-slider-level .container-slider #logo a .block-logo .block-logo-text {
+        display: none;
+    }
+    body header .block-header-slider-level .container-slider #search .search-box .search-txt {
+        min-width: 75vw;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 7500px) {
+    /*  /////////////////////////////////////////////////////// */
+    body header .block-header-menu-level .menu-section .nav-menu {
+        max-width: 1260px;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li {
+        float: left;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li a {
+        text-decoration: none;
+        color: #f5f6fa;
+        transition: all 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li a:hover {
+        color: #ffd000;
+        transition: all 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 1258px;
+        float: left;
+        min-height: 80px;
+        /* высота блока выезд */
+        position: absolute;
+        background: #5b8ab6;
+        overflow: hidden;
+        transition: 0.3s;
+        padding: 17px 0px 47px 44px;
+        /* отступы по периметру блока выезд */
+        margin: 0px 0px 0px 0px;
+        box-shadow: inset 0 10px 10px -10px #a8a8a8, inset 0 -10px 10px -10px #a8a8a8, 15px 0 15px -15px rgba(168, 168, 168, 0.5), -15px 0 15px -15px rgba(168, 168, 168, 0.5);
+        text-align: center;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками блока выезд */
+        border: none;
+        margin: auto;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 1%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -184%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -369%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -831px;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -1109px;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li a {
+        width: 270px;
+        height: 34px;
+        text-transform: uppercase;
+        color: #f5f6fa;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        padding: 0px 0px 0px 7px;
+        line-height: 34px;
+        background: #5b8ab6;
+        border-bottom: 1px solid #f5f6fa;
+        transition: 0.7s linear;
+        /* блоки в всплывающем  блоке выезд */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li a:hover {
+        color: #ffd000;
+        box-shadow: inset 300px 0px 0px #5e8ebb;
+        transition: 0.7s linear;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li ul li {
+        display: none;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li ul {
+        position: absolute;
+        top: -350px;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li:hover ul {
+        display: none;
+    }
+}
+
+@media (min-width: 1251px) and (max-width: 1260px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.8vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -183.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -367.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -552%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -736%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 42px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1241px) and (max-width: 1250px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -182%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -364.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -547%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -729.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 38px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1231px) and (max-width: 1240px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -180.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -361%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -542%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -722.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 32px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1221px) and (max-width: 1230px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -178.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -357.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -537%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -716%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 28px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1211px) and (max-width: 1220px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -177%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -354.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -532%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -709.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 22px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1210px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -175.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -351%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -527%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -703%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 18px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1191px) and (max-width: 1200px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -173.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -348%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -522%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -696%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 12px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1190px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -172%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -344.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -517%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -689.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 8px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1171px) and (max-width: 1180px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -170.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -341%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -512%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -682.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 54px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 42px 0px 42px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1161px) and (max-width: 1170px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -168.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -337.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -507%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -676%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 53px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 40px 0px 40px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1151px) and (max-width: 1160px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -167%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -334.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -502%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -669.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 51px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 39px 0px 39px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1141px) and (max-width: 1150px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -165.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -331%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -497%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -662.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 52px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 37px 0px 37px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1131px) and (max-width: 1140px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -163.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -328%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -492%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -656%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 50px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 36px 0px 36px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1121px) and (max-width: 1130px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -162%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -324.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -487%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -649.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 49px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 35px 0px 35px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1111px) and (max-width: 1120px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -160.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -321%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -482%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -642.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 49px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 33px 0px 33px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1110px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -158.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -317.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -477%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -636%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 47px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 32px 0px 32px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1091px) and (max-width: 1100px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -156.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -314.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -472%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -629.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 42px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 32px 0px 32px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1090px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -155%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -311%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -467%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -623%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 40px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 31px 0px 31px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1071px) and (max-width: 1080px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -153.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -307.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -462%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -616%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 41px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 29px 0px 29px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1061px) and (max-width: 1070px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -152%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -304.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -457%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -609.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 42px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 27px 0px 27px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1051px) and (max-width: 1060px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -150%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -301%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -452%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -603%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 42px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 25px 0px 25px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1041px) and (max-width: 1050px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -148.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -297.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -447%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -596%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 42px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 24px 0px 24px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1031px) and (max-width: 1040px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -147%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -294.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -442%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -589.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 40px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 23px 0px 23px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1021px) and (max-width: 1030px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -145.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -291%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -437%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -583%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 39px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 21px 0px 21px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1011px) and (max-width: 1020px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -143.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -287.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -432%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -576%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 37px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 20px 0px 20px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1010px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -142%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -284.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -427%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -569.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 37px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 18px 0px 18px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1000px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -140.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -281%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -422%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -563%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 37px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 16px 0px 16px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 981px) and (max-width: 990px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -138.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -278%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -417%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -556%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 36px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 15px 0px 15px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 971px) and (max-width: 980px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -137%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -274.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -412%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -549.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 36px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 14px 0px 14px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 961px) and (max-width: 970px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -135.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -271%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -407%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -543%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 34px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 13px 0px 13px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 951px) and (max-width: 960px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -133.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -267.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -402%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -536%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 28px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 13px 0px 13px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 941px) and (max-width: 950px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -132%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -264.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -397%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -529.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 28px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 11px 0px 11px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 931px) and (max-width: 940px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -130.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -261%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -392%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -523%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 24px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 11px 0px 11px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 921px) and (max-width: 930px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -128.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -257.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -387%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -516%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 20px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 11px 0px 11px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 911px) and (max-width: 920px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -127%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -254.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -382%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -509.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 18px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 901px) and (max-width: 910px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -125.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -251%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -377%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -503%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 12px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 891px) and (max-width: 900px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -123.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -247.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -372%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -496%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 8px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 10px 0px 10px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 881px) and (max-width: 890px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -122%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -244.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -367%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -489.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 80px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 44px 0px 44px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 871px) and (max-width: 880px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -120.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -241%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -362%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -483%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 76px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 44px 0px 44px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 861px) and (max-width: 870px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -118.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -237.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -357%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -476%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 72px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 44px 0px 44px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 851px) and (max-width: 860px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -117%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -234.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -352%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -469.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 68px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 44px 0px 44px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 841px) and (max-width: 850px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -115.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -231%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -347%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -463%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 62px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 44px 0px 44px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 831px) and (max-width: 840px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -113.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -227.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -342%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -456%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 56px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 44px 0px 44px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 821px) and (max-width: 830px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -112%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -224.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -337%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -449.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 56px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 42px 0px 42px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 811px) and (max-width: 820px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -110.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -221%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -332%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -443%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 50px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 42px 0px 42px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 801px) and (max-width: 810px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -108.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -218%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -327%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -436%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 50px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 40px 0px 40px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 791px) and (max-width: 800px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -107%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -214.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -322%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -429.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 44px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 40px 0px 40px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 781px) and (max-width: 790px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -105.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -211%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -317%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -423%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 38px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 40px 0px 40px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 771px) and (max-width: 780px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -103.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -207.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -312%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -416%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 32px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 40px 0px 40px;
+        /* отступы между блоками */
+    }
+}
+
+@media (min-width: 761px) and (max-width: 770px) {
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        width: 99.9vw;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-one {
+        margin-left: 0.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-two {
+        margin-left: -102%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-three {
+        margin-left: -204.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul.level-li-four {
+        margin-left: -307%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li .level-li-five {
+        margin-left: -409.5%;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul {
+        padding: 17px 0px 47px 32px;
+        /* отступы по периметру */
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li {
+        padding: 0px 38px 0px 38px;
+        /* отступы между блоками */
+    }
+}
+
+@media all and (max-width: 760px) {
+    /* концовка кода меню конец*/
+    body header .block-header-menu-level .menu-section {
+        padding: 0% 0% 0% 0%;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu {
+        overflow: hidden;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu .toggleMenu {
+        padding: 0;
+        margin: 0;
+        color: #f5f6fa;
+        height: 50px;
+        line-height: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        transition: linear 0.5s;
+        /* меню */
+    }
+    body header .block-header-menu-level .menu-section .dws-menu .toggleMenu .fa-bars {
+        line-height: 25px;
+        color: #f5f6fa;
+        transition: linear 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu .toggleMenu:hover {
+        color: #ffd000;
+        transition: linear 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu .toggleMenu:hover .fa-bars {
+        color: #ffd000;
+        transition: linear 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu ul {
+        display: block;
+        max-height: 0;
+        transition: max-height 0.3s;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li a {
+        border-bottom: 2px solid #f5f6fa;
+        /* 1 уровень */
+        text-align: left;
+        padding-left: 10px;
+        height: 40px;
+        line-height: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li a {
+        border-bottom: 2px solid #f5f6fa;
+        /* 2уровень */
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    body header .block-header-menu-level .menu-section .nav-menu ul li ul li ul li a {
+        border-bottom: 2px solid #f5f6fa;
+        /* 3уровень */
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu li>ul li ul {
+        position: absolute;
+        right: auto;
+        top: auto;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu label.toggleMenu {
+        display: block;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu input.toggleMenu:checked+label.toggleMenu {
+        color: #f5f6fa;
+        background: #314b62;
+        /* уровень само меню */
+        border-bottom: 2px solid #f5f6fa;
+        transition: linear 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu input.toggleMenu:checked+label.toggleMenu:hover {
+        color: #ffd000;
+        transition: linear 0.5s;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu input.toggleMenu:checked~ul {
+        display: block;
+        position: relative;
+        max-height: 10000px;
+        transition: max-height 2s ease-in;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu input.toggleSubmenu:checked~ul {
+        display: block;
+        position: relative;
+        max-height: 10000px;
+        min-height: 1px;
+        transition: max-height 2s ease-in;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu label.toggleSubmenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu ul li input.toggleSubmenu:checked~a {
+        color: #ffd000;
+        background: #45698b;
+        text-align: center;
+        /* 1 уровень при клике */
+    }
+    body header .block-header-menu-level .menu-section .dws-menu ul li ul li input.toggleSubmenu:checked~a {
+        background: #5b8ab6;
+        color: #ffd000;
+        text-align: center;
+        /* 2 уровень при клике */
+    }
+    body header .block-header-menu-level .menu-section .dws-menu label.toggleSubmenu .fa::before {
+        content: "\f00c";
+        color: #f5f6fa;
+        font-size: 17px;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu label.toggleSubmenu .fa {
+        position: absolute;
+        top: 10px;
+        right: 7px;
+    }
+    body header .block-header-menu-level .menu-section .dws-menu input.toggleSubmenu:checked~label.toggleSubmenu .fa::before {
+        content: "\f00c";
+        color: #ffd000;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 760px) {
+    body .footer .container .box {
+        margin: 0px 0px;
+        padding: 5px 10px;
+    }
+    body .footer .container .box h4 {
+        font-size: 17px;
+    }
+    body .footer .container .box p {
+        font-size: 15px;
+    }
+    body .footer .container .box .social a {
+        font-size: 15px;
+    }
+    body .footer .container .box .social a i {
+        font-size: 25px;
+    }
+    body .footer .container .box .address a {
+        font-size: 15px;
+    }
+    body .footer .container .box .address a i {
+        font-size: 25px;
+    }
+    body .footer .container .box .address a {
+        font-size: 15px;
+    }
+    body .footer .container .box form input,
+    body .footer .container .box form textarea {
+        font-size: 15px;
+    }
+    body .footer .container .box form label {
+        font-size: 15px;
+    }
+    body .footer .container .box form button {
+        font-size: 15px;
+    }
+    body .footer .author {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body .footer .container .box {
+        margin: 0px 0px;
+        padding: 5px 10px;
+    }
+    body .footer .container .box h4 {
+        font-size: 15px;
+    }
+    body .footer .container .box p {
+        font-size: 13px;
+    }
+    body .footer .container .box .social a {
+        font-size: 13px;
+    }
+    body .footer .container .box .social a i {
+        font-size: 23px;
+    }
+    body .footer .container .box .address a {
+        font-size: 13px;
+    }
+    body .footer .container .box .address a i {
+        font-size: 23px;
+    }
+    body .footer .container .box .address a {
+        font-size: 13px;
+    }
+    body .footer .container .box form input,
+    body .footer .container .box form textarea {
+        font-size: 13px;
+    }
+    body .footer .container .box form label {
+        font-size: 13px;
+    }
+    body .footer .container .box form button {
+        font-size: 13px;
+    }
+    body .footer .author {
+        font-size: 13px;
+    }
+}
