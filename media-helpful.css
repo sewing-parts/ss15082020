@@ -1,0 +1,25 @@
+@media (min-width: 540px) and (max-width: 760px) {
+    body #main .helpful .helpful-description .helpful-title {
+        font-size: 25px;
+    }
+    body #main .helpful .helpful-description .helpful-text {
+        padding: 20px 15px 0px 15px;
+        font-size: 15px;
+    }
+    body #main .helpful .helpful-section .helpful-section-menu a .menu-block-text .helpful-menu-text {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .helpful .helpful-description .helpful-title {
+        font-size: 23px;
+    }
+    body #main .helpful .helpful-description .helpful-text {
+        padding: 20px 15px 0px 15px;
+        font-size: 13px;
+    }
+    body #main .helpful .helpful-section .helpful-section-menu a .menu-block-text .helpful-menu-text {
+        font-size: 14px;
+    }
+}
