@@ -1,117 +1,98 @@
-/*  */
-
-body #general-sider {
-    background-color: #fbc71c;
-    min-height: 1px;
-}
-
-body #general-sider section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-
-body #general-sider section .aaa {
-    width: 100%;
-    height: 100px;
-}
-
-body #general-sider section .block1_s2 {
-    width: 100vw;
-    height: 14vh;
-    padding: 0px 15px;
-    z-index: 1000;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-body #general-sider section .block1_s2 h1 {
-    font-weight: bold;
-    color: black;
-}
-
-body #general-sider section .block1_s2 p {
-    line-height: 1.6em;
-    margin-bottom: 10px;
-    font-size: 18px;
-    padding: 0;
-}
-
-body #general-sider section .block1_s2 p:last-child {
-    margin-bottom: 0px;
-}
-
-body #general-sider section .block2_s2 {
-    width: 100%;
-    background: wheat;
-    padding: 0px 0px;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider {
-    width: 100%;
-    float: left;
-    overflow: hidden;
-    box-sizing: border-box;
-    background-color: #527708;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider .thumbnail-container {
-    width: 100%;
-    background: blue;
-    float: left;
-    box-sizing: border-box;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider .thumbnail-container .item {
-    height: 250px;
-    background-color: grey;
-    line-height: 250px;
-    text-align: center;
-    font-size: 50px;
-    color: #ffffff;
-    float: left;
-    box-sizing: border-box;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider .controls {
-    width: 100%;
-    float: left;
-    padding: 15px;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider .controls ul {
-    display: block;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider .controls ul li {
-    height: 35px;
-    width: 35px;
-    border: 1px solid #c3c3c3;
-    margin: 4px;
-    display: inline-block;
-    line-height: 33px;
-    cursor: pointer;
-    color: #ffffff;
-}
-
-body #general-sider section .block2_s2 .thumbnail-slider .controls ul li.active {
-    background-color: #43b8b2;
-}
-
-
-/*  */
-
 body #main .page-general {
     padding: 0;
     margin: 0;
 }
+
+
+/*  слайдер начало */
+
+body #main .page-general .slider {
+    position: relative;
+    width: 350px;
+    margin: 120px auto;
+    perspective: 1000px;
+    padding-top: 120px;
+    /* background-color: blueviolet; */
+}
+
+body #main .page-general .slider .rotator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    margin: auto;
+    width: 55%;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: roter 25s linear infinite;
+    /* background-color: rgb(158, 120, 194); */
+}
+
+@keyframes roter {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+body #main .page-general .slider .rotator:hover {
+    animation-play-state: paused;
+}
+
+body #main .page-general .slider .rotator .items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+body #main .page-general .slider .rotator .items img {
+    height: 100%;
+    width: 100%;
+    transition: all 3s ease;
+}
+
+body #main .page-general .slider .rotator .items:first-child {
+    transform: rotateY(calc(40deg * 1)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(2) {
+    transform: rotateY(calc(40deg * 2)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(3) {
+    transform: rotateY(calc(40deg * 3)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(4) {
+    transform: rotateY(calc(40deg * 4)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(5) {
+    transform: rotateY(calc(40deg * 5)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(6) {
+    transform: rotateY(calc(40deg * 6)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(7) {
+    transform: rotateY(calc(40deg * 7)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(8) {
+    transform: rotateY(calc(40deg * 8)) translateZ(300px);
+}
+
+body #main .page-general .slider .rotator .items:nth-child(9) {
+    transform: rotateY(calc(40deg * 9)) translateZ(300px);
+}
+
+
+/*  слайдер  конец */
 
 body #main .page-general .content1-description {
     padding: 0;
