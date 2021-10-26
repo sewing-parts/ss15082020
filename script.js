@@ -1,22 +1,3 @@
-// const btn = document.querySelector('button');
-const btn = document.getElementsByClassName('buttonius');
-const inputs = document.querySelector('form');
-btn.addEventListener('click', () => {
-    Email.send({
-        Host: "smtp.mail.google.com",
-        Username: "sewing77parts",
-        Password: "sewing0953989891",
-        To: "sewing77parts@gmail.com",
-        From: inputs.elements["email"].value,
-        Subject: "Contact Us Query By the Customer",
-        Body: inputs.elements["message"].value + "<br>" + inputs.elements["name"].value + "<br>" + inputs.elements["phone"].value
-    })
-})
-
-
-
-
-
 //////////////////////  функция смены языков и смены URL под каждый язык  ////////////start/////////////////////
 // function qqqqq() {
 //     var radios = document.getElementsByName("button");
