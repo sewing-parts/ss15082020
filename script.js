@@ -3,7 +3,7 @@ const inputs = document.querySelector('form');
 btn.addEventListener('click', () => {
     Email.send({
         Host: "smtp.gmail.com",
-        Username: "Александр Мартынов",
+        Username: "sewing77parts",
         Password: "sewing0953989891",
         To: "sewing77parts@gmail.com",
         From: inputs.elements["email"].value,
