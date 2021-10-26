@@ -2,7 +2,7 @@ const btn = document.querySelector('button');
 const inputs = document.querySelector('form');
 btn.addEventListener('click', () => {
     Email.send({
-        Host: "smtp.gmail.com",
+        Host: "smtp.mail.google.com",
         Username: "sewing77parts",
         Password: "sewing0953989891",
         To: "sewing77parts@gmail.com",
