@@ -1,3 +1,19 @@
+const btn = document.querySelector('button');
+const inputs = document.querySelector('form');
+btn.addEventListener('click', () => {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "Александр Мартынов",
+        Password: "sewing0953989891",
+        To: "sewing77parts@gmail.com",
+        From: inputs.elements["email"].value,
+        Subject: "Contact Us Query By the Customer",
+        Body: inputs.elements["message"].value + "<br>" + inputs.elements["name"].value + "<br>" + inputs.elements["phone"].value
+    })
+})
+
+
+
 //////////////////////  функция смены языков и смены URL под каждый язык  ////////////start/////////////////////
 // function qqqqq() {
 //     var radios = document.getElementsByName("button");
@@ -104,78 +120,78 @@
 
 
 //////////////////////// слайдер с перещетом  разрешения экрана /////////////start////////////
-const controls = document.querySelector(".controls");
-const container = document.querySelector(".thumbnail-container")
-const allBox = container.children;
-const containerWidth = container.offsetWidth;
-const margin = 30;
-var items = 0;
-var totalItems = 0;
-var jumpSlideWidth = 0;
+// const controls = document.querySelector(".controls");
+// const container = document.querySelector(".thumbnail-container")
+// const allBox = container.children;
+// const containerWidth = container.offsetWidth;
+// const margin = 30;
+// var items = 0;
+// var totalItems = 0;
+// var jumpSlideWidth = 0;
 
-responsive = [
-    { breakPoint: { width: 0, item: 1 } },
-    { breakPoint: { width: 600, item: 2 } },
-    { breakPoint: { width: 900, item: 3 } },
-    { breakPoint: { width: 1200, item: 4 } },
-    { breakPoint: { width: 1500, item: 5 } },
-    { breakPoint: { width: 1800, item: 6 } },
-    { breakPoint: { width: 2100, item: 7 } }
-]
+// responsive = [
+//     { breakPoint: { width: 0, item: 1 } },
+//     { breakPoint: { width: 600, item: 2 } },
+//     { breakPoint: { width: 900, item: 3 } },
+//     { breakPoint: { width: 1200, item: 4 } },
+//     { breakPoint: { width: 1500, item: 5 } },
+//     { breakPoint: { width: 1800, item: 6 } },
+//     { breakPoint: { width: 2100, item: 7 } }
+// ]
 
-function load() {
+// function load() {
 
-    for (let i = 0; i < responsive.length; i++) {
-        if (window.innerWidth > responsive[i].breakPoint.width) {
-            items = responsive[i].breakPoint.item
-        }
-    }
-    start();
-}
+//     for (let i = 0; i < responsive.length; i++) {
+//         if (window.innerWidth > responsive[i].breakPoint.width) {
+//             items = responsive[i].breakPoint.item
+//         }
+//     }
+//     start();
+// }
 
-function start() {
-    var totalItemsWidth = 0;
-    for (let i = 0; i < allBox.length; i++) {
-        allBox[i].style.width = (containerWidth / items) - margin + "px";
-        allBox[i].style.margin = (margin / 2) + "px";
-        totalItemsWidth += containerWidth / items;
-        totalItems++;
-    }
-    container.style.width = totalItemsWidth + "px";
+// function start() {
+//     var totalItemsWidth = 0;
+//     for (let i = 0; i < allBox.length; i++) {
+//         allBox[i].style.width = (containerWidth / items) - margin + "px";
+//         allBox[i].style.margin = (margin / 2) + "px";
+//         totalItemsWidth += containerWidth / items;
+//         totalItems++;
+//     }
+//     container.style.width = totalItemsWidth + "px";
 
-    const allSlides = Math.ceil(totalItems / items);
-    const ul = document.createElement("ul");
-    for (let i = 1; i <= allSlides; i++) {
-        const li = document.createElement("li");
-        li.id = i;
-        li.innerHTML = i;
-        li.setAttribute("onclick", "controlSlides(this)");
-        // onclick = "location.reload(); return false;"
-        ul.appendChild(li);
-        if (i == 1) {
-            li.className = "active";
-        }
-    }
-    controls.appendChild(ul);
-}
+//     const allSlides = Math.ceil(totalItems / items);
+//     const ul = document.createElement("ul");
+//     for (let i = 1; i <= allSlides; i++) {
+//         const li = document.createElement("li");
+//         li.id = i;
+//         li.innerHTML = i;
+//         li.setAttribute("onclick", "controlSlides(this)");
 
-function controlSlides(ele) {
-    const ul = controls.children;
-    const li = ul[0].children;
-    var active;
-    for (let i = 0; i < li.length; i++) {
-        if (li[i].className == "active") {
-            active = i;
-            li[i].className = ""
-        }
-    }
-    ele.className = "active"
-    var numb = (ele.id - 1) - active;
-    jumpSlideWidth = jumpSlideWidth + (containerWidth * numb);
-    container.style.marginLeft = -jumpSlideWidth + "px"
-}
+//         ul.appendChild(li);
+//         if (i == 1) {
+//             li.className = "active";
+//         }
+//     }
+//     controls.appendChild(ul);
+// }
 
-window.onload = load();
+// function controlSlides(ele) {
+//     const ul = controls.children;
+//     const li = ul[0].children;
+//     var active;
+//     for (let i = 0; i < li.length; i++) {
+//         if (li[i].className == "active") {
+//             active = i;
+//             li[i].className = ""
+//         }
+//     }
+//     ele.className = "active"
+//     var numb = (ele.id - 1) - active;
+//     jumpSlideWidth = jumpSlideWidth + (containerWidth * numb);
+//     container.style.marginLeft = -jumpSlideWidth + "px"
+// }
+
+// window.onload = load();
 //////////////////////// слайдер с перещетом  разрешения экрана /////////////end////////////
 
 
