@@ -1,4 +1,5 @@
-const btn = document.querySelector('button');
+// const btn = document.querySelector('button');
+const btn = document.queryCommandValue('buttonius');
 const inputs = document.querySelector('form');
 btn.addEventListener('click', () => {
     Email.send({
@@ -11,6 +12,8 @@ btn.addEventListener('click', () => {
         Body: inputs.elements["message"].value + "<br>" + inputs.elements["name"].value + "<br>" + inputs.elements["phone"].value
     })
 })
+
+
 
 
 
