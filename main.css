@@ -4433,6 +4433,88 @@ body .footer .author p .author-text-two {
 
 /* media-ppage-parts-list-pdf START ################################################################################### */
 
+@media (min-width: 540px) and (max-width: 760px) {
+    body #main .page-parts-list-pdf .content1-description .content1-description-title {
+        font-size: 25px;
+    }
+    body #main .page-parts-list-pdf .content1-description .content1-description-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-title {
+        font-size: 22px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper {
+        height: 37px;
+        width: 95%;
+        margin-top: 3px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section {
+        width: 100%;
+        height: 37px;
+        padding: 0px 10px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
+        min-width: 1px;
+        height: 37px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
+        font-size: 15px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
+        display: inline-block;
+        font-size: 15px;
+        text-transform: lowercase;
+        font-weight: 500;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
+        display: none;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .page-parts-list-pdf .content1-description .content1-description-title {
+        font-size: 23px;
+    }
+    body #main .page-parts-list-pdf .content1-description .content1-description-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-title {
+        font-size: 20px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper {
+        height: 37px;
+        width: 95%;
+        margin-top: 3px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section {
+        width: 100%;
+        height: 37px;
+        padding: 0px 10px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
+        min-width: 1px;
+        height: 37px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
+        font-size: 13px;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
+        display: inline-block;
+        font-size: 13px;
+        text-transform: lowercase;
+        font-weight: 500;
+    }
+    body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
+        display: none;
+    }
+}
+
 
 /* media-page-parts-list-pdf END ###################################################################################### */
 
