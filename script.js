@@ -1,3 +1,17 @@
+$(document).ready(function() {
+    $('.compose').click(function() {
+        $('.overlay').addClass('is-open');
+    })
+    $('.modal-close, .send').click(function() {
+        $('.overlay').removeClass('is-open');
+    })
+})
+
+
+
+
+
+
 //////////////////////  функция смены языков и смены URL под каждый язык  ////////////start/////////////////////
 // function qqqqq() {
 //     var radios = document.getElementsByName("button");
