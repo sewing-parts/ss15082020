@@ -15,7 +15,7 @@
 let params = (new URL(document.location)).searchParams;
 const paramsss = [{ item: params.get("item").split('_').join(' '), brand: params.get("brand") }, ]
 
-const idchapter = '#chapterbonis'
+const idchapter = '#chapterbrand'
 
 //////////////////////////////
 // const idpl = '#plbonis'
