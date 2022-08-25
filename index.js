@@ -1,14 +1,28 @@
 ///////////////////////////////
-const idcourse = '#coursebonis'
-const coursePDF = [{ coursehref: 'bonis', coursetitle: 'parts list' }, ]
+// const idcourse = '#coursebonis'
+// const coursePDF = [{ coursehref: 'bonis', coursetitle: 'parts list' }, ]
 
 
-///////////////////////////////
+
+// const idchapter = '#chapterbonis'
+// const chapterPDF = [{ items: 'bonis', chap: 'parts list' }, ]
+
+
+
+//////////////////////////////////////////////
+
+
+let params = (new URL(document.location)).searchParams;
+const paramsss = [{ item: params.get("item").split('_').join(' '), brand: params.get("brand") }, ]
+
 const idchapter = '#chapterbonis'
-const chapterPDF = [{ items: 'bonis', chap: 'parts list' }, ]
 
 //////////////////////////////
-const idpl = '#plbonis'
+// const idpl = '#plbonis'
+const idpartslist = '#partslistbrand'
+
+
+
 const bonisPDF = [
     { bonistitle: 'Bonis_3000_series_Parts_List', bonishref: 'https://drive.google.com/file/d/1zQRolSN7CJ1A2V4P_SfHDVopjnlx3eQS/view?usp=sharing' },
     { bonistitle: 'Bonis_3012_3032_BD_Parts_List', bonishref: 'https://drive.google.com/file/d/1zLLS9xVhBqH0f7E-Lv9flPqp-dMnA8YC/view?usp=sharing' },
@@ -32,14 +46,65 @@ const bonisPDF = [
 
 
 
+const barudanPDF = [
+    { bonistitle: 'Barudan_EliteBevt_Pro_Z9-15_01CB_Parts_List', bonishref: 'https://drive.google.com/file/d/1VPIpCxw2P9Oo2J4CT0ImL1bF31iDSpVb/view?usp=sharing' },
+    { bonistitle: 'Barudan_Elite_pro_Bead_ZQ_501_Parts_List', bonishref: 'https://drive.google.com/file/d/1xZtn235aSNJFeaELVyFh3yt-N-LTzGEi/view?usp=sharing' },
+    { bonistitle: 'Barudan_Elite_JR_Z1501CA_Parts_List', bonishref: 'https://drive.google.com/file/d/1qA0O-JcXYi1Od_WHlx9Z0HpfInslvosO/view?usp=sharing' },
+    { bonistitle: 'Barudan_Elite_Jr_Z3_z9_Parts_List', bonishref: 'https://drive.google.com/file/d/16lK-d-oH0oIE70LQxpFNXe38y6H6FgOG/view?usp=sharing' },
+    { bonistitle: 'Barudan_Elite_Jr_Bead_ZN_01_Parts_List', bonishref: 'https://drive.google.com/file/d/15I3U9mPqiqfL-SnurDXLgBCCeCfDkyul/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bevt_Z1501CB_II_Parts_List', bonishref: 'https://drive.google.com/file/d/18tBiappUEwjKvbImrZApLTTqh_jgVqsL/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bevt_Z1201C_Z1501C_Parts_List', bonishref: 'https://drive.google.com/file/d/1qv8-Clu1_mN8-vm6tK9ye1QOk5Lq6X-O/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bevt_C1201C_Z1501CII_Parts_List', bonishref: 'https://drive.google.com/file/d/1JfT8Q4u30uabfcz81IRPXrgth-CVWZdM/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bent_ZN_ZQ_Parts_List', bonishref: 'https://drive.google.com/file/d/1hhCx-5Z648WTUJ0gDxTv9wKl9y2h0W8l/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bent_ZN_ZQ_201_Parts_List', bonishref: 'https://drive.google.com/file/d/1DSRM0OCvcNPITwluTf8-TW-eunQOMNnS/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bent_ZN_101U_Parts_List', bonishref: 'https://drive.google.com/file/d/1Dm8hAFU29MZ9WMQz5b2CVXJ5UiJR5lZn/view?usp=sharing' },
+    { bonistitle: 'Barudan_Bedthe_ZQ_C01_Parts_List', bonishref: 'https://drive.google.com/file/d/1skWY1NrW14IpV2SgW5mQXY5VPaFPP7dF/view?usp=sharing' },
+    { bonistitle: 'Barudan_Beat_IV_YS_T_Parts_List', bonishref: 'https://drive.google.com/file/d/18nKypO3RmL15ULSN2U7B-aeKMkMWuvd7/view?usp=sharing' },
+    { bonistitle: 'Barudan_Beat_IV_Supplement_Parts_List', bonishref: 'https://drive.google.com/file/d/1vKCgA6tL5Jmk6synHt7wybTlLoF6g-PQ/view?usp=sharing' },
+    { bonistitle: 'Barudan_Beat_IV_Parts_List', bonishref: 'https://drive.google.com/file/d/1w_rs7qrDur2NnAbGPQkBYNEXBcOxVHk1/view?usp=sharing' },
+]
+
+
+let brandPDF = [];
+
+switch (params.get("brand")) {
+    case 'barudan':
+        brandPDF = barudanPDF;
+        break;
+    case 'bonis':
+        brandPDF = bonisPDF;
+        break;
+
+}
+
+
+
+
+
+
+
+
+
+
 ////////////////////////////////
 
+// const toHTMLchapter = fruitchapter =>
+//     `<h1 class="content1-description-title">${fruitchapter.chap}</h1>
+//     <h2 class="content2-list-title">${fruitchapter.items}</h2>`
+
+// function renderchapter() {
+//     const htmlchapter = chapterPDF.map(toHTMLchapter).join('')
+//     document.querySelector(idchapter).innerHTML = htmlchapter
+// }
+// renderchapter()
+
+
 const toHTMLchapter = fruitchapter =>
-    `<h1 class="content1-description-title">${fruitchapter.chap}</h1>
-    <h2 class="content2-list-title">${fruitchapter.items}</h2>`
+    `<h1 class="content1-description-title">${fruitchapter.item}</h1>
+    <h2 class="content2-list-title">${fruitchapter.brand}</h2>`
 
 function renderchapter() {
-    const htmlchapter = chapterPDF.map(toHTMLchapter).join('')
+    const htmlchapter = paramsss.map(toHTMLchapter).join('')
     document.querySelector(idchapter).innerHTML = htmlchapter
 }
 renderchapter()
@@ -60,29 +125,7 @@ const toHTMLbasic = fruitbasic =>
     </div>`
 
 function renderbasic() {
-    const htmlbasic = bonisPDF.map(toHTMLbasic).join('')
-    document.querySelector(idpl).innerHTML = htmlbasic
+    const htmlbasic = brandPDF.map(toHTMLbasic).join('')
+    document.querySelector(idpartslist).innerHTML = htmlbasic
 }
 renderbasic()
-
-
-// import { fruits } from './dataindex.js'
-
-// const toHTML = fruit => `
-//     <div class = "content2-list-section-wrapper">
-//         <a href = "${fruit.gplhref}" target="_ blank">
-//             <div class = "content2-list-section">
-//                 <div class = "list-block-text" >
-//                     <p class = "content2-list-text">${fruit.title.split('_').join(' ')}<span>.pdf</span></p>
-//                 </div> 
-//                 <div class = "list-block-img"> </div> 
-//             </div> 
-//         </a> 
-//     </div> `
-
-
-// function render() {
-//     const html = fruits.map(toHTML).join('')
-//     document.querySelector('#fruits').innerHTML = html
-// }
-// render()
