@@ -36,6 +36,6 @@ const barudanPDF = [
     { bonistitle: 'Barudan_Bedthe_ZQ_C01_Parts_List', bonishref: 'https://drive.google.com/file/d/1skWY1NrW14IpV2SgW5mQXY5VPaFPP7dF/view?usp=sharing' },
     { bonistitle: 'Barudan_Beat_IV_YS_T_Parts_List', bonishref: 'https://drive.google.com/file/d/18nKypO3RmL15ULSN2U7B-aeKMkMWuvd7/view?usp=sharing' },
     { bonistitle: 'Barudan_Beat_IV_Supplement_Parts_List', bonishref: 'https://drive.google.com/file/d/1vKCgA6tL5Jmk6synHt7wybTlLoF6g-PQ/view?usp=sharing' },
-    { bonistitle: 'Barudan_Beat_IV_Parts_List', bonishref: 'https://drive.google.com/file/d/1w_rs7qrDur2NnAbGPQkBYNEXBcOxVHk1/view?usp=sharing' },
+    { bonistitle: 'Barudan_Beat_IV_Parts_List_WWWWWWWWWW', bonishref: 'https://drive.google.com/file/d/1w_rs7qrDur2NnAbGPQkBYNEXBcOxVHk1/view?usp=sharing' },
 ]
 export { bonisPDF, barudanPDF };
