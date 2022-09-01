@@ -946,6 +946,11 @@
             text-decoration: none;
         }
         
+        body #main .crumbs-section .crumbs-text li a:hover {
+            font-weight: 400;
+            color: #4f97db;
+        }
+        
         body #main .crumbs-section .crumbs-text li .fas {
             padding: 0px 5px;
             font-size: 15px;

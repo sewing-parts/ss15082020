@@ -1,260 +1,256 @@
-// 
 export const barudanPDF = [{
-            brandorder: 1,
-            brandname: 'Barudan_Beat_IV_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1cFu0Pc93rzCm9ILz_XSmjtkRw67IK6EG/view?usp=drivesdk'
-        },
-        {
-            brandorder: 2,
-            brandname: 'Barudan_Beat_IV_Supplement_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1Q7oo7bkVoKJvrUeTZhNQrEHeNtAsKc0p/view?usp=drivesdk'
-        },
-        {
-            brandorder: 3,
-            brandname: 'Barudan_Beat_IV_YS_T_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1KGBaPj7v34kOOapsRLmxiqbkPKxWYQUH/view?usp=drivesdk'
-        },
-        {
-            brandorder: 4,
-            brandname: 'Barudan_Bent_ZN_101U_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1UdBI8qFDyX9UX61nnzlwu9DUkR1MHKfB/view?usp=drivesdk'
-        },
-        {
-            brandorder: 5,
-            brandname: 'Barudan_Bent_ZN_ZQ_201_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1F3kn6H3fwp5ji2HpXWLOItpGVBKI3Lpj/view?usp=drivesdk'
-        },
-        {
-            brandorder: 6,
-            brandname: 'Barudan_Bent_ZN_ZQ_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1ZX_l813gOzji8Yf_zENkrAU4wbMw6cj9/view?usp=drivesdk'
-        },
-        {
-            brandorder: 7,
-            brandname: 'Barudan_Bedthe_ZQ_C01_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1XkjQWNhL-g1E7usdrFP0Ofa0cor58Tvm/view?usp=drivesdk'
-        },
-        {
-            brandorder: 8,
-            brandname: 'Barudan_Elite_Jr_Bead_ZN_01_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1VtBw-awzqJQUaSuQYzw_jaXqiTpkg-m2/view?usp=drivesdk'
-        },
-        {
-            brandorder: 9,
-            brandname: 'Barudan_Elite_pro_Bead_ZQ_501_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/10O3UE3MwSAbTuty1NRwo3LlmU-n4hCGE/view?usp=drivesdk'
-        },
-        {
-            brandorder: 10,
-            brandname: 'Barudan_Bevt_C1201C_Z1501CII_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1ERna2gtqSxFMwKXewC54ERK7LUCDsuHz/view?usp=drivesdk'
-        },
-        {
-            brandorder: 11,
-            brandname: 'Barudan_Bevt_Z1201C_Z1501C_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1UMrpDvaGOOz297dtbYLcORQolQYmFqvc/view?usp=drivesdk'
-        },
-        {
-            brandorder: 12,
-            brandname: 'Barudan_Elite_JR_Z1501CA_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1bSTLKT6sDeJrZ_1pwOS9rQzcQ8WXQ9AA/view?usp=drivesdk'
-        },
-        {
-            brandorder: 13,
-            brandname: 'Barudan_Elite_Jr_Z3_z9_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1rgUsVHjcuSz4htnaCg9nVa8uphnK56Ci/view?usp=drivesdk'
-        },
-        {
-            brandorder: 14,
-            brandname: 'Barudan_Bevt_Z1501CB_II_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1XmHDur_cvBQWmQUXqagSiYVA0eORu7jN/view?usp=drivesdk'
-        },
-        {
-            brandorder: 15,
-            brandname: 'Barudan_EliteBevt_Pro_Z9-15_01CB_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1oQ7cLYxTD_hdZyT97IGtpShd585zp71k/view?usp=drivesdk'
-        }
-    ]
-    // 
+        brandorder: 1,
+        brandname: 'Barudan_Beat_IV_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1cFu0Pc93rzCm9ILz_XSmjtkRw67IK6EG/view?usp=drivesdk'
+    },
+    {
+        brandorder: 2,
+        brandname: 'Barudan_Beat_IV_Supplement_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1Q7oo7bkVoKJvrUeTZhNQrEHeNtAsKc0p/view?usp=drivesdk'
+    },
+    {
+        brandorder: 3,
+        brandname: 'Barudan_Beat_IV_YS_T_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1KGBaPj7v34kOOapsRLmxiqbkPKxWYQUH/view?usp=drivesdk'
+    },
+    {
+        brandorder: 4,
+        brandname: 'Barudan_Bent_ZN_101U_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1UdBI8qFDyX9UX61nnzlwu9DUkR1MHKfB/view?usp=drivesdk'
+    },
+    {
+        brandorder: 5,
+        brandname: 'Barudan_Bent_ZN_ZQ_201_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1F3kn6H3fwp5ji2HpXWLOItpGVBKI3Lpj/view?usp=drivesdk'
+    },
+    {
+        brandorder: 6,
+        brandname: 'Barudan_Bent_ZN_ZQ_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1ZX_l813gOzji8Yf_zENkrAU4wbMw6cj9/view?usp=drivesdk'
+    },
+    {
+        brandorder: 7,
+        brandname: 'Barudan_Bedthe_ZQ_C01_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1XkjQWNhL-g1E7usdrFP0Ofa0cor58Tvm/view?usp=drivesdk'
+    },
+    {
+        brandorder: 8,
+        brandname: 'Barudan_Elite_Jr_Bead_ZN_01_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1VtBw-awzqJQUaSuQYzw_jaXqiTpkg-m2/view?usp=drivesdk'
+    },
+    {
+        brandorder: 9,
+        brandname: 'Barudan_Elite_pro_Bead_ZQ_501_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/10O3UE3MwSAbTuty1NRwo3LlmU-n4hCGE/view?usp=drivesdk'
+    },
+    {
+        brandorder: 10,
+        brandname: 'Barudan_Bevt_C1201C_Z1501CII_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1ERna2gtqSxFMwKXewC54ERK7LUCDsuHz/view?usp=drivesdk'
+    },
+    {
+        brandorder: 11,
+        brandname: 'Barudan_Bevt_Z1201C_Z1501C_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1UMrpDvaGOOz297dtbYLcORQolQYmFqvc/view?usp=drivesdk'
+    },
+    {
+        brandorder: 12,
+        brandname: 'Barudan_Elite_JR_Z1501CA_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1bSTLKT6sDeJrZ_1pwOS9rQzcQ8WXQ9AA/view?usp=drivesdk'
+    },
+    {
+        brandorder: 13,
+        brandname: 'Barudan_Elite_Jr_Z3_z9_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1rgUsVHjcuSz4htnaCg9nVa8uphnK56Ci/view?usp=drivesdk'
+    },
+    {
+        brandorder: 14,
+        brandname: 'Barudan_Bevt_Z1501CB_II_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1XmHDur_cvBQWmQUXqagSiYVA0eORu7jN/view?usp=drivesdk'
+    },
+    {
+        brandorder: 15,
+        brandname: 'Barudan_EliteBevt_Pro_Z9-15_01CB_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1oQ7cLYxTD_hdZyT97IGtpShd585zp71k/view?usp=drivesdk'
+    }
+];
 export const berninaHomePDF = [{
-            brandorder: 1,
-            brandname: 'Bernina_E92c_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1YScY1kvmGgq-AkVxtQsknOjIIDWOA0fY/view?usp=drivesdk'
-        },
-        {
-            brandorder: 2,
-            brandname: 'Bernina_E55_E56_E66_E82e_RU_LT_ET_LV_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/19ZgpbhMpaj-TrOon3CNvHf5f7lKrOXMB/view?usp=drivesdk'
-        },
-        {
-            brandorder: 3,
-            brandname: 'Bernina_bernette-10-12-15_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1suA31-rk32fBI4lxfSNHc2hlFaSp951U/view?usp=drivesdk'
-        },
-        {
-            brandorder: 4,
-            brandname: 'Bernina_bernette_short_manual_20_25_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1GhDClHrzvFz3E_KiSyJXpSeCAFlhAXr8/view?usp=drivesdk'
-        },
-        {
-            brandorder: 5,
-            brandname: 'Bernina_bernette_20_25_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1JQJ9kf77q_MMJpjnUwe4WsH5ex7ghmfQ/view?usp=drivesdk'
-        },
-        {
-            brandorder: 6,
-            brandname: 'Bernina_Aurora_430_440_450_str62_87_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1Ej9yVBNMEZxGCxLlnwj5YHv3KyOHnk7q/view?usp=drivesdk'
-        },
-        {
-            brandorder: 7,
-            brandname: 'Bernina_Aurora_430_440_450_str59_61_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1JMtI-SOMLgTPU9cuC7Wvx6vdl6TwpcYU/view?usp=drivesdk'
-        },
-        {
-            brandorder: 8,
-            brandname: 'Bernina_Aurora_430_440_450_str48_58_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1UZK6ceZSjh9hgZsG59pvmYJ5LOLid6fb/view?usp=drivesdk'
-        },
-        {
-            brandorder: 9,
-            brandname: 'Bernina_Aurora_430_440_450_str30_47_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1Ve0M76wgwR4Ys164Fogahst4owsErIyZ/view?usp=drivesdk'
-        },
-        {
-            brandorder: 10,
-            brandname: 'Bernina_Aurora_430_440_450_str11_29_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1EhuTL1uJ-MPgMLebTAzYRQW8CXJmkQyc/view?usp=drivesdk'
-        },
-        {
-            brandorder: 11,
-            brandname: 'Bernina_Aurora_430_440_450_str1_10manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1T9Ky0Jwr2UC2vJXuBZaF_7Vi8d7h-Vvw/view?usp=drivesdk'
-        },
-        {
-            brandorder: 12,
-            brandname: 'Bernina_Aurora_430_440_450_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1iGdIs7Ob3z4NMKcjhjXrTTvVbdIch1II/view?usp=drivesdk'
-        },
-        {
-            brandorder: 13,
-            brandname: 'Bernina_1300mdc_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1O0226Ur4YJ_hl-giNd3_476Oglriy16T/view?usp=drivesdk'
-        },
-        {
-            brandorder: 14,
-            brandname: 'Bernina_1150mda_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1g7Jgxc7RtmKHPY1_QpfeShrNKKnntZiI/view?usp=drivesdk'
-        },
-        {
-            brandorder: 15,
-            brandname: 'Bernina_700d_800dl_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1O9bRftuZrMbn-6SOY3Ah9WbfL_Zlbxq_/view?usp=drivesdk'
-        },
-        {
-            brandorder: 16,
-            brandname: 'Bernina_217_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/12dgQmfoOGv2lXe6L-DESPvgWmigWnam1/view?usp=drivesdk'
-        },
-        {
-            brandorder: 17,
-            brandname: 'Bernina_009dcc_manual.pdf',
-            brandhref: 'https://drive.google.com/file/d/1M4unw6T3soDy1LMdyDUc_Xfb7GZTxnoR/view?usp=drivesdk'
-        }
-    ]
-    // 
+        brandorder: 1,
+        brandname: 'Bernina_E92c_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1YScY1kvmGgq-AkVxtQsknOjIIDWOA0fY/view?usp=drivesdk'
+    },
+    {
+        brandorder: 2,
+        brandname: 'Bernina_E55_E56_E66_E82e_RU_LT_ET_LV_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/19ZgpbhMpaj-TrOon3CNvHf5f7lKrOXMB/view?usp=drivesdk'
+    },
+    {
+        brandorder: 3,
+        brandname: 'Bernina_bernette-10-12-15_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1suA31-rk32fBI4lxfSNHc2hlFaSp951U/view?usp=drivesdk'
+    },
+    {
+        brandorder: 4,
+        brandname: 'Bernina_bernette_short_manual_20_25_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1GhDClHrzvFz3E_KiSyJXpSeCAFlhAXr8/view?usp=drivesdk'
+    },
+    {
+        brandorder: 5,
+        brandname: 'Bernina_bernette_20_25_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1JQJ9kf77q_MMJpjnUwe4WsH5ex7ghmfQ/view?usp=drivesdk'
+    },
+    {
+        brandorder: 6,
+        brandname: 'Bernina_Aurora_430_440_450_str62_87_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1Ej9yVBNMEZxGCxLlnwj5YHv3KyOHnk7q/view?usp=drivesdk'
+    },
+    {
+        brandorder: 7,
+        brandname: 'Bernina_Aurora_430_440_450_str59_61_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1JMtI-SOMLgTPU9cuC7Wvx6vdl6TwpcYU/view?usp=drivesdk'
+    },
+    {
+        brandorder: 8,
+        brandname: 'Bernina_Aurora_430_440_450_str48_58_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1UZK6ceZSjh9hgZsG59pvmYJ5LOLid6fb/view?usp=drivesdk'
+    },
+    {
+        brandorder: 9,
+        brandname: 'Bernina_Aurora_430_440_450_str30_47_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1Ve0M76wgwR4Ys164Fogahst4owsErIyZ/view?usp=drivesdk'
+    },
+    {
+        brandorder: 10,
+        brandname: 'Bernina_Aurora_430_440_450_str11_29_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1EhuTL1uJ-MPgMLebTAzYRQW8CXJmkQyc/view?usp=drivesdk'
+    },
+    {
+        brandorder: 11,
+        brandname: 'Bernina_Aurora_430_440_450_str1_10manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1T9Ky0Jwr2UC2vJXuBZaF_7Vi8d7h-Vvw/view?usp=drivesdk'
+    },
+    {
+        brandorder: 12,
+        brandname: 'Bernina_Aurora_430_440_450_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1iGdIs7Ob3z4NMKcjhjXrTTvVbdIch1II/view?usp=drivesdk'
+    },
+    {
+        brandorder: 13,
+        brandname: 'Bernina_1300mdc_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1O0226Ur4YJ_hl-giNd3_476Oglriy16T/view?usp=drivesdk'
+    },
+    {
+        brandorder: 14,
+        brandname: 'Bernina_1150mda_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1g7Jgxc7RtmKHPY1_QpfeShrNKKnntZiI/view?usp=drivesdk'
+    },
+    {
+        brandorder: 15,
+        brandname: 'Bernina_700d_800dl_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1O9bRftuZrMbn-6SOY3Ah9WbfL_Zlbxq_/view?usp=drivesdk'
+    },
+    {
+        brandorder: 16,
+        brandname: 'Bernina_217_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/12dgQmfoOGv2lXe6L-DESPvgWmigWnam1/view?usp=drivesdk'
+    },
+    {
+        brandorder: 17,
+        brandname: 'Bernina_009dcc_manual.pdf',
+        brandhref: 'https://drive.google.com/file/d/1M4unw6T3soDy1LMdyDUc_Xfb7GZTxnoR/view?usp=drivesdk'
+    }
+];
 export const bonisPDF = [{
-            brandorder: 1,
-            brandname: 'Bonis_SL_64_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/16IDNddpnQN5mwArX6RIRTA2zAtOEjVI6/view?usp=drivesdk'
-        },
-        {
-            brandorder: 2,
-            brandname: 'Bonis_SL_65_SB-66_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1fLJjZMOdHPd_LTd3z2cpNaLJ3FFbcH53/view?usp=drivesdk'
-        },
-        {
-            brandorder: 3,
-            brandname: 'Bonis_BN-10_BC-14_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/10gBgFStasdCWoE3Ijl2mBZN5ijbq3dLt/view?usp=drivesdk'
-        },
-        {
-            brandorder: 4,
-            brandname: 'Bonis_BK-10_BK-12_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/13f0S0UJM7sQSJ52hmwtff2Fj4v22D5Um/view?usp=drivesdk'
-        },
-        {
-            brandorder: 5,
-            brandname: 'Bonis_BT-11_T-12_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1NGwuUfdAtVpbjQf3-lvmOxLLFd-t13O0/view?usp=drivesdk'
-        },
-        {
-            brandorder: 6,
-            brandname: 'Bonis_BH-12_BD-32_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1emA4yh9-qYo7m-llBFc2yTyQISI3m_WJ/view?usp=drivesdk'
-        },
-        {
-            brandorder: 7,
-            brandname: 'Bonis_BG-12_BG-14_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1pLXKiCd-tJyeE4EoJWackDRged4ENf73/view?usp=drivesdk'
-        },
-        {
-            brandorder: 8,
-            brandname: 'Bonis_B-27_B-32_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1xE2WmDZtTF4WOzb_gXr-GMAma1SHK0HN/view?usp=drivesdk'
-        },
-        {
-            brandorder: 9,
-            brandname: 'Bonis_A21_18_15_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1SWP7Abj-Kcfg1iYwof1zrGvjNtX5D3ji/view?usp=drivesdk'
-        },
-        {
-            brandorder: 10,
-            brandname: 'Bonis_3067_3068_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1UtpgyJAj_cqNEsON2eR7CFxTGJpz63g5/view?usp=drivesdk'
-        },
-        {
-            brandorder: 11,
-            brandname: 'Bonis_3051_3064_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1k8SPps9by0gwjkmA4UPHyOb4KFX86zMk/view?usp=drivesdk'
-        },
-        {
-            brandorder: 12,
-            brandname: 'Bonis_3065_3066_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1vUV0JU7Vt3rGve8jqbvKnFYbjrQT2p-y/view?usp=drivesdk'
-        },
-        {
-            brandorder: 13,
-            brandname: 'Bonis_3014_3010_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1NHypuM35P7s1tJwaL8Gvkniq0yLZBvB0/view?usp=drivesdk'
-        },
-        {
-            brandorder: 14,
-            brandname: 'Bonis_3032_3027_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1U6OOCAga5VndCd-73btmsTLSixBQdQcq/view?usp=drivesdk'
-        },
-        {
-            brandorder: 15,
-            brandname: 'Bonis_3012_3032_BD_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1UMN1cld8C1PETbfetRscbkU-3PtX4NoC/view?usp=drivesdk'
-        },
-        {
-            brandorder: 16,
-            brandname: 'Bonis_3000_series_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1BRBcyZQf9RL5JY-5fpc1impwVVmJWGuD/view?usp=drivesdk'
-        },
-        {
-            brandorder: 17,
-            brandname: 'Bonis_A21_A18_A16_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1LXGXs5vk-z3M36cPDAvKFAXDTJLhvCLz/view?usp=drivesdk'
-        },
-        {
-            brandorder: 18,
-            brandname: 'Bonis_T_57_Parts_List.pdf',
-            brandhref: 'https://drive.google.com/file/d/1Q8VL9rv9d832gX4jHS0EuilrZLu-6zW0/view?usp=drivesdk'
-        }
-    ]
-    // 
+        brandorder: 1,
+        brandname: 'Bonis_SL_64_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/16IDNddpnQN5mwArX6RIRTA2zAtOEjVI6/view?usp=drivesdk'
+    },
+    {
+        brandorder: 2,
+        brandname: 'Bonis_SL_65_SB-66_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1fLJjZMOdHPd_LTd3z2cpNaLJ3FFbcH53/view?usp=drivesdk'
+    },
+    {
+        brandorder: 3,
+        brandname: 'Bonis_BN-10_BC-14_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/10gBgFStasdCWoE3Ijl2mBZN5ijbq3dLt/view?usp=drivesdk'
+    },
+    {
+        brandorder: 4,
+        brandname: 'Bonis_BK-10_BK-12_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/13f0S0UJM7sQSJ52hmwtff2Fj4v22D5Um/view?usp=drivesdk'
+    },
+    {
+        brandorder: 5,
+        brandname: 'Bonis_BT-11_T-12_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1NGwuUfdAtVpbjQf3-lvmOxLLFd-t13O0/view?usp=drivesdk'
+    },
+    {
+        brandorder: 6,
+        brandname: 'Bonis_BH-12_BD-32_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1emA4yh9-qYo7m-llBFc2yTyQISI3m_WJ/view?usp=drivesdk'
+    },
+    {
+        brandorder: 7,
+        brandname: 'Bonis_BG-12_BG-14_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1pLXKiCd-tJyeE4EoJWackDRged4ENf73/view?usp=drivesdk'
+    },
+    {
+        brandorder: 8,
+        brandname: 'Bonis_B-27_B-32_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1xE2WmDZtTF4WOzb_gXr-GMAma1SHK0HN/view?usp=drivesdk'
+    },
+    {
+        brandorder: 9,
+        brandname: 'Bonis_A21_18_15_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1SWP7Abj-Kcfg1iYwof1zrGvjNtX5D3ji/view?usp=drivesdk'
+    },
+    {
+        brandorder: 10,
+        brandname: 'Bonis_3067_3068_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1UtpgyJAj_cqNEsON2eR7CFxTGJpz63g5/view?usp=drivesdk'
+    },
+    {
+        brandorder: 11,
+        brandname: 'Bonis_3051_3064_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1k8SPps9by0gwjkmA4UPHyOb4KFX86zMk/view?usp=drivesdk'
+    },
+    {
+        brandorder: 12,
+        brandname: 'Bonis_3065_3066_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1vUV0JU7Vt3rGve8jqbvKnFYbjrQT2p-y/view?usp=drivesdk'
+    },
+    {
+        brandorder: 13,
+        brandname: 'Bonis_3014_3010_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1NHypuM35P7s1tJwaL8Gvkniq0yLZBvB0/view?usp=drivesdk'
+    },
+    {
+        brandorder: 14,
+        brandname: 'Bonis_3032_3027_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1U6OOCAga5VndCd-73btmsTLSixBQdQcq/view?usp=drivesdk'
+    },
+    {
+        brandorder: 15,
+        brandname: 'Bonis_3012_3032_BD_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1UMN1cld8C1PETbfetRscbkU-3PtX4NoC/view?usp=drivesdk'
+    },
+    {
+        brandorder: 16,
+        brandname: 'Bonis_3000_series_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1BRBcyZQf9RL5JY-5fpc1impwVVmJWGuD/view?usp=drivesdk'
+    },
+    {
+        brandorder: 17,
+        brandname: 'Bonis_A21_A18_A16_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1LXGXs5vk-z3M36cPDAvKFAXDTJLhvCLz/view?usp=drivesdk'
+    },
+    {
+        brandorder: 18,
+        brandname: 'Bonis_T_57_Parts_List.pdf',
+        brandhref: 'https://drive.google.com/file/d/1Q8VL9rv9d832gX4jHS0EuilrZLu-6zW0/view?usp=drivesdk'
+    }
+];
 export const brotherPDF = [{
         brandorder: 1,
         brandname: 'Brother_lt5_p13_Parts_List.pdf',
@@ -1460,7 +1456,7 @@ export const brotherPDF = [{
         brandname: 'Brother_Bas_304_PartsList.pdf',
         brandhref: 'https://drive.google.com/file/d/1dcjQBTbO-Hs4E-JMMO8aWvRgcaImpqs_/view?usp=drivesdk'
     }
-]
+];
 export const brotherHomePDF = [{
         brandorder: 1,
         brandname: 'Brother_XR9000-SQ9000_Parts_List.pdf',
@@ -2447,7 +2443,7 @@ export const brotherHomePDF = [{
         brandname: 'Brother_25A_35A_LS590_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1oUypkdhMVB9ST1UrfFUat3fmEoiyVdfc/view?usp=drivesdk'
     }
-]
+];
 export const chandlerPDF = [{
         brandorder: 1,
         brandname: 'Chandler_558_Parts_List.pdf',
@@ -2503,7 +2499,7 @@ export const chandlerPDF = [{
         brandname: 'Chandler_543_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1tP2s1W4HfUFmEqH-kl3JS_Zej7N9dpJE/view?usp=drivesdk'
     }
-]
+];
 export const consewPDF = [{
         brandorder: 1,
         brandname: 'Consew_cn2033r_cn2043r_cn2053r_Parts_List.pdf',
@@ -3176,7 +3172,7 @@ export const consewPDF = [{
         brandname: 'Consew_10_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1oRdDh972MQsD9HZcHLA6_8owCp2Bx6I-/view?usp=drivesdk'
     }
-]
+];
 export const durkoppAdlerPDF = [{
         brandorder: 1,
         brandname: 'Durkopp_Adler_z110_z151_Parts_List.PDF',
@@ -4277,7 +4273,7 @@ export const durkoppAdlerPDF = [{
         brandname: 'Durkopp_Adler_745-22_745-23_745-24_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1Wbar8jayFMPwvXFpWgTUPxEyHN0Ika_O/view?usp=drivesdk'
     }
-]
+];
 export const eastmanPDF = [{
         brandorder: 1,
         brandname: 'Eastman_Multi-Ply-Cutter_Parts_List.pdf',
@@ -4408,12 +4404,12 @@ export const eastmanPDF = [{
         brandname: 'Eastman_Parts_List..pdf',
         brandhref: 'https://drive.google.com/file/d/1uJDF_F_NXXlmonRvEkJ3-THq3FIkImmh/view?usp=drivesdk'
     }
-]
+];
 export const fischbeinPDF = [{
     brandorder: 1,
     brandname: 'Fischbein_model_f_Parts_List.pdf',
     brandhref: 'https://drive.google.com/file/d/1_wNXSZuiv1MU2Y-kmH_9ak_6egWX5lG5/view?usp=drivesdk'
-}]
+}];
 export const globalPDF = [{
         brandorder: 1,
         brandname: 'Global_zz_568td_Parts_List.pdf',
@@ -5529,4 +5525,37 @@ export const globalPDF = [{
         brandname: 'Global_100-p_100-s_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1js87VXGi_7uQwN3PwaE_0MfBDRUKHPHh/view?usp=drivesdk'
     }
-]
+];
+export const hashimaFusingPDF = [];
+export const hidhleadPDF = [];
+export const janomeHomePDF = [];
+export const jukiHomePDF = [];
+export const jukiPDF = [];
+export const kasaiSpecialPDF = [];
+export const kingtexPDF = [];
+export const kmPDF = [];
+export const maierPDF = [];
+export const mauserSpezialPDF = [];
+export const merrowPDF = [];
+export const minervaPDF = [];
+export const minervaHomePDF = [];
+export const misubishiPDF = [];
+export const NCcarpetPDF = [];
+export const newlongPDF = [];
+export const pegasusPDF = [];
+export const pfaffPDF = [];
+export const reecePDF = [];
+export const rimoldiPDF = [];
+export const seikoPDF = [];
+export const singerPDF = [];
+export const singerHomePDF = [];
+export const sirubaPDF = [];
+export const strobelPDF = [];
+export const sunStarPDF = [];
+export const suprenaPDF = [];
+export const typicalPDF = [];
+export const unionSpecialPDF = [];
+export const veitPDF = [];
+export const willcoxGibbsPDF = [];
+export const yamatoPDF = [];
+export const zojePDF = [];
