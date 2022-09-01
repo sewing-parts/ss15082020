@@ -1,6 +1,6 @@
 ///////////////////////////////
 
-const idchapter = '#chaptercatalog'
+// const idchapter = '#chaptercatalog'
 const idcatalog = '#catalogbrand'
 
 //////////////////////////////
@@ -39,15 +39,15 @@ switch (params.get("brand")) {
 
 const toHTMLbasic = fruitbasic =>
     `<div class="content4-list-section-wrapper">
-<a href="${fruitbasic.brandhref}" target="_ blank">
-    <div class="content4-list-section">
-        <div class="list-block-text">
-            <p class="content4-list-text">${fruitbasic.brandname.slice(0, -4).split('_').join(' ')}<span>.pdf</span></p>
-        </div>
-        <div class="list-block-img"></div>
-    </div>
-</a>
-</div>`
+        <a href="${fruitbasic.brandhref}" target="_ blank">
+            <div class="content4-list-section">
+                <div class="list-block-text">
+                    <p class="content4-list-text">${fruitbasic.brandname.slice(0, -4).split('_').join(' ')}<span>.pdf</span></p>
+                </div>
+                <div class="list-block-img"></div>
+            </div>
+        </a>
+    </div>`
 
 
 // `<div class = "content2-list-section-wrapper">
