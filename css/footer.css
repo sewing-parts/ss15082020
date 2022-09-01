@@ -1,0 +1,369 @@
+body .footer {
+    padding: 0;
+    margin: 0;
+    min-height: 1px;
+    width: 100%;
+    width: 100vw;
+    background: #45698b;
+    color: #f5f6fa;
+    z-index: 999;
+}
+
+body .footer .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .footer .container .box {
+    flex: 1;
+    margin: 5px 15px;
+    padding: 10px 20px;
+    min-width: 300px;
+    /* border: 1px solid rgb(255, 208, 0); */
+}
+
+body .footer .container .box a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body .footer .container .box h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #f5f6fa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #4f97db;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    transition: linear 0.2s;
+}
+
+
+/*  */
+
+body .footer .container .box #logos {
+    /* margin-left: 20px;
+margin-top: -10px;
+position: relative; */
+    /* z-index: 88888; */
+    /* min-width: 250px;
+min-height: 1px; */
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+}
+
+body .footer .container .box #logos a {
+    text-decoration: none;
+    cursor: pointer;
+    /* display: flex; */
+}
+
+body .footer .container .box #logos a .logos-wrapper {
+    /* display: flex;
+flex-direction: column; */
+}
+
+body .footer .container .box #logos a .logos-wrapper .block-logos {
+    padding: 0;
+    margin: 0;
+    /* margin-top: -75px; */
+    max-width: 200px;
+    height: 65px;
+    /* margin: 0px 0px 0px 0px; */
+    background-image: url('../images/11-aaa-waaa.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-color: turquoise; */
+}
+
+
+/* body .footer .container .box #logos a .logos-wrapper .block-logos .block-logos-text {      
+max-width: 200px;
+height: 22px;
+line-height: 22px;     
+margin-left: 0px;
+padding: 0px 3px 0px 3px;      
+background: #dcdde1;
+} */
+
+body .footer .container .box #logos a .logos-wrapper .logos-text {
+    color: rgb(224, 224, 224);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 8.6px;
+    text-transform: uppercase;
+    /* display: flex;
+justify-content: space-between; */
+    /* position: relative; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    transform: scale(1.0, 1.5);
+    /* background-color: rgb(0, 255, 76); */
+}
+
+body .footer .container .box .block-logos-text-info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 172px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
+    /* background: rgb(9, 146, 50); */
+}
+
+body .footer .container .box .block-logos-text-info .logos-text-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 25px;
+    margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    max-height: 172px;
+}
+
+
+/*  */
+
+body .footer .container .box:hover h4 {
+    color: #ffd000;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box h4::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid #ffd000;
+    position: absolute;
+}
+
+body .footer .container .box p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    text-align: center;
+}
+
+body .footer .container .box .social {
+    /* max-width: 280px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+body .footer .container .box .social a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box .social a i {
+    background: #222222;
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 5px;
+    border: 1px solid #5aaaf5;
+    color: #5aaaf5;
+    font-size: 27px;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box .social a:hover i {
+    border: 1px solid #ffd000;
+    color: #ffd000;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box .address a {
+    display: block;
+    text-decoration: none;
+    /* width: 100%; */
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 55px;
+    margin-bottom: 6px;
+    color: #f5f6fa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    transition: linear 0.2s;
+    /* background-color: red; */
+}
+
+body .footer .container .box .address a .fas {
+    position: absolute;
+    background: #222222;
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    margin-left: -55px;
+    border-radius: 5px;
+    border: 1px solid #5aaaf5;
+    color: #5aaaf5;
+    font-size: 27px;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box .address a .fab1 {
+    position: absolute;
+    border: none;
+    font-size: 27px;
+    margin-left: 3px;
+    margin-top: 7px;
+    color: #5aaaf5;
+}
+
+body .footer .container .box .address a .fab2 {
+    position: absolute;
+    border: none;
+    font-size: 27px;
+    margin-left: 33px;
+    margin-top: 7px;
+    color: #5aaaf5;
+}
+
+body .footer .container .box .address a:hover {
+    color: #ffd000;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box .address a:hover .fas {
+    border: 1px solid #ffd000;
+    color: #ffd000;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box .address a:hover .fab {
+    color: #ffd000;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box form input,
+body .footer .container .box form textarea {
+    width: 100%;
+    min-height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #222222;
+}
+
+body .footer .container .box form label {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+body .footer .container .box form label .span-icon {
+    color: #5aaaf5;
+}
+
+body .footer .container .box a button,
+body .footer .container .box form button {
+    width: 250px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background: #222222;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #5aaaf5;
+    border: 1px solid #5aaaf5;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: linear 0.2s;
+    position: relative;
+    /* Это важно добавить */
+    overflow-x: hidden;
+    /* Это важно добавить */
+}
+
+body .footer .container .box button .flare,
+body .footer .container .box form button .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 170px;
+    transform: skewX(-45deg);
+    /* Наклон */
+    animation: flareAnimation;
+    left: 0%;
+    background: linear-gradient(90deg, rgba(255, 208, 0, 0.02), rgba(255, 208, 0, 0.25), rgba(255, 208, 0, 0.02));
+    animation: flareAnimation 12s infinite linear;
+    /* Время и тип анимации можно менять */
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: 20%;
+    }
+    100% {
+        left: 50%;
+        width: 0px;
+        height: 0%;
+        top: 18px;
+    }
+}
+
+body .footer .container .box button:hover,
+body .footer .container .box form button:hover {
+    border: 1px solid rgb(255, 208, 0);
+    color: #ffd000;
+    border-radius: 3px;
+    transition: linear 0.2s;
+}
+
+body .footer .author {
+    width: 100%;
+    background: #222222;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+body .footer .author p {
+    color: #f5f6fa;
+}
+
+body .footer .author p .author-text-one {
+    color: #5aaaf5;
+}
+
+body .footer .author p .author-text-two {
+    color: crimson;
+}
