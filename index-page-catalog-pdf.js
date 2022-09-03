@@ -17,7 +17,7 @@ let brandPDF = [];
 
 switch (params.get("brand")) {
     case 'catalogs':
-        brandPDF = catalogDATA;
+        brandPDF = catalogDATA.reverse();
         break;
 
 

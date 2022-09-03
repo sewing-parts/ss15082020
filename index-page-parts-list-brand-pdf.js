@@ -61,136 +61,136 @@ let brandPDF = [];
 
 switch (params.get("brand")) {
     case 'barudan':
-        brandPDF = barudanPDF;
+        brandPDF = barudanPDF.reverse();
         break;
     case 'bernina-home':
-        brandPDF = berninaHomePDF;
+        brandPDF = berninaHomePDF.reverse();
         break;
     case 'bonis':
-        brandPDF = bonisPDF;
+        brandPDF = bonisPDF.reverse();
         break;
     case 'brother':
-        brandPDF = brotherPDF;
+        brandPDF = brotherPDF.reverse();
         break;
     case 'brother-home':
-        brandPDF = brotherHomePDF;
+        brandPDF = brotherHomePDF.reverse();
         break;
     case 'chandler':
-        brandPDF = chandlerPDF;
+        brandPDF = chandlerPDF.reverse();
         break;
     case 'consew':
-        brandPDF = consewPDF;
+        brandPDF = consewPDF.reverse();
         break;
     case 'durkoop-adler':
-        brandPDF = durkoppAdlerPDF;
+        brandPDF = durkoppAdlerPDF.reverse();
         break;
     case 'eastman':
-        brandPDF = eastmanPDF;
+        brandPDF = eastmanPDF.reverse();
         break;
     case 'fischbein':
-        brandPDF = fischbeinPDF;
+        brandPDF = fischbeinPDF.reverse();
         break;
     case 'global':
-        brandPDF = globalPDF;
+        brandPDF = globalPDF.reverse();
         break;
     case 'hashima-fusing':
-        brandPDF = hashimaFusingPDF;
+        brandPDF = hashimaFusingPDF.reverse();
         break;
     case 'highlead':
-        brandPDF = highleadPDF;
+        brandPDF = highleadPDF.reverse();
         break;
     case 'janome-home':
-        brandPDF = janomeHomePDF;
+        brandPDF = janomeHomePDF.reverse();
         break;
     case 'juki':
-        brandPDF = jukiPDF;
+        brandPDF = jukiPDF.reverse();
         break;
     case 'juki-home':
         brandPDF = jukiHomePDF;
         break;
     case 'kansai-special':
-        brandPDF = kansaiSpecialPDF;
+        brandPDF = kansaiSpecialPDF.reverse();
         break;
     case 'kingtex':
-        brandPDF = kingtexPDF;
+        brandPDF = kingtexPDF.reverse();
         break;
     case 'km':
-        brandPDF = kmPDF;
+        brandPDF = kmPDF.reverse();
         break;
     case 'maier':
-        brandPDF = maierPDF;
+        brandPDF = maierPDF.reverse();
         break;
     case 'mauser-spezial':
-        brandPDF = mauserSpezialPDF;
+        brandPDF = mauserSpezialPDF.reverse();
         break;
     case 'merrow':
-        brandPDF = merrowPDF;
+        brandPDF = merrowPDF.reverse();
         break;
     case 'minerva':
-        brandPDF = minervaPDF;
+        brandPDF = minervaPDF.reverse();
         break;
     case 'minerva-home':
         brandPDF = minervaHomePDF;
         break;
     case 'mitsubishi':
-        brandPDF = mitsubishiPDF;
+        brandPDF = mitsubishiPDF.reverse();
         break;
     case 'n-c-carpet':
-        brandPDF = NCcarpetPDF;
+        brandPDF = NCcarpetPDF.reverse();
         break;
     case 'newlong':
-        brandPDF = newlongPDF;
+        brandPDF = newlongPDF.reverse();
         break;
     case 'pegasus':
-        brandPDF = pegasusPDF;
+        brandPDF = pegasusPDF.reverse();
         break;
     case 'pfaff':
-        brandPDF = pfaffPDF;
+        brandPDF = pfaffPDF.reverse();
         break;
     case 'reece':
-        brandPDF = reecePDF;
+        brandPDF = reecePDF.reverse();
         break;
     case 'rimoldi':
-        brandPDF = rimoldiPDF;
+        brandPDF = rimoldiPDF.reverse();
         break;
     case 'seiko':
-        brandPDF = seikoPDF;
+        brandPDF = seikoPDF.reverse();
         break;
     case 'singer':
-        brandPDF = singerPDF;
+        brandPDF = singerPDF.reverse();
         break;
     case 'singer-home':
         brandPDF = singerHomePDF;
         break;
     case 'siruba':
-        brandPDF = sirubaPDF;
+        brandPDF = sirubaPDF.reverse();
         break;
     case 'strobel':
-        brandPDF = strobelPDF;
+        brandPDF = strobelPDF.reverse();
         break;
     case 'sun-star':
-        brandPDF = sunStarPDF;
+        brandPDF = sunStarPDF.reverse();
         break;
     case 'suprena':
-        brandPDF = suprenaPDF;
+        brandPDF = suprenaPDF.reverse();
         break;
     case 'typical':
-        brandPDF = typicalPDF;
+        brandPDF = typicalPDF.reverse();
         break;
     case 'union-special':
-        brandPDF = unionSpecialPDF;
+        brandPDF = unionSpecialPDF.reverse();
         break;
     case 'veit':
-        brandPDF = veitPDF;
+        brandPDF = veitPDF.reverse();
         break;
     case 'willcox-gibbs':
-        brandPDF = willcoxGibbsPDF;
+        brandPDF = willcoxGibbsPDF.reverse();
         break;
     case 'yamato':
-        brandPDF = yamatoPDF;
+        brandPDF = yamatoPDF.reverse();
         break;
     case 'zoje':
-        brandPDF = zojePDF;
+        brandPDF = zojePDF.reverse();
         break;
 
 };
@@ -243,3 +243,15 @@ function renderbasic() {
     document.querySelector(idpartslist).innerHTML = htmlbasic
 };
 renderbasic()
+
+// function updateURL() {
+//     if (history.pushState) {
+
+//         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+//         var newUrl = baseUrl + '?tyapk=awesome';
+//         history.pushState(null, null, newUrl);
+//     } else {
+//         console.warn('History API не поддерживается');
+//     }
+// }
+// updateURL()
