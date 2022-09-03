@@ -6,6 +6,7 @@ const idpartslist = '#partslistbrand';
 //////////////////////////////
 
 let params = (new URL(document.location)).searchParams;
+// const paramsss = [{ item: params.get("item").split('-').join(' '), brand: params.get("brand").split('-').join(' ') }, ];
 const paramsss = [{ item: params.get("item").split('-').join(' '), brand: params.get("brand").split('-').join(' ') }, ];
 
 //////////////////////////////
@@ -22,11 +23,11 @@ import { eastmanPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { fischbeinPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { globalPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { hashimaFusingPDF } from './index-page-parts-list-brand-pdf-DATA.js';
-import { hidhleadPDF } from './index-page-parts-list-brand-pdf-DATA.js';
+import { highleadPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { janomeHomePDF } from './index-page-parts-list-brand-pdf-DATA.js';
-import { jukiHomePDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { jukiPDF } from './index-page-parts-list-brand-pdf-DATA.js';
-import { kasaiSpecialPDF } from './index-page-parts-list-brand-pdf-DATA.js';
+import { jukiHomePDF } from './index-page-parts-list-brand-pdf-DATA.js';
+import { kansaiSpecialPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { kingtexPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { kmPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { maierPDF } from './index-page-parts-list-brand-pdf-DATA.js';
@@ -34,7 +35,7 @@ import { mauserSpezialPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { merrowPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { minervaPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { minervaHomePDF } from './index-page-parts-list-brand-pdf-DATA.js';
-import { misubishiPDF } from './index-page-parts-list-brand-pdf-DATA.js';
+import { mitsubishiPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { NCcarpetPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { newlongPDF } from './index-page-parts-list-brand-pdf-DATA.js';
 import { pegasusPDF } from './index-page-parts-list-brand-pdf-DATA.js';
@@ -62,11 +63,12 @@ switch (params.get("brand")) {
     case 'barudan':
         brandPDF = barudanPDF;
         break;
+    case 'bernina-home':
+        brandPDF = berninaHomePDF;
+        break;
     case 'bonis':
         brandPDF = bonisPDF;
         break;
-    case 'bernina-home':
-        brandPDF = berninaHomePDF;
     case 'brother':
         brandPDF = brotherPDF;
         break;
@@ -94,20 +96,20 @@ switch (params.get("brand")) {
     case 'hashima-fusing':
         brandPDF = hashimaFusingPDF;
         break;
-    case 'hidhlead':
-        brandPDF = hidhleadPDF;
+    case 'highlead':
+        brandPDF = highleadPDF;
         break;
     case 'janome-home':
         brandPDF = janomeHomePDF;
         break;
-    case 'juki-home':
-        brandPDF = jukiHomePDF;
-        break;
     case 'juki':
         brandPDF = jukiPDF;
         break;
-    case 'kasai-specia':
-        brandPDF = kasaiSpecialPDF;
+    case 'juki-home':
+        brandPDF = jukiHomePDF;
+        break;
+    case 'kansai-special':
+        brandPDF = kansaiSpecialPDF;
         break;
     case 'kingtex':
         brandPDF = kingtexPDF;
@@ -130,8 +132,8 @@ switch (params.get("brand")) {
     case 'minerva-home':
         brandPDF = minervaHomePDF;
         break;
-    case 'misubishi':
-        brandPDF = misubishiPDF;
+    case 'mitsubishi':
+        brandPDF = mitsubishiPDF;
         break;
     case 'n-c-carpet':
         brandPDF = NCcarpetPDF;
@@ -229,7 +231,7 @@ const toHTMLbasic = fruitbasic =>
         <a href = "${fruitbasic.brandhref}" target="_ blank">
             <div class = "content2-list-section">
                 <div class = "list-block-text" >
-                    <p class = "content2-list-text">${fruitbasic.brandname.slice(0, -4).split('_').join(' ').split('-').join(' ')}<span>.pdf</span></p>
+                    <p class = "content2-list-text">${fruitbasic.brandname.slice(0, -4).split('_').join(' ')}<span>.pdf</span></p>
                 </div> 
                 <div class = "list-block-img"> </div> 
             </div> 
