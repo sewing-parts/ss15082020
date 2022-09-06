@@ -22376,7 +22376,8 @@ export const singerHomePDF = [{
         brandorder: 40,
         brandname: 'Singer_117_120V_230V_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1hcaVPBhkup5PLYtdU2z5nx8OTSflV1cK/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 41,
         brandname: 'Singer_118_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1Hg1Xl247rBvKLbbOzrx3UURjvUOZrjI7/view?usp=drivesdk'
@@ -22575,7 +22576,8 @@ export const singerHomePDF = [{
         brandorder: 80,
         brandname: 'Singer_403A_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/15mudJ9hbAKcysDnUpFpmqP_-tVAHHlub/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 81,
         brandname: 'Singer_404_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1daDntrCpryWnKONEAaMCb5W1yLhnCdxp/view?usp=drivesdk'
@@ -22774,7 +22776,8 @@ export const singerHomePDF = [{
         brandorder: 120,
         brandname: 'Singer_734E_774E_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1Y4UnTIj9fgqyXVvoLejmDPthtrkpzHsr/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 121,
         brandname: 'Singer_737_750_755_756_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1l0zIEBYtEYP5MGSs_rWe1TRprz3Lc_tr/view?usp=drivesdk'
@@ -22973,7 +22976,8 @@ export const singerHomePDF = [{
         brandorder: 160,
         brandname: 'Singer_2500_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1Um2HTWXztckeGgtXNIzu0w_53xWjc_7v/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 161,
         brandname: 'Singer_2600_SERIES_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1Dem_p_veO_ZIGN9odCi7Vja8MhRzPoR4/view?usp=drivesdk'
@@ -23172,7 +23176,8 @@ export const singerHomePDF = [{
         brandorder: 200,
         brandname: 'Singer_5530_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1fSHWiELx0Sfan0jCidv9MIB_dMqfo9H7/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 201,
         brandname: 'Singer_5705_5710_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/14_xXYUlH0GZ9se9oMJvU-nAYlvssaV8V/view?usp=drivesdk'
@@ -23371,7 +23376,8 @@ export const singerHomePDF = [{
         brandorder: 240,
         brandname: 'Singer_7464_7466_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1Ks-m3tYjUKvokYD8hfGGITfzFD1Sh8pL/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 241,
         brandname: 'Singer_7468_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1pwUoGC6iV9TjvWVQoPKJnIj66a-ZJ3xS/view?usp=drivesdk'
@@ -23570,7 +23576,8 @@ export const singerHomePDF = [{
         brandorder: 280,
         brandname: 'Singer_57825_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1hjeJKAifS3WM8dZhU7yLkLWA6_xbOKhX/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 281,
         brandname: 'Singer_93220_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1RmH9mp0dD45klxSXtWU02HZmq1FaMzfK/view?usp=drivesdk'
@@ -23769,7 +23776,8 @@ export const singerHomePDF = [{
         brandorder: 320,
         brandname: 'Singer_XL-150_alpha_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1CxDLQxXvi2pT8dtMNjIQob73X5mlNwlz/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 281,
         brandname: 'Singer_93220_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1RmH9mp0dD45klxSXtWU02HZmq1FaMzfK/view?usp=drivesdk'
@@ -24169,7 +24177,8 @@ export const sirubaPDF = [{
         brandorder: 40,
         brandname: 'Siruba_HSM-2212_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1fWqXwxqRAZywdyrkh_YwMCGXq_mYQm7L/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 41,
         brandname: 'Siruba_HF008_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1UYL-ZgqILI0WlnY3gcWG-a9S_SiZdD0N/view?usp=drivesdk'
@@ -24368,7 +24377,8 @@ export const sirubaPDF = [{
         brandorder: 80,
         brandname: 'Siruba_700UX_attachment_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1DTlB8yA1zyV0AatAly4xfIN9eS2IHFiu/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 81,
         brandname: 'Siruba_700QE_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1RMv_aS9dT0TTrpQUN2vMX-Qt108UCcFy/view?usp=drivesdk'
@@ -24567,7 +24577,8 @@ export const sirubaPDF = [{
         brandorder: 120,
         brandname: 'Siruba_L819_with_trimmer_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/132fX9bTXzSO9jQpiBQrg0w7ayNx_syfI/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 121,
         brandname: 'Siruba_L819_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1x1080rROX8zXt15y8HxGNXr1SsjCC2h9/view?usp=drivesdk'
@@ -25761,7 +25772,8 @@ export const unionSpecialPDF = [{
         brandorder: 40,
         brandname: 'Union_Special_6900_10300_12700_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/15zlZpQo3SIgckNtT49lOV2ZlzAc7yKty/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 41,
         brandname: 'Union_Special_52700BK_52700BL_52700BM_52700BN_52700BP_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/15k6Glo5jeA3cHOMjX-KOPYkqyqC8W80r/view?usp=drivesdk'
@@ -25960,7 +25972,8 @@ export const unionSpecialPDF = [{
         brandorder: 80,
         brandname: 'Union_Special_43200A_43200B_43200C_43200D_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1jqp8HuP_wM68VWS5ONlgLJTXFsja9FVU/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 81,
         brandname: 'Union_Special_39500PP_39500PT_39500PW_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/14kBRoNfV-cqfGQJAE1i8rY9AlC4sdxJP/view?usp=drivesdk'
@@ -26159,7 +26172,8 @@ export const unionSpecialPDF = [{
         brandorder: 120,
         brandname: 'Union_Special_34700KPW_34700KWS_34700KPWS_34700KPCC_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1T3NVSwi40YDk_CqkTPkZEnJKPGuqNSDA/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 121,
         brandname: 'Union_Special_200-38_45_Parts_List.pdf',
         brandhref: 'https://drive.google.com/file/d/1ZGnu8-lXusNrsi8NhIxovGS5QTy3Dcno/view?usp=drivesdk'

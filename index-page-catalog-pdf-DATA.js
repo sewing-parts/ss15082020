@@ -197,7 +197,8 @@ export const catalogDATA = [{
         brandorder: 40,
         brandname: 'CATALOG_FOLDERS_BINDERS_YANO.pdf',
         brandhref: 'https://drive.google.com/file/d/12YFDr7zsBmBha4Wr9MCijUlaEwaKo-pX/view?usp=drivesdk'
-    }, {
+    },
+    {
         brandorder: 41,
         brandname: 'CATALOG_FOLDERS_BINDERS_KNF.pdf',
         brandhref: 'https://drive.google.com/file/d/1uPcOA9AnntfO5iR1136FJwET6i30_i6p/view?usp=drivesdk'

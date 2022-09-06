@@ -30,16 +30,10 @@
                     </li>
                 </div>
             </div>
-            <div class="language-selection">
-                <a href="">
-                    <div class="flag-en flag"></div>
-                </a>
-                <a href="">
-                    <div class="flag-ua flag"></div>
-                </a>
-                <a href="index.html">
-                    <div class="flag-ru flag flag-active"></div>
-                </a>
+            <div class="language-selection" id="myFLAG">
+                <div id="lg-lgen" class="flag-en flag" onclick="q()"></div>
+                <div id="lg-lgua" class="flag-ua flag" onclick="qq()"></div>
+                <div id="lg-lgru" class="flag-ru flag" onclick="qqq()"></div>
             </div>
         </div>
         <div class="block-header-slider-level">
@@ -959,7 +953,7 @@
 
                                 <li>
                                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m5-1">
-                                    <a href="index-page-catalog-pdf.html">Catalogs pdf</a>
+                                    <a href="index-page-catalog-pdf.html?brand=catalogs&item=canalogs_list">Catalogs pdf</a>
                                     <label for="submit-m5-1" class="toggleSubmenu"><i class="fa"></i></label>
                                     <ul>
                                         <li><a href="#">CATALOG BOBBIN CASE</a></li>
@@ -992,12 +986,12 @@
 
                                 <li>
                                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m5-2">
-                                    <a href="index-parts-list-brand.html">Parts Lists pdf</a>
+                                    <a href="index-page-parts-list-brand.html?brand=brands&item=parts-list">Parts Lists pdf</a>
                                     <label for="submit-m5-2" class="toggleSubmenu"><i class="fa"></i></label>
                                     <ul>
                                         <li><a href="#">Parts Lists Barudan</a></li>
                                         <li><a href="#">PARTS LIST BERNINA</a></li>
-                                        <li><a href="index-page-parts-list-bonis-pdf.html">PARTS LIST BONIS</a></li>
+                                        <li><a href="">PARTS LIST BONIS</a></li>
                                         <li><a href="#">PARTS LIST BROTHER</a></li>
                                         <li><a href="#">PARTS LIST BROTHER HOME</a></li>
                                         <li><a href="#">PARTS LIST CHANDLER</a></li>
@@ -1397,7 +1391,7 @@
                     <p class="handbook-title">Руководство</p>
                 </div>
                 <div class="handbook-block">
-                    <a class="handbook-button" href="index-parts-list-brand.html">Перейти в раздел parts list</a>
+                    <a class="handbook-button" href="index-page-parts-list-brand.html?brand=brands&item=parts-list">Перейти в раздел parts list</a>
                 </div>
             </div>
         </section>
@@ -1559,6 +1553,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/0bd948430b.js" crossorigin="anonymous"></script>
+    <script src="index-lang-ru.js"></script>
     <script src="script.js"></script>
 
 </body>

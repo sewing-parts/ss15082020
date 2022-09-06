@@ -1,27 +1,18 @@
+"use strict";
+
 // const inputLang = document.getElementById('lg-en');
 // const langEn = inputLang.value;
 // console.log(langEn)
-
 // function qqqqq() {
-
 //     const lang = document.querySelector('.lg-lg').value;
 //     console.log(lang)
 // }
 // let resLANG = 'ru'
-
 // let langRESen
 // let langRESua
 // let langRESru
-
-
-
-
 // function startLANG() {
-
 // }
-
-
-
 // function updateURL() {
 //     if (history.pushState) {
 //         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
@@ -32,115 +23,110 @@
 //     }
 // }
 // updateURL()
-
-
-
-// let ddd = document.location.search;
-// console.log(ddd, "до")
-
-
-// //////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-let langRES;
-
-function q() {
-    langRES = "en"
-    if (document.location.search === "") { location.href = location.href + "?lang=" + langRES; }
-    if (document.location.search == "?") { location.href = location.href + "&lang=" + langRES; }
-    if (document.location.search.includes("lang=ru")) { location.href = location.href.replace(/lang=ru/gi, 'lang=en'); }
-    if (document.location.search.includes("lang=ua")) { location.href = location.href.replace(/lang=ua/gi, 'lang=en'); } else { return }
+function aaa() {
+  if (document.location.search === "") {
+    location.href = location.href + "?lang=ru";
+  } // if (document.location.search == "?") { location.href = location.href + "&lang=" + langRES; }
+  // if (document.location.search.includes("lang=ru")) { location.href = location.href.replace(/lang=ru/gi, 'lang=en'); }
+  // if (document.location.search.includes("lang=ua")) { location.href = location.href.replace(/lang=ua/gi, 'lang=en'); } else { return }
 
 }
 
+aaa();
+var ddd = document.location.search;
+console.log(ddd, "до"); // //////////////////////////////////////////////////////////////////////////////////////////////////
 
+var langRES;
+
+function q() {
+  // langRES = document.querySelector('.lg-lgen').value;
+  langRES = "en";
+
+  if (document.location.search === "") {
+    location.href = location.href + "?lang=" + langRES;
+  }
+
+  if (document.location.search == "?") {
+    location.href = location.href + "&lang=" + langRES;
+  }
+
+  if (document.location.search.includes("lang=ru")) {
+    location.href = location.href.replace(/lang=ru/gi, 'lang=en');
+  }
+
+  if (document.location.search.includes("lang=ua")) {
+    location.href = location.href.replace(/lang=ua/gi, 'lang=en');
+  } else {
+    return;
+  }
+}
+
+var dd = document.location.search;
+console.log(dd, "после"); // ///////////////////////////////////////////////////////////////////////
 
 function qq() {
-    langRES = "ua"
-    if (document.location.search === "") { location.href = location.href + "?lang=" + langRES; }
-    if (document.location.search == "?") { location.href = location.href + "&lang=" + langRES; }
-    if (document.location.search.includes("lang=ru")) { location.href = location.href.replace(/lang=ru/gi, 'lang=ua'); }
-    if (document.location.search.includes("lang=en")) { location.href = location.href.replace(/lang=en/gi, 'lang=ua'); } else { return }
+  // langRES = document.querySelector('.lg-lgua').value;
+  langRES = "ua";
+
+  if (document.location.search === "") {
+    location.href = location.href + "?lang=" + langRES;
+  }
+
+  if (document.location.search == "?") {
+    location.href = location.href + "&lang=" + langRES;
+  }
+
+  if (document.location.search.includes("lang=ru")) {
+    location.href = location.href.replace(/lang=ru/gi, 'lang=ua');
+  }
+
+  if (document.location.search.includes("lang=en")) {
+    location.href = location.href.replace(/lang=en/gi, 'lang=ua');
+  } else {
+    return;
+  }
 }
 
 function qqq() {
-    langRES = "ru"
-    if (document.location.search === "") { location.href = location.href + "?lang=" + langRES; }
-    if (document.location.search == "?") { location.href = location.href + "&lang=" + langRES; }
-    if (document.location.search.includes("lang=ua")) { location.href = location.href.replace(/lang=ua/gi, 'lang=ru'); }
-    if (document.location.search.includes("lang=en")) { location.href = location.href.replace(/lang=en/gi, 'lang=ru'); } else { return }
+  // langRES = document.querySelector('.lg-lgru').value;
+  langRES = "ru";
+
+  if (document.location.search === "") {
+    location.href = location.href + "?lang=" + langRES;
+  }
+
+  if (document.location.search == "?") {
+    location.href = location.href + "&lang=" + langRES;
+  }
+
+  if (document.location.search.includes("lang=ua")) {
+    location.href = location.href.replace(/lang=ua/gi, 'lang=ru');
+  }
+
+  if (document.location.search.includes("lang=en")) {
+    location.href = location.href.replace(/lang=en/gi, 'lang=ru');
+  } else {
+    return;
+  }
 }
 
-
-
-
-let langRESU = "";
-if (document.location.search.includes("lang=ua")) { langRESU = "&lang=ua" };
-if (document.location.search.includes("lang=ru")) { langRESU = "&lang=ru" };
-if (document.location.search.includes("lang=en")) { langRESU = "&lang=en" };
-let langRESULT = langRESU;
-
-
-//собираем все ссылки в массив
-var links = document.getElementsByTagName("a");
-//для каждой ссылки делаем
-for (var i = 0; i < links.length; i++) {
-    //если в ссылке есть 'pr1'
-    if (links[i].href.includes("index-page")) {
-        //дописываем в конец ссылки '&pr2=text' 
-        links[i].href += langRESULT;
-    }
-}
-
-if (document.location.search.includes("lang=ru")) {
-    var elementRU = document.getElementById("lg-lgru");
-    elementRU.className += " flag-active";
-}
-if (document.location.search.includes("lang=ua")) {
-    var elementUA = document.getElementById("lg-lgua");
-    elementUA.className += " flag-active";
-}
 if (document.location.search.includes("lang=en")) {
-    var elementEN = document.getElementById("lg-lgen");
-    elementEN.className += " flag-active";
-    // elementEN.classList.add(" flag-active");
-}
+  var btnContainer = document.getElementById("myFLAG");
+  var btns = btnContainer.getElementsByClassName("flag");
 
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("flag-active");
+      current[0].className = current[0].className.replace(" flag-active", "");
+      this.className += " flag-active";
+    });
+  }
 
-
-// function fff() {
-//     if (document.location.search.includes("lang=")) {
-//         var btnContainer = document.getElementById("myFLAG");
-//         var btns = btnContainer.getElementsByClassName("flag");
-//         for (var i = 0; i < btns.length; i++) {
-//             btns[i].addEventListener("click", function() {
-//                 var current = document.getElementsByClassName("flag-active");
-//                 current[0].className = current[0].className.replace(" flag-active", "");
-//                 this.className += " flag-active";
-//             });
-//         };
-//     }
-// }
-// fff()
-
-// //////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
+  ;
+} // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // console.log(langRES)
-
 // var paramsString = document.location.search
 // console.log(paramsString)
-
-
 // $(document).ready(function() {
 //     $('.compose').click(function() {
 //         $('.overlay').addClass('is-open');
@@ -149,12 +135,6 @@ if (document.location.search.includes("lang=en")) {
 //         $('.overlay').removeClass('is-open');
 //     })
 // })
-
-
-
-
-
-
 //////////////////////  функция смены языков и смены URL под каждый язык  ////////////start/////////////////////
 // function qqqqq() {
 //     var radios = document.getElementsByName("button");
@@ -166,12 +146,10 @@ if (document.location.search.includes("lang=en")) {
 //     console.log(resLngEn)
 //     console.log(resLngUa)
 //     console.log(resLngRu)
-
 //     var radiosId = document.getElementsByName("pageIdLang");
 //     console.log(radiosId)
 //     var radiosHref = document.getElementsByName("pageHrefLang");
 //     console.log(radiosHref)
-
 //     /////////////////// переключение язык en span  по класу весь html  /////////////////////
 //     if (radios[0].checked === true) {
 //         for (var i = 0; i < resLngEn.length; i++) {
@@ -185,7 +163,6 @@ if (document.location.search.includes("lang=en")) {
 //         }
 //         val = radios[0].value;
 //         console.log(val + ' флаг');
-
 //         //////////  div id  смена URL en  //////////
 //         for (var i = 0; i < radiosId.length; i++) {
 //             radiosId[i].id = radiosId[i].id.slice(0, -2) + 'en';
@@ -198,7 +175,6 @@ if (document.location.search.includes("lang=en")) {
 //         document.getElementById("defaultOpen").click();
 //         window.location.href = window.location.href;
 //     }
-
 //     /////////////////// переключение язык ua span  по класу весь html  /////////////////////
 //     if (radios[1].checked === true) {
 //         for (var i = 0; i < resLngEn.length; i++) {
@@ -212,7 +188,6 @@ if (document.location.search.includes("lang=en")) {
 //         }
 //         val = radios[1].value;
 //         console.log(val + ' флаг');
-
 //         /////////  div id  смена URL ua ////////
 //         for (var i = 0; i < radiosId.length; i++) {
 //             radiosId[i].id = radiosId[i].id.slice(0, -2) + 'ua';
@@ -225,7 +200,6 @@ if (document.location.search.includes("lang=en")) {
 //         document.getElementById("defaultOpen").click();
 //         window.location.href = window.location.href;
 //     }
-
 //     /////////////////// переключение язык ru span  по класу весь html  /////////////////////
 //     if (radios[2].checked === true) {
 //         for (var i = 0; i < resLngEn.length; i++) {
@@ -239,8 +213,6 @@ if (document.location.search.includes("lang=en")) {
 //         }
 //         val = radios[2].value;
 //         console.log(val + ' флаг');
-
-
 //         /////////  div id  смена URL ru ////////
 //         for (var i = 0; i < radiosId.length; i++) {
 //             radiosId[i].id = radiosId[i].id.slice(0, -2) + 'ru';
@@ -248,7 +220,6 @@ if (document.location.search.includes("lang=en")) {
 //         /////////  a href  смена URL ru ///////
 //         for (var i = 0; i < radiosHref.length; i++) {
 //             radiosHref[i].hash = radiosHref[i].hash.slice(0, -2) + 'ru';
-
 //         }
 //         ///////// обновляем страницу  //////////
 //         document.getElementById("defaultOpen").click();
@@ -257,9 +228,6 @@ if (document.location.search.includes("lang=en")) {
 // }
 // qqqqq();
 //////////////////////  функция смены языков и смены URL под каждый язык  ////////////end/////////////////////
-
-
-
 //////////////////////// слайдер с перещетом  разрешения экрана /////////////start////////////
 // const controls = document.querySelector(".controls");
 // const container = document.querySelector(".thumbnail-container")
@@ -269,7 +237,6 @@ if (document.location.search.includes("lang=en")) {
 // var items = 0;
 // var totalItems = 0;
 // var jumpSlideWidth = 0;
-
 // responsive = [
 //     { breakPoint: { width: 0, item: 1 } },
 //     { breakPoint: { width: 600, item: 2 } },
@@ -279,9 +246,7 @@ if (document.location.search.includes("lang=en")) {
 //     { breakPoint: { width: 1800, item: 6 } },
 //     { breakPoint: { width: 2100, item: 7 } }
 // ]
-
 // function load() {
-
 //     for (let i = 0; i < responsive.length; i++) {
 //         if (window.innerWidth > responsive[i].breakPoint.width) {
 //             items = responsive[i].breakPoint.item
@@ -289,7 +254,6 @@ if (document.location.search.includes("lang=en")) {
 //     }
 //     start();
 // }
-
 // function start() {
 //     var totalItemsWidth = 0;
 //     for (let i = 0; i < allBox.length; i++) {
@@ -299,7 +263,6 @@ if (document.location.search.includes("lang=en")) {
 //         totalItems++;
 //     }
 //     container.style.width = totalItemsWidth + "px";
-
 //     const allSlides = Math.ceil(totalItems / items);
 //     const ul = document.createElement("ul");
 //     for (let i = 1; i <= allSlides; i++) {
@@ -307,7 +270,6 @@ if (document.location.search.includes("lang=en")) {
 //         li.id = i;
 //         li.innerHTML = i;
 //         li.setAttribute("onclick", "controlSlides(this)");
-
 //         ul.appendChild(li);
 //         if (i == 1) {
 //             li.className = "active";
@@ -315,7 +277,6 @@ if (document.location.search.includes("lang=en")) {
 //     }
 //     controls.appendChild(ul);
 // }
-
 // function controlSlides(ele) {
 //     const ul = controls.children;
 //     const li = ul[0].children;
@@ -331,16 +292,10 @@ if (document.location.search.includes("lang=en")) {
 //     jumpSlideWidth = jumpSlideWidth + (containerWidth * numb);
 //     container.style.marginLeft = -jumpSlideWidth + "px"
 // }
-
 // window.onload = load();
 //////////////////////// слайдер с перещетом  разрешения экрана /////////////end////////////
-
-
-
-
 ///////////////////////////скрываем блок при клике вне элемента с классом pop-up /////////start////////////
 // const popup = document.querySelector('.pop-up');
-
 // document.onclick = function(e){
 //     if ( event.target.className != 'pop-up') {
 //         popup.style.display = 'none';

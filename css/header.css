@@ -69,6 +69,9 @@ body header .block-header-upper-level .quick-contact .contact-menu .contact-menu
 
 /* флаги */
 
+
+/* ////////////////////////////landug START//////////////////////////////////////////////////////////////// */
+
 body header .block-header-upper-level .language-selection {
     width: 210px;
     height: 50px;
@@ -77,14 +80,14 @@ body header .block-header-upper-level .language-selection {
     justify-content: space-between;
 }
 
-body header .block-header-upper-level .language-selection a .flag {
+body header .block-header-upper-level .language-selection .flag {
     width: 67px;
     height: 39px;
     cursor: pointer;
     transition: 1.1s linear;
 }
 
-body header .block-header-upper-level .language-selection a .flag-ua {
+body header .block-header-upper-level .language-selection .flag-ua {
     background-image: url('../images/flagua.jpg');
     background-repeat: no-repeat;
     background-size: 65% 65%;
@@ -92,7 +95,7 @@ body header .block-header-upper-level .language-selection a .flag-ua {
     transition: 1.1s linear;
 }
 
-body header .block-header-upper-level .language-selection a .flag-ru {
+body header .block-header-upper-level .language-selection .flag-ru {
     background-image: url('../images/flagru.jpg');
     background-repeat: no-repeat;
     background-size: 65% 65%;
@@ -100,7 +103,7 @@ body header .block-header-upper-level .language-selection a .flag-ru {
     transition: 1.1s linear;
 }
 
-body header .block-header-upper-level .language-selection a .flag-en {
+body header .block-header-upper-level .language-selection .flag-en {
     background-image: url('../images/flageng.jpg');
     background-repeat: no-repeat;
     background-size: 65% 65%;
@@ -108,16 +111,103 @@ body header .block-header-upper-level .language-selection a .flag-en {
     transition: 1.1s linear;
 }
 
-body header .block-header-upper-level .language-selection a .flag:hover {
+body header .block-header-upper-level .language-selection .flag:hover {
     background-size: 100%;
     transition: 1s linear;
 }
 
-body header .block-header-upper-level .language-selection a .flag-active {
+body header .block-header-upper-level .language-selection .flag-active {
     background-size: 100%;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 1px;
 }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* body header .block-header-upper-level .language-selection {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2px 0px 2px;
+}
+
+body header .block-header-upper-level .language-selection input {
+    display: none;
+}
+
+body header .block-header-upper-level .language-selection input:checked+.label-flagua {
+    background-image: url("/images/flagua.jpg");
+    background-size: cover;
+    border: none;
+    padding: 0 5px;
+}
+
+body header .block-header-upper-level .language-selection input:checked+.label-flagru {
+    background-image: url("/images/flagru.jpg");
+    background-size: cover;
+    border: none;
+    padding: 0 6px;
+}
+
+body header .block-header-upper-level .language-selection input:checked+.label-flageng {
+    background-image: url("/images/flageng.jpg");
+    background-size: cover;
+    border: none;
+    padding: 0 6px;
+}
+
+body header .block-header-upper-level .language-selection input:checked+label {
+    color: #f5f6fa;
+    font-size: 0px;
+}
+
+body header .block-header-upper-level .language-selection label {
+    width: 67px;
+    height: 39px;
+    padding: 0 6px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+    margin: -1px 0px 0px 0px;
+    transition: 0.8s linear;
+}
+
+body header .block-header-upper-level .language-selection .label-flageng {
+    background-image: url('../images/flageng.jpg');
+    background-repeat: no-repeat;
+    background-size: 70% 60%;
+    background-position: 55% 50%;
+    transition: 0.8s linear;
+}
+
+body header .block-header-upper-level .language-selection .label-flagru {
+    background-image: url('../images/flagru.jpg');
+    background-repeat: no-repeat;
+    background-size: 70% 60%;
+    background-position: 55% 50%;
+    transition: 0.8s linear;
+}
+
+body header .block-header-upper-level .language-selection .label-flagua {
+    background-image: url('../images/flagua.jpg');
+    background-repeat: no-repeat;
+    background-size: 70% 60%;
+    background-position: 55% 50%;
+    transition: 0.8s linear;
+}
+
+body header .block-header-upper-level .language-selection label:hover {
+    border: none;
+    background-size: 100%;
+    transition: 0.8s linear;
+} */
+
+
+/* ////////////////////////////landug END//////////////////////////////////////////////////////////////// */
 
 
 /* body header .block-header-upper-level .language-selection input {

@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>index_page_catalog_pdf</title>
+    <title>indexpage1</title>
     <link rel="stylesheet" type='text/css' href="main.css" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -26,16 +26,11 @@
                     </li>
                 </div>
             </div>
-            <div class="language-selection">
-                <a href="">
-                    <div class="flag-en flag"></div>
-                </a>
-                <a href="">
-                    <div class="flag-ua flag"></div>
-                </a>
-                <a href="index.html">
-                    <div class="flag-ru flag flag-active"></div>
-                </a>
+
+            <div class="language-selection" id="myFLAG">
+                <div id="lg-lgen" class="flag-en flag" onclick="q()"></div>
+                <div id="lg-lgua" class="flag-ua flag" onclick="qq()"></div>
+                <div id="lg-lgru" class="flag-ru flag" onclick="qqq()"></div>
             </div>
         </div>
         <div class="block-header-slider-level">
@@ -1576,6 +1571,7 @@
 
 
     <script src="https://kit.fontawesome.com/0bd948430b.js" crossorigin="anonymous"></script>
+    <!-- <script src="index-lang-ru.js"></script> -->
     <script src="script.js"></script>
 
 </body>
