@@ -3,23 +3,49 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>page-catalog-pdf</title>
     <link rel="stylesheet" type='text/css' href="main.css" />
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!---- Настройка адаптивности страницы -->
+    <!---- Фиксированная ширина страницы -->
+    <!-- <meta name="viewport" content="width=1260"/> -->
+    <!---- Для мобильных устройств  1.значение-изночальный масштаб страницы 2.значение-максимальный масштаб страницы 3.значение-запрет мастабирования контента -->
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> -->
+    <!---- Настройки подстраиваются под ширину , но не уменьшается содержимое -->
+    <!-- <meta name="viewport" content="width=device-width"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>index-catalog-pdf</title>
+
+    <!---- Отключает формирование ссылки номера телефона на IOS -->
+    <!-- <meta name="format-detection" content="telephone=no"/> -->
+
+    <!---- Краткое описание страницы -->
+    <meta name="description" content="Можно писать до 140 СИМВОЛОВ о странице КРАТКОЕ ОПИСАНИЕ" />
+
+    <!---- Ключевые слова страницы -->
+    <meta name="keywords" content="мета теги, теги, мета теги seo, КЛЮЧЕВЫЕ СЛОВА не более 20 СЛОВ " />
+
+    <!---- Управление доступом поисковых роботов к странице -->
+    <!-- <meta name=”robots” content=””/> -->
+
+    <!---- Запрет индексации страницы поностью -->
+    <!-- <meta name=”robots” content=”noindex, nofollow”/> -->
+    <!---- или -->
+    <meta name=”robots” content=”none”/>
+
+    <!---- Автор страницы -->
+    <!-- <meta name="author" content="Александр" /> -->
+    <!---- Авторские права страницы -->
+    <!-- <meta name="copyright" content="sima-biz" /> -->
+    <!---- Адрес автора -->
+    <!-- <meta name="address" content="Запорожье" /> -->
 
 </head>
 
 <body>
-
-
-
     <header>
         <div class="block-header-upper-level">
-
             <div class="quick-contact">
                 <div class="contact-menu">
                     <li class="contact-menu-li">
@@ -30,17 +56,7 @@
                     </li>
                 </div>
             </div>
-            <!-- <div class="language-selection">
-                <a href="">
-                    <div class="flag-en flag"></div>
-                </a>
-                <a href="">
-                    <div class="flag-ua flag"></div>
-                </a>
-                <a href="index.html">
-                    <div class="flag-ru flag flag-active"></div>
-                </a>
-            </div> -->
+
             <div class="language-selection" id="myFLAG">
                 <div id="lg-lgen" class="flag-en flag" onclick="q()"></div>
                 <div id="lg-lgua" class="flag-ua flag" onclick="qq()"></div>

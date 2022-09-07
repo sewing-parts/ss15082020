@@ -1,27 +1,3 @@
-// const inputLang = document.getElementById('lg-en');
-// const langEn = inputLang.value;
-// console.log(langEn)
-
-// function qqqqq() {
-
-//     const lang = document.querySelector('.lg-lg').value;
-//     console.log(lang)
-// }
-// let resLANG = 'ru'
-
-// let langRESen
-// let langRESua
-// let langRESru
-
-
-
-
-// function startLANG() {
-
-// }
-
-
-
 // function updateURL() {
 //     if (history.pushState) {
 //         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
@@ -35,13 +11,7 @@
 
 
 
-// let ddd = document.location.search;
-// console.log(ddd, "до")
-
-
-// //////////////////////////////////////////////////////////////////////////////////////////////////
-
-
+// START Переключение языка на текущей странице //////////////////////////////////////////////////////////////////////////////////////////////////
 let langRES;
 
 function q() {
@@ -51,9 +21,7 @@ function q() {
     if (document.location.search.includes("lang=ru")) { location.href = location.href.replace(/lang=ru/gi, 'lang=en'); }
     if (document.location.search.includes("lang=ua")) { location.href = location.href.replace(/lang=ua/gi, 'lang=en'); } else { return }
 
-}
-
-
+};
 
 function qq() {
     langRES = "ua"
@@ -61,7 +29,7 @@ function qq() {
     if (document.location.search == "?") { location.href = location.href + "&lang=" + langRES; }
     if (document.location.search.includes("lang=ru")) { location.href = location.href.replace(/lang=ru/gi, 'lang=ua'); }
     if (document.location.search.includes("lang=en")) { location.href = location.href.replace(/lang=en/gi, 'lang=ua'); } else { return }
-}
+};
 
 function qqq() {
     langRES = "ru"
@@ -69,42 +37,51 @@ function qqq() {
     if (document.location.search == "?") { location.href = location.href + "&lang=" + langRES; }
     if (document.location.search.includes("lang=ua")) { location.href = location.href.replace(/lang=ua/gi, 'lang=ru'); }
     if (document.location.search.includes("lang=en")) { location.href = location.href.replace(/lang=en/gi, 'lang=ru'); } else { return }
-}
+};
+// END Переключение языка на текущей странице //////////////////////////////////////////////////////////////////////////////////////////////////
+
+// START переключение флагов по клику ///////////////////////////////////////////////////////
+if (document.location.search.includes("lang=ru")) {
+    var elementRU = document.getElementById("lg-lgru");
+    elementRU.className += " flag-active";
+};
+if (document.location.search.includes("lang=ua")) {
+    var elementUA = document.getElementById("lg-lgua");
+    elementUA.className += " flag-active";
+};
+if (document.location.search.includes("lang=en")) {
+    var elementEN = document.getElementById("lg-lgen");
+    elementEN.className += " flag-active";
+    // elementEN.classList.add(" flag-active");
+};
+// END переключение флагов по клику ///////////////////////////////////////////////////////
 
 
 
-
+// START передача выбранного языка по ссылке на следующюю страницу ///////////////////////////////////////////////////////
 let langRESU = "";
-if (document.location.search.includes("lang=ua")) { langRESU = "&lang=ua" };
-if (document.location.search.includes("lang=ru")) { langRESU = "&lang=ru" };
-if (document.location.search.includes("lang=en")) { langRESU = "&lang=en" };
+if (document.location.search.includes("lang=ua")) { langRESU = "lang=ua" };
+if (document.location.search.includes("lang=ru")) { langRESU = "lang=ru" };
+if (document.location.search.includes("lang=en")) { langRESU = "lang=en" };
 let langRESULT = langRESU;
-
 
 //собираем все ссылки в массив
 var links = document.getElementsByTagName("a");
 //для каждой ссылки делаем
 for (var i = 0; i < links.length; i++) {
-    //если в ссылке есть 'pr1'
-    if (links[i].href.includes("index-page")) {
-        //дописываем в конец ссылки '&pr2=text' 
-        links[i].href += langRESULT;
+    //если в ссылке есть 'index'
+    if (links[i].href.includes("index") && links[i].href.includes("?")) {
+        //дописываем в конец ссылки  
+        links[i].href += "&" + langRESULT;
     }
-}
+    if (links[i].href.includes("index") && !links[i].href.includes("?")) {
+        //дописываем в конец ссылки 
+        links[i].href += "?" + langRESULT;
+    }
+};
+// END передача выбранного языка по ссылке на следующюю страницу ///////////////////////////////////////////////////////
 
-if (document.location.search.includes("lang=ru")) {
-    var elementRU = document.getElementById("lg-lgru");
-    elementRU.className += " flag-active";
-}
-if (document.location.search.includes("lang=ua")) {
-    var elementUA = document.getElementById("lg-lgua");
-    elementUA.className += " flag-active";
-}
-if (document.location.search.includes("lang=en")) {
-    var elementEN = document.getElementById("lg-lgen");
-    elementEN.className += " flag-active";
-    // elementEN.classList.add(" flag-active");
-}
+
 
 
 
@@ -127,15 +104,6 @@ if (document.location.search.includes("lang=en")) {
 
 
 
-
-
-
-
-
-
-
-
-// console.log(langRES)
 
 // var paramsString = document.location.search
 // console.log(paramsString)
