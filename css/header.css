@@ -58,11 +58,11 @@ body header .block-header-upper-level .quick-contact .contact-menu .contact-menu
     color: #f5f6fa;
     text-decoration: none;
     padding: 9px 13px 9px 13px;
-    transition: linear 0.5s;
+    /* transition: linear 0.5s; */
 }
 
 body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li .contact-menu-a:hover {
-    transition: 0.5s linear;
+    /* transition: 0.5s linear; */
     color: #ffd000;
 }
 
@@ -84,7 +84,6 @@ body header .block-header-upper-level .language-selection .flag {
     width: 67px;
     height: 39px;
     cursor: pointer;
-    transition: 1.1s linear;
 }
 
 body header .block-header-upper-level .language-selection .flag-ua {
@@ -92,7 +91,6 @@ body header .block-header-upper-level .language-selection .flag-ua {
     background-repeat: no-repeat;
     background-size: 65% 65%;
     background-position: 50% 50%;
-    transition: 1.1s linear;
 }
 
 body header .block-header-upper-level .language-selection .flag-ru {
@@ -100,7 +98,6 @@ body header .block-header-upper-level .language-selection .flag-ru {
     background-repeat: no-repeat;
     background-size: 65% 65%;
     background-position: 50% 50%;
-    transition: 1.1s linear;
 }
 
 body header .block-header-upper-level .language-selection .flag-en {
@@ -108,18 +105,18 @@ body header .block-header-upper-level .language-selection .flag-en {
     background-repeat: no-repeat;
     background-size: 65% 65%;
     background-position: 50% 50%;
-    transition: 1.1s linear;
 }
 
 body header .block-header-upper-level .language-selection .flag:hover {
     background-size: 100%;
-    transition: 1s linear;
+    ;
 }
 
 body header .block-header-upper-level .language-selection .flag-active {
     background-size: 100%;
-    border: 1px solid rgb(192, 192, 192);
-    border-radius: 1px;
+    border: 1px solid rgba(192, 192, 192, 0.615);
+    /* border-radius: 1px; */
+    transition: 2.0s linear;
 }
 
 

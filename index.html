@@ -15,16 +15,16 @@
     <!-- <meta name="viewport" content="width=device-width"/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title></title>
+    <!-- <title></title> //////////////////////////////////////////////////////-->
 
     <!---- Отключает формирование ссылки номера телефона на IOS -->
     <!-- <meta name="format-detection" content="telephone=no"/> -->
 
     <!---- Краткое описание страницы (Можно писать до 140 СИМВОЛОВ о странице КРАТКОЕ ОПИСАНИЕ)-->
-    <meta name="description" content="" />
+    <!-- <meta name="description" content="" /> ///////////////////////////////-->
 
     <!---- Ключевые слова страницы (мета теги, теги, мета теги seo, КЛЮЧЕВЫЕ СЛОВА не более 20 СЛОВ )-->
-    <meta name="keywords" content="" />
+    <!-- <meta name="keywords" content="" /> //////////////////////////////////-->
 
     <!---- Управление доступом поисковых роботов к странице -->
     <!-- <meta name=”robots” content=””/> -->
@@ -57,11 +57,23 @@
                 </div>
             </div>
 
-            <div class="language-selection" id="myFLAG">
-                <div id="lg-lgen" class="flag-en flag" onclick="q()"></div>
-                <div id="lg-lgua" class="flag-ua flag" onclick="qq()"></div>
-                <div id="lg-lgru" class="flag-ru flag" onclick="qqq()"></div>
+            <div class="language-selection">
+                <div id="lg-lgen" class="flagen flag-en flag"></div>
+                <div id="lg-lgua" class="flagua flag-ua flag"></div>
+                <div id="lg-lgru" class="flagru flag-ru flag"></div>
             </div>
+
+            <!-- <div class="language-selection" id="myFLAG">
+                <div id="lg-lgen" class="flagen flag-en flag" onclick="q()"></div>
+                <div id="lg-lgua" class="flagua flag-ua flag" onclick="qq()"></div>
+                <div id="lg-lgru" class="flagru flag-ru flag" onclick="qqq()"></div>
+            </div> -->
+
+            <!-- <div class="language-selection" id="myFLAG">
+                <div id="lg-lgen" class="flagen flag-en flag click" data-value='en'></div>
+                <div id="lg-lgua" class="flagua flag-ua flag click" data-value='ua'></div>
+                <div id="lg-lgru" class="flagru flag-ru flag click" data-value='ru'></div>
+            </div> -->
         </div>
         <div class="block-header-slider-level">
             <div class="container-slider">
@@ -980,7 +992,7 @@
 
                                 <li>
                                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m5-1">
-                                    <a href="index-page-catalog-pdf.html?brand=catalogs&item=canalogs_list">Catalogs pdf</a>
+                                    <a href="index-page-catalog-pdf.html?page=one&brand=catalogs&item=canalogs_list">Catalogs pdf</a>
                                     <label for="submit-m5-1" class="toggleSubmenu"><i class="fa"></i></label>
                                     <ul>
                                         <li><a href="#">CATALOG BOBBIN CASE</a></li>
@@ -1240,7 +1252,7 @@
                     <p class="handbook-title">Руководство</p>
                 </div>
                 <div class="handbook-block">
-                    <a class="handbook-button" href="index-page-catalog-pdf.html?brand=catalogs&item=canalogs_list">Перейти в раздел catalogs</a>
+                    <a class="handbook-button" href="index-page-catalog-pdf.html?page=one&brand=catalogs&item=canalogs_list">Перейти в раздел catalogs</a>
                 </div>
             </div>
         </section>
@@ -1581,7 +1593,14 @@
 
     <script src="https://kit.fontawesome.com/0bd948430b.js" crossorigin="anonymous"></script>
     <script src="index-lang-ru.js"></script>
+
     <script src="script.js"></script>
+    <script src="base.js"></script>
+    <script src="lang-DATA.js" type="module"></script>
+    <script src="lang.js" type="module"></script>
+
+    <script src="index-page-DATA.js" type="module"></script>
+    <script src="index-page.js" type="module"></script>
 
 </body>
 

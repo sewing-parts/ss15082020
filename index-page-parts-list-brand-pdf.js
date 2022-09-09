@@ -228,10 +228,10 @@ renderchapter();
 
 const toHTMLbasic = fruitbasic =>
     `<div class = "content2-list-section-wrapper">
-        <a href = "${fruitbasic.brandhref}" target="_ blank">
+        <a href = "${fruitbasic.brandhref}" title="${fruitbasic.brandname.slice(0, -4).split('_').join(' ')} Manuals to Sewing Machine Pdf" target="_ blank">
             <div class = "content2-list-section">
                 <div class = "list-block-text" >
-                    <p class = "content2-list-text">${fruitbasic.brandname.slice(0, -4).split('_').join(' ')}<span>.pdf</span></p>
+                    <p class = "content2-list-text">${fruitbasic.brandname.slice(0, -4).split('_').join(' ')} <span>pdf</span></p>
                 </div> 
                 <div class = "list-block-img"> </div> 
             </div> 
