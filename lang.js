@@ -192,7 +192,9 @@ function getValue(array, search) {
     }
 }
 
-let keyHEAD = pageNUMBERhead + "=" + langRESULThead;
+let keyHEAD = pageNUMBERhead + langRESULThead;
+
+console.log(keyHEAD)
 getValue(arryHEAD, keyHEAD)
 
 console.log(titleHEAD)
