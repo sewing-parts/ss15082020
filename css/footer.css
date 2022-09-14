@@ -20,7 +20,6 @@ body .footer .container .box {
     margin: 5px 15px;
     padding: 10px 20px;
     min-width: 300px;
-    /* border: 1px solid rgb(255, 208, 0); */
 }
 
 body .footer .container .box a {
@@ -42,17 +41,7 @@ body .footer .container .box h4 {
     transition: linear 0.2s;
 }
 
-
-/*  */
-
 body .footer .container .box #logos {
-    /* margin-left: 20px;
-margin-top: -10px;
-position: relative; */
-    /* z-index: 88888; */
-    /* min-width: 250px;
-min-height: 1px; */
-    /* background-color: tomato; */
     display: flex;
     justify-content: center;
 }
@@ -60,7 +49,6 @@ min-height: 1px; */
 body .footer .container .box #logos a {
     text-decoration: none;
     cursor: pointer;
-    /* display: flex; */
 }
 
 body .footer .container .box #logos a .logos-wrapper {
@@ -71,39 +59,21 @@ flex-direction: column; */
 body .footer .container .box #logos a .logos-wrapper .block-logos {
     padding: 0;
     margin: 0;
-    /* margin-top: -75px; */
     max-width: 200px;
-    height: 65px;
-    /* margin: 0px 0px 0px 0px; */
+    height: 60px;
     background-image: url('../images/11-aaa-waaa.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* background-color: turquoise; */
 }
-
-
-/* body .footer .container .box #logos a .logos-wrapper .block-logos .block-logos-text {      
-max-width: 200px;
-height: 22px;
-line-height: 22px;     
-margin-left: 0px;
-padding: 0px 3px 0px 3px;      
-background: #dcdde1;
-} */
 
 body .footer .container .box #logos a .logos-wrapper .logos-text {
     color: rgb(224, 224, 224);
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 8.6px;
     text-transform: uppercase;
-    /* display: flex;
-justify-content: space-between; */
-    /* position: relative; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
     transform: scale(1.0, 1.5);
-    /* background-color: rgb(0, 255, 76); */
+    padding-top: 3px;
 }
 
 body .footer .container .box .block-logos-text-info {
@@ -111,12 +81,6 @@ body .footer .container .box .block-logos-text-info {
     margin-bottom: 15px;
     width: 100%;
     height: 172px;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
-    /* display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; */
-    /* background: rgb(9, 146, 50); */
 }
 
 body .footer .container .box .block-logos-text-info .logos-text-info {
@@ -160,7 +124,6 @@ body .footer .container .box p {
 }
 
 body .footer .container .box .social {
-    /* max-width: 280px; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +162,6 @@ body .footer .container .box .social a:hover i {
 body .footer .container .box .address a {
     display: block;
     text-decoration: none;
-    /* width: 100%; */
     width: 270px;
     height: 40px;
     line-height: 40px;
@@ -210,7 +172,6 @@ body .footer .container .box .address a {
     font-weight: 300;
     font-size: 17px;
     transition: linear 0.2s;
-    /* background-color: red; */
 }
 
 body .footer .container .box .address a .fas {
@@ -281,6 +242,8 @@ body .footer .container .box form label {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 17px;
+    padding: 5px 0px;
+    margin-top: -10px;
 }
 
 body .footer .container .box form label .span-icon {
@@ -290,13 +253,13 @@ body .footer .container .box form label .span-icon {
 body .footer .container .box a button,
 body .footer .container .box form button {
     width: 250px;
-    height: 36px;
+    height: 32px;
     border: none;
     outline: none;
     background: #222222;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 17px;
     color: #5aaaf5;
     border: 1px solid #5aaaf5;

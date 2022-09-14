@@ -1,0 +1,22 @@
+/* ///////////////////////////////////////////////  MEDIA BLOCK CRUMBS START  ////////////////////////////////////////////// */
+
+@media (min-width: 540px) and (max-width: 760px) {
+    body #main .crumbs-section {
+        padding: 15px 30px 15px 30px;
+    }
+    body #main .crumbs-section .crumbs-text li a {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .crumbs-section {
+        padding: 15px 30px 15px 30px;
+    }
+    body #main .crumbs-section .crumbs-text li a {
+        font-size: 13px;
+    }
+}
+
+
+/* ///////////////////////////////////////////////  MEDIA BLOCK CRUMBS END  ////////////////////////////////////////////// */

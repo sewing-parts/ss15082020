@@ -1,7 +1,7 @@
 ///////////////////////////////
-const idcrumbs = '#crumbsbrand'
-const idchapter = '#chapterbrand';
-const idpartslist = '#partslistbrand';
+const idcrumbs = '#crumbs'
+const idchapter = '#chapter-list';
+const idpartslist = '#list-positions';
 
 //////////////////////////////
 
@@ -195,7 +195,7 @@ switch (params.get("brand")) {
 
 };
 
-// 
+// ////////////////////////////////
 const toHTMLcrumbs = fruitchapter =>
     `<ul class="crumbs-text">
     <li><a href="index.html">Главная</a><i class="fas fa-angle-right"></i></li>
@@ -215,8 +215,8 @@ rendercrumbs()
 /////////////////////////////
 
 const toHTMLchapter = fruitchapter =>
-    `<h1 class="content1-description-title">${fruitchapter.item}</h1>
-    <h2 class="content2-list-title">${fruitchapter.brand}</h2>`;
+    `<h1 class="title-shadow-h1h2">${fruitchapter.item}</h1>
+    <h2 class="title-shadow-h1h2">${fruitchapter.brand}</h2>`;
 
 function renderchapter() {
     const htmlchapter = paramsss.map(toHTMLchapter).join('')

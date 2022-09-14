@@ -1,0 +1,44 @@
+/* /////////////////////////////  MEDIA BLOCK HANDBOOK START  /////////////////////////////// */
+
+@media (min-width: 540px) and (max-width: 760px) {
+    body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
+        font-size: 18px;
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block {
+        display: flex;
+        flex-direction: column;
+        /* */
+        justify-content: center;
+        /* */
+        align-items: center;
+        /* */
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
+        font-size: 15px;
+        width: 275px;
+        line-height: 17px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
+        font-size: 16px;
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block {
+        display: flex;
+        flex-direction: column;
+        /* */
+        justify-content: center;
+        /* */
+        align-items: center;
+        /* */
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
+        font-size: 13px;
+        width: 250px;
+        line-height: 15px;
+    }
+}
+
+
+/* ////////////////////////////////  MEDIA BLOCK HANDBOOK END  /////////////////////////////// */

@@ -1,10 +1,35 @@
-        @import url('css/fonts.css');
-        @import url('css/header.css');
-        @import url('css/footer.css');
-        @import url('css/media-header.css');
-        @import url('css/media-footer.css');
-        /* font-face START ///////////////////////////////////////////////////////////////////////////////////////// */
-        /* @font-face {
+/* CSS */
+
+@import url('css/fonts.css');
+@import url('css/header.css');
+@import url('css/main-page.css');
+@import url('css/crumbs.css');
+@import url('css/discription-title-text.css');
+@import url('css/slider.css');
+@import url('css/handbook-section.css');
+@import url('css/catalog-section.css');
+@import url('css/species-section.css');
+@import url('css/list-pdf-section.css');
+@import url('css/helpful-section.css');
+@import url('css/footer.css');
+
+/* CSS media */
+
+@import url('css/media-header.css');
+@import url('css/media-crumbs.css');
+@import url('css/media-discription-title-text.css');
+@import url('css/media-slider.css');
+@import url('css/media-handbook-section.css');
+@import url('css/media-catalog-section.css');
+@import url('css/media-species-section.css');
+@import url('css/media-list-pdf-section.css');
+@import url('css/media-helpful-section.css');
+@import url('css/media-footer.css');
+
+/* font-face START ///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @font-face {
             font-family: 'Roboto';
             font-style: italic;
             font-weight: 100;
@@ -243,9 +268,15 @@
             font-display: swap;
             src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_epG7g4.ttf) format('truetype');
         } */
-        /* font-face END //////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* header START ///////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* * {
+
+
+/* font-face END //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* header START ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* * {
             padding: 0;
             margin: 0;
             text-decoration: none;
@@ -908,696 +939,742 @@
             background: #45698b;
             position: absolute;
         } */
-        /* header END ///////////////////////////////////////////////////////////////////////////////////////////// */
-        /* ========================================== MAIN START ==================================================== */
-        
-        body #main {
-            max-width: 1260px;
-            width: 100%;
-            min-height: 100px;
-            /* background-color: cadetblue; */
-        }
-        /* /////////////////////////////////////////////////////   BLOCK CRUMBS START  ///////////////////////////////////////////////////// */
-        
-        body #main .crumbs-section {
-            display: flex;
-            align-items: center;
-            min-height: 25px;
-            max-width: 1260px;
-            padding: 15px 40px 15px 40px;
-        }
-        
-        body #main .crumbs-section .crumbs-text li {
-            line-height: 25px;
-            height: 100%;
-            list-style: none;
-            float: left;
-            min-width: 1px;
-        }
-        
-        body #main .crumbs-section .crumbs-text li a {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            color: #222222;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-        
-        body #main .crumbs-section .crumbs-text li a:hover {
-            font-weight: 400;
-            color: #4f97db;
-        }
-        
-        body #main .crumbs-section .crumbs-text li .fas {
-            padding: 0px 5px;
-            font-size: 15px;
-            color: #4f97db;
-        }
-        /* /////////////////////////////////////////////////////   BLOCK CRUMBS END  ///////////////////////////////////////////////////// */
-        /* /////////////////////////////  BLOCK DESCRIPTION START  /////////////////////////////// */
-        
-        body #main .discription-section {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 200px;
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        body #main .discription-section .dsn-line {
-            height: 3px;
-            width: 90%;
-            background: #dcdde1;
-            margin: 0px 0px 30px 0px;
-        }
-        
-        body #main .discription-section .dsn-title {
-            color: #222222;
-            font-size: 34px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            word-spacing: 10px;
-            text-align: center;
-            padding-top: 0px;
-            border-bottom: 3px solid #45698b;
-            position: relative;
-        }
-        
-        body #main .discription-section .dsn-title::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 3px solid #ffd000;
-            position: absolute;
-        }
-        
-        body #main .discription-section .dsn-text {
-            color: #222222;
-            text-indent: 30px;
-            padding: 20px 40px 20px 40px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            margin: 0px 0px -15px 0px;
-            padding-bottom: 40px;
-            text-align: justify;
-        }
-        /* /////////////////////////////  BLOCK DESCRIPTION END  /////////////////////////////// */
-        /* /////////////////////////////  BLOCK DESCRIPTION-HELPFUL START  /////////////////////////////// */
-        
-        body #main .discription-helpful-section {
-            padding: 0;
-            margin: 0;
-            margin-top: -10px;
-            display: flex;
-            flex-direction: column;
-            min-height: 50px;
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-        
-        body #main .discription-helpful-section .discription-helpful-line {
-            height: 3px;
-            width: 90%;
-            background: #dcdde1;
-            margin: 0px 0px 30px 0px;
-        }
-        
-        body #main .discription-helpful-section .discription-helpful-title {
-            color: #222222;
-            font-size: 26px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            /* letter-spacing: 5px; */
-            /* word-spacing: 10px; */
-            text-align: center;
-            padding-top: 0px;
-            border-bottom: 3px solid #45698b;
-            position: relative;
-        }
-        
-        body #main .discription-helpful-section .discription-helpful-title::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 3px solid #ffd000;
-            position: absolute;
-        }
-        
-        body #main .discription-helpful-subsection {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 50px;
-            width: 100%;
-            max-width: 1260px;
-            /* align-items: center;
-            justify-content: center; */
-            /* background-color: aqua; */
-            margin-bottom: 30px;
-            padding: 0px 10px 0px 10px;
-        }
-        
-        body #main .discription-helpful-subsection .discription-helpful-subtitle {
-            color: #222222;
-            font-size: 22px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            /* letter-spacing: 5px; */
-            /* word-spacing: 10px; */
-            text-align: center;
-            margin-bottom: 20px;
-            /* padding-top: 20px; */
-            /* border-bottom: 3px solid #45698b;
-            position: relative; */
-        }
-        /* body #main .discription-helpful-subsection .dsn-hf-subtitle {
-            font-weight: 500;
-        } */
-        
-        body #main .discription-helpful-subsection .discription-helpful-subtext {
-            color: #222222;
-            text-indent: 30px;
-            padding: 0px 0px -10px 0px;
-            /* background-color: aqua; */
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            margin: 0px 0px 0px 0px;
-            /* padding-bottom: -20px; */
-            text-align: justify;
-        }
-        
-        body #main .discription-helpful-subsection .discription-helpful-subtext span {
-            font-size: 12px;
-            font-weight: 600;
-        }
-        /* /////////////////////////////  BLOCK DESCRIPTION-HELPFUL END  /////////////////////////////// */
-        /* ////////////////////////////////////////////////////  BLOCK SLIDER START  ////////////////////////////////////////////////////// */
-        
-        body #main .slider-section {
-            position: relative;
-            width: 350px;
-            margin: 120px auto;
-            perspective: 1000px;
-            padding-top: 120px;
-            /* background-color: blueviolet; */
-        }
-        
-        body #main .slider-section .rotator {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0px;
-            margin: auto;
-            width: 55%;
-            height: 150px;
-            transform-style: preserve-3d;
-            animation: roter 25s linear infinite;
-            /* background-color: rgb(158, 120, 194); */
-        }
-        
-        @keyframes roter {
-            from {
-                transform: rotateY(0deg);
-            }
-            to {
-                transform: rotateY(360deg);
-            }
-        }
-        
-        body #main .slider-section .rotator:hover {
-            animation-play-state: paused;
-        }
-        
-        body #main .slider-section .rotator .items {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            border: 1px solid #9e9e9e;
-            box-shadow: 0px 0px 2px 3px #f3f3f3;
-        }
-        
-        body #main .slider-section .rotator .items img {
-            height: 100%;
-            width: 100%;
-            transition: all 3s ease;
-            /* transition: transform 1s; */
-        }
-        
-        body #main .slider-section .rotator .items img:hover {
-            transform: scale(1.6);
-            transition: all 1s ease;
-        }
-        /* body #main .page-general .slider .rotator .items .block-text-slaider {
-    height: 20%;
+
+
+/* header END ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ========================================== MAIN START ==================================================== */
+
+
+/* body #main {
+    max-width: 1260px;
     width: 100%;
+    min-height: 100px;
+} */
+
+
+/* /////////////////////////////////////////////////////   BLOCK CRUMBS START  ///////////////////////////////////////////////////// */
+
+
+/* body #main .crumbs-section {
+    display: flex;
+    align-items: center;
+    min-height: 25px;
+    max-width: 1260px;
+    padding: 15px 40px 15px 40px;
+}
+
+body #main .crumbs-section .crumbs-text li {
+    line-height: 25px;
+    height: 100%;
+    list-style: none;
+    float: left;
+    min-width: 1px;
+}
+
+body #main .crumbs-section .crumbs-text li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    color: #222222;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+body #main .crumbs-section .crumbs-text li a:hover {
+    font-weight: 400;
+    color: #4f97db;
+}
+
+body #main .crumbs-section .crumbs-text li .fas {
+    padding: 0px 5px;
+    font-size: 15px;
+    color: #4f97db;
+} */
+
+
+/* /////////////////////////////////////////////////////   BLOCK CRUMBS END  ///////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////  BLOCK DESCRIPTION START  //////////////////////////////////////////// */
+
+
+/* /////////////////////////////  ЗАГОЛОВКИ С ФОНОМ И  ТЕКСТОМ  НА СТРАЦИЦАХ ++ 11-09-2022 /////////////////////////////// */
+
+
+/* body #main .discription-section {
+    padding: 0;
+    margin: 0;
+}
+
+body #main .discription-section .dsn-fon-img {
+    padding: 0;
+    margin: 0;
+    padding: 30px 0px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    width: 100%;
+    max-width: 1260px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/grg.jpg);
+} */
+
+
+/* ///  START  ///заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р с подчеркиванием  ////// */
+
+
+/* body #main .discription-section .dsn-fon-img .title-line-h1h2 {
+    color: #222222;
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    padding-top: 0px;
+    border-bottom: 3px solid #45698b;
+    position: relative;
+}
+
+body #main .discription-section .dsn-fon-img .title-line-h1h2::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 3px solid #ffd000;
+    position: absolute;
+} */
+
+
+/* ///  END  ///   заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р с подчеркиванием   ////// */
+
+
+/* ///  START  ///  заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р  с тенью  /////// */
+
+
+/* body #main .discription-section .dsn-fon-img .title-shadow-h1h2 {
+    color: #31587d;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+body #main .discription-section .dsn-fon-img .text {
+    color: #222222;
+    text-indent: 30px;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    margin: 0px 0px -15px 0px;
+    text-align: justify;
+} */
+
+
+/* ///  END  ///  заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р  с тенью  /////// */
+
+
+/* /////////////////////////////  BLOCK DESCRIPTION END  /////////////////////////////// */
+
+
+/* /////////////////////////////  BLOCK DESCRIPTION-HELPFUL START  ++++++ 11-09-2022/////////////////////////////// */
+
+
+/* body #main .discription-helpful-section {
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 100%;
+    max-width: 1260px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+body #main .discription-helpful-section .discription-helpful-line {
+    height: 3px;
+    width: 90%;
+    background: #dcdde1;
+    margin: 0px 0px 30px 0px;
+}
+
+body #main .discription-helpful-section .discription-helpful-title {
+    color: #222222;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0px;
+    border-bottom: 3px solid #45698b;
+    position: relative;
+}
+
+body #main .discription-helpful-section .discription-helpful-title::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 3px solid #ffd000;
+    position: absolute;
+}
+
+body #main .discription-helpful-subsection {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 100%;
+    max-width: 1260px;
+    margin-bottom: 30px;
+    padding: 0px 10px 0px 10px;
+}
+
+body #main .discription-helpful-subsection .discription-helpful-subtitle {
+    color: #222222;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body #main .discription-helpful-subsection .discription-helpful-subtext {
+    color: #222222;
+    text-indent: 30px;
+    padding: 0px 0px -10px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    margin: 0px 0px 0px 0px;
+    text-align: justify;
+}
+
+body #main .discription-helpful-subsection .discription-helpful-subtext span {
+    font-size: 12px;
+    font-weight: 600;
+} */
+
+
+/* /////////////////////////////  BLOCK DESCRIPTION-HELPFUL END  /////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////  BLOCK SLIDER START  ////////////////////////////////////////////////////// */
+
+
+/* body #main .slider-section {
+    position: relative;
+    width: 350px;
+    margin: 120px auto;
+    perspective: 1000px;
+    padding-top: 120px;
+    
+}
+
+body #main .slider-section .rotator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    margin: auto;
+    width: 55%;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: roter 25s linear infinite;
+    
+}
+
+@keyframes roter {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+body #main .slider-section .rotator:hover {
+    animation-play-state: paused;
+}
+
+body #main .slider-section .rotator .items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #9e9e9e;
+    box-shadow: 0px 0px 2px 3px #f3f3f3;
+}
+
+body #main .slider-section .rotator .items img {
+    height: 100%;
+    width: 100%;
+    transition: all 3s ease;
+   
+}
+
+body #main .slider-section .rotator .items img:hover {
+    transform: scale(1.6);
+    transition: all 1s ease;
+}
+
+
+
+
+body #main .slider-section .rotator .items .text-slaider {
+    position: absolute;
+    margin-top: -22px;
+    left: 0;
+    width: 100%;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #585858;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body #main .slider-section .rotator .items:first-child {
+    transform: rotateY(calc(40deg * 1)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(2) {
+    transform: rotateY(calc(40deg * 2)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(3) {
+    transform: rotateY(calc(40deg * 3)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(4) {
+    transform: rotateY(calc(40deg * 4)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(5) {
+    transform: rotateY(calc(40deg * 5)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(6) {
+    transform: rotateY(calc(40deg * 6)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(7) {
+    transform: rotateY(calc(40deg * 7)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(8) {
+    transform: rotateY(calc(40deg * 8)) translateZ(300px);
+}
+
+body #main .slider-section .rotator .items:nth-child(9) {
+    transform: rotateY(calc(40deg * 9)) translateZ(300px);
+} */
+
+
+/* /////////////////////////////  BLOCK SLIDER END  /////////////////////////////// */
+
+
+/* /////////////////////////////  BLOCK CATALOGS START  /////////////////////////////// */
+
+
+/* body #main .catalog-section {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 740px;
+    width: 100%;
+    max-width: 1260px;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body #main .catalog-section a {
+    text-decoration: none;
+}
+
+body #main .catalog-section a .catalog {
+    padding: 0;
+    margin: 0;
+    height: 324px;
+    width: 190px;
+    margin: 20px 15px 25px 15px;
+    box-shadow: 7px 7px #dddddd;
+    transition: linear 0.5s;
+}
+
+body #main .catalog-section a .catalog .catalog-block-img {
+ 
+    height: 280px;
+    width: 190px;
+    display: inline-block;
+    overflow: hidden;
+    background: red;
+}
+
+body #main .catalog-section a .catalog .catalog-block-img .catalog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: linear 0.5s;
+}
+
+body #main .catalog-section a .catalog .catalog-block-text {
+   
+    height: 44px;
+    line-height: 20px;
+    width: 190px;
     background-image: url("images/fon_parts_three.jpg");
+    background-size: cover;
+    padding: 2px 0px;
+    margin-top: -4px;
+  
+    transition: linear 0.5s;
+}
+
+body #main .catalog-section a .catalog .catalog-block-text .catalog-text {
+    text-align: center;
+    color: #f5f6fa;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    transition: linear 0.5s;
+}
+
+body #main .catalog-section a .catalog:hover {
+    box-shadow: 1px 1px #c7c7c7;
+    transition: linear 0.5s;
+}
+
+body #main .catalog-section a .catalog:hover .catalog-block-text .catalog-text {
+    color: #ffd000;
+    transition: linear 0.5s;
+}
+
+body #main .catalog-section a .catalog:hover .catalog-block-img .catalog-img {
+    transform: scale(1.07);
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: linear 0.5s;
 } */
-        
-        body #main .slider-section .rotator .items .text-slaider {
-            position: absolute;
-            margin-top: -22px;
-            left: 0;
-            width: 100%;
-            font-size: 11px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            color: #585858;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        
-        body #main .slider-section .rotator .items:first-child {
-            transform: rotateY(calc(40deg * 1)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(2) {
-            transform: rotateY(calc(40deg * 2)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(3) {
-            transform: rotateY(calc(40deg * 3)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(4) {
-            transform: rotateY(calc(40deg * 4)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(5) {
-            transform: rotateY(calc(40deg * 5)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(6) {
-            transform: rotateY(calc(40deg * 6)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(7) {
-            transform: rotateY(calc(40deg * 7)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(8) {
-            transform: rotateY(calc(40deg * 8)) translateZ(300px);
-        }
-        
-        body #main .slider-section .rotator .items:nth-child(9) {
-            transform: rotateY(calc(40deg * 9)) translateZ(300px);
-        }
-        /* /////////////////////////////  BLOCK SLIDER END  /////////////////////////////// */
-        /* /////////////////////////////  BLOCK CATALOGS START  /////////////////////////////// */
-        
-        body #main .catalog-section {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            height: 740px;
-            width: 100%;
-            max-width: 1260px;
-            justify-content: space-around;
-            background-repeat: no-repeat;
-            background-position: 0px 0px;
-            background-size: cover;
-            overflow: hidden;
-        }
-        
-        body #main .catalog-section a {
-            text-decoration: none;
-        }
-        
-        body #main .catalog-section a .catalog {
-            padding: 0;
-            margin: 0;
-            height: 324px;
-            width: 195px;
-            margin: 20px 15px 25px 15px;
-            box-shadow: 7px 7px #dddddd;
-            transition: linear 0.5s;
-        }
-        
-        body #main .catalog-section a .catalog .catalog-block-img {
-            height: 295px;
-            width: 195px;
-            display: inline-block;
-            overflow: hidden;
-        }
-        
-        body #main .catalog-section a .catalog .catalog-block-img .catalog-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-            -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-            filter: gray;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        
-        body #main .catalog-section a .catalog .catalog-block-text {
-            height: 29px;
-            width: 195px;
-            background-image: url("images/fon_parts_three.jpg");
-            background-size: cover;
-            margin-top: -4px;
-            line-height: 29px;
-            transition: linear 0.5s;
-        }
-        
-        body #main .catalog-section a .catalog .catalog-block-text .catalog-text {
-            text-align: center;
-            color: #f5f6fa;
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            transition: linear 0.5s;
-        }
-        
-        body #main .catalog-section a .catalog:hover {
-            box-shadow: 1px 1px #c7c7c7;
-            transition: linear 0.5s;
-        }
-        
-        body #main .catalog-section a .catalog:hover .catalog-block-text .catalog-text {
-            color: #ffd000;
-            transition: linear 0.5s;
-        }
-        
-        body #main .catalog-section a .catalog:hover .catalog-block-img .catalog-img {
-            transform: scale(1.07);
-            -webkit-filter: none;
-            -moz-filter: none;
-            -ms-filter: none;
-            -o-filter: none;
-            filter: none;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        /* /////////////////////////////  BLOCK CATALOGS END  /////////////////////////////// */
-        /* /////////////////////////////  BLOCK HANDBOOK  START  /////////////////////////////// */
-        
-        body #main .handbook-section {
-            width: 100%;
-            padding: 30px 0px 20px 0px;
-            min-height: 1px;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-description {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 1px;
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
-            color: #222222;
-            text-transform: uppercase;
-            font-size: 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            letter-spacing: 0px;
-            word-spacing: 5px;
-            text-align: center;
-            padding-top: 0px;
-            border-bottom: 2px solid #45698b;
-            position: relative;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title:before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 2px solid #ffd000;
-            position: absolute;
-            left: 0;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-block {
-            width: 100%;
-            min-height: 1px;
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
-            background-image: url("images/fon_parts_three.jpg");
-            background-size: cover;
-            background-size: 300px 70px;
-            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
-            border-radius: 4px;
-            border-style: solid;
-            border-width: 1px;
-            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-            text-decoration: none;
-            display: block;
-            color: #f5f6fa;
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 0px;
-            width: 300px;
-            line-height: 20px;
-            margin: 20px auto;
-            padding: 12px 12px;
-            text-align: center;
-            position: relative;
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-            -webkit-transition-property: -webkit-transform;
-            transition-property: transform;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-transform: translateZ(0);
-            -ms-transform: translateZ(0);
-            transform: translateZ(0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button:before {
-            pointer-events: none;
-            position: absolute;
-            z-index: -1;
-            content: '';
-            top: 100%;
-            left: 5%;
-            height: 10px;
-            width: 90%;
-            opacity: 0;
-            background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-            -webkit-transition-property: -webkit-transform, opacity;
-            transition-property: transform, opacity;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button:hover {
-            -webkit-transform: translateY(-5px);
-            -ms-transform: translateY(-5px);
-            transform: translateY(-5px);
-            color: #ffd000;
-        }
-        
-        body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button:hover:before {
-            opacity: 1;
-            -webkit-transform: translateY(5px);
-            -ms-transform: translateY(5px);
-            transform: translateY(5px);
-        }
-        /* /////////////////////////////  BLOCK HANDBOOK  END  /////////////////////////////// */
-        /* ///////////////////////////////  BLOCK SPECIES START  /////////////////////////////  */
-        
-        body #main .species-section {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            min-height: 260px;
-            width: 100%;
-            max-width: 1260px;
-            justify-content: space-around;
-            overflow: hidden;
-        }
-        
-        body #main .species-section .species-wrapper {
-            min-height: 415px;
-            max-width: 1220px;
-            padding: 20px 10px;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            overflow: hidden;
-        }
-        
-        body #main .species-section .species-wrapper a {
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        
-        body #main .species-section .species-wrapper a .species {
-            margin: 6px 15px 21px 15px;
-            height: 77px;
-            width: 260px;
-            background-image: url("images/fon_parts_one.jpg");
-            background-size: cover;
-            background-size: 260px 130px;
-            text-align: center;
-            box-shadow: 7px 7px #dddddd;
-            overflow: hidden;
-            transition: linear 0.5s;
-            padding: 4px;
-            display: flex;
-            overflow: visible;
-        }
-        
-        body #main .species-section .species-wrapper a .species .species-img {
-            /* width: 69px;
-    height: 69px; */
-            width: 92px;
-            height: 92px;
-            background-image: url("images/5unnamed.png");
-            opacity: 1;
-            margin-top: -12px;
-            /* border: 2px solid #bbbbbb; */
-            transition: linear 0.3s;
-            /* background-size: cover; */
-            background-size: 92px 92px;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-            -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-            filter: gray;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        
-        body #main .species-section .species-wrapper a .species .species-name {
-            width: 160px;
-            height: 69px;
-            padding-top: 11px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        body #main .species-section .species-wrapper a .species .species-name .species-text {
-            color: #f5f6fa;
-            font-size: 17px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            word-spacing: 5px;
-            height: 23px;
-            /* width: 100%; */
-            line-height: 23px;
-            transition: linear 0.5s;
-            transform: scale(1, 1.2);
-            letter-spacing: 0px;
-        }
-        /* body #main .species-section .species-wrapper a .species .species-name .species-text-1 {
-    font-size: 10px;
+
+
+/* /////////////////////////////  BLOCK CATALOGS END  /////////////////////////////// */
+
+
+/* ///  START  ///  BLOCK HANDBOOK  /////////     КНОПКА прыжок и тень   ++ 11-09-2022   ////////// */
+
+
+/* body #main .handbook-section {
+    width: 100%;
+    padding: 30px 0px 20px 0px;
+    min-height: 1px;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-description {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 1px;
+    width: 100%;
+    max-width: 1260px;
+    align-items: center;
+    justify-content: center;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0px;
+    word-spacing: 5px;
+    text-align: center;
+    padding-top: 0px;
+    border-bottom: 2px solid #45698b;
+    position: relative;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid #ffd000;
+    position: absolute;
+    left: 0;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-block {
+    width: 100%;
+    min-height: 1px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
+    background-image: url("images/fon_parts_three.jpg");
+    background-size: cover;
+    background-size: 300px 70px;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    display: block;
+    color: #f5f6fa;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    width: 300px;
+    line-height: 20px;
+    margin: 20px auto;
+    padding: 12px 12px;
+    text-align: center;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #ffd000;
+}
+
+body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button:hover:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
 } */
-        
-        body #main .species-section .species-wrapper a .species:hover {
-            background-size: 300px 130px;
-            box-shadow: 1px 1px #c7c7c7;
-            transition: linear 0.5s;
-        }
-        
-        body #main .species-section .species-wrapper a .species:hover .species-img {
-            /* transform: scale(1.07); */
-            /* width: 109px;
+
+
+/* ///  END  ///  BLOCK HANDBOOK  /////////     КНОПКА прыжок и тень   ++ 11-09-2022   ////////// */
+
+
+/* ///////////////////////////////  BLOCK SPECIES START  /////////////////////////////  */
+
+
+/* body #main .species-section {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 260px;
+    width: 100%;
+    max-width: 1260px;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+body #main .species-section .species-wrapper {
+    min-height: 415px;
+    max-width: 1220px;
+    padding: 20px 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+body #main .species-section .species-wrapper a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body #main .species-section .species-wrapper a .species {
+    margin: 6px 15px 21px 15px;
+    height: 77px;
+    width: 260px;
+    background-image: url("images/fon_parts_one.jpg");
+    background-size: cover;
+    background-size: 260px 130px;
+    text-align: center;
+    box-shadow: 7px 7px #dddddd;
+    overflow: hidden;
+    transition: linear 0.5s;
+    padding: 4px;
+    display: flex;
+    overflow: visible;
+}
+
+body #main .species-section .species-wrapper a .species .species-img {
+    width: 92px;
+    height: 92px;
+    background-image: url("images/5unnamed.png");
+    opacity: 1;
+    margin-top: -12px;
+    transition: linear 0.3s;
+    background-size: 92px 92px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: linear 0.5s;
+}
+
+body #main .species-section .species-wrapper a .species .species-name {
+    width: 160px;
+    height: 69px;
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+}
+
+body #main .species-section .species-wrapper a .species .species-name .species-text {
+    color: #f5f6fa;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    height: 23px;
+    line-height: 23px;
+    transition: linear 0.5s;
+    transform: scale(1, 1.2);
+    letter-spacing: 0px;
+}
+
+body #main .species-section .species-wrapper a .species:hover {
+    background-size: 300px 130px;
+    box-shadow: 1px 1px #c7c7c7;
+    transition: linear 0.5s;
+}
+
+body #main .species-section .species-wrapper a .species:hover .species-img {
+    
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: linear 0.5s;
+}
+
+body #main .species-section .species-wrapper a .species:hover .species-img-one {
+  
+    width: 109px;
     height: 109px;
     background-size: 109px 109px;
     margin-top: -21px;
     margin-left: -17px;
     z-index: 1000000;
-    border: 2px solid #6897af; */
-            -webkit-filter: none;
-            -moz-filter: none;
-            -ms-filter: none;
-            -o-filter: none;
-            filter: none;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        
-        body #main .species-section .species-wrapper a .species:hover .species-img-one {
-            /* transform: scale(1.07); */
-            width: 109px;
-            height: 109px;
-            background-size: 109px 109px;
-            margin-top: -21px;
-            margin-left: -17px;
-            z-index: 1000000;
-            border: 2px solid #6897af;
-            -webkit-filter: none;
-            -moz-filter: none;
-            -ms-filter: none;
-            -o-filter: none;
-            filter: none;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        
-        body #main .species-section .species-wrapper a .species:hover .species-name .species-text {
-            color: #ffd000;
-            transition: linear 0.5s;
-        }
-        /* /////////////////////////////////  BLOCK SPECIES END  /////////////////////////////  */
-        /* page-general END ################################################################################################## */
-        /* page-catalog START ################################################################################################# */
-        
-        body #main .page-catalog-pdf .content1-description {
+    border: 2px solid #6897af;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: linear 0.5s;
+}
+
+body #main .species-section .species-wrapper a .species:hover .species-name .species-text {
+    color: #ffd000;
+    transition: linear 0.5s;
+} */
+
+
+/* /////////////////////////////////  BLOCK SPECIES END  /////////////////////////////  */
+
+
+/* page-general END ################################################################################################## */
+
+
+/* page-catalog START ################################################################################################# */
+
+
+/* body #main .page-catalog-pdf .content1-description {
             padding: 0;
             margin: 0;
             display: flex;
@@ -1650,9 +1727,10 @@
             margin: 0px 0px -15px 0px;
             padding-bottom: 40px;
             text-align: justify;
-        }
-        
-        body #main .page-catalog-pdf .content2-catalog {
+        } */
+
+
+/* body #main .page-catalog-pdf .content2-catalog {
             padding: 0;
             margin: 0;
             display: flex;
@@ -1750,9 +1828,19 @@
             -o-transition: all 1s;
             transition: all 1s;
             transition: linear 0.5s;
-        }
-        
-        body #main .page-catalog-pdf .content3-list {
+        } */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/* body #main .page-catalog-pdf .content3-list {
             padding: 0;
             margin: 0;
             display: flex;
@@ -1786,545 +1874,212 @@
             height: 100%;
             border-bottom: 1px solid #ffd000;
             position: absolute;
-        }
-        /* ========================================================================= */
-        
-        body #main .page-catalog-pdf .content4-list {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 150px;
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper {
-            height: 40px;
-            width: 95%;
-            margin-top: 3px;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a {
-            text-decoration: none;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section {
-            width: 100%;
-            height: 40px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            text-align: center;
-            padding: 0px 10px;
-            background: #e3e4e8;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-text {
-            min-width: 1px;
-            height: 40px;
-            word-break: break-all;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-text .content4-list-text {
-            color: #45698b;
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: linear 0.3s;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-text .content4-list-text span {
-            display: none;
-            font-size: 17px;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-img {
-            width: 40px;
-            height: 40px;
-            background-image: url(images/40pdf.png);
-            background-size: cover;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section:hover .list-block-img {
-            margin-right: -10px;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section:hover {
-            background: #5b8ab6;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section:hover .list-block-text .content4-list-text {
-            color: #f5f6fa;
-            transition: linear 0.3s;
-        }
-        
-        body #main .page-catalog-pdf .content5-list-section-wrapper .content5-block-overlapping {
-            /* background: #142878; */
-            width: 100%;
-            /* height: 100%; */
-            height: 40px;
-        }
-        /* page-catalog END ################################################################################################# */
-        /* page-parts-list-brand START ###################################################################################### */
-        
-        body #main .page-parts-list-brand {
-            padding: 0;
-            margin: 0;
-        }
-        
-        body #main .page-parts-list-brand .dsn-section {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 200px;
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-            background-image: url(./images/grg.jpg);
-        }
-        /* body #main .page-parts-list-brand .dsn-section .dsn-line {
-            height: 3px;
-            width: 90%;
-            background: #dcdde1;
-            margin: 0px 0px 30px 0px;
         } */
-        
-        body #main .page-parts-list-brand .dsn-section .dsn-title {
-            color: #222222;
-            font-size: 34px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            word-spacing: 10px;
-            text-align: center;
-            padding-top: 0px;
-            border-bottom: 3px solid #45698b;
-            position: relative;
-        }
-        
-        body #main .page-parts-list-brand .dsn-section .dsn-title:before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 3px solid #ffd000;
-            position: absolute;
-        }
-        
-        body #main .page-parts-list-brand .dsn-section .dsn-text {
-            color: #222222;
-            text-indent: 30px;
-            padding: 20px 40px 20px 40px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            margin: 0px 0px -15px 0px;
-            padding-bottom: 40px;
-            text-align: justify;
-        }
-        
-        body #main .page-parts-list-brand .partslist {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            min-height: 260px;
-            width: 100%;
-            max-width: 1260px;
-            justify-content: space-around;
-            overflow: hidden;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper {
-            min-height: 415px;
-            max-width: 1220px;
-            padding: 10px;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            overflow: hidden;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a {
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section {
-            margin: 5px 10px 20px 10px;
-            height: 77px;
-            width: 260px;
-            background-image: url("images/fon_parts_one.jpg");
-            background-size: cover;
-            background-size: 260px 130px;
-            text-align: center;
-            box-shadow: 7px 7px #dddddd;
-            overflow: hidden;
-            transition: linear 0.5s;
-            padding: 4px;
-            display: flex;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .block-img {
-            width: 69px;
-            height: 69px;
-            background-image: url("images/5unnamed.png");
-            opacity: 0.9;
-            background-size: cover;
-            background-size: 69px 69px;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-            -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-            filter: gray;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section {
-            width: 183px;
-            height: 69px;
-            padding-top: 11px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section .partslist-text {
-            color: #f5f6fa;
-            font-size: 17px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            word-spacing: 5px;
-            height: 23px;
-            /* width: 100%; */
-            line-height: 23px;
-            transition: linear 0.5s;
-            transform: scale(1, 1.2);
-            letter-spacing: 0px;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section:hover {
-            background-size: 300px 130px;
-            box-shadow: 1px 1px #c7c7c7;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section:hover .block-img {
-            /* transform: scale(1.07); */
-            -webkit-filter: none;
-            -moz-filter: none;
-            -ms-filter: none;
-            -o-filter: none;
-            filter: none;
-            -webkit-transition: all 1s;
-            -moz-transition: all 1s;
-            -o-transition: all 1s;
-            transition: all 1s;
-            transition: linear 0.5s;
-        }
-        
-        body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section:hover .name-section .partslist-text {
-            color: #ffd000;
-            transition: linear 0.5s;
-        }
-        /* page-parts-list-brand END ######################################################################################## */
-        /* page-parts-list-pdf START ################################################################################### */
-        
-        body #main .page-parts-list-pdf {
-            padding: 0;
-            margin: 0;
-        }
-        
-        body #main .page-parts-list-pdf .content1-description {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100px;
-            /* background-color: red; */
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-            background-image: url(./images/grg.jpg);
-        }
-        
-        body #main .page-parts-list-pdf .content1-description .content1-block-linear {
-            height: 3px;
-            width: 90%;
-            background: #dcdde1;
-            margin: 0px 0px 50px 0px;
-        }
-        
-        body #main .page-parts-list-pdf .content1-description .content1-description-title {
-            color: #31587d;
-            font-size: 40px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 1000;
-            text-transform: uppercase;
-            letter-spacing: 15px;
-            word-spacing: 10px;
-            text-align: center;
-            padding-top: 30px;
-            text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
-            /* border-bottom: 3px solid #45698b;
-            position: relative; */
-        }
-        /* body #main .page-parts-list-pdf .content1-description .content1-description-title::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 3px solid #ffd000;
-            position: absolute;
-        } */
-        
-        body #main .page-parts-list-pdf .content1-description .content2-list-title {
-            color: #31587d;
-            font-size: 40px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0px;
-            word-spacing: 10px;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 40px;
-            text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
-            /* border-bottom: 1px solid #45698b;
-            position: relative; */
-        }
-        /* body #main .page-parts-list-pdf .content1-description .content2-list-title::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 1px solid #ffd000;
-            position: absolute;
-        } */
-        /* body #main .page-parts-list-pdf .content1-description .content1-description-text {
-            color: #222222;
-            text-indent: 30px;
-            padding: 20px 40px 20px 40px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            margin: 0px 0px -15px 0px;
-            padding-bottom: 40px;
-            text-align: justify;
-        } */
-        
-        body #main .page-parts-list-pdf .content2-list {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 150px;
-            width: 100%;
-            max-width: 1260px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        /* body #main .page-parts-list-pdf .content2-list .content2-list-title {
-            color: #222222;
-            font-size: 30px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0px;
-            word-spacing: 10px;
-            text-align: center;
-            margin-top: -10px;
-            border-bottom: 1px solid #45698b;
-            position: relative;
-            margin-bottom: 40px;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-title::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 1px solid #ffd000;
-            position: absolute;
-        } */
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper {
-            height: 40px;
-            width: 95%;
-            margin-top: 3px;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a {
-            text-decoration: none;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section {
-            width: 100%;
-            height: 40px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            text-align: center;
-            padding: 0px 10px;
-            background: #dcdde1;
-            /* background-image: url(./images/grg.jpg); */
-            transition: linear 0.2s;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
-            min-width: 1px;
-            height: 40px;
-            word-break: break-all;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
-            color: #45698b;
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 17px;
-            letter-spacing: 0px;
-            word-spacing: 3px;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: linear 0.2s;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
-            display: none;
-            font-size: 17px;
-            text-transform: uppercase;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
-            width: 40px;
-            height: 40px;
-            background-image: url(images/40pdf.png);
-            background-size: cover;
-            transition: linear 0.2s;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section:hover .list-block-img {
-            margin-right: -10px;
-            transition: linear 0.2s;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section:hover {
-            background: #5b8ab6;
-            transition: linear 0.2s;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section:hover .list-block-text .content2-list-text {
-            color: #f5f6fa;
-            transition: linear 0.2s;
-        }
-        
-        body #main .page-parts-list-pdf .content2-list-section-wrapper .content2-block-overlapping {
-            /* background: #f5f6fa; */
-            background-color: white;
-            width: 100%;
-            height: 30px;
-        }
-        /* page-parts-list-pdf END ###################################################################################### */
-        /* helpful START ///////////////////////////////////////////////////////////////////////////////////////////// */
-        
-        body #main .helpful {
-            padding: 0;
-            margin: 0;
-        }
-        
-        body #main .helpful .helpful-section {
-            padding: 10px 10px 40px 10px;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            min-height: 120px;
-            width: 100%;
-            max-width: 1260px;
-            justify-content: space-around;
-            align-items: center;
-            /* background-color: rgb(149, 206, 149); */
-        }
-        
-        body #main .helpful .helpful-section .helpful-section-menu {
-            /* height: 100px; */
-            /* max-width: 185px; */
-            margin: 10px 5px 0px 5px;
-            min-height: 120px;
-            width: 360px;
-            padding: 2px;
-            /* border: 1px solid gray; */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            /* box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6), inset 0 0 7px #96b5cc; */
-            box-sizing: content-box;
-            transition: linear 0.5s;
-            align-self: flex-start;
-        }
-        /* body #main .helpful .helpful-section .helpful-section-menu a {
-            text-decoration: none;
-        } */
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block-img {
-            height: 200px;
-            width: 360px;
-            /* display: inline-block;*/
-            /* overflow: hidden; */
-            /* display: flex;
+
+
+/* ========================================================================= */
+
+
+/* body #main .page-catalog-pdf .content4-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    width: 100%;
+    max-width: 1260px;
+    align-items: center;
     justify-content: center;
-    align-items: center; */
-            /* height: 200px;
-            width: 300px; */
-            /* border-radius: 50%; */
-            text-align: center;
-            vertical-align: middle;
-            overflow: hidden;
-            /* background: rgb(0, 255, 76); */
-        }
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block-img .helpful-menu-img {
-            /* height: 100%;
-    width: auto; */
-            /* background: url("images/service_1.png"); */
-            /* width: 100%;
-            height: 100%; */
-            height: 220px;
-            width: 360px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            /* object-fit: contain; */
-            /* padding-top: 4px; */
-            /* transform: scaleX(1);
-    display: block; */
-            /* -webkit-filter: grayscale(100%);
+    margin-top: 30px;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper {
+    height: 40px;
+    width: 95%;
+    margin-top: 3px;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a {
+    text-decoration: none;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 10px;
+    background: #e3e4e8;
+    transition: linear 0.5s;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-text {
+    min-width: 1px;
+    height: 40px;
+    word-break: break-all;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-text .content4-list-text {
+    color: #45698b;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: linear 0.3s;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-text .content4-list-text span {
+    display: none;
+    font-size: 17px;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section .list-block-img {
+    width: 40px;
+    height: 40px;
+    background-image: url(images/40pdf.png);
+    background-size: cover;
+    transition: linear 0.5s;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section:hover .list-block-img {
+    margin-right: -10px;
+    transition: linear 0.5s;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section:hover {
+    background: #5b8ab6;
+    transition: linear 0.5s;
+}
+
+body #main .page-catalog-pdf .content4-list .content4-list-section-wrapper a .content4-list-section:hover .list-block-text .content4-list-text {
+    color: #f5f6fa;
+    transition: linear 0.3s;
+}
+
+body #main .page-catalog-pdf .content-indent-wrapper .indent-block {
+    width: 100%;
+    height: 40px;
+} */
+
+
+/* page-catalog END ################################################################################################# */
+
+
+/* page-parts-list-brand START ###################################################################################### */
+
+
+/* body #main .page-parts-list-brand {
+    padding: 0;
+    margin: 0;
+}
+
+body #main .page-parts-list-brand .dsn-section {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+    max-width: 1260px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/grg.jpg);
+}
+
+body #main .page-parts-list-brand .dsn-section .dsn-title {
+    color: #222222;
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    padding-top: 0px;
+    border-bottom: 3px solid #45698b;
+    position: relative;
+}
+
+body #main .page-parts-list-brand .dsn-section .dsn-title:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 3px solid #ffd000;
+    position: absolute;
+}
+
+body #main .page-parts-list-brand .dsn-section .dsn-text {
+    color: #222222;
+    text-indent: 30px;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    margin: 0px 0px -15px 0px;
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+body #main .page-parts-list-brand .partslist {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 260px;
+    width: 100%;
+    max-width: 1260px;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper {
+    min-height: 415px;
+    max-width: 1220px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section {
+    margin: 5px 10px 20px 10px;
+    height: 77px;
+    width: 260px;
+    background-image: url("images/fon_parts_one.jpg");
+    background-size: cover;
+    background-size: 260px 130px;
+    text-align: center;
+    box-shadow: 7px 7px #dddddd;
+    overflow: hidden;
+    transition: linear 0.5s;
+    padding: 4px;
+    display: flex;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .block-img {
+    width: 69px;
+    height: 69px;
+    background-image: url("images/5unnamed.png");
+    opacity: 0.9;
+    background-size: cover;
+    background-size: 69px 69px;
+    -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
@@ -2333,99 +2088,277 @@
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
-    transition: all 0.5s;
-    transition: linear 0.5s; */
-        }
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block .menu-text-one {
-            color: #222222;
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            letter-spacing: 0px;
-            word-spacing: 0px;
-            text-align: center;
-            /* padding: 10px; */
-            transition: linear 0.5s;
-            position: relative;
-            border-bottom: 2px solid #45698b;
-            margin: 15px 0px;
-            padding-bottom: 5px;
-        }
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block .menu-text-one::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            border-bottom: 2px solid #ffd000;
-            position: absolute;
-            left: 0;
-        }
-        /* body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul {
-            background-color: gray;
-        } */
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li {
-            /* width: 100%; */
-            margin-bottom: 2px;
-            /* padding-left: 5px; */
-            /* background-color: white; */
-        }
-        /* body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li span {
-            color: #45698b;
-            font-size: 16px;
-            position: absolute;
-        } */
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li a {
-            text-align: center;
-            color: #222222;
-            /* text-transform: uppercase; */
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-            letter-spacing: 0px;
-            word-spacing: 0px;
-            text-align: left;
-            transition: linear 0.5s;
-        }
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li a span {
-            color: #45698b;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -2px;
-        }
-        
-        body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li a:hover span {
-            font-size: 24px;
-            color: rgb(220, 190, 20);
-            margin-top: -5px;
-        }
-        /* body #main .helpful .helpful-section .helpful-section-menu:hover {
-    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.3), -23px 0 20px -28px rgba(0, 0, 0, 0.6), 23px 0 20px -28px rgba(0, 0, 0, 0.6), inset 0px 0px 140px #003c6d;
-    box-sizing: content-box;
+    transition: all 1s;
     transition: linear 0.5s;
-} */
-        /* body #main .helpful .helpful-section .helpful-section-menu:hover a .menu-block-text .helpful-menu-text {
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section {
+    width: 183px;
+    height: 69px;
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section .partslist-text {
     color: #f5f6fa;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    height: 23px;
+    line-height: 23px;
     transition: linear 0.5s;
-} */
-        /* body #main .helpful .helpful-section .helpful-section-menu:hover a .menu-block-img .helpful-menu-img {
-    transform: scale(1.08);
-    transition: all 0.5s;
+    transform: scale(1, 1.2);
+    letter-spacing: 0px;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section:hover {
+    background-size: 300px 130px;
+    box-shadow: 1px 1px #c7c7c7;
+    transition: linear 0.5s;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section:hover .block-img {
     -webkit-filter: none;
     -moz-filter: none;
     -ms-filter: none;
     -o-filter: none;
     filter: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transition: linear 0.5s;
+}
+
+body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section:hover .name-section .partslist-text {
+    color: #ffd000;
     transition: linear 0.5s;
 } */
-        /* helpful END /////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* ========================================== MAIN END ====================================================== */
-        /* footer START ///////////////////////////////////////////////////////////////////////////////////////////// */
-        /* body .footer {
+
+
+/* page-parts-list-brand END ######################################################################################## */
+
+
+/* page-list-pdf START +++  11-09-2022  ################################################################################### */
+
+
+/* body #main .list-pdf-section {
+    padding: 0;
+    margin: 0;
+}
+
+body #main .list-pdf-section .content2-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    width: 100%;
+    max-width: 1260px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper {
+    height: 40px;
+    width: 95%;
+    margin-top: 3px;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a {
+    text-decoration: none;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 10px;
+    background: #dcdde1;
+    transition: linear 0.2s;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
+    min-width: 1px;
+    height: 40px;
+    word-break: break-all;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
+    color: #45698b;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: linear 0.2s;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
+    display: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
+    width: 40px;
+    height: 40px;
+    background-image: url(images/40pdf.png);
+    background-size: cover;
+    transition: linear 0.2s;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section:hover .list-block-img {
+    margin-right: -10px;
+    transition: linear 0.2s;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section:hover {
+    background: #5b8ab6;
+    transition: linear 0.2s;
+}
+
+body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section:hover .list-block-text .content2-list-text {
+    color: #f5f6fa;
+    transition: linear 0.2s;
+}
+
+body #main .list-pdf-section .content2-list-section-wrapper .content2-block-overlapping {
+    
+    background-color: white;
+    width: 100%;
+    height: 30px;
+} */
+
+
+/* page-list-pdf END       +++  11-09-2022##################################### */
+
+
+/* helpful START ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* body #main .helpful {
+    padding: 0;
+    margin: 0;
+}
+
+body #main .helpful .helpful-section {
+    padding: 10px 10px 40px 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 120px;
+    width: 100%;
+    max-width: 1260px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu {
+    margin: 10px 5px 0px 5px;
+    min-height: 120px;
+    width: 360px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: content-box;
+    transition: linear 0.5s;
+    align-self: flex-start;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block-img {
+    height: 200px;
+    width: 360px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block-img .helpful-menu-img {
+    height: 220px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block .menu-text-one {
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-align: center;
+    transition: linear 0.5s;
+    position: relative;
+    border-bottom: 2px solid #45698b;
+    margin: 15px 0px;
+    padding-bottom: 5px;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block .menu-text-one::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid #ffd000;
+    position: absolute;
+    left: 0;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li {
+    margin-bottom: 2px;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li a {
+    text-align: center;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-align: left;
+    transition: linear 0.5s;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li a span {
+    color: #45698b;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -2px;
+}
+
+body #main .helpful .helpful-section .helpful-section-menu .menu-wrapper .menu-block ul li a:hover span {
+    font-size: 24px;
+    color: rgb(220, 190, 20);
+    margin-top: -5px;
+} */
+
+
+/* helpful END /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ========================================== MAIN END ====================================================== */
+
+
+/* footer START ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* body .footer {
             padding: 0;
             margin: 0;
             min-height: 1px;
@@ -2764,10 +2697,18 @@
         body .footer .author p .author-text-two {
             color: crimson;
         } */
-        /* footer END ///////////////////////////////////////////////////////////////////////////////////////////// */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   MEDIA  START @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-        /* media-header START///////////////////////////////////////////////////////////////////////////////////////////// */
-        /* @media (min-width: 668px) and (max-width: 940px) {
+
+
+/* footer END ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   MEDIA  START @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/* media-header START///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @media (min-width: 668px) and (max-width: 940px) {
             body header .block-header-upper-level {
                 padding: 0px 25px 0px 25px;
             }
@@ -4423,56 +4364,74 @@
                 font-size: 17px;
             }
         } */
-        /* media-header END ///////////////////////////////////////////////////////////////////////////////////////////// */
-        /* ========================================== MEDIA-MAIN START ====================================================== */
-        /* ///////////////////////////////////////////////  MEDIA BLOCK CRUMBS START  ////////////////////////////////////////////// */
-        
-        @media (min-width: 540px) and (max-width: 760px) {
-            body #main .crumbs-section {
-                padding: 15px 30px 15px 30px;
-            }
-            body #main .crumbs-section .crumbs-text li a {
-                font-size: 15px;
-            }
-        }
-        
-        @media all and (max-width: 539px) {
-            body #main .crumbs-section {
-                padding: 15px 30px 15px 30px;
-            }
-            body #main .crumbs-section .crumbs-text li a {
-                font-size: 13px;
-            }
-        }
-        /* ///////////////////////////////////////////////  MEDIA BLOCK CRUMBS END  ////////////////////////////////////////////// */
-        /* media-page-general START /////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* //////////////////////// MEDIA BLOCK DESCRIPTION START ///////////////////////*/
-        
-        @media (min-width: 586px) and (max-width: 760px) {
-            body #main .discription-section .dsn-title {
-                font-size: 30px;
-            }
-            body #main .discription-section .dsn-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 16px;
-                text-align: center;
-            }
-        }
-        
-        @media all and (max-width: 585px) {
-            body #main .discription-section .dsn-title {
-                font-size: 26px;
-            }
-            body #main .discription-section .dsn-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 15px;
-                text-align: center;
-            }
-        }
-        /* //////////////////////////  MEDIA BLOCK DESCRIPTION END  /////////////////////// */
-        /* @media (min-width: 540px) and (max-width: 760px) {
+
+
+/* media-header END ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ========================================== MEDIA-MAIN START ====================================================== */
+
+
+/* ///////////////////////////////////////////////  MEDIA BLOCK CRUMBS START  ////////////////////////////////////////////// */
+
+
+/* @media (min-width: 540px) and (max-width: 760px) {
+    body #main .crumbs-section {
+        padding: 15px 30px 15px 30px;
+    }
+    body #main .crumbs-section .crumbs-text li a {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .crumbs-section {
+        padding: 15px 30px 15px 30px;
+    }
+    body #main .crumbs-section .crumbs-text li a {
+        font-size: 13px;
+    }
+} */
+
+
+/* ///////////////////////////////////////////////  MEDIA BLOCK CRUMBS END  ////////////////////////////////////////////// */
+
+
+/* media-page-general START /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////// MEDIA BLOCK DESCRIPTION START ///////////////////////*/
+
+
+/* @media (min-width: 586px) and (max-width: 760px) {
+    body #main .discription-section .dsn-title {
+        font-size: 30px;
+    }
+    body #main .discription-section .dsn-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 585px) {
+    body #main .discription-section .dsn-title {
+        font-size: 26px;
+    }
+    body #main .discription-section .dsn-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+} */
+
+
+/* //////////////////////////  MEDIA BLOCK DESCRIPTION END  /////////////////////// */
+
+
+/* @media (min-width: 540px) and (max-width: 760px) {
     body #main .page-general .content1-description .content1-description-title {
         font-size: 25px;
     }
@@ -4493,7 +4452,9 @@
         font-size: 15px;
     }
 } */
-        /* @media all and (max-width: 539px) {
+
+
+/* @media all and (max-width: 539px) {
     body #main .page-general .content1-description .content1-description-title {
         font-size: 23px;
     }
@@ -4516,405 +4477,409 @@
         text-align: center;
     }
 } */
-        /* ///////////////////////////////  MEDIA  BLOCK SPECIES START  /////////////////////////////  */
-        
-        @media (min-width: 541px) and (max-width: 760px) {
-            body #main .species-section .species-wrapper a .species {
-                height: 72px;
-                width: 250px;
-                background-size: 250px 125px;
-            }
-            body #main .species-section .species-wrapper a .species .species-img {
-                width: 87px;
-                height: 87px;
-                background-size: 87px 87px;
-            }
-            body #main .species-section .species-wrapper a .species .species-name {
-                width: 155px;
-                height: 64px;
-                padding-top: 9px;
-            }
-            body #main .species-section .species-wrapper a .species .species-name .species-text {
-                height: 22px;
-                line-height: 22px;
-                font-size: 16px;
-            }
-            /*  */
-            body #main .species-section .species-wrapper a .species-one {
-                /* height: 72px;
+
+
+/* ///////////////////////////////  MEDIA  BLOCK SPECIES START  /////////////////////////////  */
+
+
+/* @media (min-width: 541px) and (max-width: 760px) {
+    body #main .species-section .species-wrapper a .species {
+        height: 72px;
         width: 250px;
-        background-size: 250px 125px; */
-                height: 72px;
-                width: 250px;
-                background-size: 250px 125px;
-                overflow: visible;
-                /* box-shadow: none; */
-            }
-            body #main .species-section .species-wrapper a .species-one .species-img-one {
-                /* width: 64px;
+        background-size: 250px 125px;
+    }
+    body #main .species-section .species-wrapper a .species .species-img {
+        width: 87px;
+        height: 87px;
+        background-size: 87px 87px;
+    }
+    body #main .species-section .species-wrapper a .species .species-name {
+        width: 155px;
         height: 64px;
-        background-size: 64px 64px; */
-                width: 87px;
-                height: 87px;
-                background-size: 87px 87px;
-                opacity: 1;
-                margin-top: -12px;
-                border: 2px solid #bbbbbb;
-                transition: linear 0.3s;
-            }
-            body #main .species-section .species-wrapper a .species-one:hover .species-img-one {
-                width: 104px;
-                height: 104px;
-                /* background-image: url("images/unnamed.png"); */
-                background-size: 104px 104px;
-                margin-top: -20px;
-                margin-left: -17px;
-                z-index: 1000000;
-                transition: linear 0.3s;
-                border: 2px solid #6897af;
-            }
-            body #main .species-section .species-wrapper a .species-one .species-name-one {
-                /* width: 178px;
+        padding-top: 9px;
+    }
+    body #main .species-section .species-wrapper a .species .species-name .species-text {
+        height: 22px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+   
+    body #main .species-section .species-wrapper a .species-one {
+        height: 72px;
+        width: 250px;
+        background-size: 250px 125px;
+        overflow: visible;
+    }
+    body #main .species-section .species-wrapper a .species-one .species-img-one {
+        width: 87px;
+        height: 87px;
+        background-size: 87px 87px;
+        opacity: 1;
+        margin-top: -12px;
+        border: 2px solid #bbbbbb;
+        transition: linear 0.3s;
+    }
+    body #main .species-section .species-wrapper a .species-one:hover .species-img-one {
+        width: 104px;
+        height: 104px;
+        background-size: 104px 104px;
+        margin-top: -20px;
+        margin-left: -17px;
+        z-index: 1000000;
+        transition: linear 0.3s;
+        border: 2px solid #6897af;
+    }
+    body #main .species-section .species-wrapper a .species-one .species-name-one {
+        width: 152px;
         height: 64px;
-        padding-top: 9px; */
-                width: 152px;
-                height: 64px;
-                padding-top: 9px;
-            }
-            body #main .species-section .species-wrapper a .species-one .species-name-one .species-text-one {
-                height: 22px;
-                line-height: 22px;
-                font-size: 16px;
-            }
-            body #main .species-section .species-wrapper a .species-one:hover .species-name-one .species-text-one {
-                font-size: 16px;
-            }
-            /*  */
-        }
-        
-        @media all and (max-width: 540px) {
-            body #main .species-section .species-wrapper a .species {
-                height: 67px;
-                width: 240px;
-                background-size: 240px 120px;
-            }
-            body #main .species-section .species-wrapper a .species .species-img {
-                width: 82px;
-                height: 82px;
-                background-size: 82px 82px;
-            }
-            body #main .species-section .species-wrapper a .species .species-name {
-                width: 150px;
-                height: 59px;
-                padding-top: 7px;
-            }
-            body #main .species-section .species-wrapper a .species .species-name .species-text {
-                height: 22px;
-                line-height: 22px;
-                font-size: 15px;
-            }
-        }
-        /* ///////////////////////////////  BLOCK SPECIES END  /////////////////////////////  */
-        /* /////////////////////////////  MEDIA BLOCK HANDBOOK START  /////////////////////////////// */
-        
-        @media (min-width: 540px) and (max-width: 760px) {
-            body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
-                font-size: 18px;
-            }
-            body #main .handbook-section .handbook-wrapper .handbook-block {
-                display: flex;
-                flex-direction: column;
-                /* */
-                justify-content: center;
-                /* */
-                align-items: center;
-                /* */
-            }
-            body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
-                font-size: 15px;
-                width: 275px;
-                line-height: 17px;
-            }
-        }
-        
-        @media all and (max-width: 539px) {
-            body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
-                font-size: 16px;
-            }
-            body #main .handbook-section .handbook-wrapper .handbook-block {
-                display: flex;
-                flex-direction: column;
-                /* */
-                justify-content: center;
-                /* */
-                align-items: center;
-                /* */
-            }
-            body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
-                font-size: 13px;
-                width: 250px;
-                line-height: 15px;
-            }
-        }
-        /* ////////////////////////////////  MEDIA BLOCK HANDBOOK END  /////////////////////////////// */
-        /* media-page-general END /////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* media-page-catalog START /////////////////////////////////////////////////////////////////////////////////////////////// */
-        
-        @media (min-width: 540px) and (max-width: 727px) {
-            body #main .page-catalog-pdf .content1-description .content1-description-title {
-                font-size: 25px;
-            }
-            body #main .page-catalog-pdf .content1-description .content1-description-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 15px;
-                text-align: center;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-title {
-                font-size: 20px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper {
-                height: 37px;
-                width: 95%;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section {
-                height: 37px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text {
-                height: 37px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text {
-                font-size: 15px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text span {
-                display: inline-block;
-                font-size: 15px;
-                text-transform: uppercase;
-                font-weight: 400;
-                text-indent: 3px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-img {
-                display: none;
-            }
-        }
-        
-        @media all and (max-width: 539px) {
-            body #main .page-catalog-pdf .content1-description .content1-description-title {
-                font-size: 23px;
-            }
-            body #main .page-catalog-pdf .content1-description .content1-description-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 13px;
-                text-align: center;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-title {
-                font-size: 18px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper {
-                height: 37px;
-                width: 95%;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section {
-                height: 37px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text {
-                height: 37px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text {
-                font-size: 13px;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text span {
-                display: inline-block;
-                font-size: 13px;
-                font-weight: 400;
-            }
-            body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-img {
-                display: none;
-            }
-        }
-        /* media-page-catalog END //////////////////////////////////////////////////////////////////////////////////////////// */
-        /* media-page-parts-list-brand START ################################################################################# */
-        
-        @media (min-width: 586px) and (max-width: 760px) {
-            body #main .page-parts-list-brand .dsn-section .dsn-title {
-                font-size: 30px;
-            }
-            body #main .page-parts-list-brand .dsn-section .dsn-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 16px;
-                text-align: center;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section {
-                height: 72px;
-                width: 250px;
-                background-size: 250px 125px;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .block-img {
-                width: 64px;
-                height: 64px;
-                background-size: 64px 64px;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section {
-                width: 178px;
-                height: 64px;
-                padding-top: 9px;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section .partslist-text {
-                height: 22px;
-                line-height: 22px;
-                font-size: 16px;
-            }
-        }
-        
-        @media all and (max-width: 585px) {
-            body #main .page-parts-list-brand .dsn-section .dsn-title {
-                font-size: 26px;
-            }
-            body #main .page-parts-list-brand .dsn-section .dsn-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 15px;
-                text-align: center;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section {
-                height: 67px;
-                width: 240px;
-                background-size: 240px 120px;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .block-img {
-                width: 59px;
-                height: 59px;
-                background-size: 59px 59px;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section {
-                width: 173px;
-                height: 59px;
-                padding-top: 7px;
-            }
-            body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section .partslist-text {
-                height: 22px;
-                line-height: 22px;
-                font-size: 15px;
-            }
-        }
-        /* media-page-parts-list-brand END ################################################################################### */
-        /* media-page-parts-list-pdf START ################################################################################### */
-        
-        @media (min-width: 540px) and (max-width: 760px) {
-            body #main .page-parts-list-pdf .content1-description .content1-description-title {
-                font-size: 25px;
-            }
-            body #main .page-parts-list-pdf .content1-description .content1-description-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 15px;
-                text-align: center;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-title {
-                font-size: 22px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper {
-                height: 37px;
-                width: 95%;
-                margin-top: 3px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section {
-                width: 100%;
-                height: 37px;
-                padding: 0px 10px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
-                min-width: 1px;
-                height: 37px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
-                font-size: 15px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
-                display: inline-block;
-                font-size: 15px;
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
-                display: none;
-            }
-        }
-        
-        @media all and (max-width: 539px) {
-            body #main .page-parts-list-pdf .content1-description .content1-description-title {
-                font-size: 23px;
-            }
-            body #main .page-parts-list-pdf .content1-description .content1-description-text {
-                text-indent: 0px;
-                padding: 20px 15px 20px 15px;
-                font-size: 13px;
-                text-align: center;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-title {
-                font-size: 20px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper {
-                height: 37px;
-                width: 95%;
-                margin-top: 3px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section {
-                width: 100%;
-                height: 37px;
-                padding: 0px 10px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
-                min-width: 1px;
-                height: 37px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
-                font-size: 13px;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
-                display: inline-block;
-                font-size: 13px;
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-            body #main .page-parts-list-pdf .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
-                display: none;
-            }
-        }
-        /* media-page-parts-list-pdf END ###################################################################################### */
-        /* media-helpful START /////////////////////////////////////////////////////////////////////////////////////////////// */
-        
-        @media (min-width: 540px) and (max-width: 760px) {
-            body #main .helpful .helpful-description .helpful-title {
-                font-size: 25px;
-            }
-            body #main .helpful .helpful-description .helpful-text {
-                padding: 20px 15px 0px 15px;
-                font-size: 15px;
-            }
-            body #main .helpful .helpful-section .helpful-section-menu a .menu-block-text .helpful-menu-text {
-                font-size: 15px;
-            }
-        }
-        
-        @media all and (max-width: 539px) {
-            body #main .helpful .helpful-description .helpful-title {
-                font-size: 23px;
-            }
-            body #main .helpful .helpful-description .helpful-text {
-                padding: 20px 15px 0px 15px;
-                font-size: 13px;
-            }
-            body #main .helpful .helpful-section .helpful-section-menu a .menu-block-text .helpful-menu-text {
-                font-size: 14px;
-            }
-        }
-        /* media-helpful END /////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* ========================================== MEDIA-MAIN END ======================================================== */
-        /* media-footer START /////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* @media (min-width: 540px) and (max-width: 760px) {
+        padding-top: 9px;
+    }
+    body #main .species-section .species-wrapper a .species-one .species-name-one .species-text-one {
+        height: 22px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    body #main .species-section .species-wrapper a .species-one:hover .species-name-one .species-text-one {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    body #main .species-section .species-wrapper a .species {
+        height: 67px;
+        width: 240px;
+        background-size: 240px 120px;
+    }
+    body #main .species-section .species-wrapper a .species .species-img {
+        width: 82px;
+        height: 82px;
+        background-size: 82px 82px;
+    }
+    body #main .species-section .species-wrapper a .species .species-name {
+        width: 150px;
+        height: 59px;
+        padding-top: 7px;
+    }
+    body #main .species-section .species-wrapper a .species .species-name .species-text {
+        height: 22px;
+        line-height: 22px;
+        font-size: 15px;
+    }
+} */
+
+
+/* ///////////////////////////////  BLOCK SPECIES END  /////////////////////////////  */
+
+
+/* /////////////////////////////  MEDIA BLOCK HANDBOOK START  /////////////////////////////// */
+
+
+/* @media (min-width: 540px) and (max-width: 760px) {
+    body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
+        font-size: 18px;
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block {
+        display: flex;
+        flex-direction: column;
+     
+        justify-content: center;
+  
+        align-items: center;
+  
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
+        font-size: 15px;
+        width: 275px;
+        line-height: 17px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .handbook-section .handbook-wrapper .handbook-description .handbook-title {
+        font-size: 16px;
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block {
+        display: flex;
+        flex-direction: column;
+   
+        justify-content: center;
+    
+        align-items: center;
+       
+    }
+    body #main .handbook-section .handbook-wrapper .handbook-block .handbook-button {
+        font-size: 13px;
+        width: 250px;
+        line-height: 15px;
+    }
+} */
+
+
+/* ////////////////////////////////  MEDIA BLOCK HANDBOOK END  /////////////////////////////// */
+
+
+/* media-page-general END /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* media-page-catalog START /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @media (min-width: 540px) and (max-width: 727px) {
+    body #main .page-catalog-pdf .content1-description .content1-description-title {
+        font-size: 25px;
+    }
+    body #main .page-catalog-pdf .content1-description .content1-description-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-title {
+        font-size: 20px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper {
+        height: 37px;
+        width: 95%;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section {
+        height: 37px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text {
+        height: 37px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text {
+        font-size: 15px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text span {
+        display: inline-block;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-indent: 3px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-img {
+        display: none;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .page-catalog-pdf .content1-description .content1-description-title {
+        font-size: 23px;
+    }
+    body #main .page-catalog-pdf .content1-description .content1-description-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-title {
+        font-size: 18px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper {
+        height: 37px;
+        width: 95%;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section {
+        height: 37px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text {
+        height: 37px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text {
+        font-size: 13px;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-text .content3-list-text span {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    body #main .page-catalog-pdf .content3-list .content3-list-section-wrapper a .content3-list-section .list-block-img {
+        display: none;
+    }
+} */
+
+
+/* media-page-catalog END //////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* media-page-parts-list-brand START ################################################################################# */
+
+
+/* @media (min-width: 586px) and (max-width: 760px) {
+    body #main .page-parts-list-brand .dsn-section .dsn-title {
+        font-size: 30px;
+    }
+    body #main .page-parts-list-brand .dsn-section .dsn-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section {
+        height: 72px;
+        width: 250px;
+        background-size: 250px 125px;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .block-img {
+        width: 64px;
+        height: 64px;
+        background-size: 64px 64px;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section {
+        width: 178px;
+        height: 64px;
+        padding-top: 9px;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section .partslist-text {
+        height: 22px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 585px) {
+    body #main .page-parts-list-brand .dsn-section .dsn-title {
+        font-size: 26px;
+    }
+    body #main .page-parts-list-brand .dsn-section .dsn-text {
+        text-indent: 0px;
+        padding: 20px 15px 20px 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section {
+        height: 67px;
+        width: 240px;
+        background-size: 240px 120px;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .block-img {
+        width: 59px;
+        height: 59px;
+        background-size: 59px 59px;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section {
+        width: 173px;
+        height: 59px;
+        padding-top: 7px;
+    }
+    body #main .page-parts-list-brand .partslist .partslist-wrapper a .partslist-section .name-section .partslist-text {
+        height: 22px;
+        line-height: 22px;
+        font-size: 15px;
+    }
+} */
+
+
+/* media-page-parts-list-brand END ################################################################################### */
+
+
+/* media-page-parts-list-pdf START ################################################################################### */
+
+
+/* @media (min-width: 540px) and (max-width: 760px) {
+    
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper {
+        height: 37px;
+        width: 95%;
+        margin-top: 3px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section {
+        width: 100%;
+        height: 37px;
+        padding: 0px 10px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
+        min-width: 1px;
+        height: 37px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
+        font-size: 15px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
+        display: inline-block;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
+        display: none;
+    }
+}
+
+@media all and (max-width: 539px) {
+   
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper {
+        height: 37px;
+        width: 95%;
+        margin-top: 3px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section {
+        width: 100%;
+        height: 37px;
+        padding: 0px 10px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text {
+        min-width: 1px;
+        height: 37px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text {
+        font-size: 13px;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-text .content2-list-text span {
+        display: inline-block;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    body #main .list-pdf-section .content2-list .content2-list-section-wrapper a .content2-list-section .list-block-img {
+        display: none;
+    }
+} */
+
+
+/* media-page-parts-list-pdf END ###################################################################################### */
+
+
+/* media-helpful START /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @media (min-width: 540px) and (max-width: 760px) {
+    body #main .helpful .helpful-description .helpful-title {
+        font-size: 25px;
+    }
+    body #main .helpful .helpful-description .helpful-text {
+        padding: 20px 15px 0px 15px;
+        font-size: 15px;
+    }
+    body #main .helpful .helpful-section .helpful-section-menu a .menu-block-text .helpful-menu-text {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 539px) {
+    body #main .helpful .helpful-description .helpful-title {
+        font-size: 23px;
+    }
+    body #main .helpful .helpful-description .helpful-text {
+        padding: 20px 15px 0px 15px;
+        font-size: 13px;
+    }
+    body #main .helpful .helpful-section .helpful-section-menu a .menu-block-text .helpful-menu-text {
+        font-size: 14px;
+    }
+} */
+
+
+/* media-helpful END /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ========================================== MEDIA-MAIN END ======================================================== */
+
+
+/* media-footer START /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @media (min-width: 540px) and (max-width: 760px) {
             body .footer .container .box {
                 margin: 0px 0px;
                 padding: 5px 10px;
@@ -4995,5 +4960,9 @@
                 font-size: 13px;
             }
         } */
-        /* media-footer END /////////////////////////////////////////////////////////////////////////////////////////////// */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   MEDIA  END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/* media-footer END /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   MEDIA  END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

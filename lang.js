@@ -165,15 +165,15 @@ for (var i = 0; i < links.length; i++) {
 
 import { arryHEAD } from './lang-DATA.js';
 
-let titleHEAD;
-let descriHEAD;
-let keyworHEAD;
+let titleHEAD = "";
+let descriHEAD = "";
+let keyworHEAD = "";
 
-let pageNUMBERhead = (new URL(document.location)).searchParams.get("page");
-let langRESULThead = (new URL(document.location)).searchParams.get("lang");
+let pageResultHead = (new URL(document.location)).searchParams.get("page");
+let langResultHead = (new URL(document.location)).searchParams.get("lang");
 
 
-let itemRESULThead = (new URL(document.location)).searchParams.get("item")
+let itemResultHead = (new URL(document.location)).searchParams.get("item");
 
 
 
@@ -192,16 +192,20 @@ function getValue(array, search) {
     }
 }
 
-let keyHEAD = pageNUMBERhead + langRESULThead;
+console.log(typeof pageResultHead, pageResultHead);
+console.log(typeof langResultHead, langResultHead);
 
-console.log(keyHEAD)
-getValue(arryHEAD, keyHEAD)
+let keyHEAD = pageResultHead + langResultHead;
 
-console.log(titleHEAD)
-console.log(descriHEAD)
-console.log(keyworHEAD)
+console.log(typeof keyHEAD, keyHEAD);
 
-var code = `<title>${titleHEAD + itemRESULThead}</title>` +
+getValue(arryHEAD, keyHEAD);
+
+console.log(titleHEAD);
+console.log(descriHEAD);
+console.log(keyworHEAD);
+
+var code = `<title>${titleHEAD + itemResultHead}</title>` +
     `<meta name="description" content="${descriHEAD}" />` +
     `<meta name="keywords" content="${keyworHEAD}" />`;
 
