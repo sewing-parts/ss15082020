@@ -28,7 +28,7 @@ body #main .crumbs-section .crumbs-text li a {
 }
 
 body #main .crumbs-section .crumbs-text li a:hover {
-    font-weight: 400;
+    font-weight: 300;
     color: #4f97db;
 }
 

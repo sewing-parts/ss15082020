@@ -69,7 +69,7 @@ rendercrumbs()
 
 const toHTMLchapter = fruitchapter =>
     `
-    <h2 class="title-shadow-h1h2">${fruitchapter.item}</h2>`;
+    <h2 class="title-shadow-two">${fruitchapter.item}</h2>`;
 
 function renderchapter() {
     const htmlchapter = paramsss.map(toHTMLchapter).join('')

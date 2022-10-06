@@ -35,7 +35,7 @@ body #main .catalog-section a .catalog .catalog-block-img {
     width: 190px;
     display: inline-block;
     overflow: hidden;
-    background: red;
+    /* background: red; */
 }
 
 body #main .catalog-section a .catalog .catalog-block-img .catalog-img {

@@ -81,7 +81,7 @@ switch (params.get("brand")) {
     case 'consew':
         brandPDF = consewPDF.reverse();
         break;
-    case 'durkoop-adler':
+    case 'durkopp-adler':
         brandPDF = durkoppAdlerPDF.reverse();
         break;
     case 'eastman':
@@ -215,8 +215,8 @@ rendercrumbs()
 /////////////////////////////
 
 const toHTMLchapter = fruitchapter =>
-    `<h1 class="title-shadow-h1h2">${fruitchapter.item}</h1>
-    <h2 class="title-shadow-h1h2">${fruitchapter.brand}</h2>`;
+    `<h1 class="title-shadow-one">${fruitchapter.item}</h1>
+    <h2 class="title-shadow-two">${fruitchapter.brand}</h2>`;
 
 function renderchapter() {
     const htmlchapter = paramsss.map(toHTMLchapter).join('')
