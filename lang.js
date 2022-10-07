@@ -163,21 +163,51 @@ for (var i = 0; i < links.length; i++) {
 //     return obj;
 // }
 
+
+// ///// START ///////////////////////////   TITLE DISCRIPTION  KEYWOR  ////////////////////////////////
+
 import { arryHEAD } from './lang-DATA.js';
 
 let titleHEAD = "";
 let descriHEAD = "";
 let keyworHEAD = "";
 
-let pageResultHead = (new URL(document.location)).searchParams.get("page");
-let langResultHead = (new URL(document.location)).searchParams.get("lang");
+// let levelResultHead = (new URL(document.location)).searchParams.get("level");
+// let itemResultHead = (new URL(document.location)).searchParams.get("item");
+// let brandResultHead = (new URL(document.location)).searchParams.get("brand");
+// let pageResultHead = (new URL(document.location)).searchParams.get("page");
+// let codeResultHead = (new URL(document.location)).searchParams.get("code");
+// let langResultHead = (new URL(document.location)).searchParams.get("lang");
 
 
-let itemResultHead = (new URL(document.location)).searchParams.get("item");
+// if (levelResultHead === null) { levelResultHead = "" } else { levelResultHead = levelResultHead };
+// if (itemResultHead === null) { itemResultHead = "" } else { itemResultHead = "_" + itemResultHead };
+// if (brandResultHead === null) { brandResultHead = "" } else { brandResultHead = "_" + brandResultHead };
+// if (pageResultHead === null) { pageResultHead = "" } else { pageResultHead = "_" + pageResultHead };
+// if (codeResultHead === null) { codeResultHead = "" } else { codeResultHead = "_" + codeResultHead };
+// if (langResultHead === null) { langResultHead = "" } else { langResultHead = "_" + langResultHead };
 
 
+// let keyHEAD = levelResultHead + itemResultHead + brandResultHead + pageResultHead + codeResultHead + langResultHead;
 
 
+let levelURL = (new URL(document.location)).searchParams.get("level");
+let itemURL = (new URL(document.location)).searchParams.get("item");
+let brandURL = (new URL(document.location)).searchParams.get("brand");
+let pageURL = (new URL(document.location)).searchParams.get("page");
+let codeURL = (new URL(document.location)).searchParams.get("code");
+let langURL = (new URL(document.location)).searchParams.get("lang");
+
+
+if (levelURL === null) { levelURL = "" } else { levelURL = levelURL };
+if (itemURL === null) { itemURL = "" } else { itemURL = "_" + itemURL };
+if (brandURL === null) { brandURL = "" } else { brandURL = "_" + brandURL };
+if (pageURL === null) { pageURL = "" } else { pageURL = "_" + pageURL };
+if (codeURL === null) { codeURL = "" } else { codeURL = "_" + codeURL };
+if (langURL === null) { langURL = "" } else { langURL = "_" + langURL };
+
+
+let keyHEAD = levelURL + itemURL + brandURL + pageURL + codeURL + langURL;
 
 function getValue(array, search) {
     var i = array.length;
@@ -190,14 +220,9 @@ function getValue(array, search) {
 
         }
     }
-}
+};
 
-console.log(typeof pageResultHead, pageResultHead);
-console.log(typeof langResultHead, langResultHead);
-
-let keyHEAD = pageResultHead + langResultHead;
-
-console.log(typeof keyHEAD, keyHEAD);
+console.log("keyHEAD", keyHEAD);
 
 getValue(arryHEAD, keyHEAD);
 
@@ -205,7 +230,8 @@ console.log(titleHEAD);
 console.log(descriHEAD);
 console.log(keyworHEAD);
 
-var code = `<title>${titleHEAD + itemResultHead}</title>` +
+var code = `<title>${titleHEAD}</title>` +
+    // var code = `<title>${titleHEAD + itemResultHead}</title>` +
     `<meta name="description" content="${descriHEAD}" />` +
     `<meta name="keywords" content="${keyworHEAD}" />`;
 
@@ -214,4 +240,27 @@ temp.innerHTML = code;
 var head = document.head;
 while (temp.firstChild) {
     head.appendChild(temp.firstChild);
-}
+};
+
+// ///// END ////////////////////////////   TITLE DISCRIPTION  KEYWOR  //////////////////////////////////
+
+
+
+//  START ////////////////////////////////////  ПРЕВОДЧИК  //////////////////////////////////////////////   
+
+import { langArr } from './lang-DATA.js';
+
+// for (let key in langArr) { document.querySelector('.lng-' + key).innerHTML = langArr[key][langURL] }
+
+let params = (new URL(document.location)).searchParams;
+let langUrl = params.get("lang");
+
+for (let key in langArr) {
+    const demoClasses = document.querySelectorAll('.lng-' + key)
+    demoClasses.forEach(element => {
+        element.textContent = langArr[key][langUrl]
+    });
+};
+
+
+//  END  ////////////////////////////////////  ПРЕВОДЧИК  ///////////////////////////////////////////////
