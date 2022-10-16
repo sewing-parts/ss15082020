@@ -7,4 +7,4 @@ var data = xlsx.utils.sheet_to_json(ws);
 
 console.log("export const brandsPartsList =", data);
 
-// node script-xlsx.js > oo.js
+// node script-xlsx.js > script-xlsx-result.js

@@ -1,14 +1,14 @@
 @media (min-width: 481px) and (max-width: 768px) {
-    body .footer .container .box .block-logos-text-info .logos-text-info {
-        font-size: 15px;
-        max-height: 164px;
-    }
     body .footer .container .box {
         margin: 0px 0px;
         padding: 5px 10px;
+        height: 360px;
     }
     body .footer .container .box h4 {
         font-size: 18px;
+    }
+    body .footer .container .box .block-logos-text-info .logos-text-info {
+        font-size: 14px;
     }
     body .footer .container .box p {
         font-size: 15px;
@@ -47,17 +47,18 @@
     }
 }
 
-@media all and (max-width: 480px) {
-    body .footer .container .box .block-logos-text-info .logos-text-info {
-        font-size: 14px;
-        max-height: 154px;
-    }
+@media (min-width: 300px) and (max-width: 480px) {
     body .footer .container .box {
         margin: 0px 0px;
         padding: 5px 10px;
+        min-width: 290px;
+        height: 380px;
     }
     body .footer .container .box h4 {
         font-size: 17px;
+    }
+    body .footer .container .box .block-logos-text-info .logos-text-info {
+        font-size: 13px;
     }
     body .footer .container .box p {
         font-size: 14px;

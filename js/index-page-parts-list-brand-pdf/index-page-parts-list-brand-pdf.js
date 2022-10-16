@@ -5,9 +5,20 @@ const idpartslist = '#list-positions';
 
 //////////////////////////////
 
+
+
 let params = (new URL(document.location)).searchParams;
-// const paramsss = [{ item: params.get("item").split('-').join(' '), brand: params.get("brand").split('-').join(' ') }, ];
-const paramsss = [{ item: params.get("item").split('-').join(' '), brand: params.get("brand").split('-').join(' ') }, ];
+// const paramsUrl = [{ item: params.get("item").split('-').join(' '), brand: params.get("brand").split('-').join(' '), lang: params.get("lang") }];
+const paramsUrl = [{
+
+    aimA: params.get("a"),
+    aimB: params.get("b"),
+    aimC: params.get("c"),
+    aimD: params.get("d"),
+    aimE: params.get("e"),
+    aimF: params.get("f"),
+    aimLANG: params.get("lang"),
+}];
 
 //////////////////////////////
 
@@ -59,7 +70,7 @@ import { zojePDF } from './index-page-parts-list-brand-pdf-DATA.js';
 
 let brandPDF = [];
 
-switch (params.get("brand")) {
+switch (params.get("d")) {
     case 'barudan':
         brandPDF = barudanPDF.reverse();
         break;
@@ -196,30 +207,33 @@ switch (params.get("brand")) {
 };
 
 // ////////////////////////////////
+
 const toHTMLcrumbs = fruitchapter =>
     `<ul class="crumbs-text">
-    <li><a href="index.html">Главная</a><i class="fas fa-angle-right"></i></li>
-    <li><a href="">Документация</a><i class="fas fa-angle-right"></i></li>
-    <li><a href="index-parts-list-brand.html">${fruitchapter.item} pdf</a><i class="fas fa-angle-right"></i></li>
-    <li><a href="">${fruitchapter.brand} ${fruitchapter.item} pdf</a><i class="fas fa-angle-right"></i></li>
-</ul>`;
+            <li class="lev-${fruitchapter.aimA}"><a class="lng-lev-${fruitchapter.aimA}" href="index.html"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimB}"><a class="lng-lev-${fruitchapter.aimB}" href="#"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="#"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="#">${fruitchapter.aimD.split('-').join(' ')}</a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="#"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimF}"><a class="lng-lev-${fruitchapter.aimF}" href="#"></a><i class="fas fa-angle-right"></i></li>
+        </ul>`;
 
-function rendercrumbs() {
-    const htmlchapter = paramsss.map(toHTMLcrumbs).join('')
-    document.querySelector(idcrumbs).innerHTML = htmlchapter
+function renderCrumbs() {
+    const htmlcrumbs = paramsUrl.map(toHTMLcrumbs).join('')
+    document.querySelector(idcrumbs).innerHTML = htmlcrumbs
 };
-
-rendercrumbs()
-
+renderCrumbs()
 
 /////////////////////////////
 
 const toHTMLchapter = fruitchapter =>
-    `<h1 class="title-shadow-one">${fruitchapter.item}</h1>
-    <h2 class="title-shadow-two">${fruitchapter.brand}</h2>`;
+    `<h1 class="title-shadow-one lng-lev-${fruitchapter.aimC}" ></h1>
+    <p class="title-shadow-two">${fruitchapter.aimD.split('-').join(' ')}</p>`;
+
+// <p class="title-shadow-two">${paramsUrl[0]["aimD"].split('-').join(' ')}</p>
 
 function renderchapter() {
-    const htmlchapter = paramsss.map(toHTMLchapter).join('')
+    const htmlchapter = paramsUrl.map(toHTMLchapter).join('')
     document.querySelector(idchapter).innerHTML = htmlchapter
 };
 renderchapter();
@@ -243,15 +257,3 @@ function renderbasic() {
     document.querySelector(idpartslist).innerHTML = htmlbasic
 };
 renderbasic()
-
-// function updateURL() {
-//     if (history.pushState) {
-
-//         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-//         var newUrl = baseUrl + '?tyapk=awesome';
-//         history.pushState(null, null, newUrl);
-//     } else {
-//         console.warn('History API не поддерживается');
-//     }
-// }
-// updateURL()

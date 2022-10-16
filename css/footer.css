@@ -18,9 +18,13 @@ body .footer .container {
 body .footer .container .box {
     flex: 1;
     margin: 5px 15px;
-    padding: 10px 20px;
-    min-width: 300px;
+    padding: 10px 10px;
+    min-width: 400px;
+    height: 380px;
 }
+
+
+/* ////////////////////////// */
 
 body .footer .container .box a {
     text-decoration: none;
@@ -38,6 +42,19 @@ body .footer .container .box h4 {
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 16px;
+    transition: linear 0.2s;
+}
+
+body .footer .container .box h4::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid #ffd000;
+    position: absolute;
+}
+
+body .footer .container .box:hover h4 {
+    color: #ffd000;
     transition: linear 0.2s;
 }
 
@@ -80,39 +97,27 @@ body .footer .container .box .block-logos-text-info {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100%;
-    height: 172px;
+    min-height: 210px;
+    /* background: red; */
 }
 
 body .footer .container .box .block-logos-text-info .logos-text-info {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
-    text-indent: 25px;
+    text-indent: 10px;
     margin-top: 0px;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 9;
-    max-height: 172px;
+    max-height: 172px; */
 }
 
 
 /*  */
-
-body .footer .container .box:hover h4 {
-    color: #ffd000;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box h4::before {
-    content: "";
-    width: 50%;
-    height: 100%;
-    border-bottom: 2px solid #ffd000;
-    position: absolute;
-}
 
 body .footer .container .box p {
     font-family: 'Roboto', sans-serif;

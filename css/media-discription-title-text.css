@@ -1,44 +1,37 @@
 /* //////////////////////// MEDIA BLOCK DESCRIPTION START ///////////////////////*/
 
 @media (min-width: 481px) and (max-width: 768px) {
-    /* ///  START  ///заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р с подчеркиванием  ////// */
-    body #main .discription-section .dsn-fon-img .title-line-h1h2 {
-        /*  */
-        font-size: 30px;
+    body #main .discription-section .dsn .title-line-one {
+        font-size: 25px;
     }
-    /* ///  END  ///   заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р с подчеркиванием   ////// */
-    /* ///  START  ///  заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р  с тенью  /////// */
-    body #main .discription-section .dsn-fon-img .title-shadow-h1h2 {
-        font-size: 33px;
+    body #main .discription-section .dsn .title-line-two {
+        font-size: 25px;
     }
-    /* ///  START  ///  заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р  с тенью  /////// */
-    /* ///  общий тег Р с подчеркиванием и с тенью ///  */
-    body #main .discription-section .dsn-fon-img .text {
-        text-indent: 20px;
-        padding: 15px 30px 15px 30px;
+    body #main .discription-section .dsn .title-shadow-one {
+        font-size: 25px;
+    }
+    body #main .discription-section .dsn .title-shadow-two {
+        font-size: 25px;
+    }
+    body #main .discription-section .dsn .text-line {
         font-size: 15px;
     }
 }
 
-
-/*  */
-
 @media all and (max-width: 480px) {
-    /* ///  START  ///заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р с подчеркиванием  ////// */
-    body #main .discription-section .dsn-fon-img .title-line-h1h2 {
-        /*  */
-        font-size: 26px;
+    body #main .discription-section .dsn .title-line-one {
+        font-size: 20px;
     }
-    /* ///  END  ///   заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р с подчеркиванием   ////// */
-    /* ///  START  ///  заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р  с тенью  /////// */
-    body #main .discription-section .dsn-fon-img .title-shadow-h1h2 {
-        font-size: 26px;
+    body #main .discription-section .dsn .title-line-two {
+        font-size: 20px;
     }
-    /* ///  START  ///  заголовок ++ 11-09-2022 //////  блок с фоном , заголовки  H1 и H2 и текст Р  с тенью  /////// */
-    /* ///  общий тег Р с подчеркиванием и с тенью ///  */
-    body #main .discription-section .dsn-fon-img .text {
-        text-indent: 10px;
-        padding: 10px 20px 20px 20px;
+    body #main .discription-section .dsn .title-shadow-one {
+        font-size: 20px;
+    }
+    body #main .discription-section .dsn .title-shadow-two {
+        font-size: 20px;
+    }
+    body #main .discription-section .dsn .text-line {
         font-size: 14px;
     }
 }
