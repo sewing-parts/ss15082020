@@ -65,7 +65,7 @@ const toHTMLfooter = fruitchapter =>
             <span class="span-icon">&ensp; &#10034;</span></label>
             <input type="tel" name="tel" id="tel" required>
 
-            <label for="mail"><p class="lng-footer-c-p3">Видите свой email</p>
+            <label for="mail"><p class="lng-footer-c-p3"></p>
             <span class="span-icon">&ensp; &#10034;</span></label>
             <input type="email" name="email" id="email" required>
 
