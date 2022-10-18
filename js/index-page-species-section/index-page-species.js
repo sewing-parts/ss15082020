@@ -3,7 +3,7 @@ const idspecies = '#species';
 const iddiscription = '#discription'
 
 
-import { brandsPartsList } from "./index-page-species-section-DATA.js";
+import { brandsPartsList } from "./index-page-species-DATA.js";
 
 
 //////////////////////////////
@@ -66,9 +66,9 @@ switch (params.get("c")) {
 
 const toHTMLcrumbs = fruitchapter =>
     `<ul class="crumbs-text">
-            <li class="lev-${fruitchapter.aimA}"><a class="lng-lev-${fruitchapter.aimA}" href="index.html"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimA}"><a class="lng-lev-${fruitchapter.aimA}" href="index.html?a=${fruitchapter.aimA}"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimB}"><a class="lng-lev-${fruitchapter.aimB}" href="#"></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="#"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="index-page-species.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=&e=&f="></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="#"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="#"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimF}"><a class="lng-lev-${fruitchapter.aimF}" href="#"></a><i class="fas fa-angle-right"></i></li>

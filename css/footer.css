@@ -1,337 +1,258 @@
-body .footer {
-    padding: 0;
-    margin: 0;
-    min-height: 1px;
-    width: 100%;
-    width: 100vw;
-    background: #45698b;
-    color: #f5f6fa;
-    z-index: 999;
-}
-
-body .footer .container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-body .footer .container .box {
-    flex: 1;
-    margin: 5px 15px;
-    padding: 10px 10px;
-    min-width: 400px;
-    height: 380px;
-}
-
-
-/* ////////////////////////// */
-
-body .footer .container .box a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-body .footer .container .box h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 19px;
-    color: #f5f6fa;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #4f97db;
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 16px;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box h4::before {
-    content: "";
-    width: 50%;
-    height: 100%;
-    border-bottom: 2px solid #ffd000;
-    position: absolute;
-}
-
-body .footer .container .box:hover h4 {
-    color: #ffd000;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box #logos {
-    display: flex;
-    justify-content: center;
-}
-
-body .footer .container .box #logos a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-body .footer .container .box #logos a .logos-wrapper {
-    /* display: flex;
-flex-direction: column; */
-}
-
-body .footer .container .box #logos a .logos-wrapper .block-logos {
-    padding: 0;
-    margin: 0;
-    max-width: 200px;
-    height: 60px;
-    background-image: url('../images/11-aaa-waaa.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-body .footer .container .box #logos a .logos-wrapper .logos-text {
-    color: rgb(224, 224, 224);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 8.6px;
-    text-transform: uppercase;
-    transform: scale(1.0, 1.5);
-    padding-top: 3px;
-}
-
-body .footer .container .box .block-logos-text-info {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    min-height: 210px;
-    /* background: red; */
-}
-
-body .footer .container .box .block-logos-text-info .logos-text-info {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: left;
-    text-indent: 10px;
-    margin-top: 0px;
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 9;
-    max-height: 172px; */
-}
-
-
-/*  */
-
-body .footer .container .box p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    padding-bottom: 5px;
-    margin-top: 75px;
-    text-align: center;
-}
-
-body .footer .container .box .social {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-body .footer .container .box .social a {
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .social a i {
-    background: #222222;
-    width: 45px;
-    height: 40px;
-    text-align: center;
-    line-height: 37px;
-    border-radius: 5px;
-    border: 1px solid #5aaaf5;
-    color: #5aaaf5;
-    font-size: 27px;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .social a:hover i {
-    border: 1px solid #ffd000;
-    color: #ffd000;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .address a {
-    display: block;
-    text-decoration: none;
-    width: 270px;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 55px;
-    margin-bottom: 6px;
-    color: #f5f6fa;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .address a .fas {
-    position: absolute;
-    background: #222222;
-    width: 45px;
-    height: 40px;
-    text-align: center;
-    line-height: 37px;
-    margin-left: -55px;
-    border-radius: 5px;
-    border: 1px solid #5aaaf5;
-    color: #5aaaf5;
-    font-size: 27px;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .address a .fab1 {
-    position: absolute;
-    border: none;
-    font-size: 27px;
-    margin-left: 3px;
-    margin-top: 7px;
-    color: #5aaaf5;
-}
-
-body .footer .container .box .address a .fab2 {
-    position: absolute;
-    border: none;
-    font-size: 27px;
-    margin-left: 33px;
-    margin-top: 7px;
-    color: #5aaaf5;
-}
-
-body .footer .container .box .address a:hover {
-    color: #ffd000;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .address a:hover .fas {
-    border: 1px solid #ffd000;
-    color: #ffd000;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box .address a:hover .fab {
-    color: #ffd000;
-    transition: linear 0.2s;
-}
-
-body .footer .container .box form input,
-body .footer .container .box form textarea {
-    width: 100%;
-    min-height: 30px;
-    border: none;
-    outline: none;
-    padding-left: 5px;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    color: #222222;
-}
-
-body .footer .container .box form label {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    padding: 5px 0px;
-    margin-top: -10px;
-}
-
-body .footer .container .box form label .span-icon {
-    color: #5aaaf5;
-}
-
-body .footer .container .box a button,
-body .footer .container .box form button {
-    width: 250px;
-    height: 32px;
-    border: none;
-    outline: none;
-    background: #222222;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    color: #5aaaf5;
-    border: 1px solid #5aaaf5;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: linear 0.2s;
-    position: relative;
-    /* Это важно добавить */
-    overflow-x: hidden;
-    /* Это важно добавить */
-}
-
-body .footer .container .box button .flare,
-body .footer .container .box form button .flare {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 170px;
-    transform: skewX(-45deg);
-    /* Наклон */
-    animation: flareAnimation;
-    left: 0%;
-    background: linear-gradient(90deg, rgba(255, 208, 0, 0.02), rgba(255, 208, 0, 0.25), rgba(255, 208, 0, 0.02));
-    animation: flareAnimation 12s infinite linear;
-    /* Время и тип анимации можно менять */
-}
-
-@keyframes flareAnimation {
-    0% {
-        left: 20%;
+    body .footer {
+        padding: 0;
+        margin: 0;
+        min-height: 1px;
+        width: 100%;
+        width: 100vw;
+        background: #45698b;
+        color: #f5f6fa;
+        z-index: 999;
     }
-    100% {
-        left: 50%;
-        width: 0px;
-        height: 0%;
-        top: 18px;
+    
+    body .footer .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
-}
-
-body .footer .container .box button:hover,
-body .footer .container .box form button:hover {
-    border: 1px solid rgb(255, 208, 0);
-    color: #ffd000;
-    border-radius: 3px;
-    transition: linear 0.2s;
-}
-
-body .footer .author {
-    width: 100%;
-    background: #222222;
-    text-align: center;
-    padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    text-transform: uppercase;
-    overflow: hidden;
-}
-
-body .footer .author p {
-    color: #f5f6fa;
-}
-
-body .footer .author p .author-text-one {
-    color: #5aaaf5;
-}
-
-body .footer .author p .author-text-two {
-    color: crimson;
-}
+    
+    body .footer .container .box {
+        flex: 1;
+        margin: 5px 10px;
+        padding: 10px 10px;
+        min-width: 360px;
+        height: 380px;
+    }
+    /* ////////////////////////// */
+    
+    body .footer .container .box h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        color: #f5f6fa;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #4f97db;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 16px;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box h2::before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        border-bottom: 2px solid #ffd000;
+        position: absolute;
+    }
+    
+    body .footer .container .box:hover h2 {
+        color: #ffd000;
+        transition: linear 0.2s;
+    }
+    /* 1 */
+    
+    body .footer .container .box .logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    body .footer .container .box .logo a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    body .footer .container .box .logo a .logo-wrapper .logo-img {
+        padding: 0;
+        margin: 0;
+        width: 200px;
+        height: 40px;
+    }
+    
+    body .footer .container .box .logo a .logo-wrapper .logo-img img {
+        width: 200px;
+        height: 40px;
+    }
+    
+    body .footer .container .box .logo a .logo-wrapper .logo-text {
+        /* color: rgb(224, 224, 224);
+        color: #ffd000; */
+        color: #5aaaf5;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 9px;
+        text-transform: uppercase;
+        transform: scale(1.0, 1.5);
+        padding-top: 3px;
+    }
+    
+    body .footer .container .box .info {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 237px;
+        overflow: hidden;
+    }
+    
+    body .footer .container .box .info .text-info {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: left;
+        text-indent: 10px;
+        margin-top: 0px;
+    }
+    /* 2 */
+    
+    body .footer .container .box .address a {
+        display: block;
+        text-decoration: none;
+        width: 275px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 55px;
+        margin-bottom: 6px;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box .address a .fas {
+        position: absolute;
+        background: #222222;
+        width: 45px;
+        height: 40px;
+        text-align: center;
+        line-height: 37px;
+        margin-left: -55px;
+        border-radius: 5px;
+        border: 1px solid #5aaaf5;
+        color: #5aaaf5;
+        font-size: 27px;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box .address a p {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        color: #f5f6fa;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box .address a .fab1 {
+        position: absolute;
+        border: none;
+        font-size: 27px;
+        margin-left: 160px;
+        margin-top: -33px;
+        color: #5aaaf5;
+    }
+    
+    body .footer .container .box .address a .fab2 {
+        position: absolute;
+        border: none;
+        font-size: 27px;
+        margin-left: 190px;
+        margin-top: -33px;
+        color: #5aaaf5;
+    }
+    
+    body .footer .container .box .address a:hover p {
+        color: #ffd000;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box .address a:hover .fas {
+        border: 1px solid #ffd000;
+        color: #ffd000;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box .address a:hover .fab {
+        color: #ffd000;
+        transition: linear 0.2s;
+    }
+    /* 3 */
+    
+    body .footer .container .box form input,
+    body .footer .container .box form textarea {
+        width: 100%;
+        min-height: 30px;
+        border: none;
+        outline: none;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        color: #222222;
+    }
+    
+    body .footer .container .box form label {
+        display: flex;
+        padding: 5px 0px;
+        margin-top: -10px;
+    }
+    
+    body .footer .container .box form label p {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+    }
+    
+    body .footer .container .box form label .span-icon {
+        color: #5aaaf5;
+    }
+    
+    body .footer .container .box form button {
+        width: 250px;
+        height: 32px;
+        border: none;
+        outline: none;
+        background: #222222;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: #5aaaf5;
+        border: 1px solid #5aaaf5;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box form button:hover {
+        border: 1px solid rgb(255, 208, 0);
+        color: #ffd000;
+        border-radius: 3px;
+        transition: linear 0.2s;
+    }
+    /* низ */
+    
+    body .footer .author {
+        width: 100%;
+        background: #222222;
+        text-align: center;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    
+    body .footer .author p {
+        color: #f5f6fa;
+    }
+    
+    body .footer .author p .author-text-one {
+        color: #5aaaf5;
+    }
+    
+    body .footer .author p .author-text-two {
+        color: crimson;
+    }
