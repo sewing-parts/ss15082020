@@ -74,6 +74,7 @@ export const barudanPDF = [{
         brandhref: 'https://drive.google.com/file/d/1oQ7cLYxTD_hdZyT97IGtpShd585zp71k/view?usp=drivesdk'
     }
 ];
+
 export const berninaHomePDF = [{
         brandorder: 1,
         brandname: 'Bernina_E92c_manual.pdf',

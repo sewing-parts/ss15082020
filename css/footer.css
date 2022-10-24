@@ -101,6 +101,12 @@
         text-align: left;
         text-indent: 10px;
         margin-top: 0px;
+        transition: linear 0.2s;
+    }
+    
+    body .footer .container .box .info .text-info:hover {
+        color: #ffd000;
+        transition: linear 0.2s;
     }
     /* 2 */
     
@@ -202,6 +208,11 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 17px;
+    }
+    
+    body .footer .container .box form:hover label p {
+        color: #ffd000;
+        transition: linear 0.2s;
     }
     
     body .footer .container .box form label .span-icon {

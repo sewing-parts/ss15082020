@@ -23,7 +23,7 @@ const paramsUrl = [{
     aimD: params.get("d"),
     aimE: params.get("e"),
     aimF: params.get("f"),
-    aimLANG: params.get("lang"),
+    aimLang: params.get("lang"),
 }];
 
 

@@ -5,23 +5,17 @@
         margin: 6px 5px 17px 5px;
         width: 290px;
     }
-    body #main .species-section .species-wrapper a .species .species-name {
-        width: 186px;
-        height: 86px;
+    body #main .species-section .species-wrapper a .species .block-fon {
+        width: 290px;
     }
-    body #main .species-section .species-wrapper a .species .species-name .species-title {
-        font-size: 14px;
-        min-height: 14px;
-        line-height: 14px;
-        padding-top: 2px;
-        margin-bottom: 4px;
+    body #main .species-section .species-wrapper a .species .container {
+        width: 290px;
     }
-    body #main .species-section .species-wrapper a .species .species-name .species-text {
+    body #main .species-section .species-wrapper a .species .container .species-name {
+        width: 188px;
+    }
+    body #main .species-section .species-wrapper a .species .container .species-name .species-text {
         font-size: 14px;
-        min-height: 14px;
-        line-height: 14px;
-        padding-top: 2px;
-        margin-top: 4px;
     }
 }
 
@@ -29,36 +23,19 @@
     body #main .species-section .species-wrapper a .species {
         margin: 6px 5px 17px 5px;
         width: 285px;
-        height: 78px;
     }
-    body #main .species-section .species-wrapper a .species .species-img {
-        width: 92px;
-        height: 92px;
+    body #main .species-section .species-wrapper a .species .block-fon {
+        width: 285px;
     }
-    body #main .species-section .species-wrapper a .species .species-name {
-        width: 191px;
-        height: 78px;
+    body #main .species-section .species-wrapper a .species .container {
+        width: 285px;
     }
-    body #main .species-section .species-wrapper a .species .species-name .species-title {
+    body #main .species-section .species-wrapper a .species .container .species-name {
+        width: 183px;
+        /* height: 86px; */
+    }
+    body #main .species-section .species-wrapper a .species .container .species-name .species-text {
         font-size: 13px;
-        min-height: 13px;
-        line-height: 13px;
-        padding-top: 2px;
-        margin-bottom: 4px;
-    }
-    body #main .species-section .species-wrapper a .species .species-name .species-text {
-        font-size: 13px;
-        min-height: 13px;
-        line-height: 13px;
-        padding-top: 2px;
-        margin-top: 4px;
-    }
-    body #main .species-section .species-wrapper a .species:hover .species-img {
-        width: 100px;
-        height: 100px;
-        background-size: 100px 100px;
-        /* margin-top: -21px; */
-        margin-left: -8px;
     }
 }
 

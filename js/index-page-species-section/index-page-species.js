@@ -18,7 +18,7 @@ const paramsUrl = [{
     aimD: params.get("d"),
     aimE: params.get("e"),
     aimF: params.get("f"),
-    aimLANG: params.get("lang"),
+    aimLang: params.get("lang"),
 }];
 
 
@@ -81,6 +81,12 @@ function renderCrumbs() {
 renderCrumbs()
 
 //////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+import { langArr } from '../lang/lang-DATA.js';
+
+
+// ///////////////////////////////////////////////
+// //////////////////////////////////////////////
 
 const toHTMLdiscription = fruitchapter =>
     `<div class="dsn">
@@ -96,25 +102,29 @@ renderDiscription()
 
 ////////////////////////////////////////////
 
-
+let xx = speciesCategory[0]["c"]
+console.log(xx)
 
 const toHTMLspeciesSection = fruitbasic =>
-    `<a href="${fruitbasic.href}?a=${fruitbasic.a}&b=${fruitbasic.b}&c=${fruitbasic.c}&d=${fruitbasic.d}&e=&f=">
+    `<a href="${fruitbasic.href}?a=${fruitbasic.a}&b=${fruitbasic.b}&c=${fruitbasic.c}&d=${fruitbasic.d}&e=1&f=">
             <section class="species">
                 <div class="block-fon">
                     <img class="img-fon" src="${fruitbasic.imgFon}" alt="">
                 </div>
-                <div class="species-img">
-                    <img src="${fruitbasic.imgOne}" alt="">
+                <div class="container">
+                    <div class="species-img">
+                        <img src="${fruitbasic.imgOne}" alt="">
+                    </div>
+                    <div class="species-name">
+                        <p class="lng-lev-${fruitbasic.c} species-text"></p>
+                        <p class="lng-lev-${fruitbasic.d} species-text"></p>
+                    </div>
                 </div>
-                <div class="species-name">
-                    <p class="species-text">${fruitbasic.d.split('-').join(' ')}</p>
-                    <p class="lng-lev-${fruitbasic.c} species-text"></p>  
-                </div>
+               
             </section>
         </a>`;
 
-// <p class="lng-lev-${aimCurl} species-text"></p> 
+
 
 function renderSpeciesSection() {
     const htmlSpeciesSection = speciesCategory.map(toHTMLspeciesSection).join('')
