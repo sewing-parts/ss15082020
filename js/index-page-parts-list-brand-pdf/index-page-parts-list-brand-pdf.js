@@ -214,7 +214,7 @@ const toHTMLcrumbs = fruitchapter =>
             <li class="lev-${fruitchapter.aimB}"><a class="lng-lev-${fruitchapter.aimB}" href="#"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="index-page-species.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=&e=&f="></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=&f="></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="#"></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="#">${fruitchapter.aimE}</a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimF}"><a class="lng-lev-${fruitchapter.aimF}" href="#"></a><i class="fas fa-angle-right"></i></li>
         </ul>`;
 
@@ -264,9 +264,136 @@ renderchapter();
 
 
 // /////////////////////////////////////////////////////////////////////// +++++++++++++
+
+
+// //////////////////////////********************** */
+
+
+// let currenPage = Number(params.get("e"));
+
+// let perPage = 4;
+
+
+// console.log(currenPage)
+// let start = 0;
+// let end = perPage;
+
+// const page = document.querySelector(".page-num");
+// const prevMin = document.querySelector(".prev-min");
+// const nextMax = document.querySelector(".next-max");
+
+// const totalPages = Math.ceil(brandPDF.length / perPage);
+
+// let num = Number(totalPages);
+// console.log(num);
+
+// const btnNext = document.querySelector('.btn-next');
+// const btnPrev = document.querySelector('.btn-prev');
+
+// prevMin.innerHTML = 1;
+
+// nextMax.innerHTML = totalPages;
+
+
+
+
+// function renderBasic() {
+//     let toHTMLbasic = ''
+//     const htmlbasic = brandPDF.map((item, index) => {
+//         if (index >= start && index < end) {
+//             toHTMLbasic =
+//                 `<div class = "content2-list-section-wrapper">
+//                     <a href = "${item.brandhref}" title="${item.brandname.slice(0, -4).split('_').join(' ')} Manuals to Sewing Machine Pdf" target="_ blank">
+//                         <div class = "content2-list-section">
+//                             <div class = "list-block-text" >
+//                                 <p class = "content2-list-text">${item.brandname.slice(0, -4).split('_').join(' ')} <span>pdf</span></p>
+//                             </div> 
+//                             <div class = "list-block-img"> </div> 
+//                         </div> 
+//                     </a> 
+//                 </div>`;
+//             return toHTMLbasic
+//         } else {
+//             return toHTMLbasic = ''
+//         };
+//     });
+//     document.querySelector(idpartslist).innerHTML = htmlbasic.join('');
+//     showItems();
+
+
+// };
+// renderBasic();
+
+// btnNext.addEventListener('click', () => {
+//     currenPage++;
+//     if (currenPage > totalPages) {
+//         currenPage = totalPages;
+//     }
+//     start = (currenPage - 1) * perPage;
+//     end = currenPage * perPage;
+//     renderBasic();
+
+
+
+
+// })
+
+// btnPrev.addEventListener('click', () => {
+//     currenPage--;
+//     if (currenPage <= 1) {
+//         currenPage = 1;
+//     }
+//     start = (currenPage - 1) * perPage;
+//     end = currenPage * perPage;
+//     renderBasic();
+
+
+
+
+// })
+
+// function showItems() {
+//     const url = new URL(document.location);
+//     const searchParams = url.searchParams;
+//     searchParams.delete("e");
+//     window.history.pushState({}, '', url.toString());
+
+//     page.innerHTML = currenPage;
+
+//     updateURL(currenPage)
+// }
+
+// function updateURL(yy) {
+
+//     if (history.pushState) {
+//         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+//         var newUrl = baseUrl + '&e=' + yy;
+
+//         history.pushState(null, null, newUrl);
+//     } else {
+//         console.warn('History API не поддерживается');
+//     }
+
+// }
+
+// /////////////////////////////////////////************ */
+
+// const url = new URL(document.location);
+// const searchParams = url.searchParams;
+// searchParams.delete("e");
+// window.history.pushState({}, '', url.toString());
+// location.href = location.href + "&e=" + currenPage
+
+
+// ///////////////////////)))))))))))))))))))))))))))))))))))))))))))
+
 let currenPage = Number(params.get("e"));
-let perPage = 40;
-// let currenPage = 1;
+// let currenPage = params.get("e");
+
+let perPage = 4;
+
+
+console.log(currenPage)
 let start = 0;
 let end = perPage;
 
@@ -276,7 +403,7 @@ const nextMax = document.querySelector(".next-max");
 
 const totalPages = Math.ceil(brandPDF.length / perPage);
 
-let num = Number(totalPages); /* всего страниц */
+let num = Number(totalPages);
 console.log(num);
 
 const btnNext = document.querySelector('.btn-next');
@@ -292,6 +419,8 @@ nextMax.innerHTML = totalPages;
 function renderBasic() {
     let toHTMLbasic = ''
     const htmlbasic = brandPDF.map((item, index) => {
+        start = (currenPage - 1) * perPage;
+        end = currenPage * perPage;
         if (index >= start && index < end) {
             toHTMLbasic =
                 `<div class = "content2-list-section-wrapper">
@@ -313,6 +442,7 @@ function renderBasic() {
     showItems();
 
 
+
 };
 renderBasic();
 
@@ -321,10 +451,13 @@ btnNext.addEventListener('click', () => {
     if (currenPage > totalPages) {
         currenPage = totalPages;
     }
-    start = (currenPage - 1) * perPage;
-    end = currenPage * perPage;
+    // start = (currenPage - 1) * perPage;
+    // end = currenPage * perPage;
+
     renderBasic();
 
+    console.log(currenPage, "+")
+    document.location.reload();
 
 
 
@@ -335,9 +468,11 @@ btnPrev.addEventListener('click', () => {
     if (currenPage <= 1) {
         currenPage = 1;
     }
-    start = (currenPage - 1) * perPage;
-    end = currenPage * perPage;
+    // start = (currenPage - 1) * perPage;
+    // end = currenPage * perPage;
+
     renderBasic();
+    document.location.reload();
 
 
 
@@ -350,41 +485,23 @@ function showItems() {
     searchParams.delete("e");
     window.history.pushState({}, '', url.toString());
 
-
-
     page.innerHTML = currenPage;
 
-
-    // const url = new URL(document.location);
-    // const searchParams = url.searchParams;
-    // searchParams.delete("e");
-    // window.history.pushState({}, '', url.toString());
-
-    updateURL(currenPage);
-
-
+    updateURL(currenPage)
 }
 
 function updateURL(yy) {
 
-
-
-
     if (history.pushState) {
         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
-
         var newUrl = baseUrl + '&e=' + yy;
+
         history.pushState(null, null, newUrl);
     } else {
         console.warn('History API не поддерживается');
     }
-}
 
-// const url = new URL(document.location);
-// const searchParams = url.searchParams;
-// searchParams.delete("e");
-// window.history.pushState({}, '', url.toString());
-// location.href = location.href + "&e=" + currenPage
+}
 
 
 
