@@ -241,6 +241,114 @@ renderchapter();
 ////////////////////////////
 
 
+
+// START /////////// paginatin ////////////////////////////////////////////////////////////////////////
+
+
+
+let currenPage = Number((new URL(document.location)).searchParams.get("e"));
+
+let perPage = 35; /*колличество на странице */
+
+let start = 0; /* нулевой элемент массива */
+let end = perPage;
+
+const page = document.querySelector(".page-num");
+const prevMin = document.querySelector(".prev-min");
+const nextMax = document.querySelector(".next-max");
+
+const totalPages = Math.ceil(brandPDF.length / perPage);
+let num = Number(totalPages);
+
+const btnNext = document.querySelector('.btn-next');
+const btnPrev = document.querySelector('.btn-prev');
+
+prevMin.innerHTML = 1;
+nextMax.innerHTML = totalPages;
+
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+// ///////
+
+function renderBasic() {
+    let toHTMLbasic = ''
+    const htmlbasic = brandPDF.map((item, index) => {
+        start = (currenPage - 1) * perPage;
+        end = currenPage * perPage;
+        if (index >= start && index < end) {
+            toHTMLbasic =
+                `<div class = "content2-list-section-wrapper">
+                    <a href = "${item.brandhref}" title="${item.brandname.slice(0, -4).split('_').join(' ')} Manuals to Sewing Machine Pdf" target="_ blank">
+                        <div class = "content2-list-section">
+                            <div class = "list-block-text" >
+                                <p class = "content2-list-text">${item.brandname.slice(0, -4).split('_').join(' ')} <span>pdf</span></p>
+                            </div> 
+                            <div class = "list-block-img"> </div> 
+                        </div> 
+                    </a> 
+                </div>`;
+            return toHTMLbasic
+        } else {
+            return toHTMLbasic = ''
+        };
+    });
+
+    document.querySelector(idpartslist).innerHTML = htmlbasic.join('');
+
+    showItems();
+
+    if (currenPage === totalPages) { next.classList.add("disable") } else { next.classList.remove("disable") };
+    if (currenPage === 1) { prev.classList.add("disable") } else { prev.classList.remove("disable") };
+};
+
+renderBasic();
+
+if (currenPage < totalPages) {
+    btnNext.addEventListener('click', () => {
+        currenPage++;
+        renderBasic();
+        document.location.reload();
+    });
+};
+
+if (currenPage > 1) {
+    btnPrev.addEventListener('click', () => {
+        currenPage--;
+        renderBasic();
+        document.location.reload();
+    });
+};
+
+function showItems() {
+    const url = new URL(document.location);
+    const searchParams = url.searchParams;
+    searchParams.delete("e");
+    window.history.pushState({}, '', url.toString());
+
+    page.innerHTML = currenPage;
+
+    updateURL(currenPage)
+};
+
+function updateURL(room) {
+    if (history.pushState) {
+        var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+        var newUrl = baseUrl + '&e=' + room;
+        history.pushState(null, null, newUrl);
+    } else {
+        console.warn('History API не поддерживается');
+    };
+
+};
+
+
+// END /////////// paginatin ////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 // const toHTMLbasic = fruitbasic =>
 
 //     `<div class = "content2-list-section-wrapper">
@@ -260,14 +368,7 @@ renderchapter();
 // };
 // renderbasic()
 
-// START /////////// paginatin ////////////////////////////////////////////////////////////////////////
-
-
 // /////////////////////////////////////////////////////////////////////// +++++++++++++
-
-
-// //////////////////////////********************** */
-
 
 // let currenPage = Number(params.get("e"));
 
@@ -293,9 +394,6 @@ renderchapter();
 // prevMin.innerHTML = 1;
 
 // nextMax.innerHTML = totalPages;
-
-
-
 
 // function renderBasic() {
 //     let toHTMLbasic = ''
@@ -383,129 +481,6 @@ renderchapter();
 // searchParams.delete("e");
 // window.history.pushState({}, '', url.toString());
 // location.href = location.href + "&e=" + currenPage
-
-
-// ///////////////////////)))))))))))))))))))))))))))))))))))))))))))
-
-let currenPage = Number(params.get("e"));
-// let currenPage = params.get("e");
-
-let perPage = 4;
-
-
-console.log(currenPage)
-let start = 0;
-let end = perPage;
-
-const page = document.querySelector(".page-num");
-const prevMin = document.querySelector(".prev-min");
-const nextMax = document.querySelector(".next-max");
-
-const totalPages = Math.ceil(brandPDF.length / perPage);
-
-let num = Number(totalPages);
-console.log(num);
-
-const btnNext = document.querySelector('.btn-next');
-const btnPrev = document.querySelector('.btn-prev');
-
-prevMin.innerHTML = 1;
-
-nextMax.innerHTML = totalPages;
-
-
-
-
-function renderBasic() {
-    let toHTMLbasic = ''
-    const htmlbasic = brandPDF.map((item, index) => {
-        start = (currenPage - 1) * perPage;
-        end = currenPage * perPage;
-        if (index >= start && index < end) {
-            toHTMLbasic =
-                `<div class = "content2-list-section-wrapper">
-                    <a href = "${item.brandhref}" title="${item.brandname.slice(0, -4).split('_').join(' ')} Manuals to Sewing Machine Pdf" target="_ blank">
-                        <div class = "content2-list-section">
-                            <div class = "list-block-text" >
-                                <p class = "content2-list-text">${item.brandname.slice(0, -4).split('_').join(' ')} <span>pdf</span></p>
-                            </div> 
-                            <div class = "list-block-img"> </div> 
-                        </div> 
-                    </a> 
-                </div>`;
-            return toHTMLbasic
-        } else {
-            return toHTMLbasic = ''
-        };
-    });
-    document.querySelector(idpartslist).innerHTML = htmlbasic.join('');
-    showItems();
-
-
-
-};
-renderBasic();
-
-btnNext.addEventListener('click', () => {
-    currenPage++;
-    if (currenPage > totalPages) {
-        currenPage = totalPages;
-    }
-    // start = (currenPage - 1) * perPage;
-    // end = currenPage * perPage;
-
-    renderBasic();
-
-    console.log(currenPage, "+")
-    document.location.reload();
-
-
-
-})
-
-btnPrev.addEventListener('click', () => {
-    currenPage--;
-    if (currenPage <= 1) {
-        currenPage = 1;
-    }
-    // start = (currenPage - 1) * perPage;
-    // end = currenPage * perPage;
-
-    renderBasic();
-    document.location.reload();
-
-
-
-
-})
-
-function showItems() {
-    const url = new URL(document.location);
-    const searchParams = url.searchParams;
-    searchParams.delete("e");
-    window.history.pushState({}, '', url.toString());
-
-    page.innerHTML = currenPage;
-
-    updateURL(currenPage)
-}
-
-function updateURL(yy) {
-
-    if (history.pushState) {
-        var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
-        var newUrl = baseUrl + '&e=' + yy;
-
-        history.pushState(null, null, newUrl);
-    } else {
-        console.warn('History API не поддерживается');
-    }
-
-}
-
-
-
-// /////////////////////////////////////////////////////////////////////  ++++++++++++++
 
 // ///////////////////////////////////////////////////   ////////////////////////////////////////
 
@@ -605,9 +580,3 @@ function updateURL(yy) {
 // } else {
 //     location.search = location.search + "?e=" + index;
 // }
-
-
-
-
-
-// START /////////// paginatin ///////////////////

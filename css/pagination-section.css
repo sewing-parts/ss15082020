@@ -4,77 +4,9 @@ body #main .pagination-section {
     justify-content: center;
     min-height: 25px;
     max-width: 1260px;
-    padding: 15px 40px 15px 40px;
+    padding: 15px 0px 15px 0px;
     margin-bottom: 30px;
-    /* background: yellowgreen; */
 }
-
-
-/* body #main .pagination-section .pagination-wrapper .content__paging {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-body #main .pagination-section .pagination-wrapper .content__paging .page-config {
-    margin-right: 30px;
-}
-
-body #main .pagination-section .pagination-wrapper.content__paging .page-config select {
-    width: 50px;
-    height: 25px;
-    border-radius: 3px;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging .total-item,
-.total-page {
-    margin-right: 30px;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging .number-page {
-    display: flex;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging ul {
-    display: flex;
-    justify-content: center;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging li {
-    width: 30px;
-    height: 30px;
-    border-radius: 3px;
-    border: 1px solid gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging ul li a {
-    color: black;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging ul li .btn-active {
-    color: #c6c9cc;
-    border: solid 1px #c6c9cc !important;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging .active {
-    background: #ff6e06;
-    border: 1px solid #ff6e06;
-}
-
-body #main .pagination-section .pagination-wrapper .content__paging .active a {
-    color: white;
-} */
-
-
-/* *********************************************************** */
 
 body #main .pagination-section .pagination-wrapper .pagination {
     width: 100%;
@@ -83,7 +15,6 @@ body #main .pagination-section .pagination-wrapper .pagination {
 
 body #main .pagination-section .pagination-wrapper .pagination div {
     display: inline-block;
-    margin: 0px 10px;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .page {
@@ -91,25 +22,37 @@ body #main .pagination-section .pagination-wrapper .pagination .page {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 0px;
     word-spacing: 3px;
-    padding: 8px 8px;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .prev-next {
-    color: #45698b;
+    box-sizing: border-box;
+    padding: 0;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 0px;
     word-spacing: 3px;
-    border: 1px solid #000;
-    padding: 8px 15px;
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    background: #45698b;
+    color: rgb(255, 255, 255);
 }
 
-body #main .pagination-section .pagination-wrapper .pagination .disable {
-    border: 1px solid rgb(199, 9, 9);
-    color: gray;
+body #main .pagination-section .pagination-wrapper .pagination .prev-next:hover {
+    color: #ffd000;
+}
+
+body #main .pagination-section .pagination-wrapper .pagination .disable:hover {
+    color: #5aaaf5;
 }
