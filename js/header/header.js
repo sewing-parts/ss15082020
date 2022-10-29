@@ -156,7 +156,7 @@ const toHTMLheader = fruitchapter =>
                     <label for="submit-m5" class="toggleSubmenu"><i class="fa"></i></label>
                     <ul id="sublevel-menu-five" class="level-li-five">
                         <li><a href="index-page-catalog-pdf.html?a=home&b=documentation&c=catalogs-pdf&d=&e=&f="><p class="lng-lev-catalogs-pdf"></p></a></li>
-                        <li><a href="index-page-species.html?a=home&b=documentation&c=parts-list-pdf&d=&e=&f="><p class="lng-lev-parts-list-pdf"></p></a></li>
+                        <li><a href="index-page-species-section.html?a=home&b=documentation&c=parts-list-pdf&d=&e=&f="><p class="lng-lev-parts-list-pdf"></p></a></li>
                     </ul>
                 </li>
             </ul>

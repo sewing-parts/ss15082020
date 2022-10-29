@@ -1,3 +1,35 @@
+// listen(window.history.length);
+// var oldLength = -1;
+
+// function listen(currentLength) {
+//     if (currentLength === !oldLength) {
+//         document.location.reload();
+
+//     }
+
+//     oldLength = window.history.length;
+//     setInterval(function() {
+//         listen(window.history.length);
+//     }, 1000);
+
+// }
+
+
+
+
+
+// window.onpopstate = function(event) {
+//     console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+// };
+
+
+
+
+// window.addEventListener('locationchange', function() {
+//     console.log('location changed!');
+// });
+
+
 // var code = '<title>oooooo</title>' +
 //     '<meta name="description" content="tttttttt" />' +
 //     '<meta name="keywords" content="dddddddddd" />';

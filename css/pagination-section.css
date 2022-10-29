@@ -5,7 +5,13 @@ body #main .pagination-section {
     min-height: 25px;
     max-width: 1260px;
     padding: 15px 0px 15px 0px;
-    margin-bottom: 30px;
+}
+
+body #main .pagination-section .pagination-wrapper {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination {
@@ -13,22 +19,14 @@ body #main .pagination-section .pagination-wrapper .pagination {
     display: flex;
 }
 
-body #main .pagination-section .pagination-wrapper .pagination div {
-    display: inline-block;
+body #main .pagination-section .pagination-wrapper .pagination-total {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-body #main .pagination-section .pagination-wrapper .pagination .page {
-    color: #45698b;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0px;
-    word-spacing: 3px;
-    width: 100px;
-    height: 34px;
-    line-height: 34px;
-    text-align: center;
+body #main .pagination-section .pagination-wrapper .pagination div {
+    display: inline-block;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .prev-next {
@@ -37,16 +35,80 @@ body #main .pagination-section .pagination-wrapper .pagination .prev-next {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 40px;
     letter-spacing: 0px;
     word-spacing: 3px;
-    width: 120px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     line-height: 34px;
     text-align: center;
     cursor: pointer;
     background: #45698b;
     color: rgb(255, 255, 255);
+}
+
+body #main .pagination-section .pagination-wrapper .pagination .page-wrapper {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #45698b;
+    border-bottom: 1px solid #45698b;
+}
+
+body #main .pagination-section .pagination-wrapper .pagination .page-wrapper .page {
+    color: #45698b;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 5px;
+}
+
+body #main .pagination-section .pagination-wrapper .pagination .page-wrapper .page-num {
+    color: #45698b;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 5px;
+}
+
+body #main .pagination-section .pagination-wrapper .pagination-total .total-pages {
+    color: #45698b;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+body #main .pagination-section .pagination-wrapper .pagination-total .total {
+    color: #45698b;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 5px;
+    text-align: center;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .prev-next:hover {

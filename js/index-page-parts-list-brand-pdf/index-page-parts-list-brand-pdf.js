@@ -212,9 +212,9 @@ const toHTMLcrumbs = fruitchapter =>
     `<ul class="crumbs-text">
             <li class="lev-${fruitchapter.aimA}"><a class="lng-lev-${fruitchapter.aimA}" href="index.html?a=${fruitchapter.aimA}"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimB}"><a class="lng-lev-${fruitchapter.aimB}" href="#"></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="index-page-species.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=&e=&f="></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=&f="></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="#">${fruitchapter.aimE}</a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="index-page-species-section.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=&e=&f="></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=1&f="></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=${fruitchapter.aimE}&f=">${fruitchapter.aimE}</a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimF}"><a class="lng-lev-${fruitchapter.aimF}" href="#"></a><i class="fas fa-angle-right"></i></li>
         </ul>`;
 
@@ -243,43 +243,48 @@ renderchapter();
 
 
 // START /////////// paginatin ////////////////////////////////////////////////////////////////////////
+// let currenPage;
 
-
+// if ((new URL(document.location)).searchParams.get("e") === "") {
+//     currenPage = 1;
+// } else {
+//     currenPage = Number((new URL(document.location)).searchParams.get("e"))
+// }
 
 let currenPage = Number((new URL(document.location)).searchParams.get("e"));
 
-let perPage = 35; /*колличество на странице */
+let perPage = 5; /*колличество на странице */
 
 let start = 0; /* нулевой элемент массива */
 let end = perPage;
 
 const page = document.querySelector(".page-num");
-const prevMin = document.querySelector(".prev-min");
 const nextMax = document.querySelector(".next-max");
 
 const totalPages = Math.ceil(brandPDF.length / perPage);
-let num = Number(totalPages);
 
 const btnNext = document.querySelector('.btn-next');
 const btnPrev = document.querySelector('.btn-prev');
 
-prevMin.innerHTML = 1;
 nextMax.innerHTML = totalPages;
 
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
-// ///////
+
+renderBasic();
 
 function renderBasic() {
+
     let toHTMLbasic = ''
     const htmlbasic = brandPDF.map((item, index) => {
         start = (currenPage - 1) * perPage;
         end = currenPage * perPage;
         if (index >= start && index < end) {
+
             toHTMLbasic =
                 `<div class = "content2-list-section-wrapper">
-                    <a href = "${item.brandhref}" title="${item.brandname.slice(0, -4).split('_').join(' ')} Manuals to Sewing Machine Pdf" target="_ blank">
+                    <a href = "${item.brandhref}" title="${item.brandname.slice(0, -4).split('_').join(' ')}. The parts list for sewing machine manual format pdf">
                         <div class = "content2-list-section">
                             <div class = "list-block-text" >
                                 <p class = "content2-list-text">${item.brandname.slice(0, -4).split('_').join(' ')} <span>pdf</span></p>
@@ -300,47 +305,292 @@ function renderBasic() {
 
     if (currenPage === totalPages) { next.classList.add("disable") } else { next.classList.remove("disable") };
     if (currenPage === 1) { prev.classList.add("disable") } else { prev.classList.remove("disable") };
+
 };
 
-renderBasic();
+// renderBasic();
 
-if (currenPage < totalPages) {
-    btnNext.addEventListener('click', () => {
+btnNext.addEventListener('click', () => {
+    if (currenPage < totalPages) {
         currenPage++;
         renderBasic();
         document.location.reload();
-    });
-};
+    };
+});
 
-if (currenPage > 1) {
-    btnPrev.addEventListener('click', () => {
+
+btnPrev.addEventListener('click', () => {
+    if (currenPage > 1) {
         currenPage--;
         renderBasic();
         document.location.reload();
-    });
-};
+    };
+});
 
 function showItems() {
-    const url = new URL(document.location);
-    const searchParams = url.searchParams;
-    searchParams.delete("e");
-    window.history.pushState({}, '', url.toString());
-
-    page.innerHTML = currenPage;
-
-    updateURL(currenPage)
-};
-
-function updateURL(room) {
     if (history.pushState) {
-        var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
-        var newUrl = baseUrl + '&e=' + room;
+        var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        let searchPAPAMS = "?" + "a=" + (new URL(document.location)).searchParams.get("a") +
+            "&" + "b=" + (new URL(document.location)).searchParams.get("b") +
+            "&" + "c=" + (new URL(document.location)).searchParams.get("c") +
+            "&" + "d=" + (new URL(document.location)).searchParams.get("d") +
+            "&" + "e=" + currenPage +
+            "&" + "f=" + (new URL(document.location)).searchParams.get("f") +
+            "&" + "lang=" + (new URL(document.location)).searchParams.get("lang");
+
+        var newUrl = baseUrl + searchPAPAMS;
         history.pushState(null, null, newUrl);
     } else {
         console.warn('History API не поддерживается');
     };
-
+    page.innerHTML = currenPage;
 };
+
+
+addEventListener("popstate", function(e) {
+    var baseUrlpopstate = window.location.protocol + "//" + window.location.host + "/index-page-species-section.html";
+    let searchPAPAMSpopstate = "?" + "a=" + (new URL(document.location)).searchParams.get("a") +
+        "&" + "b=" + (new URL(document.location)).searchParams.get("b") +
+        "&" + "c=" + (new URL(document.location)).searchParams.get("c") +
+        "&" + "d=" +
+        "&" + "e=" +
+        "&" + "f=" +
+        "&" + "lang=" + (new URL(document.location)).searchParams.get("lang");
+
+    var newUrlpopstate = baseUrlpopstate + searchPAPAMSpopstate;
+    window.location.replace(newUrlpopstate);
+}, false);
+
+
+
+
+
+
+
+//  вариант 1 *************************************************
+
+// function showItems() {
+//     const url = new URL(document.location);
+
+//     const searchParams = url.searchParams;
+//     searchParams.delete("e");
+//     window.history.pushState({}, '', url.toString());
+
+//     page.innerHTML = currenPage;
+
+//     updateURL(currenPage)
+// };
+
+// function updateURL(room) {
+//     if (history.pushState) {
+//         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+//         var newUrl = baseUrl + '&e=' + room;
+//         history.pushState(null, null, newUrl);
+//     } else {
+//         console.warn('History API не поддерживается');
+//     };
+
+// };
+
+//  вариант 2 ****************************************
+
+// function showItems() {
+
+//     const url = new URL(document.location);
+//     const searchParams = url.searchParams;
+//     searchParams.delete("e");
+//     searchParams.append('e', currenPage);
+//     window.history.pushState({}, '', url.toString());
+
+
+
+//     page.innerHTML = currenPage;
+
+// };
+
+
+//  вариант 3 **************************************** 
+
+
+// function showItems() {
+//     if (history.pushState) {
+//         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+//         let searchPAPAMS = "?" + "a=" + (new URL(document.location)).searchParams.get("a") +
+//             "&" + "b=" + (new URL(document.location)).searchParams.get("b") +
+//             "&" + "c=" + (new URL(document.location)).searchParams.get("c") +
+//             "&" + "d=" + (new URL(document.location)).searchParams.get("d") +
+//             "&" + "e=" + currenPage +
+//             "&" + "f=" + (new URL(document.location)).searchParams.get("f") +
+//             "&" + "lang=" + (new URL(document.location)).searchParams.get("lang");
+
+//         var newUrl = baseUrl + searchPAPAMS;
+//         history.pushState(null, null, newUrl);
+//     } else {
+//         console.warn('History API не поддерживается');
+//     };
+//     page.innerHTML = currenPage;
+// };
+
+
+// addEventListener("popstate", function(e) {
+//     var baseUrlpopstate = window.location.protocol + "//" + window.location.host + "/index-page-species-section.html";
+//     let searchPAPAMSpopstate = "?" + "a=" + (new URL(document.location)).searchParams.get("a") +
+//         "&" + "b=" + (new URL(document.location)).searchParams.get("b") +
+//         "&" + "c=" + (new URL(document.location)).searchParams.get("c") +
+//         "&" + "d=" +
+//         "&" + "e=" +
+//         "&" + "f=" +
+//         "&" + "lang=" + (new URL(document.location)).searchParams.get("lang");
+
+//     var newUrlpopstate = baseUrlpopstate + searchPAPAMSpopstate;
+//     window.location.replace(newUrlpopstate);
+// }, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const idpagination = '#pagination-page';
+
+// showItems()
+// nextMax.innerHTML = totalPages;
+// page.innerHTML = currenPage;
+
+// console.log(currenPage)
+// if (currenPage < totalPages) {
+//     console.log("www", currenPage)
+
+
+
+// };
+
+// function nextwww() {
+// btnNext.addEventListener('click', () => {
+//     currenPage++;
+
+//     renderBasic();
+//     console.log(currenPage)
+//     document.location.reload();
+// }
+
+// if (currenPage < totalPages) {
+//     console.log("www", currenPage)
+//     btnNext.addEventListener('click', () => {
+//         currenPage++;
+
+//         renderBasic();
+
+//         document.location.reload();
+//     });
+// };
+
+// if (currenPage > 1) {
+//     btnPrev.addEventListener('click', () => {
+//         currenPage--;
+
+//         renderBasic();
+//         document.location.reload();
+//     });
+// };
+
+
+
+
+// console.loc(currenPage)
+
+// function showItems() {
+//     const toHTMLpagination = fruitbasic =>
+//         `<div class="pagination-wrapper">
+//     <div class="pagination">
+//         <a href="index-page-parts-list-brand-pdf.html?a=home&b=documentation&c=parts-list-pdf&d=${fruitbasic.aimD}&e=2&f=&lang=ru">
+//             <div class="btn-prev prev prev-next">&#xab;</div>
+//         </a>
+//         <div class="page-wrapper">
+//             <div class="lng-lev-page page"></div>
+//             <div class="page-num">${currenPage}</div>
+//         </div>
+//         <a href="index-page-parts-list-brand-pdf.html?a=home&b=documentation&c=parts-list-pdf&d=${fruitbasic.aimD}&e=${currenPage}&f=&lang=ru">
+//             <div class="btn-next next prev-next" onclick="nextwww()">&#xbb;</div>
+//         </a>
+
+//     </div>
+//     <div class="pagination-total">
+//         <div class="lng-lev-total-pages total-pages"></div>
+//         <div class="total next-max">${totalPages}</div>
+//     </div>
+// </div>`;
+
+//     function renderpagination() {
+// if (currenPage === totalPages) { next.classList.add("disable") } else { next.classList.remove("disable") };
+// if (currenPage === 1) { prev.classList.add("disable") } else { prev.classList.remove("disable") };
+//     const htmlpagination = paramsUrl.map(toHTMLpagination).join('')
+//     document.querySelector(idpagination).innerHTML = htmlpagination
+// };
+// renderpagination()
+
+
+
+// };
+
+// showItems()
+
+// if (currenPage === totalPages) { next.classList.add("disable") } else { next.classList.remove("disable") };
+// if (currenPage === 1) { prev.classList.add("disable") } else { prev.classList.remove("disable") };
+
+
+
+
+
+
+
+
+
+
+
+
+// =======================================================================
+// function updateURL(room) {
+//     if (history.pushState) {
+//         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+//         var newUrl = baseUrl + '&e=' + room;
+//         history.pushState(null, null, newUrl);
+//     } else {
+//         console.warn('History API не поддерживается');
+//     };
+// document.location.reload();
+// };
+
+
 
 
 // END /////////// paginatin ////////////////////////////////////////////////////////////////////////

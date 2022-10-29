@@ -110,7 +110,20 @@ export const langArr = {
         "ua": "перелік запчастин pdf",
         "ru": "список запчастей pdf"
     },
-    // END // menu level//
+    // END // menu level //
+    // //////////////////////////////////////////
+    // START // pagination //
+    "lev-page": {
+        "en": "page",
+        "ua": "сторінка",
+        "ru": "страница"
+    },
+    "lev-total-pages": {
+        "en": "number of pages",
+        "ua": "кількість сторінок",
+        "ru": "количество страниц"
+    },
+    // END // pagination //
     // //////////////////////////////////////////
     // START // БРЭНДЫ //
     "lev-barudan": {

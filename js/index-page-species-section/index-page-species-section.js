@@ -3,8 +3,9 @@ const idspecies = '#species';
 const iddiscription = '#discription'
 
 
-import { brandsPartsList } from "./index-page-species-DATA.js";
 
+
+import { brandsPartsList } from "./index-page-species-section-DATA.js"
 
 //////////////////////////////
 
@@ -82,7 +83,7 @@ renderCrumbs()
 
 //////////////////////////////////////////////////
 // ////////////////////////////////////////////////
-import { langArr } from '../lang/lang-DATA.js';
+// import { langArr } from '../lang/lang-DATA.js';
 
 
 // ///////////////////////////////////////////////
