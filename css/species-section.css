@@ -67,6 +67,7 @@ body #main .species-section .species-wrapper a .species .container .species-img 
     overflow: hidden;
     border: 2px solid #6897af;
     transition: linear 0.5s;
+    background-color: #f5f6fa;
 }
 
 body #main .species-section .species-wrapper a .species .container .species-img img {
@@ -121,6 +122,17 @@ body #main .species-section .species-wrapper a .species:hover .block-fon .img-fo
     width: 104%;
     transition: linear 0.5s;
 }
+
+
+/*  */
+
+body #main .species-section .species-wrapper a .species:hover .container .species-img {
+    transition: linear 0.5s;
+    background-color: #ffd000;
+}
+
+
+/*  */
 
 body #main .species-section .species-wrapper a .species:hover .container .species-img {
     width: 110px;

@@ -24,13 +24,14 @@ export const langArr = {
         "ua": "головна",
         "ru": "главная"
     },
-    // ===================
+    // START ==================== 1
+    // ==================== 1
     "lev-spare-parts": {
         "en": "spare parts",
         "ua": "запчастини",
         "ru": "запчасти"
     },
-    // ***
+    // ==================== 1
     "lev-machine-parts": {
         "en": "machine parts",
         "ua": "деталі машин",
@@ -81,25 +82,44 @@ export const langArr = {
         "ua": "човники",
         "ru": "челноки"
     },
-    // ***
-    // ====================
-    // ====================
+    // END ==================== 1
+    // 
+    // 
+    // START===================== 2
+    // ===================== 2
+
     "lev-mechanization": {
         "en": "mechanization",
         "ua": "механізація",
         "ru": "механизация"
     },
-    // ====================
+    // ===================== 2
+
+
+    // END ===================== 2
+    // 
+    // 
+    // START ===================== 4
+    // ===================== 4
     "lev-service-center": {
         "en": "service center",
         "ua": "сервіс центр",
         "ru": "сервис центр"
     },
+    // ===================== 4
+
+
+    // END ===================== 4
+    // 
+    // 
+    // START===================== 5
+    // ===================== 5
     "lev-documentation": {
         "en": "documentation",
         "ua": "документація",
         "ru": "документация"
     },
+    // ===================== 5
     "lev-catalogs-pdf": {
         "en": "catalogs pdf",
         "ua": "каталоги pdf",
@@ -110,6 +130,7 @@ export const langArr = {
         "ua": "перелік запчастин pdf",
         "ru": "список запчастей pdf"
     },
+    // END ===================== 5
     // END // menu level //
     // //////////////////////////////////////////
     // START // pagination //
@@ -126,6 +147,16 @@ export const langArr = {
     // END // pagination //
     // //////////////////////////////////////////
     // START // БРЭНДЫ //
+    "lev-altin": {
+        "en": "altin",
+        "ua": "altin",
+        "ru": "altin"
+    },
+    "lev-american": {
+        "en": "american",
+        "ua": "american",
+        "ru": "american"
+    },
     "lev-barudan": {
         "en": "barudan",
         "ua": "barudan",
@@ -140,6 +171,11 @@ export const langArr = {
         "en": "bonis",
         "ua": "bonis",
         "ru": "bonis"
+    },
+    "lev-borkert": {
+        "en": "borkert",
+        "ua": "borkert",
+        "ru": "borkert"
     },
     "lev-brother": {
         "en": "brother",
@@ -156,10 +192,25 @@ export const langArr = {
         "ua": "chandler",
         "ru": "chandler"
     },
+    "lev-colli": {
+        "en": "colli",
+        "ua": "colli",
+        "ru": "colli"
+    },
+    "lev-columbia": {
+        "en": "columbia",
+        "ua": "columbia",
+        "ru": "colli"
+    },
     "lev-consew": {
         "en": "consew",
         "ua": "consew",
         "ru": "consew"
+    },
+    "lev-danda": {
+        "en": "danda",
+        "ua": "danda",
+        "ru": "danda"
     },
     "lev-durkopp-adler": {
         "en": "durkopp adler",
@@ -171,6 +222,16 @@ export const langArr = {
         "ua": "eastman",
         "ru": "eastman"
     },
+    "lev-elna": {
+        "en": "elna",
+        "ua": "elna",
+        "ru": "elna"
+    },
+    "lev-excluding": {
+        "en": "excluding",
+        "ua": "excluding",
+        "ru": "excluding"
+    },
     "lev-fischbein": {
         "en": "fischbein",
         "ua": "fischbein",
@@ -180,6 +241,16 @@ export const langArr = {
         "en": "global",
         "ua": "global",
         "ru": "global"
+    },
+    "lev-gribetz": {
+        "en": "gribetz",
+        "ua": "gribetz",
+        "ru": "gribetz"
+    },
+    "lev-happy": {
+        "en": "happy",
+        "ua": "happy",
+        "ru": "happy"
     },
     "lev-hashima-fusing": {
         "en": "hashima fusing",
@@ -191,10 +262,20 @@ export const langArr = {
         "ua": "highlead",
         "ru": "highlead"
     },
+    "lev-janome": {
+        "en": "janome",
+        "ua": "janome",
+        "ru": "janome"
+    },
     "lev-janome-home": {
         "en": "janome home",
         "ua": "janome home",
         "ru": "janome home"
+    },
+    "lev-jiannlian": {
+        "en": "jiannlian",
+        "ua": "jiannlian",
+        "ru": "jiannlian"
     },
     "lev-juki": {
         "en": "juki",
@@ -221,6 +302,11 @@ export const langArr = {
         "ua": "km",
         "ru": "km"
     },
+    "lev-lewis": {
+        "en": "lewis",
+        "ua": "lewis",
+        "ru": "lewis"
+    },
     "lev-maier": {
         "en": "maier",
         "ua": "maier",
@@ -230,6 +316,11 @@ export const langArr = {
         "en": "mauser spezial",
         "ua": "mauser spezial",
         "ru": "mauser spezial"
+    },
+    "lev-meca": {
+        "en": "meca",
+        "ua": "meca",
+        "ru": "meca"
     },
     "lev-merrow": {
         "en": "merrow",
@@ -271,10 +362,20 @@ export const langArr = {
         "ua": "pfaff",
         "ru": "pfaff"
     },
+    "lev-porter": {
+        "en": "porter",
+        "ua": "porter",
+        "ru": "porter"
+    },
     "lev-reece": {
         "en": "reece",
         "ua": "reece",
         "ru": "reece"
+    },
+    "lev-renown": {
+        "en": "renown",
+        "ua": "renown",
+        "ru": "renown"
     },
     "lev-rimoldi": {
         "en": "rimoldi",
@@ -285,6 +386,16 @@ export const langArr = {
         "en": "seiko",
         "ua": "seiko",
         "ru": "seiko"
+    },
+    "lev-shingling": {
+        "en": "shingling",
+        "ua": "shingling",
+        "ru": "shingling"
+    },
+    "lev-shingray": {
+        "en": "shingray",
+        "ua": "shingray",
+        "ru": "shingray"
     },
     "lev-singer": {
         "en": "singer",
@@ -315,6 +426,21 @@ export const langArr = {
         "en": "suprena",
         "ua": "suprena",
         "ru": "suprena"
+    },
+    "lev-titan": {
+        "en": "titan",
+        "ua": "titan",
+        "ru": "titan"
+    },
+    "lev-toyota": {
+        "en": "toyota",
+        "ua": "toyota",
+        "ru": "toyota"
+    },
+    "lev-truasuer": {
+        "en": "truasuer",
+        "ua": "truasuer",
+        "ru": "truasuer"
     },
     "lev-typical": {
         "en": "typical",
@@ -350,6 +476,11 @@ export const langArr = {
     // END // БРЭНДЫ //
     // //////////////////////////////////////////
     // START // ТЕКСТЫ//
+    "text-loopers": {
+        "en": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum numquam cum consectetur aliquid quidem soluta rem laudantium repellat natus? Quae ut sed tenetur vitae natus beatae, necessitatibus labore inventore quisquam nisi assumenda eveniet?Consequuntur aut eius similique facere mollitia quis! Corrupti vero asperiores animi delectus aut est dolorum ab nostrum, esse eveniet cumque, consequatur facilis repellat tenetur ut maxime iure atque voluptatibus, aliquam corporiseius cum perspiciatis ex. Vero aliquam, mollitia saepe eum quidem explicabo quisquam dolor doloribus vel quam, nisi omnis excepturi quos laboriosam laborum molestias dolorum tempora ducimus atque cumque asperiores. Tempore illum voluptatemaspernatur cupiditate, commodi obcaecati.',
+        "ua": 'Сама компанія є дуже успішною компанією. Невже він ніколи, домагаючись чогось, не дає відсічі тим, хто його хвалить? Але що може народитися із щасливого життя, якщо ніхто не прийде дізнатися про життєві потреби, крім того, щоб прийняти їх?Результати або його, як зробити стійкість хто! Але більш суворий вибір зіпсованого розуму чи вибір болю з нашого боку, незалежно від того, чи це є результатом легкого відштовхування, вважається головним чином законом і задоволеннями, деякими з тілаколи ви бачите це з По правді кажучи, я часто буду пояснювати йому певну стійкість, будь-який біль за болем, або що, якщо ми всі не погодимося на важку працю, проблеми, біль і часи, які є більш важкими. На той час задоволеннявін відкинутий бажанням, засліплений зручністю.',
+        "ru": 'Сама компания очень успешная. Разве он никогда, преследуя что-либо, не отталкивает тех, кто хвалит его? Но что должно родиться из счастливой жизни, если никто не придет узнать о потребностях жизни, кроме как принять их?Результаты или его хотели бы сделать устойчивость кто! Но более суровый выбор испорченного ума или выбор страданий с нашей стороны, будь то результат легкого отвращения, считается главным образом законом и удовольствиями, частью тела.когда ты видишь это из По правде говоря, я часто буду объяснять ему какую-то стойкость, всякую боль за болью, что ли, если только мы все не примем тяжкие труды, беды, боли и времена грубее. В то время удовольствиеон отвергнут желанием, ослеплен удобством.'
+    },
     "text-parts-list-pdf": {
         "en": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum numquam cum consectetur aliquid quidem soluta rem laudantium repellat natus? Quae ut sed tenetur vitae natus beatae, necessitatibus labore inventore quisquam nisi assumenda eveniet?Consequuntur aut eius similique facere mollitia quis! Corrupti vero asperiores animi delectus aut est dolorum ab nostrum, esse eveniet cumque, consequatur facilis repellat tenetur ut maxime iure atque voluptatibus, aliquam corporiseius cum perspiciatis ex. Vero aliquam, mollitia saepe eum quidem explicabo quisquam dolor doloribus vel quam, nisi omnis excepturi quos laboriosam laborum molestias dolorum tempora ducimus atque cumque asperiores. Tempore illum voluptatemaspernatur cupiditate, commodi obcaecati.',
         "ua": 'Сама компанія є дуже успішною компанією. Невже він ніколи, домагаючись чогось, не дає відсічі тим, хто його хвалить? Але що може народитися із щасливого життя, якщо ніхто не прийде дізнатися про життєві потреби, крім того, щоб прийняти їх?Результати або його, як зробити стійкість хто! Але більш суворий вибір зіпсованого розуму чи вибір болю з нашого боку, незалежно від того, чи це є результатом легкого відштовхування, вважається головним чином законом і задоволеннями, деякими з тілаколи ви бачите це з По правді кажучи, я часто буду пояснювати йому певну стійкість, будь-який біль за болем, або що, якщо ми всі не погодимося на важку працю, проблеми, біль і часи, які є більш важкими. На той час задоволеннявін відкинутий бажанням, засліплений зручністю.',

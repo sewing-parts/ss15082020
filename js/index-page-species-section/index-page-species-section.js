@@ -6,6 +6,7 @@ const iddiscription = '#discription'
 
 
 import { brandsPartsList } from "./index-page-species-section-DATA.js"
+import { categoryLoopers } from "./index-page-species-section-DATA.js"
 
 //////////////////////////////
 
@@ -33,6 +34,10 @@ switch (params.get("c")) {
     case 'parts-list-pdf':
         speciesCategory = brandsPartsList;
         break;
+    case 'loopers':
+        speciesCategory = categoryLoopers;
+        break;
+
 };
 
 //////////////////////////////////////////////

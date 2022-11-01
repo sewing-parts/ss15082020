@@ -74,7 +74,7 @@ const toHTMLheader = fruitchapter =>
                     <ul id="sublevel-menu-one" class="level-li-one">
                         <li><a href="#"><p class="lng-lev-feed-dogs"></p></a></li>
                         <li><a href="#">Лапки</a></li>
-                        <li><a href="#"><p class="lng-lev-loopers"></p></a></li>
+                        <li><a href="index-page-species-section.html?a=home&b=spare-parts&c=loopers&d=&e=&f="><p class="lng-lev-loopers"></p></a></li>
                         <li><a href="#"><p class="lng-lev-knives"></p></a></li>
                         <li><a href="#">Лезвия раскройные</a></li>
                         <li><a href="#">Игольные пластины</a></li>
