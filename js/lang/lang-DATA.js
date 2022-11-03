@@ -47,6 +47,11 @@ export const langArr = {
         "ua": "петлільники",
         "ru": "петлители"
     },
+    "lev-looper": {
+        "en": "looper",
+        "ua": "петлільник",
+        "ru": "петлитель"
+    },
     "lev-feed-dogs": {
         "en": "feed dogs",
         "ua": "двигуни тканини",
@@ -147,331 +152,332 @@ export const langArr = {
     // END // pagination //
     // //////////////////////////////////////////
     // START // БРЭНДЫ //
-    "lev-altin": {
-        "en": "altin",
-        "ua": "altin",
-        "ru": "altin"
-    },
-    "lev-american": {
-        "en": "american",
-        "ua": "american",
-        "ru": "american"
-    },
-    "lev-barudan": {
-        "en": "barudan",
-        "ua": "barudan",
-        "ru": "barudan"
-    },
-    "lev-bernina-home": {
-        "en": "bernina home",
-        "ua": "bernina home",
-        "ru": "bernina home"
-    },
-    "lev-bonis": {
-        "en": "bonis",
-        "ua": "bonis",
-        "ru": "bonis"
-    },
-    "lev-borkert": {
-        "en": "borkert",
-        "ua": "borkert",
-        "ru": "borkert"
-    },
-    "lev-brother": {
-        "en": "brother",
-        "ua": "brother",
-        "ru": "brother"
-    },
-    "lev-brother-home": {
-        "en": "brother home",
-        "ua": "brother home",
-        "ru": "brother home"
-    },
-    "lev-chandler": {
-        "en": "chandler",
-        "ua": "chandler",
-        "ru": "chandler"
-    },
-    "lev-colli": {
-        "en": "colli",
-        "ua": "colli",
-        "ru": "colli"
-    },
-    "lev-columbia": {
-        "en": "columbia",
-        "ua": "columbia",
-        "ru": "colli"
-    },
-    "lev-consew": {
-        "en": "consew",
-        "ua": "consew",
-        "ru": "consew"
-    },
-    "lev-danda": {
-        "en": "danda",
-        "ua": "danda",
-        "ru": "danda"
-    },
-    "lev-durkopp-adler": {
-        "en": "durkopp adler",
-        "ua": "durkopp adler",
-        "ru": "durkopp adler"
-    },
-    "lev-eastman": {
-        "en": "eastman",
-        "ua": "eastman",
-        "ru": "eastman"
-    },
-    "lev-elna": {
-        "en": "elna",
-        "ua": "elna",
-        "ru": "elna"
-    },
-    "lev-excluding": {
-        "en": "excluding",
-        "ua": "excluding",
-        "ru": "excluding"
-    },
-    "lev-fischbein": {
-        "en": "fischbein",
-        "ua": "fischbein",
-        "ru": "fischbein"
-    },
-    "lev-global": {
-        "en": "global",
-        "ua": "global",
-        "ru": "global"
-    },
-    "lev-gribetz": {
-        "en": "gribetz",
-        "ua": "gribetz",
-        "ru": "gribetz"
-    },
-    "lev-happy": {
-        "en": "happy",
-        "ua": "happy",
-        "ru": "happy"
-    },
-    "lev-hashima-fusing": {
-        "en": "hashima fusing",
-        "ua": "hashima fusing",
-        "ru": "hashima fusing"
-    },
-    "lev-highlead": {
-        "en": "highlead",
-        "ua": "highlead",
-        "ru": "highlead"
-    },
-    "lev-janome": {
-        "en": "janome",
-        "ua": "janome",
-        "ru": "janome"
-    },
-    "lev-janome-home": {
-        "en": "janome home",
-        "ua": "janome home",
-        "ru": "janome home"
-    },
-    "lev-jiannlian": {
-        "en": "jiannlian",
-        "ua": "jiannlian",
-        "ru": "jiannlian"
-    },
-    "lev-juki": {
-        "en": "juki",
-        "ua": "juki",
-        "ru": "juki"
-    },
-    "lev-juki-home": {
-        "en": "juki home",
-        "ua": "juki home",
-        "ru": "juki home"
-    },
-    "lev-kansai-special": {
-        "en": "kansai special",
-        "ua": "kansai special",
-        "ru": "kansai special"
-    },
-    "lev-kingtex": {
-        "en": "kingtex",
-        "ua": "kingtex",
-        "ru": "kingtex"
-    },
-    "lev-km": {
-        "en": "km",
-        "ua": "km",
-        "ru": "km"
-    },
-    "lev-lewis": {
-        "en": "lewis",
-        "ua": "lewis",
-        "ru": "lewis"
-    },
-    "lev-maier": {
-        "en": "maier",
-        "ua": "maier",
-        "ru": "maier"
-    },
-    "lev-mauser-spezial": {
-        "en": "mauser spezial",
-        "ua": "mauser spezial",
-        "ru": "mauser spezial"
-    },
-    "lev-meca": {
-        "en": "meca",
-        "ua": "meca",
-        "ru": "meca"
-    },
-    "lev-merrow": {
-        "en": "merrow",
-        "ua": "merrow",
-        "ru": "merrow"
-    },
-    "lev-minerva": {
-        "en": "minerva",
-        "ua": "minerva",
-        "ru": "minerva"
-    },
-    "lev-minerva-home": {
-        "en": "minerva home",
-        "ua": "minerva home",
-        "ru": "minerva home"
-    },
-    "lev-mitsubishi": {
-        "en": "mitsubishi",
-        "ua": "mitsubishi",
-        "ru": "mitsubishi"
-    },
-    "lev-n-c-carpet": {
-        "en": "n c carpet",
-        "ua": "n c carpet",
-        "ru": "n c carpet"
-    },
-    "lev-newlong": {
-        "en": "newlong",
-        "ua": "newlong",
-        "ru": "newlong"
-    },
-    "lev-pegasus": {
-        "en": "pegasus",
-        "ua": "pegasus",
-        "ru": "pegasus"
-    },
-    "lev-pfaff": {
-        "en": "pfaff",
-        "ua": "pfaff",
-        "ru": "pfaff"
-    },
-    "lev-porter": {
-        "en": "porter",
-        "ua": "porter",
-        "ru": "porter"
-    },
-    "lev-reece": {
-        "en": "reece",
-        "ua": "reece",
-        "ru": "reece"
-    },
-    "lev-renown": {
-        "en": "renown",
-        "ua": "renown",
-        "ru": "renown"
-    },
-    "lev-rimoldi": {
-        "en": "rimoldi",
-        "ua": "rimoldi",
-        "ru": "rimoldi"
-    },
-    "lev-seiko": {
-        "en": "seiko",
-        "ua": "seiko",
-        "ru": "seiko"
-    },
-    "lev-shingling": {
-        "en": "shingling",
-        "ua": "shingling",
-        "ru": "shingling"
-    },
-    "lev-shingray": {
-        "en": "shingray",
-        "ua": "shingray",
-        "ru": "shingray"
-    },
-    "lev-singer": {
-        "en": "singer",
-        "ua": "singer",
-        "ru": "singer"
-    },
-    "lev-singer-home": {
-        "en": "singer home",
-        "ua": "singer home",
-        "ru": "singer home"
-    },
-    "lev-siruba": {
-        "en": "siruba",
-        "ua": "siruba",
-        "ru": "siruba"
-    },
-    "lev-strobel": {
-        "en": "strobel",
-        "ua": "strobel",
-        "ru": "strobel"
-    },
-    "lev-sun-star": {
-        "en": "sun star",
-        "ua": "sun star",
-        "ru": "sun star"
-    },
-    "lev-suprena": {
-        "en": "suprena",
-        "ua": "suprena",
-        "ru": "suprena"
-    },
-    "lev-titan": {
-        "en": "titan",
-        "ua": "titan",
-        "ru": "titan"
-    },
-    "lev-toyota": {
-        "en": "toyota",
-        "ua": "toyota",
-        "ru": "toyota"
-    },
-    "lev-truasuer": {
-        "en": "truasuer",
-        "ua": "truasuer",
-        "ru": "truasuer"
-    },
-    "lev-typical": {
-        "en": "typical",
-        "ua": "typical",
-        "ru": "typical"
-    },
-    "lev-union-special": {
-        "en": "union special",
-        "ua": "union special",
-        "ru": "union special"
-    },
-    "lev-veit": {
-        "en": "veit",
-        "ua": "veit",
-        "ru": "veit"
-    },
-    "lev-willcox-gibbs": {
-        "en": "willcox gibbs",
-        "ua": "willcox gibbs",
-        "ru": "willcox gibbs"
-    },
-    "lev-yamato": {
-        "en": "yamato",
-        "ua": "yamato",
-        "ru": "yamato"
-    },
-    "lev-zoje": {
-        "en": "zoje",
-        "ua": "zoje",
-        "ru": "zoje"
-    },
+    // "lev-altin": {
+    //     "en": "altin",
+    //     "ua": "altin",
+    //     "ru": "altin"
+    // },
+    // "lev-american": {
+    //     "en": "american",
+    //     "ua": "american",
+    //     "ru": "american"
+    // },
+    // "lev-barudan": {
+    //     "en": "barudan",
+    //     "ua": "barudan",
+    //     "ru": "barudan"
+    // },
+    // "lev-bernina-home": {
+    //     "en": "bernina home",
+    //     "ua": "bernina home",
+    //     "ru": "bernina home"
+    // },
+    // "lev-bonis": {
+    //     "en": "bonis",
+    //     "ua": "bonis",
+    //     "ru": "bonis"
+    // },
+    // "lev-borkert": {
+    //     "en": "borkert",
+    //     "ua": "borkert",
+    //     "ru": "borkert"
+    // },
+    // "lev-brother": {
+    //     "en": "brother",
+    //     "ua": "brother",
+    //     "ru": "brother"
+    // },
+    // "lev-brother-home": {
+    //     "en": "brother home",
+    //     "ua": "brother home",
+    //     "ru": "brother home"
+    // },
+    // "lev-chandler": {
+    //     "en": "chandler",
+    //     "ua": "chandler",
+    //     "ru": "chandler"
+    // },
+    // "lev-colli": {
+    //     "en": "colli",
+    //     "ua": "colli",
+    //     "ru": "colli"
+    // },
+    // "lev-columbia": {
+    //     "en": "columbia",
+    //     "ua": "columbia",
+    //     "ru": "colli"
+    // },
+    // "lev-consew": {
+    //     "en": "consew",
+    //     "ua": "consew",
+    //     "ru": "consew"
+    // },
+    // "lev-danda": {
+    //     "en": "danda",
+    //     "ua": "danda",
+    //     "ru": "danda"
+    // },
+    // "lev-durkopp-adler": {
+    //     "en": "durkopp adler",
+    //     "ua": "durkopp adler",
+    //     "ru": "durkopp adler"
+    // },
+    // "lev-eastman": {
+    //     "en": "eastman",
+    //     "ua": "eastman",
+    //     "ru": "eastman"
+    // },
+    // "lev-elna": {
+    //     "en": "elna",
+    //     "ua": "elna",
+    //     "ru": "elna"
+    // },
+    // "lev-excluding": {
+    //     "en": "excluding",
+    //     "ua": "excluding",
+    //     "ru": "excluding"
+    // },
+    // "lev-fischbein": {
+    //     "en": "fischbein",
+    //     "ua": "fischbein",
+    //     "ru": "fischbein"
+    // },
+    // "lev-global": {
+    //     "en": "global",
+    //     "ua": "global",
+    //     "ru": "global"
+    // },
+    // "lev-gribetz": {
+    //     "en": "gribetz",
+    //     "ua": "gribetz",
+    //     "ru": "gribetz"
+    // },
+    // "lev-happy": {
+    //     "en": "happy",
+    //     "ua": "happy",
+    //     "ru": "happy"
+    // },
+    // "lev-hashima-fusing": {
+    //     "en": "hashima fusing",
+    //     "ua": "hashima fusing",
+    //     "ru": "hashima fusing"
+    // },
+    // "lev-highlead": {
+    //     "en": "highlead",
+    //     "ua": "highlead",
+    //     "ru": "highlead"
+    // },
+    // "lev-janome": {
+    //     "en": "janome",
+    //     "ua": "janome",
+    //     "ru": "janome"
+    // },
+    // "lev-janome-home": {
+    //     "en": "janome home",
+    //     "ua": "janome home",
+    //     "ru": "janome home"
+    // },
+    // "lev-jiannlian": {
+    //     "en": "jiannlian",
+    //     "ua": "jiannlian",
+    //     "ru": "jiannlian"
+    // },
+    // "lev-juki": {
+    //     "en": "juki",
+    //     "ua": "juki",
+    //     "ru": "juki"
+    // },
+    // "lev-juki-home": {
+    //     "en": "juki home",
+    //     "ua": "juki home",
+    //     "ru": "juki home"
+    // },
+    // "lev-kansai-special": {
+    //     "en": "kansai special",
+    //     "ua": "kansai special",
+    //     "ru": "kansai special"
+    // },
+    // "lev-kingtex": {
+    //     "en": "kingtex",
+    //     "ua": "kingtex",
+    //     "ru": "kingtex"
+    // },
+    // "lev-km": {
+    //     "en": "km",
+    //     "ua": "km",
+    //     "ru": "km"
+    // },
+    // "lev-lewis": {
+    //     "en": "lewis",
+    //     "ua": "lewis",
+    //     "ru": "lewis"
+    // },
+    // "lev-maier": {
+    //     "en": "maier",
+    //     "ua": "maier",
+    //     "ru": "maier"
+    // },
+    // "lev-mauser-spezial": {
+    //     "en": "mauser spezial",
+    //     "ua": "mauser spezial",
+    //     "ru": "mauser spezial"
+    // },
+    // "lev-meca": {
+    //     "en": "meca",
+    //     "ua": "meca",
+    //     "ru": "meca"
+    // },
+    // "lev-merrow": {
+    //     "en": "merrow",
+    //     "ua": "merrow",
+    //     "ru": "merrow"
+    // },
+    // "lev-minerva": {
+    //     "en": "minerva",
+    //     "ua": "minerva",
+    //     "ru": "minerva"
+    // },
+    // "lev-minerva-home": {
+    //     "en": "minerva home",
+    //     "ua": "minerva home",
+    //     "ru": "minerva home"
+    // },
+    // "lev-mitsubishi": {
+    //     "en": "mitsubishi",
+    //     "ua": "mitsubishi",
+    //     "ru": "mitsubishi"
+    // },
+    // "lev-n-c-carpet": {
+    //     "en": "n c carpet",
+    //     "ua": "n c carpet",
+    //     "ru": "n c carpet"
+    // },
+    // "lev-newlong": {
+    //     "en": "newlong",
+    //     "ua": "newlong",
+    //     "ru": "newlong"
+    // },
+    // "lev-pegasus": {
+    //     "en": "pegasus",
+    //     "ua": "pegasus",
+    //     "ru": "pegasus"
+    // },
+    // "lev-pfaff": {
+    //     "en": "pfaff",
+    //     "ua": "pfaff",
+    //     "ru": "pfaff"
+    // },
+    // "lev-porter": {
+    //     "en": "porter",
+    //     "ua": "porter",
+    //     "ru": "porter"
+    // },
+    // "lev-reece": {
+    //     "en": "reece",
+    //     "ua": "reece",
+    //     "ru": "reece"
+    // },
+    // "lev-renown": {
+    //     "en": "renown",
+    //     "ua": "renown",
+    //     "ru": "renown"
+    // },
+    // "lev-rimoldi": {
+    //     "en": "rimoldi",
+    //     "ua": "rimoldi",
+    //     "ru": "rimoldi"
+    // },
+    // "lev-seiko": {
+    //     "en": "seiko",
+    //     "ua": "seiko",
+    //     "ru": "seiko"
+    // },
+    // "lev-shingling": {
+    //     "en": "shingling",
+    //     "ua": "shingling",
+    //     "ru": "shingling"
+    // },
+    // "lev-shingray": {
+    //     "en": "shingray",
+    //     "ua": "shingray",
+    //     "ru": "shingray"
+    // },
+    // "lev-singer": {
+    //     "en": "singer",
+    //     "ua": "singer",
+    //     "ru": "singer"
+    // },
+    // "lev-singer-home": {
+    //     "en": "singer home",
+    //     "ua": "singer home",
+    //     "ru": "singer home"
+    // },
+    // "lev-siruba": {
+    //     "en": "siruba",
+    //     "ua": "siruba",
+    //     "ru": "siruba"
+    // },
+    // "lev-strobel": {
+    //     "en": "strobel",
+    //     "ua": "strobel",
+    //     "ru": "strobel"
+    // },
+    // "lev-sun-star": {
+    //     "en": "sun star",
+    //     "ua": "sun star",
+    //     "ru": "sun star"
+    // },
+    // "lev-suprena": {
+    //     "en": "suprena",
+    //     "ua": "suprena",
+    //     "ru": "suprena"
+    // },
+    // "lev-titan": {
+    //     "en": "titan",
+    //     "ua": "titan",
+    //     "ru": "titan"
+    // },
+    // "lev-toyota": {
+    //     "en": "toyota",
+    //     "ua": "toyota",
+    //     "ru": "toyota"
+    // },
+    // "lev-truasuer": {
+    //     "en": "truasuer",
+    //     "ua": "truasuer",
+    //     "ru": "truasuer"
+    // },
+    // "lev-typical": {
+    //     "en": "typical",
+    //     "ua": "typical",
+    //     "ru": "typical"
+    // },
+    // "lev-union-special": {
+    //     "en": "union special",
+    //     "ua": "union special",
+    //     "ru": "union special"
+    // },
+    // "lev-veit": {
+    //     "en": "veit",
+    //     "ua": "veit",
+    //     "ru": "veit"
+    // },
+    // "lev-willcox-gibbs": {
+    //     "en": "willcox gibbs",
+    //     "ua": "willcox gibbs",
+    //     "ru": "willcox gibbs"
+    // },
+    // "lev-yamato": {
+    //     "en": "yamato",
+    //     "ua": "yamato",
+    //     "ru": "yamato"
+    // },
+    // "lev-zoje": {
+    //     "en": "zoje",
+    //     "ua": "zoje",
+    //     "ru": "zoje"
+    // },
+
 
     // END // БРЭНДЫ //
     // //////////////////////////////////////////
@@ -492,6 +498,12 @@ export const langArr = {
         "ru": 'каталоги Сама компания очень успешная. Разве он никогда, преследуя что-либо, не отталкивает тех, кто хвалит его? Но что должно родиться из счастливой жизни, если никто не придет узнать о потребностях жизни, кроме как принять их?Результаты или его хотели бы сделать устойчивость кто! Но более суровый выбор испорченного ума или выбор страданий с нашей стороны, будь то результат легкого отвращения, считается главным образом законом и удовольствиями, частью тела.когда ты видишь это из По правде говоря, я часто буду объяснять ему какую-то стойкость, всякую боль за болью, что ли, если только мы все не примем тяжкие труды, беды, боли и времена грубее. В то время удовольствиеон отвергнут желанием, ослеплен удобством.'
     },
     // END // ТЕКСТЫ //
+
+    "lev-detail": {
+        "en": "detail",
+        "ua": "докладно",
+        "ru": "подробно"
+    },
     // ///////////////////////////////////////////
     // START // footer //
     // a

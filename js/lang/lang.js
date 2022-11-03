@@ -195,12 +195,17 @@ import { langArr } from './lang-DATA.js';
 // for (let key in langArr) { document.querySelector('.lng-' + key).innerHTML = langArr[key][langURL] }
 
 for (let key in langArr) {
+
     const demoClasses = document.querySelectorAll('.lng-' + key)
         // console.log(demoClasses)
     demoClasses.forEach(element => {
         // element.textContent += langArr[key][langURL]
-        element.textContent += langArr[key][(new URL(document.location)).searchParams.get("lang")]
+
+        element.textContent = langArr[key][(new URL(document.location)).searchParams.get("lang")]
+
     });
+
 };
+
 
 // /////  END  ////////////////////////////////////  ПРЕВОДЧИК  ///////////////////////////////////////////////

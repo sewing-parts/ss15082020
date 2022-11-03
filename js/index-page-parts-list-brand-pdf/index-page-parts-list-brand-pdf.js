@@ -1,6 +1,6 @@
 ///////////////////////////////
 const idcrumbs = '#crumbs'
-const idchapter = '#chapter-list';
+const iddiscription = '#discription'
 const idpartslist = '#list-positions';
 
 //////////////////////////////
@@ -213,7 +213,7 @@ const toHTMLcrumbs = fruitchapter =>
             <li class="lev-${fruitchapter.aimA}"><a class="lng-lev-${fruitchapter.aimA}" href="index.html?a=${fruitchapter.aimA}"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimB}"><a class="lng-lev-${fruitchapter.aimB}" href="#"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="index-page-species-section.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=&e=&f="></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=1&f="></a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=1&f=">${fruitchapter.aimD.split('-').join(' ')}</a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="index-page-parts-list-brand-pdf.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=${fruitchapter.aimE}&f=">${fruitchapter.aimE}</a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimF}"><a class="lng-lev-${fruitchapter.aimF}" href="#"></a><i class="fas fa-angle-right"></i></li>
         </ul>`;
@@ -227,14 +227,14 @@ renderCrumbs()
 /////////////////////////////
 
 const toHTMLchapter = fruitchapter =>
-    `<h1 class="title-shadow-one lng-lev-${fruitchapter.aimC}" ></h1>
-    <p class="title-shadow-two">${fruitchapter.aimD.split('-').join(' ')}</p>`;
-
-// <p class="title-shadow-two">${paramsUrl[0]["aimD"].split('-').join(' ')}</p>
+    `<div class="dsn">
+        <h1 class="title-shadow-one lng-lev-${fruitchapter.aimC}" ></h1>
+        <p class="title-shadow-two lng-lev-${fruitchapter.aimD}">${fruitchapter.aimD.split('-').join(' ')}</p>
+    </div>`;
 
 function renderchapter() {
     const htmlchapter = paramsUrl.map(toHTMLchapter).join('')
-    document.querySelector(idchapter).innerHTML = htmlchapter
+    document.querySelector(iddiscription).innerHTML = htmlchapter
 };
 renderchapter();
 
