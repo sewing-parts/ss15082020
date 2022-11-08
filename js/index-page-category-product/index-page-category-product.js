@@ -42,9 +42,16 @@ switch (params.get("c")) {
     case 'loopers':
         categoryPRODUCT = categoryLOOPERS.reverse();
         break;
-
-
 }
+
+let dataRequestC = (new URL(document.location)).searchParams.get("c");
+let dataRequestD = (new URL(document.location)).searchParams.get("d")
+
+let categoryPRODUCTresult = categoryPRODUCT.filter(function(item, index, array) {
+    return item.c === dataRequestC && item.d === dataRequestD
+});
+categoryPRODUCTresult = categoryPRODUCTresult.reverse();
+console.log(categoryPRODUCTresult)
 
 /////////////////////////////
 
@@ -101,7 +108,6 @@ const toHTMLdiscription = fruitchapter =>
     `<div class="dsn">
         <h1 class="title-shadow-one lng-lev-${fruitchapter.aimC}"></h1>
         <p class="title-shadow-two lng-lev-${fruitchapter.aimD}">${fruitchapter.aimD.split('-').join(' ')}</p>
-       
     </div>`;
 
 function renderDiscription() {
@@ -117,7 +123,7 @@ renderDiscription()
 
 let currenPage = Number((new URL(document.location)).searchParams.get("e"));
 
-let perPage = 1; /*колличество на странице */
+let perPage = 5; /*колличество на странице */
 
 let start = 0; /* нулевой элемент массива */
 let end = perPage;
@@ -125,7 +131,7 @@ let end = perPage;
 const page = document.querySelector(".page-num");
 const nextMax = document.querySelector(".next-max");
 
-const totalPages = Math.ceil(categoryPRODUCT.length / perPage);
+const totalPages = Math.ceil(categoryPRODUCTresult.length / perPage);
 
 const btnNext = document.querySelector('.btn-next');
 const btnPrev = document.querySelector('.btn-prev');
@@ -141,7 +147,7 @@ renderBasic();
 function renderBasic() {
 
     let toHTMLbasic = ''
-    const htmlbasic = categoryPRODUCT.map((item, index) => {
+    const htmlbasic = categoryPRODUCTresult.map((item, index) => {
         start = (currenPage - 1) * perPage;
         end = currenPage * perPage;
         if (index >= start && index < end) {
@@ -150,11 +156,11 @@ function renderBasic() {
                 `<a href="#">
             <section class="product">
                 <div class="product-block-img">
-                    <img class="product-img" src="${item.imgSrc}" alt="">
+                    <img class="product-img" src="${item.imgSrc}" alt="${item.c} ${item.f}">
                 </div>
                 <div class="product-block-text">
-                    <p class="lng-lev-${item.c} product-text">${item.c}</p>
-                    <p class="lng-lev-${item.d} product-text">${item.d}</p>
+                    <p class="lng-lev-${item.onlyc} product-text">${item.onlyc}</p>
+                    <p class="lng-lev-${item.d} product-text">${item.d.split('-').join(' ')}</p>
                     <p class="lng-lev-${item.f} product-text">${item.f}</p>
                 </div>
             </section>
