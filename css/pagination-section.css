@@ -2,15 +2,15 @@ body #main .pagination-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 25px;
     max-width: 1260px;
-    padding: 15px 0px 15px 0px;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 20px;
 }
 
 body #main .pagination-section .pagination-wrapper {
     display: flex;
     max-width: 300px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
 }
 
@@ -43,8 +43,11 @@ body #main .pagination-section .pagination-wrapper .pagination .prev-next {
     line-height: 34px;
     text-align: center;
     cursor: pointer;
-    background: #45698b;
-    color: rgb(255, 255, 255);
+    border: 1px solid #45698b;
+    color: #45698b;
+    background-image: url(../images/grg.jpg);
+    background-size: 200% 100%;
+    transition: linear 0.5s;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .page-wrapper {
@@ -53,8 +56,10 @@ body #main .pagination-section .pagination-wrapper .pagination .page-wrapper {
     line-height: 40px;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #45698b;
-    border-bottom: 1px solid #45698b;
+    border: 1px solid #45698b;
+    margin: 0 10px;
+    background-image: url(../images/grg.jpg);
+    background-size: 200% 100%;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .page-wrapper .page {
@@ -112,9 +117,15 @@ body #main .pagination-section .pagination-wrapper .pagination-total .total {
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .prev-next:hover {
-    color: #ffd000;
+    color: #27ae60;
+    background-image: url(../images/grg.jpg);
+    background-size: 1000% 1000%;
+    transition: linear 0.5s;
 }
 
 body #main .pagination-section .pagination-wrapper .pagination .disable:hover {
-    color: #5aaaf5;
+    color: #c0392b;
+    background-image: url(../images/grg.jpg);
+    background-size: 1000% 1000%;
+    transition: linear 0.5s;
 }

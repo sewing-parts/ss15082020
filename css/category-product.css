@@ -9,161 +9,129 @@ body #main .category-product-section {
     width: 100%;
     max-width: 1260px;
     justify-content: space-around;
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: cover;
+    padding: 10PX 0PX;
     overflow: hidden;
-    /* background-color: red; */
 }
 
 body #main .category-product-section .product {
     padding: 0;
     margin: 0;
-    height: 318px;
-    /* width: 190px; */
-    width: 290px;
     margin: 20px 10px 20px 10px;
     box-sizing: border-box;
-    /* box-shadow: 7px 7px #dddddd;
-    transition: linear 0.5s; */
-    /* border: 1px solid rgb(212, 212, 212); */
-    /* border: 2px solid #f0f0f0; */
-    overflow: hidden;
-    /* background-color: red; */
+    box-shadow: -4px -4px 7px -8px #45698b, 4px 4px 7px -8px #45698b;
+    transition: linear 0.5s;
 }
 
-body #main .category-product-section .product .product-block-img {
-    /* height: 295px; */
-    height: 230px;
-    /* width: 190px; */
-    width: 290px;
+
+/* ================================================================= */
+
+body #main .category-product-section .product-w4x3h270width {
+    min-height: 1px;
+    width: 270px;
+}
+
+body #main .category-product-section .product-w6x7h270width {
+    min-height: 1px;
+    width: 270px;
+}
+
+
+/* ================================================================ */
+
+body #main .category-product-section .product .block-img {
     display: inline-block;
     overflow: hidden;
-    /* background: red; */
     box-sizing: border-box;
-    border: 1px solid #e4e4e4;
+    /* border-top: 1px solid #e4e4e4; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-body #main .category-product-section .product .product-block-img .product-img {
+
+/* ================================================================ */
+
+body #main .category-product-section .product .block-img-w4x3h270width {
+    height: 205px;
     width: 100%;
+}
+
+body #main .category-product-section .product .block-img-w6x7h270width {
+    height: 315px;
+    width: 100%;
+}
+
+
+/* ================================================================ */
+
+body #main .category-product-section .product .block-img .img {
     height: 100%;
-    /* object-fit: cover; */
-    display: block;
-    /* -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; */
+    width: 100%;
     transition: linear 0.5s;
 }
 
-body #main .category-product-section .product .product-block-text {
-    margin-top: -4px;
-    /* height: 44px;
-    line-height: 20px;
-    width: 190px; */
+body #main .category-product-section .product .block-text {
     background-image: url("../images/fon_parts_three.jpg");
     background-size: cover;
-    /* padding: 2px 0px;
-    margin-top: -4px; */
     transition: linear 0.5s;
-    /*  */
-    width: 290px;
-    height: 86px;
+    width: 100%;
+    /* height: 86px; */
+    height: 100px;
     min-height: 1px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: rgb(245, 245, 245); */
+    align-items: center;
 }
 
-body #main .category-product-section .product .product-block-text .product-text {
-    /* text-align: center;
-    color: #f5f6fa;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0px;
-    word-spacing: 3px;
-    transition: linear 0.5s; */
+body #main .category-product-section .product .block-text .text {
     text-align: center;
     color: #f5f6fa;
-    /* color: #45698b;
-    color: rgb(77, 77, 77); */
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    /* word-spacing: 5px; */
     min-height: 15px;
     line-height: 15px;
-    transition: linear 0.5s;
-    transform: scale(1, 1.2);
     letter-spacing: 0px;
     margin: 3px 0px 3px 0px;
     padding: 2px 0px 0px 0px;
-}
-
-
-/* body #main .category-product-section .product a .product-block-detail {
-    height: 32px;
-    line-height: 32px;
-    width: 190px;
-    background-image: url("../images/fon_parts_three.jpg");
-    background-size: cover;
-    padding: 2px 0px;
-    margin-top: -4px;
-    transition: linear 0.5s;
-} */
-
-
-/* body #main .category-product-section .product a .product-block-detail .product-detail {
-    text-align: center;
-    color: #f5f6fa;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0px;
-    word-spacing: 3px;
-    transition: linear 0.5s;
-} */
-
-
-/* body #main .category-product-section .product:hover {
-    box-shadow: 1px 1px #c7c7c7;
-    transition: linear 0.5s;
-} */
-
-body #main .category-product-section .product:hover .product-block-text {
-    background-color: rgb(241, 241, 241);
     transition: linear 0.5s;
 }
 
-body #main .category-product-section .product:hover .product-block-text .product-text {
+body #main .category-product-section .product .block-text .text-sp {
+    position: absolute;
+    bottom: -18%;
+    background-image: url(../images/grg.jpg);
+    font-size: 0px;
+    padding: 0px 0px;
+    width: 0%;
+    transition: linear 0.5s;
+}
+
+body #main .category-product-section .product:hover {
+    box-shadow: -4px -4px 10px -8px #45698b, 4px 4px 10px -8px #45698b;
+    transition: linear 0.5s;
+}
+
+body #main .category-product-section .product:hover .block-text .text {
     color: #ffd000;
     transition: linear 0.5s;
 }
 
-body #main .category-product-section .product:hover .product-block-img .product-img {
-    /* transform: scale(1.07); */
-    /* -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    -o-filter: none;
-    filter: none;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; */
-    /* transition: linear 0.5s; */
+body #main .category-product-section .product:hover .block-text .text-sp {
+    position: absolute;
+    color: #45698b;
+    bottom: -24%;
+    background-image: url(../images/grg.jpg);
+    background-size: 100% 300%;
+    font-size: 14px;
+    padding: 3px 0px;
+    width: 100%;
+    border-bottom: 1px solid #bdc3c7;
+    box-shadow: -4px -4px 10px -6px #45698b, 4px 4px 10px -6px #45698b;
+    transition: linear 0.3s;
 }
 
 

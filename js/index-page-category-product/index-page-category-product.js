@@ -123,7 +123,7 @@ renderDiscription()
 
 let currenPage = Number((new URL(document.location)).searchParams.get("e"));
 
-let perPage = 5; /*колличество на странице */
+let perPage = 4; /*колличество на странице */
 
 let start = 0; /* нулевой элемент массива */
 let end = perPage;
@@ -153,15 +153,16 @@ function renderBasic() {
         if (index >= start && index < end) {
 
             toHTMLbasic =
-                `<a href="#">
-            <section class="product">
-                <div class="product-block-img">
-                    <img class="product-img" src="${item.imgSrc}" alt="${item.c} ${item.f}">
+                `<a href="https://www.google.com.ua/?gws_rd=ssl">
+            <section class="product product-${item.widthxheight}">
+                <div class="block-img block-img-${item.widthxheight}">
+                    <img class="img" src="${item.imgSrc}" alt="${item.c} ${item.f}">
                 </div>
-                <div class="product-block-text">
-                    <p class="lng-lev-${item.onlyc} product-text">${item.onlyc}</p>
-                    <p class="lng-lev-${item.d} product-text">${item.d.split('-').join(' ')}</p>
-                    <p class="lng-lev-${item.f} product-text">${item.f}</p>
+                <div class="block-text">
+                    <p class="lng-lev-${item.onlyc} text">${item.onlyc}</p>
+                    <p class="lng-lev-${item.d} text">${item.d.split('-').join(' ')}</p>
+                    <p class="lng-lev-${item.f} text">${item.f}</p>
+                    <p class="lng-lev-more-details text text-sp"></p>
                 </div>
             </section>
         </a>`;

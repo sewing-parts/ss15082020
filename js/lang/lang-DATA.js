@@ -499,10 +499,15 @@ export const langArr = {
     },
     // END // ТЕКСТЫ //
 
-    "lev-detail": {
-        "en": "detail",
-        "ua": "докладно",
-        "ru": "подробно"
+    "lev-check-availability": {
+        "en": "check availability",
+        "ua": "уточнити наявність",
+        "ru": "уточнить наличие"
+    },
+    "lev-more-details": {
+        "en": "more details",
+        "ua": "детальніше",
+        "ru": "подробнее"
     },
     // ///////////////////////////////////////////
     // START // footer //

@@ -16,6 +16,7 @@ body #main .discription-section .dsn {
     align-items: center;
     justify-content: center;
     background-image: url(../images/grg.jpg);
+    background-size: 100% 100%;
 }
 
 
