@@ -75,7 +75,6 @@ body #main .category-product-section .product .block-text {
     background-size: cover;
     transition: linear 0.5s;
     width: 100%;
-    /* height: 86px; */
     height: 100px;
     min-height: 1px;
     position: relative;
@@ -129,7 +128,7 @@ body #main .category-product-section .product:hover .block-text .text-sp {
     font-size: 14px;
     padding: 3px 0px;
     width: 100%;
-    border-bottom: 1px solid #bdc3c7;
+    border-bottom: 1px solid #8fbace;
     box-shadow: -4px -4px 10px -6px #45698b, 4px 4px 10px -6px #45698b;
     transition: linear 0.3s;
 }

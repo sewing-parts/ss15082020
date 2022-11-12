@@ -4,19 +4,6 @@ export const categoryLOOPERS = [{
         c: 'loopers',
         d: 'altin',
         e: 1,
-        f: '81000124',
-        onlyc: 'looper',
-        widthxheight: 'w4x3h270width',
-        hef: '#',
-        imgSrc: 'images/category-product/loopers/altin/81000124.jpg',
-        oen: 'altin 81000124'
-    },
-    {
-        a: 'home',
-        b: 'spare-parts',
-        c: 'loopers',
-        d: 'altin',
-        e: 1,
         f: '81000125',
         onlyc: 'looper',
         widthxheight: 'w4x3h270width',
@@ -89,6 +76,7 @@ export const categoryLOOPERS = [{
         imgSrc: 'images/category-product/loopers/altin/81070808.jpg',
         oen: 'altin 81070808'
     },
+
     {
         a: 'home',
         b: 'spare-parts',
@@ -114,6 +102,19 @@ export const categoryLOOPERS = [{
         href: '#',
         imgSrc: 'images/category-product/loopers/altin/81071401.jpg',
         oen: 'altin 81071401'
+    },
+    {
+        a: 'home',
+        b: 'spare-parts',
+        c: 'loopers',
+        d: 'altin',
+        e: 1,
+        f: '81000124',
+        onlyc: 'looper',
+        widthxheight: 'w4x3h270width',
+        href: 'index-page-product-card.html',
+        imgSrc: 'images/category-product/loopers/altin/81000124.jpg',
+        oen: 'altin 81000124'
     },
     {
         a: 'home',

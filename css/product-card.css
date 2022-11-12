@@ -1,0 +1,82 @@
+body #main .product-card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1260px;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 20px;
+}
+
+body #main .product-card-section .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(242, 112, 112); */
+}
+
+body #main .product-card-section .container .goods-left-wrapper {}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    min-width: 660px;
+    min-height: 580px;
+    background-color: rgb(204, 204, 204);
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-max {
+    margin: 5px 5px;
+    padding: 5px 5px;
+    min-width: 1px;
+    min-height: 580px;
+    background-color: rgb(6, 202, 212);
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-max img {
+    width: 100%;
+    height: 100%;
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-min {
+    margin: 5px 5px;
+    padding: 5px 5px;
+    min-width: 160px;
+    height: 150px;
+    /* border: 2px solid black; */
+    background-color: rgb(6, 202, 212);
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-min div {
+    width: 130px;
+    height: 130px;
+    background-color: rgb(6, 202, 212);
+    padding: 2px;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-min .active {
+    background-color: rgb(255, 0, 0);
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-min div:hover {
+    background-color: yellow;
+}
+
+body #main .product-card-section .container .goods-left-wrapper .single-goods-left .goods-img-min div img {
+    width: 100%;
+    height: 100%;
+}
+
+body #main .product-card-section .container .goods-right-wrapper {}
+
+body #main .product-card-section .container .goods-right-wrapper .single-goods-right {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 360px;
+    min-height: 580px;
+    background-color: rgb(244, 98, 244);
+}

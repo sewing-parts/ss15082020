@@ -78,8 +78,8 @@ const toHTMLcrumbs = fruitchapter =>
             <li class="lev-${fruitchapter.aimA}"><a class="lng-lev-${fruitchapter.aimA}" href="index.html?a=${fruitchapter.aimA}"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimB}"><a class="lng-lev-${fruitchapter.aimB}" href="#"></a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimC}"><a class="lng-lev-${fruitchapter.aimC}" href="index-page-species-section.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=&e=&f="></a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="#">${fruitchapter.aimD.split('-').join(' ')}</a><i class="fas fa-angle-right"></i></li>
-            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="#">${fruitchapter.aimE}</a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimD}"><a class="lng-lev-${fruitchapter.aimD}" href="index-page-category-product.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=${fruitchapter.aimE}&f=">${fruitchapter.aimD.split('-').join(' ')}</a><i class="fas fa-angle-right"></i></li>
+            <li class="lev-${fruitchapter.aimE}"><a class="lng-lev-${fruitchapter.aimE}" href="index-page-category-product.html?a=${fruitchapter.aimA}&b=${fruitchapter.aimB}&c=${fruitchapter.aimC}&d=${fruitchapter.aimD}&e=${fruitchapter.aimE}&f=">${fruitchapter.aimE}</a><i class="fas fa-angle-right"></i></li>
             <li class="lev-${fruitchapter.aimF}"><a class="lng-lev-${fruitchapter.aimF}" href="#"></a><i class="fas fa-angle-right"></i></li>
         </ul>`;
 
@@ -153,19 +153,19 @@ function renderBasic() {
         if (index >= start && index < end) {
 
             toHTMLbasic =
-                `<a href="https://www.google.com.ua/?gws_rd=ssl">
-            <section class="product product-${item.widthxheight}">
-                <div class="block-img block-img-${item.widthxheight}">
-                    <img class="img" src="${item.imgSrc}" alt="${item.c} ${item.f}">
-                </div>
-                <div class="block-text">
-                    <p class="lng-lev-${item.onlyc} text">${item.onlyc}</p>
-                    <p class="lng-lev-${item.d} text">${item.d.split('-').join(' ')}</p>
-                    <p class="lng-lev-${item.f} text">${item.f}</p>
-                    <p class="lng-lev-more-details text text-sp"></p>
-                </div>
-            </section>
-        </a>`;
+                `<a href="${item.href}?a=${item.a}&b=${item.b}&c=${item.c}&d=${item.d}&e=${item.e}&f=${item.f}">
+                    <section class="product product-${item.widthxheight}">
+                        <div class="block-img block-img-${item.widthxheight}">
+                            <img class="img" src="${item.imgSrc}" alt="${item.c} ${item.f}">
+                        </div>
+                        <div class="block-text">
+                            <p class="lng-lev-${item.onlyc} text">${item.onlyc}</p>
+                            <p class="lng-lev-${item.d} text">${item.d.split('-').join(' ')}</p>
+                            <p class="lng-lev-${item.f} text">${item.f}</p>
+                            <p class="lng-lev-more-details text text-sp"></p>
+                        </div>
+                    </section>
+                </a>`;
             // `<div class = "content2-list-section-wrapper">
             //     <a href = "${item.brandhref}" title="${item.brandname.slice(0, -4).split('_').join(' ')}. The parts list for sewing machine manual format pdf">
             //         <div class = "content2-list-section">

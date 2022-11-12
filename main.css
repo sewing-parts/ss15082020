@@ -10,6 +10,7 @@
 @import url('css/catalog-section.css');
 @import url('css/species-section.css');
 @import url('css/category-product.css');
+@import url('css/product-card.css');
 @import url('css/list-pdf-section.css');
 @import url('css/helpful-section.css');
 @import url('css/pagination-section.css');
@@ -25,6 +26,7 @@
 @import url('css/media-catalog-section.css');
 @import url('css/media-species-section.css');
 @import url('css/media-category-product.css');
+@import url('css/media-product-card.css');
 @import url('css/media-list-pdf-section.css');
 @import url('css/media-helpful-section.css');
 @import url('css/media-footer.css');
