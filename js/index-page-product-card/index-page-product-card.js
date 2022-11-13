@@ -64,15 +64,15 @@ setTimeout(fff, 10);
 
 
 function fff() {
-    let textOneArry = document.getElementsByClassName('purpose-text-one');
+    let textOneArry = document.getElementsByClassName('purpose-text-d');
     let resTEXTone = textOneArry[0].innerText
     console.log(resTEXTone)
 
-    let textTwoArry = document.getElementsByClassName('purpose-text-two');
+    let textTwoArry = document.getElementsByClassName('purpose-text-f');
     let resTEXTtwo = textTwoArry[0].innerText
     console.log(resTEXTtwo)
 
-    let textThreeArry = document.getElementsByClassName('purpose-text-three');
+    let textThreeArry = document.getElementsByClassName('purpose-text-c');
     let resTEXTthree = textThreeArry[0].innerText
     console.log(resTEXTthree)
 
