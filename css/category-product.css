@@ -9,7 +9,7 @@ body #main .category-product-section {
     width: 100%;
     max-width: 1260px;
     justify-content: space-around;
-    padding: 10PX 0PX;
+    padding: 10px 0px;
     overflow: hidden;
 }
 

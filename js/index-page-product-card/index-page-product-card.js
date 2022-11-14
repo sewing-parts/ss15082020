@@ -80,5 +80,5 @@ function fff() {
     console.log(resss)
 
     const form = document.querySelector('.purpose-text-zero');
-    form.textContent = resss
+    form.textContent += resss
 }
