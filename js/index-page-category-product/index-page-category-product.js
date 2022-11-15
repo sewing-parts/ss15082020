@@ -153,7 +153,7 @@ function renderBasic() {
         if (index >= start && index < end) {
 
             toHTMLbasic =
-                `<a href="${item.href}?a=${item.a}&b=${item.b}&c=${item.c}&d=${item.d}&e=${(new URL(document.location)).searchParams.get("e")}&f=${item.f}">
+                `<a href="${item.href}?a=${item.a}&b=${item.b}&c=${item.c}&d=${item.d}&e=${item.e}&f=${item.f}">
                     <section class="product product-${item.widthxheight}">
                         <div class="block-img block-img-${item.widthxheight}">
                             <img class="img" src="${item.imgSrc}" alt="${item.c} ${item.f}">

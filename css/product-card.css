@@ -33,6 +33,7 @@
         min-height: 60px;
         width: 100%;
         /* background-color: #9df0a1; */
+        /* text-align: center; */
     }
     
     body #main .product-card-section .container-headline .headline-wrapper .text-h1 {
@@ -46,6 +47,7 @@
         line-height: 60px;
         padding: 0px 10px;
         word-spacing: 5px;
+        /* text-align: right; */
     }
     /*  */
     
@@ -172,7 +174,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        border-top: 1px solid rgb(165, 165, 164);
+        /* border-top: 1px solid rgb(165, 165, 164); */
         /* background-color: rgb(231, 231, 231); */
         margin-top: 20px;
     }
