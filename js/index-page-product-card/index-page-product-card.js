@@ -65,20 +65,21 @@ setTimeout(fff, 10);
 
 function fff() {
     let textOneArry = document.getElementsByClassName('purpose-text-d');
-    let resTEXTone = textOneArry[0].innerText
-    console.log(resTEXTone)
+    let resTEXTone = textOneArry[0].innerText;
+    console.log(resTEXTone);
 
     let textTwoArry = document.getElementsByClassName('purpose-text-f');
-    let resTEXTtwo = textTwoArry[0].innerText
-    console.log(resTEXTtwo)
+    let resTEXTtwo = textTwoArry[0].innerText;
+    console.log(resTEXTtwo);
 
     let textThreeArry = document.getElementsByClassName('purpose-text-c');
-    let resTEXTthree = textThreeArry[0].innerText
-    console.log(resTEXTthree)
+    let resTEXTthree = textThreeArry[0].innerText;
+    console.log(resTEXTthree);
 
-    let resss = resTEXTtwo + " " + resTEXTone + " " + resTEXTthree;
-    console.log(resss)
+    let resss = resTEXTthree + " " + resTEXTone + " " + resTEXTtwo;
+    console.log(resss);
 
     const form = document.querySelector('.purpose-text-zero');
-    form.textContent += resss
+    // form.textContent += resss
+    form.textContent = resss;
 }
