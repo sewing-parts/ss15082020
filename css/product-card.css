@@ -138,7 +138,8 @@
         /* flex-direction: column; */
         align-items: center;
         justify-content: center;
-        background-color: #45698b;
+        /* background-color: #45698b; */
+        background-color: #282828;
         margin: 10px;
     }
     
@@ -249,20 +250,37 @@
     /* START ++++++++++++++++++++++++++++++++++ кнопка отправки запроса формы */
     
     body #main .product-card-section .container .goods-right .price-wrapper .block .modal__btn {
+        background-color: #45698b;
         border: none;
-        background-color: rgb(234, 36, 36);
-        padding: 5px 10px;
-        color: #fff;
+        color: #f5f6fa;
+        padding: 0px 0px;
+        height: 50px;
+        width: 240px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline-block; */
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        word-spacing: 3px;
+        cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 5px;
-        font-size: 20px;
-        cursor: pointer;
+        justify-content: center;
     }
     
     body #main .product-card-section .container .goods-right .price-wrapper .block .modal__btn img {
-        width: 10px;
-        height: 10px;
+        width: 40px;
+        height: 40px;
+        /* background-color: yellow; */
+        margin-right: 15px;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .block .modal__btn:hover {
+        color: #ffd000;
     }
     /* END ++++++++++++++++++++++++++++++++++ кнопка отправки запроса формы */
     /*  */
@@ -449,7 +467,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 10;
+        z-index: 100000;
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s;
