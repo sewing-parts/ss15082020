@@ -1,5 +1,6 @@
     body #main .product-card-section {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         min-height: 100px;
@@ -7,30 +8,31 @@
         max-width: 100%;
         padding: 20px 0px 0px 0px;
         margin-bottom: 40px;
-        /* background-color: red; */
+        /* background-color: rgb(241, 140, 140); */
     }
-    
-    body #main .product-card-section .single {
-        width: 100%;
-        background-image: url(../images/grg.jpg);
-        background-size: 100% 100%;
-    }
+    /* body #main .product-card-section .single {
+      
+    } */
     /*  */
     
-    body #main .product-card-section .single .headline {
-        max-width: 100%;
+    body #main .product-card-section .headline {
+        width: 100%;
         display: flex;
+        /* justify-content: flex-start; */
         /* background-color: #e69df0; */
         /* margin-bottom: 20px; */
         padding-left: 10px;
-        background-color: #45698b;
+        /* background-color: #45698b; */
         margin: 10px;
+        /* background-image: url(../images/grg.jpg);
+        background-size: 100% 100%; */
     }
     
-    body #main .product-card-section .single .headline .text-h1 {
+    body #main .product-card-section .headline .text-h1 {
+        color: #5d5d5d;
         /* color: #3b63ae; */
         /* color: #f5f6fa; */
-        color: #f5f6fa;
+        /* color: #f5f6fa; */
         font-size: 25px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -43,7 +45,7 @@
     }
     /*  */
     
-    body #main .product-card-section .single .container {
+    body #main .product-card-section .container {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -52,81 +54,74 @@
         /* border: 1px solid grey; */
     }
     
-    body #main .product-card-section .single .container .goods-left {
+    body #main .product-card-section .container .goods-left {
         /* background-color: rgb(42, 24, 202); */
-        width: 66.6%;
+        width: 60%;
         padding: 10px;
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-max {
+    body #main .product-card-section .container .goods-left .picture-max {
         display: flex;
         justify-content: center;
         min-width: 1px;
         min-height: 1px;
         /* background-color: rgb(255, 255, 255); */
-        border: 3px solid #45698b;
+        border: 1px solid #45698b;
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-max img {
+    body #main .product-card-section .container .goods-left .picture-max img {
         width: 100%;
         height: 100%;
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-min {
+    body #main .product-card-section .container .goods-left .picture-min {
         padding: 10px 10px;
         min-width: 150px;
-        min-height: 100px;
+        min-height: 1px;
         /* background-color: rgb(161, 161, 161); */
         display: flex;
         margin-top: 10px;
-        border: 3px solid #45698b;
+        border: 1px solid #45698b;
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-min div {
+    body #main .product-card-section .container .goods-left .picture-min div {
         width: 150px;
-        min-height: 100px;
+        min-height: 1px;
         cursor: pointer;
         display: block;
         margin: auto 5px;
         border: 1px solid #4f97db;
-        background-image: url(../images/product-card/foto-no.png);
-        background-size: 100% 100%;
+        /* background-image: url(../images/product-card/foto-no.png);
+        background-size: 100% 100%; */
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-min div .goods-min {
+    body #main .product-card-section .container .goods-left .picture-min div .goods-min {
         width: 100%;
+        /* width: 150px; */
         display: block;
         margin: auto;
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-min div:hover {
+    body #main .product-card-section .container .goods-left .picture-min div:hover {
         border: 1px solid #ffd000
         /* background-color: yellow; */
     }
     
-    body #main .product-card-section .single .container .goods-left .picture-min .active {
+    body #main .product-card-section .container .goods-left .picture-min .active {
         /* background-color: rgb(255, 0, 0); */
         border: 1px solid rgb(255, 0, 0);
     }
     
-    body #main .product-card-section .single .container .goods-right {
+    body #main .product-card-section .container .goods-right {
         /* background-color: rgb(199, 179, 52); */
-        width: 33.3%;
+        width: 40%;
         padding: 10px;
     }
-    /* body #main .product-card-section .single-goods .container .goods-right-wrapper .single-goods-right {
-        min-height: 1px;
-        padding: 10px 10px;
-    } */
     /*  */
     /*  */
     /*  */
     
-    body #main .product-card-section .single .container .goods-right .purpose {
-        /* background-color: #00ff15; */
-    }
-    
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper {
+    body #main .product-card-section .container .goods-right .price-wrapper {
         /* background-color: #0b380f; */
         min-height: 50px;
         width: 100%;
@@ -134,14 +129,8 @@
         flex-direction: column;
         align-items: center;
     }
-    /* body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .price {
-        background-color: #dddddd;
-        height: 50px;
-        width: 250px;
-        display: flex;
-    } */
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block {
+    body #main .product-card-section .container .goods-right .price-wrapper .block {
         /* background-color: #832abe; */
         height: 50px;
         width: 240px;
@@ -153,7 +142,7 @@
         margin: 10px;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block .preice-text {
+    body #main .product-card-section .container .goods-right .price-wrapper .block .preice-text {
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -162,7 +151,7 @@
         /* padding: 0 85px; */
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block .preice-text span {
+    body #main .product-card-section .container .goods-right .price-wrapper .block .preice-text span {
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
@@ -171,7 +160,7 @@
         /* background-color: #4f97db; */
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block p {
+    body #main .product-card-section .container .goods-right .price-wrapper .block p {
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -179,65 +168,67 @@
         word-spacing: 3px;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block .text-yes {
+    body #main .product-card-section .container .goods-right .price-wrapper .block .text-yes {
         color: rgb(9, 223, 9);
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block .text-no {
+    body #main .product-card-section .container .goods-right .price-wrapper .block .text-no {
         color: rgb(255, 90, 90);
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block .text-check {
+    body #main .product-card-section .container .goods-right .price-wrapper .block .text-check {
         color: #ffd000;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block p span {
+    body #main .product-card-section .container .goods-right .price-wrapper .block p span {
         font-weight: 500;
         font-size: 25px;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block p .yes {
+    body #main .product-card-section .container .goods-right .price-wrapper .block p .yes {
         color: rgb(9, 223, 9);
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block p .no {
+    body #main .product-card-section .single .container .goods-right .price-wrapper .block p .no {
         color: rgb(255, 74, 74);
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .price-wrapper .block p .check {
+    body #main .product-card-section .container .goods-right .price-wrapper .block p .check {
         color: #ffd000;
     }
     /*  */
     /*  */
     /*  */
     
-    body #main .product-card-section .single .container .goods-right .purpose .purpose-wrapper {
+    body #main .product-card-section .container .goods-right .purpose-wrapper {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
+        /* background-color: rgb(0, 255, 55); */
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .purpose-wrapper .block {
+    body #main .product-card-section .container .goods-right .purpose-wrapper .block {
         margin: 2px 7px;
         /* background-color: aqua; */
-        min-height: 30px;
+        min-height: 1px;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .purpose-wrapper .block-img {
+    body #main .product-card-section .container .goods-right .purpose-wrapper .block-img {
         margin: 0px 2px;
         /* background-color: rgb(123, 255, 0); */
-        height: 30px;
+        /* height: 30px; */
+        min-height: 1px;
         display: flex;
         align-items: center;
         margin-left: 10px;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .purpose-wrapper .block-img img {
-        height: 60%;
+    body #main .product-card-section .container .goods-right .purpose-wrapper .block-img img {
+        height: 17px;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .purpose-wrapper .block .text-one {
+    body #main .product-card-section .container .goods-right .purpose-wrapper .block .text-one {
         color: #454545;
         font-size: 17px;
         font-family: 'Roboto', sans-serif;
@@ -245,15 +236,123 @@
         text-transform: uppercase;
     }
     
-    body #main .product-card-section .single .container .goods-right .purpose .purpose-wrapper .block .text-two {
+    body #main .product-card-section .container .goods-right .purpose-wrapper .block .text-two {
         color: #808080;
         font-size: 17px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         text-transform: uppercase;
     }
+    /*  */
+    /*  */
+    /*  */
+    /* START ++++++++++++++++++++++++++++++++++ кнопка отправки запроса формы */
     
-    body #main .product-card-section .single .container .goods-right .help {
+    body #main .product-card-section .container .goods-right .price-wrapper .block .modal__btn {
+        border: none;
+        background-color: rgb(234, 36, 36);
+        padding: 5px 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .block .modal__btn img {
+        width: 10px;
+        height: 10px;
+    }
+    /* END ++++++++++++++++++++++++++++++++++ кнопка отправки запроса формы */
+    /*  */
+    /* body #main .product-card-section .container .goods-right .price-wrapper .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(243, 243, 243);
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content .topic-text {
+        font-size: 17px;
+        font-weight: 600;
+        color: #3e2093;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content p {
+        font-size: 17px;
+        font-weight: 600;
+        color: gray;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form {
+        width: 100%;
+        padding: 2px;
+        background-color: rgb(50, 174, 205);
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .input-box {
+        height: 50px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 2px;
+        background-color: yellowgreen;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .input-box input,
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .input-box textarea {
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background: #f0f1f8;
+        padding: 0 20px;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .input-box textarea {
+        resize: none;
+        padding: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .message-box {
+        min-height: 110px;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .button {
+        display: inline-block;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .button input[type="button"] {
+        color: #fff;
+        font-size: 18px;
+        background: #3e2093;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+        transition: 0.2s;
+    }
+    
+    body #main .product-card-section .container .goods-right .price-wrapper .content form .button input[type="button"]:hover {
+        background: rgb(0, 0, 207);
+    } */
+    /* +++++++++++++++++++++++++++++++++++++ */
+    /*  */
+    /*  */
+    /*  */
+    
+    body #main .product-card-section .container .goods-right .help {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -262,7 +361,7 @@
         margin-top: 20px;
     }
     
-    body #main .product-card-section .single .container .goods-right .help .wrapper {
+    body #main .product-card-section .container .goods-right .help .wrapper {
         display: flex;
         justify-content: center;
         border: 1px solid #45698b;
@@ -271,7 +370,7 @@
         margin: 10px 0px;
     }
     
-    body #main .product-card-section .single .container .goods-right .help .wrapper .block {
+    body #main .product-card-section .container .goods-right .help .wrapper .block {
         height: 60px;
         min-width: 60px;
         display: flex;
@@ -280,13 +379,13 @@
         margin: 0px 0px;
     }
     
-    body #main .product-card-section .single .container .goods-right .help .wrapper .block img {
+    body #main .product-card-section .container .goods-right .help .wrapper .block img {
         height: 100%;
         border: 1px solid #f5f6fa;
         border-radius: 3px;
     }
     
-    body #main .product-card-section .single .container .goods-right .help .wrapper .block a {
+    body #main .product-card-section .container .goods-right .help .wrapper .block a {
         width: 220px;
         height: 60px;
         display: flex;
@@ -307,7 +406,264 @@
         transition: linear 0.5s;
     }
     
-    body #main .product-card-section .single .container .goods-right .help .wrapper .block a:hover {
+    body #main .product-card-section .container .goods-right .help .wrapper .block a:hover {
         color: #ffd000;
         transition: linear 0.5s;
     }
+    /* START 999999999999999999999999999999999999 модальное окно с формой 9999999999999999999999999999999 */
+    /*  */
+    /* класс  _locked сделан для body модальное окно */
+    
+    ._locked {
+        overflow: hidden;
+    }
+    
+    body #main .modal-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 1px;
+    }
+    /* кнопка */
+    /* body #main .modal-section .modal__btn {
+        border: none;
+        background-color: rgb(234, 36, 36);
+        padding: 5px 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    body #main .modal-section .modal__btn img {
+        width: 10px;
+        height: 10px;
+    } */
+    /* кнопка */
+    
+    body #main .modal-section ._modal {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        pointer-events: none;
+    }
+    
+    body #main .modal-section ._active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+    
+    body #main .modal-section ._modal .modal-bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(59, 59, 59);
+        display: flex;
+        padding: 20px;
+        opacity: 0.97;
+    }
+    
+    body #main .modal-section ._modal .modal-bg .modal-body {
+        padding: 24px;
+        background-color: rgb(245, 245, 245);
+        width: 700px;
+        margin: auto;
+        max-height: 90%;
+        overflow: auto;
+        border-radius: 0px;
+        position: relative;
+    }
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-close {
+        position: absolute;
+        top: 8px;
+        right: 7px;
+        cursor: pointer;
+        /* background-color: #ffd000; */
+        width: 15px;
+        height: 15px;
+    }
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-close img {
+        width: 15px;
+        height: 15px;
+    }
+    /* Ограничиваем контейнер по ширине 1000px */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container {
+        width: 100%;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    /* Стили самой формы */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content {
+        display: flex;
+        /* делаем колонки в ряд */
+        align-items: center;
+        /* выравниваем по центру */
+        justify-content: space-between;
+        /* колонки растянутся на всю ширину */
+        background: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    }
+    /* Стили левой колонки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side {
+        width: 25%;
+        /* занимает 25% общей ширины */
+        height: 100%;
+        /* растягиваем на всю высоту */
+        position: relative;
+        /* позиционирование относительное (для ::before) */
+        display: flex;
+        flex-direction: column;
+        /* внутри элементы располагаем в колонку */
+    }
+    /* Стили разделительной линии между левой и правой колонкой */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side::before {
+        content: "";
+        /* контент нам не нужен */
+        position: absolute;
+        /* позиционируем относительно .left-side */
+        height: 70%;
+        /* высота 70% от .left-side */
+        width: 2px;
+        /* ширина 2px */
+        background: #afafb6;
+        right: -15px;
+        /* позиционируем справа + отступ 15px (справа) */
+        top: 50%;
+        /* выравниваем по центру */
+        transform: translateY(-50%);
+        /* выравниваем по центру */
+    }
+    /* Стили правой колонки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side {
+        width: 75%;
+        /* занимает 75% общей ширины */
+        margin-left: 75px;
+    }
+    /* Элементы левой колонки: адрес, телефон, email */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    /* Общие стили для иконок */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details i {
+        font-size: 25px;
+        /* задаем размер */
+        color: #3e2093;
+        /* задаем цвет */
+        margin-bottom: 10px;
+    }
+    /* Стили для заголовков левой колонки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details .topic {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 7px;
+        /* отступ снизу 7px */
+    }
+    /* Стили для текста левой колонки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details .text-one,
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details .text-two {
+        font-size: 14px;
+        color: #afafb6;
+    }
+    /* Заголовок правой колонки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side .topic-text {
+        font-size: 23px;
+        font-weight: 600;
+        color: #3e2093;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Текст правой колонки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side p {
+        margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Контейнер для input'ов формы */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box {
+        height: 50px;
+        /* по сути задаем высоту input'а */
+        width: 100%;
+        /* ширина на всю ширину правой колонки (с учетом padding) */
+        margin-bottom: 20px;
+        /* отступаем снизу 20px */
+    }
+    /* Стили для input и textarea (поле сообщение) */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box input,
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box textarea {
+        height: 100%;
+        /* растягиваем на всю высоту контейнера 50px */
+        width: 100%;
+        /* растягиваем на всю ширину */
+        border: none;
+        /* убираем внешние края */
+        border-radius: 5px;
+        /* скругляем края */
+        background: #f0f1f8;
+        /* задаем цвет фона */
+        padding: 0 20px;
+        /* отступ справа и слева 20px */
+    }
+    /* Отдельно стилизуем поле сообщение */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box textarea {
+        resize: none;
+        /* чтобы нельзя было менять высоту */
+        padding: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+    /* Это контейнер для поля сообщение */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .message-box {
+        min-height: 110px;
+        /* минимальная высота 110px */
+    }
+    /* Стили для контейнера кнопки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button {
+        display: inline-block;
+        /* делаем блочно-строчный элемент */
+    }
+    /* Стили для самой кнопки */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button input[type="button"] {
+        color: #fff;
+        font-size: 18px;
+        background: #3e2093;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+        transition: 0.2s;
+        /* чтобы плавно менялся цвет при наведении (:hover) */
+    }
+    /* Меняем цвет фона при наведении на кнопку */
+    
+    body #main .modal-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button input[type="button"]:hover {
+        background: rgb(0, 0, 207);
+    }
+    /* END 999999999999999999999999999999999999 модальное окно с формой 9999999999999999999999999999999 */

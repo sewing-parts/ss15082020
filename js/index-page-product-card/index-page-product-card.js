@@ -2,7 +2,7 @@
 document.body.onclick = function(event) {
     event = event || window.event;
     if (event.target.classList.contains('goods-min')) {
-        let allDivs = document.querySelectorAll('.goods-img-min div');
+        let allDivs = document.querySelectorAll('.picture-min div');
         for (let i = 0; i < allDivs.length; i++) {
             allDivs[i].classList.remove('active');
         }
