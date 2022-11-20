@@ -14,9 +14,8 @@
 @import url('css/list-pdf-section.css');
 @import url('css/helpful-section.css');
 @import url('css/pagination-section.css');
-@import url('css/feedback-section.css');
-@import url('css/modal-form.css');
 @import url('css/footer.css');
+@import url('css/modal-form-section.css');
 
 /* CSS media */
 
@@ -32,6 +31,7 @@
 @import url('css/media-list-pdf-section.css');
 @import url('css/media-helpful-section.css');
 @import url('css/media-footer.css');
+@import url('css/media-modal-form-section.css');
 
 /* font-face START ///////////////////////////////////////////////////////////////////////////////////////// */
 

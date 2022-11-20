@@ -1,0 +1,36 @@
+/* Меняем стили при ширине экрана меньше 800px */
+
+@media (max-width: 800px) {
+    /* Теперь форма (правая колонка) будет сверху, а элементы (левая колонка) снизу */
+    body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content {
+        height: 100%;
+        flex-direction: column-reverse;
+        /* располагаем в колонку и реверсивно */
+    }
+    /* Внутри левой колонки внутренние элементы располагаем в ряд */
+    body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side {
+        margin-top: 50px;
+        flex-direction: row;
+        /* располагаем элементы (адрес, телефон, email) в ряд */
+        width: 100%;
+        /* левая колонка на всю ширину */
+        justify-content: center;
+        flex-wrap: wrap;
+        /* перенос элементов, если не хватит места */
+    }
+    body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details {
+        margin-right: 20px;
+    }
+    body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side .details:last-child {
+        margin-right: 0;
+    }
+    /* Убираем разделительную линию */
+    body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .left-side::before {
+        display: none;
+    }
+    /* Правая колонка теперь на всю ширину и не имеет отступа слева */
+    body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
