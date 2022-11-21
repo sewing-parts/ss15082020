@@ -18,7 +18,7 @@
     $email = $_POST["email"];
 	$phone = $_POST["phone"];
     $message = $_POST["message"];
-	$email_template = "template_mail.html";
+	$email_template = "template-mail.html";
 
     $body = file_get_contents($email_template);
 	$body = str_replace('%name%', $name, $body);
