@@ -3,8 +3,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-reguire "PHPMailer/src/PHPMailer.php";
-reguire "PHPMailer/src/Exception.php";
+reguire "PHPMailer-master/src/PHPMailer.php";
+reguire "PHPMailer-master/src/Exception.php";
 
 $mail = new PHPMailer(true);
 $mail->CharSet = "UFT-8";
