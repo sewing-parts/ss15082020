@@ -23,7 +23,7 @@
 	$body = str_replace('%phone%', $phone, $body);
 	$body = str_replace('%message%', $message, $body);
 
-    $mail->addAddress("your-name@email.com");   // Здесь введите Email, куда отправлять
+    $mail->addAddress("sewing77parts@gmail.com");   // Здесь введите Email, куда отправлять
 	$mail->setFrom($email);
     $mail->Subject = "[Заявка с формы]";
     $mail->MsgHTML($body);
