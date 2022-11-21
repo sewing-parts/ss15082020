@@ -163,7 +163,7 @@
  body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box {
      height: 50px;
      width: 100%;
-     margin-bottom: 20px;
+     margin-bottom: 30px;
  }
  
  body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box input,
@@ -174,6 +174,13 @@
      border-radius: 5px;
      background: #f0f1f8;
      padding: 0 20px;
+     margin-bottom: 3px;
+ }
+ 
+ body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box label {
+     font-size: 14px;
+     color: #afafb6;
+     padding-left: 5px;
  }
  
  body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .input-box textarea {
@@ -190,7 +197,7 @@
      display: inline-block;
  }
  
- body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button input[type="button"] {
+ body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button input[type="submit"] {
      color: #fff;
      font-size: 18px;
      background: #3e2093;
@@ -201,7 +208,7 @@
      transition: 0.2s;
  }
  
- body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button input[type="button"]:hover {
+ body #main .modal-form-section ._modal .modal-bg .modal-body .modal-content .modal-cotainer .container .content .right-side form .button input[type="submit"]:hover {
      background: rgb(0, 0, 207);
  }
  /* END 999999999999999999999999999999999999 модальное окно с формой 9999999999999999999999999999999 */

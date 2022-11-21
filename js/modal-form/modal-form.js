@@ -19,74 +19,19 @@ const paramsUrl = [{
 }];
 
 // //////////////////////////////////////////
-const toHTMLmodalForm = fruitchapter =>
-    `<div class="_modal" data-modal="modal-1">
-    <div class="modal-bg">
-        <div class="modal-body">
-            <div class="modal-close"><img src="images/close-cross.png" alt=""></div>
-            <div class="modal-content modal-callback">
-                <div class="modal-callback__title modal-cotainer">
-                    <div class="container">
-                        <div class="content">
-                            <div class="left-side">
-                                <div class="address details">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div class="topic">Адрес</div>
-                                    <div class="text-one">г. Москва</div>
-                                    <div class="text-two">Пресненская наб., 8 стр. 1</div>
-                                </div>
-                                <div class="phone details">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <div class="topic">Телефон</div>
-                                    <div class="text-one">8-800-000-00-00</div>
-                                    <div class="text-two">8-900-000-00-00</div>
-                                </div>
-                                <div class="email details">
-                                    <i class="fas fa-envelope"></i>
-                                    <div class="topic">Email</div>
-                                    <div class="text-one">support@site.com</div>
-                                    <div class="text-two">admin@site.com</div>
-                                </div>
-                            </div>
-                            <div class="right-side">
-                                <div class="topic-text">Отправьте нам сообщение</div>
-                                <p>
-                                    Если у вас есть какие-то вопросы или предложения по сотрудничеству - заполните форму ниже
-                                </p>
-                                <form action="#">
-                                    <div class="input-box">
-                                        <input type="text" placeholder="Ваше имя" />
-                                    </div>
-                                    <div class="input-box">
-                                        <input type="text" placeholder="Введите email" />
-                                    </div>
-                                    <div class="input-box">
-                                        <input type="text" placeholder="Введите телефон" />
-                                    </div>
-                                    <div class="input-box message-box">
-                                        <textarea placeholder="Сообщение"></textarea>
-                                    </div>
-                                    <div class="button">
-                                        <input type="button" value="Отправить" />
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>`;
+// const toHTMLmodalForm = fruitchapter =>
+//     ``;
 
-function renderModalForm() {
-    const htmlModalForm = paramsUrl.map(toHTMLmodalForm).join('')
-    document.querySelector(idmodalform).innerHTML = htmlModalForm
-};
-renderModalForm()
+// function renderModalForm() {
+//     const htmlModalForm = paramsUrl.map(toHTMLmodalForm).join('')
+//     document.querySelector(idmodalform).innerHTML = htmlModalForm
+// };
+// renderModalForm()
 
-// ////////////////////////////////////////////
 
+
+
+// START //////////////////////////////////////////// модальное окно 
 const modalBtns = document.querySelectorAll('._modal-open');
 const modals = document.querySelectorAll('._modal');
 const body = document.body;
@@ -129,3 +74,78 @@ window.addEventListener('keydown', e => {
         }
     });
 });
+// END ////////////////////////////////////////////////////////////  модальное окно
+
+
+
+
+// START ////////////////////////////////////////////////////////////  форма
+
+// const form = document.forms["form"];
+// const button = form.elements["button"];
+
+
+// const inputArr = Array.from(form);
+// const validInputArr = [];
+
+
+// inputArr.forEach((el) => {
+//     if (el.hasAttribute("data-reg")) {
+//         el.setAttribute("is-valid", "0")
+//         validInputArr.push(el);
+//     }
+// });
+
+
+// console.log(validInputArr)
+
+
+// form.addEventListener("input", inputHandler);
+// button.addEventListener('click', buttonHandler);
+
+
+
+// function inputHandler({ target }) {
+//     if (target.hasAttribute("data-reg")) {
+//         inputCheck(target);
+//     }
+// };
+
+// function inputCheck(el) {
+//     const inputValue = el.value;
+//     const inputReg = el.getAttribute("data-reg");
+//     const reg = new RegExp(inputReg);
+
+//     console.log(inputValue, reg)
+
+//     if (reg.test(inputValue)) {
+//         el.style.border = "2px solid rgb(0, 196, 0)";
+//         el.setAttribute("is-valid", "1")
+//     } else {
+//         el.style.border = "2px solid rgb(255, 0, 0)";
+//         el.setAttribute("is-valid", "0")
+//     }
+// }
+
+// function buttonHandler(e) {
+//     const isAllValid = [];
+//     validInputArr.forEach((el) => {
+//         isAllValid.push(el.getAttribute("is-valid"));
+//     });
+//     // console.log(isAllValid)
+//     const isValid = isAllValid.reduce((acc, current) => {
+//         return acc && current;
+//     });
+//     // console.log(isValid)
+//     if (!Boolean(Number(isValid))) {
+//         e.preventDefault();
+//     }
+// }
+
+
+
+
+
+
+
+// END ////////////////////////////////////////////////////////////  форма
