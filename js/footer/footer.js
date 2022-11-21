@@ -57,30 +57,33 @@ const toHTMLfooter = fruitchapter =>
     <div class="box">
         <h2 class="lng-footer-c"></h2>
         <form>
-            <label for="mail"><p class="lng-footer-c-p1"></p>
-            <span class="span-icon">&ensp; &#10034;</span></label>
-            <input type="text" name="name" id="name" required>
-
-            <label for="phone"><p class="lng-footer-c-p2"></p>
-            <span class="span-icon">&ensp; &#10034;</span></label>
-            <input type="tel" name="tel" id="tel" required>
-
-            <label for="mail"><p class="lng-footer-c-p3"></p>
-            <span class="span-icon">&ensp; &#10034;</span></label>
-            <input type="email" name="email" id="email" required>
-
-            <label for="mess"><p class="lng-footer-c-p4"></p>
-            <span class="span-icon">&ensp; &#10034;</span>
-            </label>
-            <textarea name="mess" id="mess" rows="3" required></textarea>
-
-            <button class="button lng-footer-c-button" type="submit"></button>
+            
         </form>
     </div>
 </div>
 <div class="author">
     <p><span class="author-text-one">Dev AT</span> copyright <span class="author-text-two">&copy;</span> 2020</p>
 </div>`;
+
+
+// <label for="mail"><p class="lng-footer-c-p1"></p>
+// <span class="span-icon">&ensp; &#10034;</span></label>
+// <input type="text" name="name" id="name" required>
+
+// <label for="phone"><p class="lng-footer-c-p2"></p>
+// <span class="span-icon">&ensp; &#10034;</span></label>
+// <input type="tel" name="tel" id="tel" required>
+
+// <label for="mail"><p class="lng-footer-c-p3"></p>
+// <span class="span-icon">&ensp; &#10034;</span></label>
+// <input type="email" name="email" id="email" required>
+
+// <label for="mess"><p class="lng-footer-c-p4"></p>
+// <span class="span-icon">&ensp; &#10034;</span>
+// </label>
+// <textarea name="mess" id="mess" rows="3" required></textarea>
+
+// <button class="button lng-footer-c-button" type="submit"></button>
 
 function renderFooter() {
     const htmlFooter = paramsUrl.map(toHTMLfooter).join('')
