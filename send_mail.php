@@ -2,45 +2,57 @@
 
 
 
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+    // use PHPMailer\PHPMailer\PHPMailer;
+    // use PHPMailer\PHPMailer\Exception;
 
-    require "PHPMailer/src/Exception.php";
-    require "PHPMailer/src/PHPMailer.php";
+    // require "PHPMailer/src/Exception.php";
+    // require "PHPMailer/src/PHPMailer.php";
     
 
-    $mail = new PHPMailer(true);
+    // $mail = new PHPMailer(true);
 	
-    $mail->CharSet = "UTF-8";
-    $mail->IsHTML(true);
+    // $mail->CharSet = "UTF-8";
+    // $mail->IsHTML(true);
 
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-	$phone = $_POST["phone"];
-    $message = $_POST["message"];
-	$email_template = "template_mail.html";
+    // $name = $_POST["name"];
+    // $email = $_POST["email"];
+	// $phone = $_POST["phone"];
+    // $message = $_POST["message"];
+	// $email_template = "template_mail.html";
 
-    $body = file_get_contents($email_template);
-	$body = str_replace('%name%', $name, $body);
-	$body = str_replace('%email%', $email, $body);
-	$body = str_replace('%phone%', $phone, $body);
-	$body = str_replace('%message%', $message, $body);
+    // $body = file_get_contents($email_template);
+	// $body = str_replace('%name%', $name, $body);
+	// $body = str_replace('%email%', $email, $body);
+	// $body = str_replace('%phone%', $phone, $body);
+	// $body = str_replace('%message%', $message, $body);
 
-    $mail->addAddress("sewing77parts@gmail.com");   // Здесь введите Email, куда отправлять
-	$mail->setFrom($email);
-    $mail->Subject = "[Заявка с формы]";
-    $mail->MsgHTML($body);
+    // $mail->addAddress("sewing77parts@gmail.com"); 
+	// $mail->setFrom($email);
+    // $mail->Subject = "[Заявка с формы]";
+    // $mail->MsgHTML($body);
 
-    if (!$mail->send()) {
-        $message = "Ошибка отправки";
-    } else {
-        $message = "Данные отправлены!";
-    }
+    // if (!$mail->send()) {
+    //     $message = "Ошибка отправки";
+    // } else {
+    //     $message = "Данные отправлены!";
+    // }
 	
-	$response = ["message" => $message];
+	// $response = ["message" => $message];
 
-    header('Content-type: application/json');
-    echo json_encode($response);
+    // header('Content-type: application/json');
+    // echo json_encode($response);
 
+
+
+
+
+
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
 
 ?>
