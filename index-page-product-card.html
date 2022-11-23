@@ -427,10 +427,19 @@
                                                     <input type="text" placeholder="Введите телефон" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$" />
                                                     <label for="phone">В формате: 88000000000 или 78000000000</label>
                                                 </div>
-                                                <div class="input-box file-box">
-                                                    <input type="file" name="file" id="file">
-                                                    <label for="file">Прикрепить файл</label>
+
+
+                                                <!-- <div class="input-box file-box file-container"> -->
+                                                <div class="file-container">
+                                                    <input type="file" name="file" id="file-input" multiple/>
+                                                    <label for="file-input"><img src="images/dowlood.png"> &nbsp; Choose Files To Upload</label>
+                                                    <div id="num-of-files">No Files Choosen</div>
+                                                    <ul id="files-list"></ul>
+
                                                 </div>
+
+
+
                                                 <div class="input-box message-box">
                                                     <textarea placeholder="Сообщение" name="message"></textarea>
                                                 </div>
