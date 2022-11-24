@@ -1,58 +1,47 @@
 <?php
 
+if($_POST)
+{
+    require_once 'vendor/autoload.php';
 
+    $subject = 'Stay in touch '.$_POST["user_name"];
 
-    // use PHPMailer\PHPMailer\PHPMailer;
-    // use PHPMailer\PHPMailer\Exception;
+    $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
+    $phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
+    $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-    // require "PHPMailer/src/Exception.php";
-    // require "PHPMailer/src/PHPMailer.php";
+    $text = "Name: ".$name.". Email Address: ".$email;
+
+    $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
+        ->setUsername ('___@gmail.com')
+        ->setPassword ('6hWTfGugcuwLKR9m');
+
+    $mailer = new Swift_Mailer($transport);
+
+    $message = (new Swift_Message($subject))
+     ->setFrom(['___@gmail.com'])
+     ->setTo(['my@gmail.com'])
+     ->setBody($text, 'text/html');
+
+     for ($i=0; $i < count($_FILES['file']); $i++) { 
+        $target_path = "uploads/" . basename($_FILES['file']['name'][$i]);
+        if( move_uploaded_file($_FILES['file']['tmp_name'][$i], $target_path) ) {
+            $message->attach(Swift_Attachment::fromPath($target_path));
     
+                    //if we don't want to keep the image
+                    unlink($target_path);
+        }
+    }
 
-    // $mail = new PHPMailer(true);
-	
-    // $mail->CharSet = "UTF-8";
-    // $mail->IsHTML(true);
-
-    // $name = $_POST["name"];
-    // $email = $_POST["email"];
-	// $phone = $_POST["phone"];
-    // $message = $_POST["message"];
-	// $email_template = "template_mail.html";
-
-    // $body = file_get_contents($email_template);
-	// $body = str_replace('%name%', $name, $body);
-	// $body = str_replace('%email%', $email, $body);
-	// $body = str_replace('%phone%', $phone, $body);
-	// $body = str_replace('%message%', $message, $body);
-
-    // $mail->addAddress("sewing77parts@gmail.com"); 
-	// $mail->setFrom($email);
-    // $mail->Subject = "[Заявка с формы]";
-    // $mail->MsgHTML($body);
-
-    // if (!$mail->send()) {
-    //     $message = "Ошибка отправки";
-    // } else {
-    //     $message = "Данные отправлены!";
-    // }
-	
-	// $response = ["message" => $message];
-
-    // header('Content-type: application/json');
-    // echo json_encode($response);
-
-
-
-
-
-
-    require 'PHPMailer/src/Exception.php';
-    require 'PHPMailer/src/PHPMailer.php';
-    require 'PHPMailer/src/SMTP.php';
-
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    use PHPMailer\PHPMailer\SMTP;
+    if(!$mailer->send($message))
+    {
+        $servReturn = json_encode(array('text' => 'Can\'t send mail! Please check your PHP mail settings.'));
+        die($servReturn);
+    }else{
+        $servReturn = json_encode(array('text' => 'Thank you! '.$user_Name .', your message has been sent.'));
+        die($servReturn);
+    }
+}
 
 ?>
