@@ -513,111 +513,144 @@ export const langArr = {
     // START // footer //
     // a
     "footer-a": {
-        "en": "Buy from us",
-        "ua": "Придбати у нас",
-        "ru": "Купить у нас"
+        "en": "About us",
+        "ua": "Про нас",
+        "ru": "О нас"
     },
     "footer-a-p1": {
-        "en": "Payment - cash on delivery, on a bank card, partial prepayment on a card.",
-        "ua": "Оплата - післяплата, на карту банку, часткова передоплата на картку.",
-        "ru": "Оплата - наложенный платёж, на карту банка , частичная предоплата на карту."
+        "en": "Our direction is the sale of spare parts for sewing cutting equipment. On the site you can select the necessary catalog number of the spare part of the sewing or cutting machine, it is possible to view catalogs and detail lists of spare parts. We offer repair and maintenance services for industrial and household equipment.",
+        "ua": "Наш напрямок продаж запасних частин для швейного розкрійного обладнання. На сайті можна підібрати необхідний каталожний номер запасної частини швейної або розкрійної машини, є можливість подивитися каталоги та списки деталювання запасних частин. Пропонуємо послуги з ремонту та обслуговування промислового та побутового обладнання.",
+        "ru": "Наше направление продажа запасных частей для швейного раскройного оборудования. На сайте можно подобрать необходимый каталожный номер запасной части швейной или раскройной машины, есть возможность посмотреть катологи и списки деталировки  запасных частей. Предлогаем услуги ремонта и обслуживания промышленного и бытового оборудования."
     },
-    "footer-a-p2": {
-        "en": "Delivery - New mail, Ukr mail, to the buyer's address or delivery service department.",
-        "ua": "Доставка - Нова пошта, Укр пошта, на адресу покупця або відділення служби доставки.",
-        "ru": "Доставка - Новая почта, Укр почта, на адрес покупателя или отделение службы доставки."
-    },
-    "footer-a-p3": {
-        "en": "Return - within 14 days after receipt of the goods by the buyer, return delivery of the goods by agreement.",
-        "ua": "Повернення - протягом 14 днів після отримання товару покупцем, зворотна доставка товару за погодженням.",
-        "ru": "Возврат - в течении 14 дней после получения товара покупателем, обратная доставка товара по соглосованию."
-    },
-    "footer-a-p4": {
-        "en": "Sending the order - by agreement, depending on the complexity of the order, from 1 to 5 days.",
-        "ua": "Надсилання замовлення - за погодженням в залежності від складності замовлення від 1 до 5 днів.",
-        "ru": "Отправка заказа - по соглосованию в зависимости от сложности заказа от 1 до 5 дней."
-    },
-    "footer-a-p5": {
-        "en": "Goods under the order - from 14 days to 4 months.",
-        "ua": "Товар на замовлення - від 14 днів до 4 місяців.",
-        "ru": "Товар под заказ - от 14 дней до 4 месяцев."
-    },
-    "footer-a-p6": {
-        "en": "Service - repair of sewing machines, overlockers, embroidery machines, wet heat processing equipment.",
-        "ua": "Сервіс - ремонт швейних машин, оверлоків, вишивальних машин, обладнання волого теплової обробки.",
-        "ru": "Сервис - ремонт швейных машин, оверлоков, вышивальных машин, оборудование влажно тепловой оброботки."
-    },
-    "footer-a-p7": {
-        "en": "Consultation - when choosing, breaking a sewing machine, learning to work on a sewing machine.",
-        "ua": "Консультація - при виборі, поломці швейної машини, навчання роботі на швейній машині.",
-        "ru": "Консультация - при выборе, поломке швейной машины, обучение работе на швейной машине."
-    },
+    // "footer-a-p2": {
+    //     "en": "Delivery - New mail, Ukr mail, to the buyer's address or delivery service department.",
+    //     "ua": "Доставка - Нова пошта, Укр пошта, на адресу покупця або відділення служби доставки.",
+    //     "ru": "Доставка - Новая почта, Укр почта, на адрес покупателя или отделение службы доставки."
+    // },
+    // "footer-a-p3": {
+    //     "en": "Return - within 14 days after receipt of the goods by the buyer, return delivery of the goods by agreement.",
+    //     "ua": "Повернення - протягом 14 днів після отримання товару покупцем, зворотна доставка товару за погодженням.",
+    //     "ru": "Возврат - в течении 14 дней после получения товара покупателем, обратная доставка товара по соглосованию."
+    // },
+    // "footer-a-p4": {
+    //     "en": "Sending the order - by agreement, depending on the complexity of the order, from 1 to 5 days.",
+    //     "ua": "Надсилання замовлення - за погодженням в залежності від складності замовлення від 1 до 5 днів.",
+    //     "ru": "Отправка заказа - по соглосованию в зависимости от сложности заказа от 1 до 5 дней."
+    // },
+    // "footer-a-p5": {
+    //     "en": "Goods under the order - from 14 days to 4 months.",
+    //     "ua": "Товар на замовлення - від 14 днів до 4 місяців.",
+    //     "ru": "Товар под заказ - от 14 дней до 4 месяцев."
+    // },
+    // "footer-a-p6": {
+    //     "en": "Service - repair of sewing machines, overlockers, embroidery machines, wet heat processing equipment.",
+    //     "ua": "Сервіс - ремонт швейних машин, оверлоків, вишивальних машин, обладнання волого теплової обробки.",
+    //     "ru": "Сервис - ремонт швейных машин, оверлоков, вышивальных машин, оборудование влажно тепловой оброботки."
+    // },
+    // "footer-a-p7": {
+    //     "en": "Consultation - when choosing, breaking a sewing machine, learning to work on a sewing machine.",
+    //     "ua": "Консультація - при виборі, поломці швейної машини, навчання роботі на швейній машині.",
+    //     "ru": "Консультация - при выборе, поломке швейной машины, обучение работе на швейной машине."
+    // },
+
     // b
     "footer-b": {
+        "en": "Location",
+        "ua": "Розташування",
+        "ru": "Местоположение"
+    },
+    "footer-b-p1": {
+        "en": "Ukraine",
+        "ua": "Україна",
+        "ru": "Украина"
+    },
+    "footer-b-p2": {
+        "en": "Zaporozhye",
+        "ua": "Запоріжжя",
+        "ru": "Запорожье"
+    },
+    "footer-b-p3": {
+        "en": "We work from 8-00 to 20-00",
+        "ua": "Працюємо з 8-00 до 20-00",
+        "ru": "Работаем с 8-00 до 20-00"
+    },
+    "footer-b-p4": {
+        "en": "Sunday and Saturday closed",
+        "ua": "Неділя та субота вихідний",
+        "ru": "Воскресенье и суббота выходной"
+    },
+    // c
+    "footer-c": {
         "en": "Contacts",
         "ua": "Контакти",
         "ru": "Контакты"
     },
-    "footer-b-p1": {
-        "en": "Ukraine, Zaporozhye",
-        "ua": "Україна, Запоріжжя",
-        "ru": "Украина, Запорожье"
-    },
-    "footer-b-p2": {
-        "en": "Schedule from 8-00 to 20-00",
-        "ua": "Графік з 8-00 до 20-00",
-        "ru": "График с 8-00 до 20-00"
-    },
-    "footer-b-p3": {
+    "footer-c-p1": {
         "en": "+38095-39-89-891",
         "ua": "+38095-39-89-891",
         "ru": "+38095-39-89-891"
     },
-    "footer-b-p4": {
+    "footer-c-p2": {
         "en": "+38096-23-43-285",
         "ua": "+38096-23-43-285",
         "ru": "+38096-23-43-285"
     },
-    "footer-b-p5": {
+    "footer-c-p3": {
         "en": "sewing77parts@gmail.com",
         "ua": "sewing77parts@gmail.com",
         "ru": "sewing77parts@gmail.com"
     },
-    "footer-b-p6": {
+    "footer-c-p4": {
         "en": "sima77sewing@gmail.com",
         "ua": "sima77sewing@gmail.com",
         "ru": "sima77sewing@gmail.com"
     },
-    // c
-    "footer-c": {
+    // d
+    "footer-d": {
         "en": "Connect with us",
         "ua": "Зв'язатися з нами",
         "ru": "Связаться с нами"
     },
-    "footer-c-p1": {
-        "en": "Enter your name",
-        "ua": "Введіть своє ім'я",
-        "ru": "Введите своё имя"
+    "footer-connection-text": {
+        "en": "If you have any questions or difficulties with the choice of spare parts for sewing equipment, you can write them in a message and send them to us. It is also possible to attach several files to a message of different formats, send the minimum file size.",
+        "ua": "Якщо виникли питання або труднощі з вибором запасних частин для швейного обладнання, можете написати їх у повідомленні та надіслати нам. Також є можливість прикріпити кілька файлів до повідомлення різних форматів, розмір файлів надсилайте мінімальний.",
+        "ru": "Если возникли вопросы или трудности с выбором запасных частей для швейного оборудования, можете написать их в сообщении  и отправить нам. Так же есть возможность прикрепить несколько файло к сообщению разных форматов , размер файлов отправляйте минимальный."
     },
-    "footer-c-p2": {
-        "en": "Enter your phone",
-        "ua": "Введіть свій телефон",
-        "ru": "Введите свой телефон"
+    "footer-connection-button": {
+        "en": "To write a message",
+        "ua": "Написати повідомлення",
+        "ru": "Написать сообщение"
     },
-    "footer-c-p3": {
-        "en": "Enter your email",
-        "ua": "Введіть свій email",
-        "ru": "Введите свой email"
-    },
-    "footer-c-p4": {
-        "en": "Write a message",
-        "ua": "Напишіть повідомлення",
-        "ru": "Напишите сообщение"
-    },
-    "footer-c-button": {
-        "en": "Send",
-        "ua": "Надіслати",
-        "ru": "Отправить"
-    },
+
+    // "footer-c": {
+    //     "en": "Connect with us",
+    //     "ua": "Зв'язатися з нами",
+    //     "ru": "Связаться с нами"
+    // },
+    // "footer-c-p1": {
+    //     "en": "Enter your name",
+    //     "ua": "Введіть своє ім'я",
+    //     "ru": "Введите своё имя"
+    // },
+    // "footer-c-p2": {
+    //     "en": "Enter your phone",
+    //     "ua": "Введіть свій телефон",
+    //     "ru": "Введите свой телефон"
+    // },
+    // "footer-c-p3": {
+    //     "en": "Enter your email",
+    //     "ua": "Введіть свій email",
+    //     "ru": "Введите свой email"
+    // },
+    // "footer-c-p4": {
+    //     "en": "Write a message",
+    //     "ua": "Напишіть повідомлення",
+    //     "ru": "Напишите сообщение"
+    // },
+    // "footer-c-button": {
+    //     "en": "Send",
+    //     "ua": "Надіслати",
+    //     "ru": "Отправить"
+    // },
     // END // footer //
 };

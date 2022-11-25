@@ -1,6 +1,6 @@
 @media (min-width: 481px) and (max-width: 768px) {
     body .footer .container .box {
-        height: 365px;
+        height: 260px;
     }
     body .footer .container .box h4 {
         font-size: 18px;
@@ -35,7 +35,7 @@
 @media (min-width: 300px) and (max-width: 480px) {
     body .footer .container .box {
         min-width: 280px;
-        height: 360px;
+        height: 250px;
     }
     body .footer .container .box h4 {
         font-size: 17px;
