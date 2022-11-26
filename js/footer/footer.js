@@ -19,6 +19,7 @@ const paramsUrl = [{
 // //////////////////////////////////////////
 const toHTMLfooter = fruitchapter =>
     `<div class="container">
+
     <div class="box">
         <h2 class="lng-footer-a"></h2>
         <div class="logo">
@@ -27,13 +28,14 @@ const toHTMLfooter = fruitchapter =>
                     <div class="logo-img">
                         <img src="images/11-aaa-waaa.png" alt="">
                     </div>
-                    <div class="logo-text">Sewing Industrial Machines Accessories</div>
+                    <div class="logo-text">
+                        <p>Sewing Industrial Machines Accessories</p>
+                    </div>
                 </div>
             </a>
         </div>
         <div class="info">
-            <p class="text-info lng-footer-a-p1"></p>
-            
+            <p class="text-info lng-footer-a-p1"></p>  
         </div>
     </div>
 
@@ -146,7 +148,7 @@ const toHTMLfooter = fruitchapter =>
             <div class="connection-two">
                 <div class="block">
                     <button class="modal__btn _modal-open" data-modal-open="modal-1">
-                        <img src="images/message-request.png" alt="">
+                        <img src="images/footer/reply-256-blu.png" alt="">
                         <p class="lng-footer-connection-button"></p>
                     </button>
                 </div>
@@ -158,50 +160,7 @@ const toHTMLfooter = fruitchapter =>
     <p><span class="author-text-one">Dev AT</span> copyright <span class="author-text-two">&copy;</span> 2020</p>
 </div>`;
 
-// 
 
-{
-    /* <a href="#"><i class="fas fa-map-marker-alt fa-lg"></i><p class="lng-footer-b-p1"></p></a>
-                <a href="#"><i class="fas fa-address-card"></i><p class="lng-footer-b-p2"></p></a>
-                <a href="tel:+380953989891"><i class="fas fa-phone-square-alt fa-lg"></i><p class="lng-footer-b-p3"></p><i class="fab fa-telegram fab1"></i><i class="fab fa-viber fab2"></i></a>
-                <a href="tel:+380962343285"><i class="fas fa-phone-square-alt fa-lg"></i><p class="lng-footer-b-p4"></p></a>
-                <a href="mailto:sewing77parts@gmail.com"><i class="fas fa-envelope fa-lg"></i><p  class="lng-footer-b-p5"></p></a> */
-}
-
-{
-    /* <p class="text-info lng-footer-a-p2"></p>
-                <p class="text-info lng-footer-a-p3"></p>
-                <p class="text-info lng-footer-a-p4"></p>
-                <p class="text-info lng-footer-a-p5"></p>
-                <p class="text-info lng-footer-a-p6"></p>
-                <p class="text-info lng-footer-a-p7"></p> */
-}
-// 
-
-
-
-
-
-
-
-// <label for="mail"><p class="lng-footer-c-p1"></p>
-// <span class="span-icon">&ensp; &#10034;</span></label>
-// <input type="text" name="name" id="name" required>
-
-// <label for="phone"><p class="lng-footer-c-p2"></p>
-// <span class="span-icon">&ensp; &#10034;</span></label>
-// <input type="tel" name="tel" id="tel" required>
-
-// <label for="mail"><p class="lng-footer-c-p3"></p>
-// <span class="span-icon">&ensp; &#10034;</span></label>
-// <input type="email" name="email" id="email" required>
-
-// <label for="mess"><p class="lng-footer-c-p4"></p>
-// <span class="span-icon">&ensp; &#10034;</span>
-// </label>
-// <textarea name="mess" id="mess" rows="3" required></textarea>
-
-// <button class="button lng-footer-c-button" type="submit"></button>
 
 function renderFooter() {
     const htmlFooter = paramsUrl.map(toHTMLfooter).join('')

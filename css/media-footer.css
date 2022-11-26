@@ -1,68 +1,172 @@
 @media (min-width: 481px) and (max-width: 768px) {
     body .footer .container .box {
-        height: 260px;
+        height: 275px;
     }
-    body .footer .container .box h4 {
+    body .footer .container .box h2 {
+        font-weight: 400;
         font-size: 18px;
+        margin-bottom: 15px;
     }
     /* 1 */
+    /* *********************************************************** */
+    body .footer .container .box .logo a .logo-wrapper .logo-img {
+        width: 150px;
+        height: 30px;
+    }
+    body .footer .container .box .logo a .logo-wrapper .logo-img img {
+        width: 150px;
+        height: 30px;
+    }
+    body .footer .container .box .logo a .logo-wrapper .logo-text p {
+        font-size: 8px;
+    }
+    body .footer .container .box .info {
+        margin-top: 5px;
+        max-height: 175px;
+    }
     body .footer .container .box .info .text-info {
-        font-size: 14px;
+        font-size: 15px;
     }
     /* 2 */
-    body .footer .container .box .address a .fas {
-        font-size: 26px;
+    /* ******************************************************** */
+    body .footer .container .box .address a {
+        height: 38px;
     }
-    body .footer .container .box .address a p {
+    body .footer .container .box .address a .block {
+        max-width: 275px;
+        height: 38px;
+    }
+    body .footer .container .box .address a .block .block-a {
+        width: 38px;
+        height: 38px;
+        padding: 6px;
+    }
+    body .footer .container .box .address a .block .block-a img {
+        width: 24px;
+        height: 24px;
+    }
+    body .footer .container .box .address a .block .block-b {
+        height: 38px;
+    }
+    body .footer .container .box .address a .block .block-b p {
         font-size: 16px;
     }
-    /* 3 */
-    body .footer .container .box form input,
-    body .footer .container .box form textarea {
-        font-size: 16px;
+    body .footer .container .box .address a .block .block-c {
+        width: 20px;
+        height: 20px;
+        margin-left: 6px;
     }
-    body .footer .container .box form label p {
-        font-size: 16px;
+    body .footer .container .box .address a .block .block-c img {
+        width: 20px;
+        height: 20px;
     }
-    body .footer .container .box form button {
-        font-size: 16px;
+    /* 3 *******************************************************************/
+    body .footer .container .box .connection {
+        width: 100%;
+        height: 220px;
     }
-    body .footer .author {
-        font-size: 16px;
+    body .footer .container .box .connection .connection-one .connection-text {
+        font-size: 15px;
+    }
+    body .footer .container .box .connection .connection-two {
+        margin-top: 10px;
+        min-height: 35px;
+    }
+    body .footer .container .box .connection .connection-two .block .modal__btn {
+        height: 35px;
+        width: 280px;
+        line-height: 35px;
+        font-size: 15px;
+    }
+    body .footer .container .box .connection .connection-two .block .modal__btn img {
+        width: 22px;
+        height: 22px;
+        margin-right: 15px;
     }
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 290px) and (max-width: 480px) {
     body .footer .container .box {
         min-width: 280px;
-        height: 250px;
+        height: 265px;
     }
-    body .footer .container .box h4 {
+    body .footer .container .box h2 {
+        font-weight: 400;
         font-size: 17px;
+        margin-bottom: 15px;
     }
-    /* 1 */
+    /* 1 *************************************************************/
+    body .footer .container .box .logo a .logo-wrapper .logo-img {
+        width: 125px;
+        height: 25px;
+    }
+    body .footer .container .box .logo a .logo-wrapper .logo-img img {
+        width: 125px;
+        height: 25px;
+    }
+    body .footer .container .box .logo a .logo-wrapper .logo-text p {
+        font-size: 7px;
+    }
+    body .footer .container .box .info {
+        margin-top: 5px;
+        max-height: 170px;
+    }
     body .footer .container .box .info .text-info {
         font-size: 13px;
     }
-    /* 2 */
-    body .footer .container .box .address a .fas {
-        font-size: 25px;
+    /* 2 ****************************************************/
+    body .footer .container .box .address a {
+        height: 36px;
     }
-    body .footer .container .box .address a p {
+    body .footer .container .box .address a .block {
+        max-width: 270px;
+        height: 36px;
+    }
+    body .footer .container .box .address a .block .block-a {
+        width: 36px;
+        height: 36px;
+        padding: 6px;
+    }
+    body .footer .container .box .address a .block .block-a img {
+        width: 22px;
+        height: 22px;
+    }
+    body .footer .container .box .address a .block .block-b {
+        height: 36px;
+    }
+    body .footer .container .box .address a .block .block-b p {
         font-size: 15px;
     }
-    /* 3 */
-    body .footer .container .box form input,
-    body .footer .container .box form textarea {
-        font-size: 15px;
+    body .footer .container .box .address a .block .block-c {
+        width: 18px;
+        height: 18px;
+        margin-left: 6px;
     }
-    body .footer .container .box form label p {
-        font-size: 15px;
+    body .footer .container .box .address a .block .block-c img {
+        width: 18px;
+        height: 18px;
     }
-    body .footer .container .box form button {
-        font-size: 15px;
+    /* 3 *************************************************************/
+    body .footer .container .box .connection {
+        width: 100%;
+        height: 210px;
     }
-    body .footer .author {
-        font-size: 15px;
+    body .footer .container .box .connection .connection-one .connection-text {
+        font-size: 14px;
+    }
+    body .footer .container .box .connection .connection-two {
+        margin-top: 10px;
+        min-height: 30px;
+    }
+    body .footer .container .box .connection .connection-two .block .modal__btn {
+        height: 30px;
+        width: 265px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    body .footer .container .box .connection .connection-two .block .modal__btn img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
     }
 }
