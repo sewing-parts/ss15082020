@@ -749,7 +749,149 @@
         </section>
     </div>
 
+    <button class="modal__btn _modal-open" data-modal-open="modal-1">
+        <!-- <img src="images/close-cross.png" alt=""> -->
+        BUTTON  1
+    </button>
+
+    <button class="modal__btn _modal-open" data-modal-open="modal-2">
+        <!-- <img src="images/close-cross.png" alt=""> -->
+        BUTTON  2
+    </button>
+
+    <button class="modal__btn _modal-open" data-modal-open="modal-3">
+        <!-- <img src="images/close-cross.png" alt=""> -->
+        BUTTON  3
+    </button>
+
+    <div id="modals">
+        <section class="modal-form-section" id="modal-form">
+            <!-- <div class="_modal _active" data-modal="modal-1"> -->
+            <div class="_modal" data-modal="modal-1">
+                <div class="modal-bg">
+                    <div class="modal-body">
+                        <div class="modal-close"><img src="images/close-cross.png" alt=""></div>
+                        <div class="modal-content modal-callback">
+                            <div class="modal-callback__title modal-cotainer">
+
+                                <div class="container">
+                                    <div class="content">
+                                        <div class="left-side">
+                                            <div class="address details">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <div class="topic">График работы</div>
+                                                <div class="text-one">Рабочии дни</div>
+                                                <div class="text-two">С 8-00 до 20-00</div>
+                                                <div class="text-one">Выходные дни</div>
+                                                <div class="text-two">Суббота воскресенье</div>
+                                            </div>
+                                            <div class="address details">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <div class="topic">Локация</div>
+                                                <div class="text-one">Украина</div>
+                                                <div class="text-two">город Запорожье</div>
+                                            </div>
+                                            <div class="phone details">
+                                                <i class="fas fa-phone-alt"></i>
+                                                <div class="topic">Телефон</div>
+                                                <div class="text-one">8-800-000-00-00</div>
+                                                <div class="text-two">8-900-000-00-00</div>
+                                            </div>
+                                            <div class="email details">
+                                                <i class="fas fa-envelope"></i>
+                                                <div class="topic">Email</div>
+                                                <div class="text-one">support@site.com</div>
+                                                <div class="text-two">admin@site.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="topic-text">Отправьте нам сообщение</div>
+                                            <p>
+                                                Если у вас есть какие-то вопросы или предложения по сотрудничеству - заполните форму ниже
+                                            </p>
+                                            <form action="send_mail.php" name="form" method="POST">
+                                                <div class="input-box">
+                                                    <input type="text" placeholder="Ваше имя" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" />
+                                                    <label for="name">Только русские буквы</label>
+                                                </div>
+                                                <div class="input-box">
+                                                    <input type="text" placeholder="Введите email" name="email" id="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+                                                    <label for="email">В формате: your-name@email.com</label>
+                                                </div>
+                                                <div class="input-box">
+                                                    <input type="text" placeholder="Введите телефон" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$" />
+                                                    <label for="phone">В формате: 88000000000 или 78000000000</label>
+                                                </div>
+
+                                                <!-- <div class="input-box file-box file-container"> -->
+                                                <div class="file-container">
+                                                    <input type="file" name="file" id="file-input" multiple/>
+                                                    <label for="file-input">
+                                                        <div><img src="images/upload-3-512.png"></div>
+                                                        <div><p>Choose Files To Upload</p></div>
+                                                    </label>
+                                                    <div id="num-of-files">No Files Choosen</div>
+                                                    <ul id="files-list"></ul>
+                                                </div>
+
+                                                <div class="input-box message-box">
+                                                    <textarea placeholder="Сообщение" name="message"></textarea>
+                                                </div>
+
+                                                <div class="button">
+                                                    <input type="submit" id="button" value="Отправить" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="_modal" data-modal="modal-2">
+                <div class="modal-bg">
+                    <div class="modal-body">
+                        <div class="modal-close"><img src="images/close-cross.png" alt=""></div>
+                        <div class="modal-content modal-callback">
+                            <div class="modal-callback__title modal-cotainer">
+                                <div class="container">
+                                    привет окно 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="_modal" data-modal="modal-3">
+                <div class="modal-bg">
+                    <div class="modal-body">
+                        <div class="modal-close"><img src="images/close-cross.png" alt=""></div>
+                        <div class="modal-content modal-callback">
+                            <div class="modal-callback__title modal-cotainer">
+                                <div class="container">
+                                    привет окно 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+
     <footer id="footer" class="footer"></footer>
+
+
+
 
 
 
@@ -766,6 +908,10 @@
     <script src="./js/index-page/index-page.js" type="module"></script>
 
     <script src="./js/footer/footer.js" type="module"></script>
+
+    <script src="./js/modal/modal.js" type="module"></script>
+
+    <script src="form-contact.js"></script>
 
     <script src="./js/lang/lang-DATA.js" type="module"></script>
     <script src="./js/lang/lang.js" type="module"></script>

@@ -141,15 +141,57 @@ const toHTMLfooter = fruitchapter =>
 
     <div class="box">
         <h2 class="lng-footer-d"></h2>
+        
         <div class="connection">
             <div class="connection-one">
+            <img src="images/footer/check-mark-10-256.png" alt="">
             <p class="lng-footer-connection-text connection-text"></p>
             </div>
             <div class="connection-two">
                 <div class="block">
                     <button class="modal__btn _modal-open" data-modal-open="modal-1">
-                        <img src="images/footer/reply-256-blu.png" alt="">
-                        <p class="lng-footer-connection-button"></p>
+                        <div class="button-img">
+                            <img src="images/footer/reply-256-blu.png" alt="">
+                        </div>    
+                        <div class="button-p">
+                            <p class="lng-footer-connection-button"></p>
+                        </div>   
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connection-one">
+            <img src="images/footer/check-mark-10-256.png" alt="">
+            <p class="lng-footer-delivery-text connection-text"></p>
+            </div>
+            <div class="connection-two">
+                <div class="block">
+                    <button class="modal__btn _modal-open" data-modal-open="modal-2">
+                        <div class="button-img">
+                            <img src="images/footer/car-28-256.png" alt="">
+                        </div>
+                        <div class="button-p">
+                            <p class="lng-footer-delivery-button"></p>
+                        </div>     
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connection-one">
+            <img src="images/footer/check-mark-10-256.png" alt="">
+            <p class="lng-footer-payment-text connection-text"></p>
+            </div>
+            <div class="connection-two">
+                <div class="block">
+                    <button class="modal__btn _modal-open" data-modal-open="modal-3">
+                        <div class="button-img">
+                            <img src="images/footer/mastercard-256.png" alt="">
+                        </div>
+                        <div class="button-p">
+                            <p class="lng-footer-payment-button"></p>
+                        </div>   
                     </button>
                 </div>
             </div>

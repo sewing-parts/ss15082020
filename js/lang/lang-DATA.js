@@ -612,14 +612,34 @@ export const langArr = {
         "ru": "Связаться с нами"
     },
     "footer-connection-text": {
-        "en": "If you have any questions or difficulties with the choice of spare parts for sewing equipment, you can write them in a message and send them to us. It is also possible to attach several files to a message of different formats, send the minimum file size.",
-        "ua": "Якщо виникли питання або труднощі з вибором запасних частин для швейного обладнання, можете написати їх у повідомленні та надіслати нам. Також є можливість прикріпити кілька файлів до повідомлення різних форматів, розмір файлів надсилайте мінімальний.",
-        "ru": "Если возникли вопросы или трудности с выбором запасных частей для швейного оборудования, можете написать их в сообщении  и отправить нам. Так же есть возможность прикрепить несколько файло к сообщению разных форматов , размер файлов отправляйте минимальный."
+        "en": "Questions have arisen",
+        "ua": "Виникли питання",
+        "ru": "Возникли вопросы"
+    },
+    "footer-delivery-text": {
+        "en": "Find out the terms of delivery",
+        "ua": "Дізнатися про умови доставки",
+        "ru": "Узнать условия доставки"
+    },
+    "footer-payment-text": {
+        "en": "Find out payment terms",
+        "ua": "Дізнатись умови оплати",
+        "ru": "Узнать уловия оплаты"
     },
     "footer-connection-button": {
         "en": "To write a message",
         "ua": "Написати повідомлення",
         "ru": "Написать сообщение"
+    },
+    "footer-delivery-button": {
+        "en": "Delivery",
+        "ua": "Доставка",
+        "ru": "Доставка"
+    },
+    "footer-payment-button": {
+        "en": "Payment",
+        "ua": "Оплата",
+        "ru": "Оплата"
     },
 
     // "footer-c": {

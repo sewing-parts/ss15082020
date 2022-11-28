@@ -97,7 +97,7 @@ fileInput.addEventListener("change", () => {
         listItem.innerHTML = `<p>${fileName}</p><p>${fileSize}KB</p>`;
 
         if (fileSize >= 1024) {
-            fileSize(fileSize / 1024).toFixed(1)
+            fileSize = (fileSize / 1024).toFixed(1)
             listItem.innerHTML = `<p>${fileName}</p><p>${fileSize}MB</p>`;
         }
         fileList.appendChild(listItem);
