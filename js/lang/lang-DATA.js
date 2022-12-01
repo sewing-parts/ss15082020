@@ -611,10 +611,10 @@ export const langArr = {
         "ua": "Зв'язатися з нами",
         "ru": "Связаться с нами"
     },
-    "footer-connection-text": {
-        "en": "Questions have arisen",
-        "ua": "Виникли питання",
-        "ru": "Возникли вопросы"
+    "footer-message-text": {
+        "en": "Learn more write",
+        "ua": "Дізнатись більше напишіть",
+        "ru": "Узнать больше напишите"
     },
     "footer-delivery-text": {
         "en": "Find out the terms of delivery",
@@ -626,17 +626,22 @@ export const langArr = {
         "ua": "Дізнатись умови оплати",
         "ru": "Узнать уловия оплаты"
     },
-    "footer-connection-button": {
-        "en": "To write a message",
-        "ua": "Написати повідомлення",
-        "ru": "Написать сообщение"
+    "link-modal-message": {
+        "en": "Message",
+        "ua": "Повідомлення",
+        "ru": "Сообщение"
     },
-    "footer-delivery-button": {
+    "link-modal-contacts": {
+        "en": "Contacts",
+        "ua": "Контакти",
+        "ru": "Контакты"
+    },
+    "link-modal-delivery": {
         "en": "Delivery",
         "ua": "Доставка",
         "ru": "Доставка"
     },
-    "footer-payment-button": {
+    "link-modal-payment": {
         "en": "Payment",
         "ua": "Оплата",
         "ru": "Оплата"

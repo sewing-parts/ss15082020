@@ -25,268 +25,197 @@ body header {
     margin: 0;
 }
 
-body header .block-header-upper-level {
+
+/* ***************************++++++++++++++++++++++++++++++++++++++ */
+
+body header .block-header-summit-level {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 56px;
-    width: 100%;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* justify-content: center;
+    align-items: center; */
+    min-height: 72px;
     width: 100vw;
-    background: #45698b;
-    padding: 0px 15px 0px 15px;
+    /* background: #ff0000; */
+    background-color: #45698b;
+    padding: 0 0.5%;
+    z-index: 200000;
 }
 
-body header .block-header-upper-level .quick-contact {
-    display: flex;
-    justify-content: space-between;
-    margin-left: -5%;
+
+/* start ///// flag */
+
+body header .block-header-summit-level .language {
+    min-width: 320px;
     min-height: 1px;
-}
-
-body header .block-header-upper-level .quick-contact .contact-menu {
-    max-width: 530px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li .contact-menu-a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    color: #f5f6fa;
-    text-decoration: none;
-    padding: 9px 13px 9px 13px;
-    /* transition: linear 0.5s; */
-}
-
-body header .block-header-upper-level .quick-contact .contact-menu .contact-menu-li .contact-menu-a:hover {
-    /* transition: 0.5s linear; */
-    color: #ffd000;
-}
-
-
-/* флаги */
-
-
-/* ////////////////////////////landug START//////////////////////////////////////////////////////////////// */
-
-body header .block-header-upper-level .language-selection {
-    width: 210px;
-    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    /* background-color: rgb(0, 234, 255); */
 }
 
-body header .block-header-upper-level .language-selection .flag {
+body header .block-header-summit-level .language .language-wrapper {
+    width: 230px;
+    height: 72px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    /* background-color: rgb(0, 255, 68); */
+}
+
+body header .block-header-summit-level .language .language-wrapper .flag {
     width: 67px;
     height: 39px;
     cursor: pointer;
 }
 
-body header .block-header-upper-level .language-selection .flag-ua {
+body header .block-header-summit-level .language .language-wrapper .flag-ua {
     background-image: url('../images/flagua.jpg');
     background-repeat: no-repeat;
     background-size: 65% 65%;
     background-position: 50% 50%;
 }
 
-body header .block-header-upper-level .language-selection .flag-ru {
+body header .block-header-summit-level .language .language-wrapper .flag-ru {
     background-image: url('../images/flagru.jpg');
     background-repeat: no-repeat;
     background-size: 65% 65%;
     background-position: 50% 50%;
 }
 
-body header .block-header-upper-level .language-selection .flag-en {
+body header .block-header-summit-level .language .language-wrapper .flag-en {
     background-image: url('../images/flageng.jpg');
     background-repeat: no-repeat;
     background-size: 65% 65%;
     background-position: 50% 50%;
 }
 
-body header .block-header-upper-level .language-selection .flag:hover {
+body header .block-header-summit-level .language .language-wrapper .flag:hover {
     background-size: 100%;
 }
 
-body header .block-header-upper-level .language-selection .flag-active {
+body header .block-header-summit-level .language .language-wrapper .flag-active {
     background-size: 100%;
     border: 1px solid rgba(192, 192, 192, 0.615);
-    /* border-radius: 1px; */
     transition: 2.0s linear;
 }
 
 
-/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*  end ///// flag */
+
+body header .block-header-summit-level .contact-menu {
+    display: flex;
+    flex-direction: column;
+    min-height: 1px;
+    width: 800px;
+    /* background: #ebbc2f; */
+}
+
+body header .block-header-summit-level .contact-menu .contact {
+    width: 100%;
+    height: 32px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background: #83458b; */
+}
+
+body header .block-header-summit-level .contact-menu .contact .block {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+body header .block-header-summit-level .contact-menu .contact .block a {
+    /* background: #c35e5e; */
+    margin: 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #f5f6fa;
+    transition: 0.5s linear;
+}
+
+body header .block-header-summit-level .contact-menu .contact .block:hover a {
+    color: #ffd000;
+    transition: 0.5s linear;
+}
 
 
-/* body header .block-header-upper-level .language-selection {
-    width: 210px;
-    height: 50px;
+/* start ///  menu top ////////////////////// */
+
+body header .block-header-summit-level .contact-menu .menu {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 2px 0px 2px;
+    /* background: #cf4968; */
 }
 
-body header .block-header-upper-level .language-selection input {
+body header .block-header-summit-level .contact-menu .menu .wrapper {
+    width: 100%;
+}
+
+body header .block-header-summit-level .contact-menu .menu .wrapper #check-menu {
     display: none;
 }
 
-body header .block-header-upper-level .language-selection input:checked+.label-flagua {
-    background-image: url("/images/flagua.jpg");
-    background-size: cover;
-    border: none;
+body header .block-header-summit-level .contact-menu .menu .wrapper label {
+    display: none;
+}
+
+body header .block-header-summit-level .contact-menu .menu .wrapper .main-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background: #0baa38; */
+}
+
+body header .block-header-summit-level .contact-menu .menu .wrapper .main-menu a {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
     padding: 0 5px;
-}
-
-body header .block-header-upper-level .language-selection input:checked+.label-flagru {
-    background-image: url("/images/flagru.jpg");
-    background-size: cover;
-    border: none;
-    padding: 0 6px;
-}
-
-body header .block-header-upper-level .language-selection input:checked+.label-flageng {
-    background-image: url("/images/flageng.jpg");
-    background-size: cover;
-    border: none;
-    padding: 0 6px;
-}
-
-body header .block-header-upper-level .language-selection input:checked+label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     color: #f5f6fa;
-    font-size: 0px;
+    text-transform: uppercase;
+    /* background-color: #5c5c5c; */
+    border-bottom: 2px solid #45698b;
+    /* border-bottom: 2px solid #5aaaf5; */
+    transition: 0.5s linear;
 }
 
-body header .block-header-upper-level .language-selection label {
-    width: 67px;
-    height: 39px;
-    padding: 0 6px;
-    cursor: pointer;
-    border-radius: 3px;
-    display: inline-block;
-    margin: -1px 0px 0px 0px;
-    transition: 0.8s linear;
+body header .block-header-summit-level .contact-menu .menu .wrapper .main-menu a:hover {
+    color: #ffd000;
+    border-bottom: 2px solid #ffd000;
+    transition: 0.5s linear;
 }
 
-body header .block-header-upper-level .language-selection .label-flageng {
-    background-image: url('../images/flageng.jpg');
-    background-repeat: no-repeat;
-    background-size: 70% 60%;
-    background-position: 55% 50%;
-    transition: 0.8s linear;
-}
 
-body header .block-header-upper-level .language-selection .label-flagru {
-    background-image: url('../images/flagru.jpg');
-    background-repeat: no-repeat;
-    background-size: 70% 60%;
-    background-position: 55% 50%;
-    transition: 0.8s linear;
-}
-
-body header .block-header-upper-level .language-selection .label-flagua {
-    background-image: url('../images/flagua.jpg');
-    background-repeat: no-repeat;
-    background-size: 70% 60%;
-    background-position: 55% 50%;
-    transition: 0.8s linear;
-}
-
-body header .block-header-upper-level .language-selection label:hover {
-    border: none;
-    background-size: 100%;
-    transition: 0.8s linear;
-} */
+/* end ///  menu top ////////////////////// */
 
 
-/* ////////////////////////////landug END//////////////////////////////////////////////////////////////// */
-
-
-/* body header .block-header-upper-level .language-selection input {
-display: none;
-}
-
-body header .block-header-upper-level .language-selection input:checked+.label-flagua {
-background-image: url("images/flagua.jpg");
-background-size: cover;
-border: none;
-padding: 0 5px;
-}
-
-body header .block-header-upper-level .language-selection input:checked+.label-flagru {
-background-image: url("images/flagru.jpg");
-background-size: cover;
-border: none;
-padding: 0 6px;
-}
-
-body header .block-header-upper-level .language-selection a input:checked+.label-flageng {
-background-image: url("images/flageng.jpg");
-background-size: cover;
-border: none;
-padding: 0 6px;
-}
-
-body header .block-header-upper-level .language-selection input:checked+label {
-color: #f5f6fa;
-font-size: 0px;
-}
-
-body header .block-header-upper-level .language-selection label {
-width: 67px;
-height: 39px;
-padding: 0 6px;
-cursor: pointer;
-border-radius: 3px;
-display: inline-block;
-margin: -1px 0px 0px 0px;
-transition: 0.8s linear;
-}
-
-body header .block-header-upper-level .language-selection .label-flageng {
-background-image: url('images/flageng.jpg');
-background-repeat: no-repeat;
-background-size: 70% 60%;
-background-position: 55% 50%;
-transition: 0.8s linear;
-}
-
-body header .block-header-upper-level .language-selection .label-flagru {
-background-image: url('images/flagru.jpg');
-background-repeat: no-repeat;
-background-size: 70% 60%;
-background-position: 55% 50%;
-transition: 0.8s linear;
-}
-
-body header .block-header-upper-level .language-selection .label-flagua {
-background-image: url('images/flagua.jpg');
-background-repeat: no-repeat;
-background-size: 70% 60%;
-background-position: 55% 50%;
-transition: 0.8s linear;
-}
-
-body header .block-header-upper-level .language-selection label:hover {
-border: none;
-background-size: 100%;
-transition: 0.8s linear;
-} */
-
-
-/* флаги */
+/* start ///  slider ////////////////////// */
 
 body header .block-header-slider-level {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100vw;
-    height: 370px;
+    /* height: 370px; */
+    /* height: 20vw; */
     align-items: center;
     justify-content: center;
     background: #f5f6fa;
@@ -295,8 +224,11 @@ body header .block-header-slider-level {
 body header .block-header-slider-level .container-slider {
     margin: 0;
     padding: 0;
-    height: 370px;
-    width: 100%;
+    /* width: 100%; */
+    width: 100vw;
+    /* height: 370px; */
+    /* height: 100%; */
+    height: 22vw;
     overflow: hidden;
     position: relative;
     background: #fcf8ec;
@@ -311,10 +243,13 @@ body header .block-header-slider-level .container-slider .photo-slider {
     opacity: 0;
     overflow: hidden;
     /* */
-    object-fit: cover;
+    /* object-fit: cover; */
     /* */
+    /* width: 100vw; */
+    height: 100%;
+    /* height: 20vw; */
     width: 100vw;
-    height: 370px;
+    /* height: 370px; */
 }
 
 @keyframes round {
@@ -350,46 +285,55 @@ body header .block-header-slider-level .container-slider img:nth-child(6) {
     animation-delay: 0S;
 }
 
-body header .block-header-slider-level .container-slider #logo {
-    margin-left: 20px;
-    margin-top: -10px;
-    position: relative;
+
+/* start  /////////////////  logo  **************************************** */
+
+body header .block-header-slider-level #logo {
+    position: absolute;
+    /* margin-top: 100px; */
+    /* position: relative; */
+    padding-left: 20px;
     z-index: 88888;
+    /* background-color: aqua; */
+    left: 0;
 }
 
-body header .block-header-slider-level .container-slider #logo a {
+body header .block-header-slider-level #logo a {
     text-decoration: none;
     cursor: pointer;
 }
 
-body header .block-header-slider-level .container-slider #logo a .block-logo {
+body header .block-header-slider-level #logo a .block-logo {
+    /* padding: 0px 30px; */
+}
+
+body header .block-header-slider-level #logo a .block-logo .block-logo-img {
     padding: 0;
     margin: 0;
-    max-width: 350px;
+    max-width: 300px;
     height: 175px;
-    margin: 100px 0px 0 0px;
-    background-image: url('../images/11-aaa-waaa.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /* margin: 100px 0px 0 0px; */
+    /* background-color: #c35e5e; */
 }
 
-body header .block-header-slider-level .container-slider #logo a .block-logo .block-logo-text {
-    position: absolute;
-    max-width: 350px;
+body header .block-header-slider-level #logo a .block-logo .block-logo-img img {
+    height: 100%;
+    width: 100%;
+}
+
+body header .block-header-slider-level #logo a .block-logo .block-logo-text {
+    max-width: 300px;
     height: 22px;
     line-height: 22px;
-    margin-top: 177px;
-    margin-left: 4px;
     padding: 0px 3px 0px 3px;
-    border-radius: 3px;
-    /* background: #dcdde1; */
+    /* background: #cd0b0b; */
 }
 
-body header .block-header-slider-level .container-slider #logo a .block-logo .block-logo-text .logo-text {
+body header .block-header-slider-level #logo a .block-logo .block-logo-text .logo-text {
     color: rgb(151, 150, 150);
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 15.5px;
+    font-size: 13.3px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
@@ -399,6 +343,18 @@ body header .block-header-slider-level .container-slider #logo a .block-logo .bl
     transform: scale(1.0, 1.5);
 }
 
+
+/* end /////////////////  logo  **************************************** */
+
+
+/* end ///  slider ////////////////////// */
+
+
+/* ========================================================================================== */
+
+
+/* ========================================================================================== */
+
 body header .block-header-menu-level {
     padding: 0;
     margin: 0;
@@ -407,7 +363,7 @@ body header .block-header-menu-level {
     width: 100%;
     max-width: 1260px;
     justify-content: space-around;
-    background: #45698b;
+    background-color: #45698b;
     margin: 0 auto;
 }
 

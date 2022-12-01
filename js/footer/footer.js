@@ -145,7 +145,7 @@ const toHTMLfooter = fruitchapter =>
         <div class="connection">
             <div class="connection-one">
             <img src="images/footer/check-mark-10-256.png" alt="">
-            <p class="lng-footer-connection-text connection-text"></p>
+            <p class="lng-footer-message-text connection-text"></p>
             </div>
             <div class="connection-two">
                 <div class="block">
@@ -154,7 +154,7 @@ const toHTMLfooter = fruitchapter =>
                             <img src="images/footer/reply-256-blu.png" alt="">
                         </div>    
                         <div class="button-p">
-                            <p class="lng-footer-connection-button"></p>
+                            <p class="lng-link-modal-message"></p>
                         </div>   
                     </button>
                 </div>
@@ -172,7 +172,7 @@ const toHTMLfooter = fruitchapter =>
                             <img src="images/footer/car-28-256.png" alt="">
                         </div>
                         <div class="button-p">
-                            <p class="lng-footer-delivery-button"></p>
+                            <p class="lng-link-modal-delivery"></p>
                         </div>     
                     </button>
                 </div>
@@ -190,7 +190,7 @@ const toHTMLfooter = fruitchapter =>
                             <img src="images/footer/mastercard-256.png" alt="">
                         </div>
                         <div class="button-p">
-                            <p class="lng-footer-payment-button"></p>
+                            <p class="lng-link-modal-payment"></p>
                         </div>   
                     </button>
                 </div>

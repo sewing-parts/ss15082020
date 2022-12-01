@@ -30,12 +30,13 @@
         font-size: 19px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        border-bottom: 2px solid #42c0fb;
+        border-bottom: 1px solid #42c0fb;
         position: relative;
         padding-bottom: 5px;
         margin-bottom: 20px;
         transition: linear 0.2s;
-        color: #54c8fd;
+        /* color: #54c8fd; */
+        color: #42c0fb;
     }
     
     body .footer .container .box h2::before {
@@ -43,6 +44,7 @@
         width: 50%;
         height: 100%;
         border-bottom: 2px solid #bbbbbb;
+        border-bottom: 1px solid #dadada;
         position: absolute;
     }
     
@@ -230,6 +232,7 @@
         min-height: 1px;
         padding: 5px 5px 5px 5px;
         display: flex;
+        /* background-color: #640808; */
     }
     
     body .footer .container .box .connection .connection-one img {
@@ -261,7 +264,7 @@
         padding: 0px;
         margin: 0;
         height: 40px;
-        width: 290px;
+        width: 260px;
         line-height: 40px;
         text-align: center;
         text-decoration: none;

@@ -20,27 +20,80 @@ const paramsUrl = [{
     aimLang: params.get("lang"),
 }];
 
+
+{
+    /* <div class="sub-menu modal__btn _modal-open" data-modal-open="modal-3"><p>оплата</p></div>
+                <div class="sub-menu modal__btn _modal-open" data-modal-open="modal-2"><p>доставка</p></div>
+                <div class="sub-menu modal__btn _modal-open" data-modal-open="modal-1"><p>контакты</p></div>
+                <div class="sub-menu modal__btn _modal-open" data-modal-open="modal-basket"><p>корзина</p></div> */
+}
+
+
+{
+    /* <div class="block-header-upper-level">
+        <div class="quick-contact">
+            <div class="contact-menu">
+                <li class="contact-menu-li">
+                    <a href="#" class="contact-menu-a">+380953989891</a>
+                </li>
+                <li class="contact-menu-li">
+                    <a href="#" class="contact-menu-a">sima-biz@meta.ua</a>
+                </li>
+            </div>
+        </div>
+
+        <div class="language-selection">
+            <div id="lg-lgen" class="flagen flag-en flag"></div>
+            <div id="lg-lgua" class="flagua flag-ua flag"></div>
+            <div id="lg-lgru" class="flagru flag-ru flag"></div>
+        </div>
+    </div> */
+}
+
 // //////////////////////////////////////////
 const toHTMLheader = fruitchapter =>
-    `<div class="block-header-upper-level">
-    <div class="quick-contact">
-        <div class="contact-menu">
-            <li class="contact-menu-li">
+    `<div class="block-header-summit-level">
+    <div class="language">
+        <div class="language-wrapper">
+            <div id="lg-lgen" class="flagen flag-en flag"></div>
+            <div id="lg-lgua" class="flagua flag-ua flag"></div>
+            <div id="lg-lgru" class="flagru flag-ru flag"></div>
+        </div>
+    </div>
+    <div class="contact-menu">
+        <div class="contact">
+            <div class="block">
                 <a href="#" class="contact-menu-a">+380953989891</a>
-            </li>
-            <li class="contact-menu-li">
-                <a href="#" class="contact-menu-a">sima-biz@meta.ua</a>
-            </li>
+            </div>
+            <div class="block">
+                <a href="#" class="contact-menu-a">+380953989891</a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="wrapper">
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu">MENU
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+                </label>
+                <nav class="main-menu">
+                    <a href="#" class="lng-link-modal-payment"></a>
+                    <a href="#" class="lng-link-modal-delivery"></a>
+                    <a href="#" class="lng-link-modal-contacts modal__btn _modal-open" data-modal-open="modal-1"></a>
+                    <a href="#" class="lng-link-modal-message"></a>
+                </nav>
+            </div>
+            
         </div>
     </div>
 
-    <div class="language-selection">
-        <div id="lg-lgen" class="flagen flag-en flag"></div>
-        <div id="lg-lgua" class="flagua flag-ua flag"></div>
-        <div id="lg-lgru" class="flagru flag-ru flag"></div>
-    </div>
-
+    
 </div>
+
+
+
 <div class="block-header-slider-level">
     <div class="container-slider">
         <img class="photo-slider" src="images/slider/header-slider-1.png" alt="">
@@ -48,17 +101,20 @@ const toHTMLheader = fruitchapter =>
         <img class="photo-slider" src="images/slider/header-slider-3.png" alt="">
         <img class="photo-slider" src="images/slider/header-slider-4.png" alt="">
         <img class="photo-slider" src="images/slider/header-slider-5.png" alt="">
-        <img class="photo-slider" src="images/slider/header-slider-6.png" alt="">
-        <div id="logo">
+        <img class="photo-slider" src="images/slider/header-slider-6.png" alt="">   
+    </div>
+    <div id="logo">
             <a id="defaultOpen" href="index.html?a=${fruitchapter.aimA}">
                 <div class="block-logo">
+                    <div class="block-logo-img">
+                        <img src="images/11-aaa-waaa.png" alt="">
+                    </div>
                     <div class="block-logo-text">
                         <p class="logo-text">Sewing Industrial Machines Accessories</p>
                     </div>
                 </div>
             </a>
         </div>
-    </div>
 </div>
 
 <div class="block-header-menu-level">
