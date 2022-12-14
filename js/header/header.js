@@ -72,12 +72,13 @@ const toHTMLheader = fruitchapter =>
         <div class="menu">
             <div class="wrapper">
                 <input type="checkbox" id="check-menu">
-                <label for="check-menu">MENU
-                <div class="burger-line first"></div>
-                <div class="burger-line second"></div>
-                <div class="burger-line third"></div>
-                <div class="burger-line fourth"></div>
-                </label>
+                <label for="check-menu">
+                    <p class="lng-lev-menu"></p>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                    </label>
                 <nav class="main-menu">
                     <a href="#" class="lng-link-modal-payment"></a>
                     <a href="#" class="lng-link-modal-delivery"></a>
@@ -119,41 +120,49 @@ const toHTMLheader = fruitchapter =>
 
 <div class="block-header-menu-level">
     <div class="menu-section">
-        <nav class="dws-menu nav-menu">
+        <nav class="dws-menu">
             <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
-            <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i><p class="lng-lev-menu"></p></label>
-            <ul id="level-menu">
-                <li>
+
+            <label for="menu" class="toggleMenu">
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+                <p class="lng-lev-menu"></p>
+            </label>
+
+            <ul class="level-ul">
+                <li class="level-li-one level-li">
                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m1">
-                    <a href="#"><i class="fas fa-th-list"></i><p class="lng-lev-spare-parts"></p></a>
-                    <label for="submit-m1" class="toggleSubmenu"><i class="fa"></i></label>
-                    <ul id="sublevel-menu-one" class="level-li-one">
-                        <li><a href="#"><p class="lng-lev-feed-dogs"></p></a></li>
+                    <a class="lng-lev-spare-parts" href="#"></a>
+                    <label for="submit-m1" class="toggleSubmenu"></label>
+                    <ul class="sublevel-ul-one sublevel-ul">
+                        <li><a class="lng-lev-feed-dogs" href="#"></a></li>
                         <li><a href="#">Лапки</a></li>
-                        <li><a href="index-page-species-section.html?a=home&b=spare-parts&c=loopers&d=&e=&f="><p class="lng-lev-loopers"></p></a></li>
-                        <li><a href="#"><p class="lng-lev-knives"></p></a></li>
+                        <li><a class="lng-lev-loopers" href="index-page-species-section.html?a=home&b=spare-parts&c=loopers&d=&e=&f="></a></li>
+                        <li><a class="lng-lev-knives" href="#"></a></li>
                         <li><a href="#">Лезвия раскройные</a></li>
                         <li><a href="#">Игольные пластины</a></li>
-                        <li><a href="#"><p class="lng-lev-needle-clamp"></p></a></li>
-                        <li><a href="#"><p class="lng-lev-gauge-set"></p></a></li>
-                        <li><a href="#"><p class="lng-lev-hooks"></p></a></li>
-                        <li><a href="#"><p class="lng-lev-bobbin-cases"></p></a></li>
-                        <li><a href="#"><p class="lng-lev-bobbins"></p></a></li>
+                        <li><a class="lng-lev-needle-clamp" href="#"></a></li>
+                        <li><a class="lng-lev-gauge-set" href="#"></a></li>
+                        <li><a class="lng-lev-hooks" href="#"></a></li>
+                        <li><a class="lng-lev-bobbin-cases" href="#"></a></li>
+                        <li><a class="lng-lev-bobbins" href="#"></a></li>
                         <li><a href="#">Нитенапровители</a></li>
-                        <li><a href="#"><p class="lng-lev-machine-parts"></p></a></li>
+                        <li><a class="lng-lev-machine-parts" href="#"></a></li>
                         <li><a href="#">Запчасти ВТО</a></li>
                         <li><a href="#">Запчасти ножи</a></li>
-                        <li><a href="#"><p class="lng-lev-belts"></p></a></li>
+                        <li><a class="lng-lev-belts" href="#"></a></li>
                         <li><a href="#">Запчасти моторы</a></li>
                         <li><a href="#">Запчасти электрика</a></li>
                     </ul>
                 </li>
 
-                <li>
+                <li class="level-li-two level-li">
                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m2">
-                    <a href="#"><i class="fas fa-th-list"></i><p class="lng-lev-mechanization"></p></a>
-                    <label for="submit-m2" class="toggleSubmenu"><i class="fa"></i></label>
-                    <ul id="sublevel-menu-two" class="level-li-two">
+                    <a class="lng-lev-mechanization" href="#"></a>
+                    <label for="submit-m2" class="toggleSubmenu"></label>
+                    <ul class="sublevel-ul-two sublevel-ul">
                         <li><a href="#">Окантователи</a></li>
                         <li><a href="#">Приспособления</a></li>
                         <li><a href="#">Ограничители линейки</a></li>
@@ -167,11 +176,11 @@ const toHTMLheader = fruitchapter =>
                     </ul>
                 </li>
 
-                <li>
+                <li class="level-li-three level-li">
                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m3">
-                    <a href="#"><i class="fas fa-th-list"></i><p class="lng-lev-">ххххххх</p></a>
-                    <label for="submit-m3" class="toggleSubmenu"><i class="fa"></i></label>
-                    <ul id="sublevel-menu-three" class="level-li-three">
+                    <a class="lng-lev-equipment" href="#"></a>
+                    <label for="submit-m3" class="toggleSubmenu"></label>
+                    <ul class="sublevel-ul-three sublevel-ul">
                         <li><a href="#">Прямострочные машины</a></li>
                         <li><a href="#">Зиг-заг машины</a></li>
                         <li><a href="#">Оверложные машины</a></li>
@@ -189,11 +198,11 @@ const toHTMLheader = fruitchapter =>
                     </ul>
                 </li>
 
-                <li>
+                <li class="level-li-four level-li">
                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m4">
-                    <a href="#"><i class="fas fa-th-list"></i><p class="lng-lev-service-center"></p></a>
-                    <label for="submit-m4" class="toggleSubmenu"><i class="fa"></i></label>
-                    <ul id="sublevel-menu-four" class="level-li-four">
+                    <a class="lng-lev-service-center" href="#"></a>
+                    <label for="submit-m4" class="toggleSubmenu"></label>
+                    <ul class="sublevel-ul-four sublevel-ul">
                         <li><a href="#">Помощь при выборе</a></li>
                         <li><a href="#">Обучение работе</a></li>
                         <li><a href="#">Техническое обслуживание</a></li>
@@ -206,11 +215,13 @@ const toHTMLheader = fruitchapter =>
                     </ul>
                 </li>
 
-                <li>
+                
+
+                <li class="level-li-five level-li">
                     <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m5">
-                    <a class="btn-lev-documentation" href="#"><i class="fas fa-th-list"></i><p class="lng-lev-documentation"></p></a>
-                    <label for="submit-m5" class="toggleSubmenu"><i class="fa"></i></label>
-                    <ul id="sublevel-menu-five" class="level-li-five">
+                    <a class="lng-lev-documentation" href="#"></a>
+                    <label for="submit-m5" class="toggleSubmenu"></label>
+                    <ul class="sublevel-ul-five sublevel-ul">
                         <li><a href="index-page-catalog-pdf.html?a=home&b=documentation&c=catalogs-pdf&d=&e=&f="><p class="lng-lev-catalogs-pdf"></p></a></li>
                         <li><a href="index-page-species-section.html?a=home&b=documentation&c=parts-list-pdf&d=&e=&f="><p class="lng-lev-parts-list-pdf"></p></a></li>
                     </ul>
